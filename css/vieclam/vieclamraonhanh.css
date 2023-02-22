@@ -1,0 +1,2068 @@
+@font-face{font-family:OpenSans-Regular,sans-serif;src:url(../fonts/OpenSans-Regular.ttf);font-display:swap}
+@font-face{font-family:OpenSans-Bold,sans-serif;src:url(../fonts/OpenSans-Bold.woff2);font-display:swap}
+@font-face{font-family:OpenSans-Light,sans-serif;src:url(../fonts/OpenSans-Light.ttf);font-display:swap}
+body{box-sizing:border-box;margin:0}
+html, body{font-family:Verdana, sans-serif;font-size:15px;line-height:1.5}
+.container-vieclam{float:left;width:100%}
+.container-vieclam .row{width:1199px;margin:auto}
+.container-vieclam .item{background:#FFF;border:.5px solid #F1F1F1;box-sizing:border-box;float:left;width:100%}
+.container-vieclam .avata img{object-fit:cover;width:58px;height:58px;border-radius:50%}
+.item-01{margin:25px;float:left}
+.div_xac_thuc{margin:30px auto;width:1199px}
+.td_xacthuc{text-align:center}
+.guilai_mail{background:#F26222;width:200px;text-align:center;height:40px;line-height:40px;border-radius:10px;color:#fff}
+#btn_rating{background:#F26222;border-radius:100px;border:#ffdead;height:37px;width:128px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;color:#FFF}
+.container-vieclam .danhgia{float:left;width:70%;margin-top:15px}
+.item:hover{background:#FFF;box-shadow:0 0 20px rgba(0,0,0,0.08)}
+.container-vieclam .group{display:flex;margin-bottom:15px}
+.container-vieclam .avata{padding-right:22px;border-radius:50%}
+.cty h3{margin:0;font-family:Open Sans,sans-serif;text-transform:capitalize;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#545454}
+.gr-mt{border-bottom:.5px solid #E9E9E9;margin-bottom:20px;padding-bottom:10px;float:left;width:100%}
+.container-vieclam .showpopup img{margin-top:-6px}
+.info .title{float:left}
+#main .name{float:left}
+.danhgia {
+    margin-top: 10px;
+}
+/*#main .name a,#main .time{line-height:40px}*/
+#popup1 .close{float:right;color:#fff;font-size:18px}
+.showpopup{float:left}
+.name{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#00A787;padding-right:10px}
+.time{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:22px;color:#9D9D9D;float:left;padding-left:10px;background: url(/images/vieclam/wall-clock.png)no-repeat left;padding-left:15px}
+.time img{margin-right:5px}
+.group1 .images{float:left;padding-right:5px}
+.group1 .gr{float:left;width:100%;margin-bottom:12px;text-transform:capitalize;background:none;padding-left:0}
+.images img{text-align:center;object-fit:cover;}
+.nguoidang>.images img{border-radius: 50%;}
+.bold{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:15px;line-height:26px;color:#545454}
+.bold.dg{background:url(/images/vieclam/like.png)no-repeat;width:16px;height:16px;padding-left:20px}
+.danhgia .bold.view{background:url(/images/vieclam/eye.png)no-repeat;padding-left:20px;padding-right:5px;font-weight:700}
+.cv{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#00A787;background:#F8FCFB;border-radius:100px;padding:3px 13px;margin-right:5px}
+.htvl,.thoihan{font-family:Open Sans,sans-serif;font-style:normal;font-weight:500;font-size:15px;line-height:20px;color:#9D9D9D}
+.mt{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:15px;line-height:20px;color:#545454}
+.like,.view{float:left}
+.box_see{font-family:OpenSans-Regular, sans-serif}
+.showname .images{float:left}
+.detail-tuyendung .hidename{margin-top:0}
+.hidename .images{float:left}
+.container-vieclam .lienhe .images{float:left}
+.container-vieclam .dumb{padding:0}
+.dg{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;text-decoration-line:underline;color:#545454}
+.container-vieclam .view{float:left;margin-top:1px}
+.diadiem{font-family:Open Sans,sans-serif;font-style:normal;padding-top:25px;font-weight:600;font-size:15px;line-height:20px;color:#545454}
+.container-vieclam .right{float:left;width:30%;padding-top:22px;position:relative;display:table-cell}
+.right .loc-timkiem{padding-left:42px;position:sticky;float:left;width:100%;top:20px}
+.right .filter{background:#FFF;box-sizing:border-box;float:left;width:100%}
+.right h2.title{background:#00A787 url(/images/vieclam/loc.png)no-repeat 15px;margin:0;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;text-align:center;padding:10px}
+.right .loc{padding:14px 10px;float:left;width:100%;background:#FFF;border:.5px solid #F1F1F1;box-sizing:border-box}
+.right #tukhoa{background:#FCFCFC;border:none;float:left;width:100%;height:38px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:19px;color:#545454;margin-bottom:10px;padding:0 10px}
+.luongmm{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:19px;color:#545454;margin-bottom:8px}
+.right .loc select{background:#FCFCFC;border:none;float:left;width:94%;height:38px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:19px;color:#545454;padding:0 11px}
+.group-mb{display:none}
+.container-vieclam .hotline{background:url(/images/vieclam/dienthoai.png)no-repeat;padding-left:35px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:30px;color:#000;height:28px;margin:10px 0;float:left}
+.mail{background:url(/images/vieclam/mail.png)no-repeat;padding-left:35px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:30px;color:#000;height:28px;float:left}
+.btn-rate{display:flex;width:100%;justify-content:center}
+.select2-container--default .select2-selection--single{border:none!important;background:#FCFCFC}
+.select2-container--default .select2-selection--single .select2-selection__rendered{background:url(/images/vieclam/fit.png)no-repeat!important;background-position:95%!important;outline:none}
+.select2-container .select2-selection--single .select2-selection__rendered{padding:0 12px!important}
+.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#545454!important;font-size:14px;line-height:19px;font-family:Open Sans,sans-serif}
+.maxmin{display:flex;width:100%;justify-content:space-between}
+#money_min,#money_max{background:#FCFCFC;border:none;float:left;width:100%;height:38px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:19px;color:#545454;margin-bottom:8px;padding:0 10px;outline:none}
+#money_min{margin-right:10px}
+.timviec h3{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:25px;color:#545454;margin:0}
+.gioithieu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:26px;color:#626262}
+.box-dg .line{float:left;padding:0 18px}
+.timviec h3:hover{text-decoration-line:underline;color:#F26222}
+body{margin:0}
+.showname{
+    padding: 5px 20px;
+}
+.money {
+    margin-top: 15px;
+}
+.right .loc select {
+    background: url(/images/vieclam/fit.png)no-repeat!important;
+    background-position: 258px 10px!important;
+    list-style: none;
+    -webkit-appearance: none;
+    border: none;
+}
+.dangtinmienphi .row{margin:auto;width:1196px}
+.dtmp{background:#fff url(/images/vieclam/bg.png)no-repeat;background-size:100% 100%;float:left;width:100%}
+.dangtinmienphi .left{float:left;width:auto;background:unset;box-shadow:none;padding:0}
+.dangtinmienphi .left .images{margin:83px 0;margin-left:67px;width:auto}
+.left img{width:100%;object-fit:cover}
+.right{float:left;padding-top:100px;width:37%}
+.dangtin-mp{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:26px;line-height:35px;text-transform:uppercase;color:#F26222;margin:0;text-align:center;padding-bottom:59px}
+p{margin:0}
+.tintuyendung{border-radius:100px;float:left;width:100%;background:#00A787;height:60px}
+.tintimviec{border-radius:100px;margin-top:20px;float:left;width:100%;background:#F26222;height:60px}
+.right .tintuyendung a,.right .tintimviec a{float:left;width:74.2%;text-align:center;text-decoration:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:60px;color:#FFF}
+.dangtin-mb{display:none}
+@media screen and (max-width: 768px) {
+.right{width:58%}
+.dangtin-mb .row{width:90%}
+.sumenh .images{width:30%}
+.sumenh .images img{width:100%}
+.sumenh .item{padding:16px}
+.gr-tinhnang .group{margin-right:90px}
+.tinhnang .noidung{width:85%}
+.gr-tinhnang .group{width:47%;margin-right:39px}
+.sumenh .item{width:61%}
+.w3-modal-content{width:500px}
+.w3-modal{padding-top:50px}
+}
+@media screen and (max-width: 411px) {
+    .right .tintuyendung a,.right .tintimviec a{width:70.5%}
+}
+@media screen and (max-width: 360px) {
+.right .tintuyendung a,.right .tintimviec a{width:66%}
+.logo{margin-right:13px}
+#keyword{font-size:10px}
+}
+@media screen and (max-width: 320px) {
+.right .tintuyendung a,.right .tintimviec a{width:60%;padding-left:6px}
+#luongmax,#luongmin{width:42%}
+.dttd .btn-dangtin{font-size:14px!important}
+.nguoidang .date{width:auto!important}
+}
+@media screen and (max-width: 280px) {
+.tintuyendung,.tintimviec{height:49px}
+.right .tintuyendung a,.right .tintimviec a{width:63%;font-size:14px;line-height:48px}
+.right .images{float:right;width:34%}
+.right .images img{width:100%;height:100%}
+#luongmax,#luongmin{width:41%}
+}
+.tt-tin{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:26px;line-height:35px;text-transform:uppercase;color:#FFF;margin:0;text-align:center}
+.elipmax{margin:auto;width:70%}
+.elipmin{margin:auto;width:55%}
+.dttd form{background:#fff;margin-top:-32px;    border-radius: 10px;}
+.dttd fieldset{border:none;margin:auto;width:90%;padding:47px 0}
+.dttd label span{color:red}
+.dttd .col,.dttd #tieude,.dttd #diachi,.dttd #ctcv,.dttd #mota,.dttd #fileupload,.dttd #thanhpho,.dttd #quanhuyen,.dttd #phone,.dttd #htlv,.dttd #hantuyen,.dttd #soluong,#trinhdo,#kinhnghiem,#ngaysinh,#chungchi{float:left;width:100%}
+.dttd .gr-01{float:left;width:49%}
+.dttd .gr{margin-right:19px}
+.dttd .col{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;padding-bottom:3px}
+.dttd .kytu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#000;padding:0 15px}
+.dttd #fileupload{border:none}
+.dttd .gr-02{float:left;width:100%;text-align:center;padding-top:54px}
+.dttd .btn-dangtin{background:#00A787;border-radius:100px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#FFF;padding:9px 22px}
+.dttd .btn-huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#545454;padding:9px 22px}
+.dttd .btn-huy span{padding-right:4px}
+.dttd #avatar{background-color:#faebd7;height:200px;width:200px;border:3px solid #0af;border-radius:50%;transition:background ease-out 200ms}
+.dttd #preview{position:relative}
+.dttd input[type="file"]{display:none}
+.dttd button{padding:24px 15px;border:none;cursor:pointer;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;transition:background-color ease-out 120ms;right:-5%;bottom:0;outline:none}
+.dttd .images,.dttd main{float:left}
+.dttd .images{padding-right:39px}
+.dttd #upload-button p{color:red;padding-top:12px}
+.dangtintuyendung{background:#F26222;float:left;width:100%;padding:23px 0 76px}
+.dangtintuyendung .row{margin:auto;width:1075px}
+.btn-02{padding-top:13px;float:left;width:100%;text-align:center}
+.dttd label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.detail-tuyendung{float:left;width:100%;background:#F8F8F8}
+.dumb{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#545454;padding:17px 0}
+.name-dumb{color:#F26222}
+.detail-tuyendung .tt-detail{width: 90%}
+.tt-detail{font-family:Open Sans,sans-serif;padding-bottom:13px;font-style:normal;font-weight:600;font-size:20px;line-height:27px;color:#000;margin:0;margin-top:1px;float:left}
+.salary{float:left;width:87%}
+.salary span{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#F26222}
+.view{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#545454;float:right}
+.save_tv{float:right}
+.detail-tuyendung .left img{width:13px}
+.form-tuyendung{float:left;width:100%;border-top:.5px solid #D6D6D6;padding:10px 0;margin-top:10px}
+.form-tuyendung{float:left;width:100%}
+.form-left{float:left;width:60%}
+.form-right{float:left;width:40%}
+.gr-tuyendung{float:left;width:100%;padding-bottom:16px}
+.gr-tuyendung .images{float:left;width:45px;text-align:center}
+.gr-tuyendung .info{float:left;width:84%;padding-left:45px}
+p{margin:0}
+.inf-top{font-family:Open Sans,sans-serif;font-style:normal;font-weight:lighter;font-size:14px;line-height:17px;color:#9D9D9D}
+.inf-bottom{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:24px;color:#575757}
+.mota{float:left;width:100%}
+.tt-mota{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:23px;color:#000;background:url(/images/vieclam/anh3.png)no-repeat left;padding-left:10px}
+.mota p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:24px;color:#9D9D9D}
+.detail-tuyendung .form-tuyendung .mota .images img{width:100%}
+.detail-tuyendung .right{float:right;width:27%;padding-top:0}
+.author{background:#FFF;box-shadow:0 0 20px rgba(0, 0, 0, 0.07);padding:21px 18px;float:right;width:28.5%}
+.nguoidang{float:left;width:100%;padding-bottom:18px}
+.nguoidang .images{float:left;padding-right:15px}
+.detail-tuyendung .danhgia,.detail-tuyendung .dangviec,.detail-tuyendung .author .diachi,.detail-tuyendung .ngaysinh,.detail-tuyendung .hannhan,.detail-tuyendung .gioitinh{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;font-weight:500;color:#9D9D9D;float:left;width:100%}
+.danhgia .au-r,.dangviec .au-r,.author .diachi .au-r,.ngaysinh .au-r,.hannhan .au-r,.gioitinh .au-r,.hannhanmb .au-r{color:#545454}
+.hannhanmb{background:url(/images/vieclam/icr6.png)no-repeat left;padding-left:30px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;font-weight:600;color:#9D9D9D;float:left;display:none}
+.detail-tuyendung .hannhan{background:url(/images/vieclam/icr6.png)no-repeat left;padding-left:30px}
+.timviec .diachi{padding-left:30px}
+.lienhe{float:left;width:100%;background:#00A787;border-radius:5px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#FFF;padding:13px;margin-top:32px;border:none;outline:none}
+.hotline{background:url(/images/vieclam/phone.png)no-repeat;padding-left:20px;color:#fff}
+.lienhe .au-r{float:right}
+.vllq{float:left;width:100%}
+.vllq .group{background:#FFF;box-shadow:0 0 20px #000;padding:18px;margin-bottom:15px;float:left;width:100%}
+.vllq .avatar{float:left;width:100%;margin-bottom:16px}
+.vllq .images{float:left;padding-right:13px;border-radius:50%}
+.vllq .images img{width:58PX;height:58px}
+.vllq .cty{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#545454;width:72%;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.mucluong span{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#F26222}
+.mota .images{padding-top:37px}
+.group .vieclam{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#00A787;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.mucluong-tv{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#545454}
+.mucluong-tv span{color:#F26222}
+.diachi-tv{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:22px;color:#545454}
+.diachi-tv span{font-weight:500}
+#lienhe{position:relative;position:relative;background:#00A787;border-radius:5px;float:left;margin-top:22px;width:100%;color:#fff;cursor:pointer}
+#checkbox{display:none}
+#checkbox:checked + #lienhe:after{content:"0386796785";position:absolute;top:0;left:0;right:0;bottom:0;background:#FFEB36;color:#000;border-radius:5px;padding:10px;text-align:center}
+.Trang_ca_nhan #checkbox:checked + #lienhe:after{margin:auto;width:95%}
+.Trang_ca_nhan .danhgia{width:60%}
+.lienhevl{float:right;cursor:pointer}
+.detail-tuyendung .left .images{margin:0;width:auto;padding-right:10px}
+.detail-tuyendung .left .images img{width:auto}
+.detail-tuyendung .left .form-left .images,.detail-tuyendung .left .form-right .images{margin:0;width:46px;padding-right:10px}
+.gioithieu,.tamnhin,.antuong,.sumenh,.giatri,.tinhnang,.danhgia{float:left;width:100%}
+.dumb,.conso,.tongquan,.group,.sumenh .noidung,.giatri .noidung,.tinhnang .noidung,.danhgia .noidung{margin:auto;width:1199px}
+.dumb .name{color:#F26222}
+.gioithieutongquan{float:left;width:100%;background:url(/images/vieclam/gioithieu.png)no-repeat;background-size:100% 100%}
+.gioithieutongquan .noidung{float:left;width:47%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+.gioithieutongquan .images{float:right;width:47%;padding-bottom:93px}
+.gioithieutongquan .images img{width:100%}
+.antuong .noidung{background:url(/images/vieclam/vector.png)no-repeat;display:flex;width:100%;justify-content:center;text-align:center;margin:85px 0}
+.antuong .num{padding-right:132px}
+.antuong .num:last-child{padding-right:0}
+.antuong .num-1{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:30px;line-height:41px;letter-spacing:.05em;text-transform:uppercase;color:#00A787;margin:0}
+.antuong .num-2{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:20px;line-height:27px;color:#474747;margin:0}
+.tamnhin .images{float:left;width:50%}
+.tamnhin .images img{width:100%}
+.tamnhin .info{float:right;width:46%}
+.tt-tamnhin{padding-top:82px}
+.tt-tamnhin,.tt-sumenh,.tt-giatri,.tt-tinhnang,.tt-danhgia{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:28px;line-height:38px;text-transform:uppercase;color:#F26222;margin:0}
+.tamnhin .noidung{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+p{margin:0}
+.tt-sumenh,.tt-tinhnang,.tt-danhgia{text-align:center;margin:155px 0 63px}
+.group01{float:left;width:50%}
+.sumenh .images{float:left}
+.sumenh .item{float:left;width:65%;background:url(/images/vieclam/khung.png)no-repeat left;background-size:100% 100%;padding:51px 19px;margin-bottom:51px}
+.sumenh .item p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;color:#000}
+.giatri p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+.giatri .images{float:right;width:50%}
+.giatri .images img{width:100%}
+.giatri .info{float:left;width:47%;padding-top:82px}
+.gr-danhgia{display:flex;width:100%;text-align:center;justify-content:center;padding-bottom:50px}
+.gr-danhgia .group{padding-right:165px}
+.gr-danhgia .group:last-child{padding-right:0}
+.gr-danhgia .name{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;text-align:center;color:#00A787;padding-top:26px}
+.gr-danhgia p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:26px;text-align:center;color:#000}
+.gr-tinhnang{display:flex;width:100%;text-align:center;justify-content:center}
+.gr-tinhnang .group{margin:0;background:url(/images/vieclam/tinhnang.png)no-repeat;background-size:100% 100%;padding:32px 18px;margin-right:54px;display:unset}
+.gr-tinhnang .group:last-child{margin-right:0}
+.gr-tinhnang .images{padding-bottom:33px;width:83%}
+.gr-tinhnang .vlnn,.gr-tinhnang .hsuv,.gr-tinhnang .dttd,.gr-tinhnang .blog{padding-bottom:34px;width:83%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:24px;text-align:center;letter-spacing:.05em;color:#00A787}
+.gr-tinhnang .des{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:25px;text-align:center;letter-spacing:.05em;color:#474747;width:83%}
+.gr-tinhnang .group.gr2 .des{padding:22px 0 54px}
+.gr-tinhnang .group.gr1,.gr-tinhnang .group.gr3{margin-top:43px}
+html{box-sizing:border-box}
+*,:before,:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}
+summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}
+progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-.25em}
+sup{top:-.5em}
+figure{margin:1em 40px}
+img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}
+optgroup{font-weight:700}
+button,input{overflow:visible}
+button,select{text-transform:none}
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:none}
+legend{display:table;max-width:100%;padding:0;white-space:normal;float:left;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#000;padding-right:23px}
+textarea{overflow:auto}
+[type="checkbox"],[type="radio"]{padding:0}
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+html{overflow-x:hidden}
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+.w3-serif{font-family:serif}
+.w3-sans-serif{font-family:sans-serif}
+.w3-cursive{font-family:cursive}
+.w3-monospace{font-family:monospace}
+.w3-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.w3-image{max-width:100%;height:auto}
+img{vertical-align:middle}
+a{color:inherit}
+.w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+.w3-table-all{border:1px solid #ccc}
+.w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
+.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.w3-table-all tr:nth-child(odd){background-color:#fff}
+.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
+.w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}
+.w3-centered tr th,.w3-centered tr td{text-align:center}
+.w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px;display:table-cell;text-align:left;vertical-align:top}
+.w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:.3}
+.w3-disabled *,:disabled *{pointer-events:none}
+.w3-btn.w3-disabled:hover,.w3-btn:disabled:hover{box-shadow:none}
+.w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+.w3-badge{border-radius:50%}
+.w3-ul{list-style-type:none;padding:0;margin:0}
+.w3-ul li{padding:8px 16px;border-bottom:1px solid #ddd}
+.w3-ul li:last-child{border-bottom:none}
+.w3-tooltip,.w3-display-container{position:relative}
+.w3-tooltip .w3-text{display:none}
+.w3-tooltip:hover .w3-text{display:inline-block}
+.w3-ripple:active{opacity:.5}
+.w3-ripple{transition:opacity 0}
+.w3-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.w3-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.w3-dropdown-click,.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.w3-dropdown-hover:hover .w3-dropdown-content{display:block}
+.w3-dropdown-hover:first-child,.w3-dropdown-click:hover{background-color:#ccc;color:#000}
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:unset;color:#fff}
+.w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
+.w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-main,#main{transition:margin-left .4s}
+.w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.w3-bar{width:100%;overflow:hidden}
+.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:0}
+.w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
+.w3-bar .w3-button{white-space:normal}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}
+.w3-block{display:block;width:100%}
+.w3-responsive{display:block;overflow-x:auto}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.w3-col.s1{width:8.33333%}
+.w3-col.s2{width:16.66666%}
+.w3-col.s3{width:24.99999%}
+.w3-col.s4{width:33.33333%}
+.w3-col.s5{width:41.66666%}
+.w3-col.s6{width:49.99999%}
+.w3-col.s7{width:58.33333%}
+.w3-col.s8{width:66.66666%}
+.w3-col.s9{width:74.99999%}
+.w3-col.s10{width:83.33333%}
+.w3-col.s11{width:91.66666%}
+.w3-col.s12{width:99.99999%}
+@media (min-width: 601px) {
+.w3-col.m1{width:8.33333%}
+.w3-col.m2{width:16.66666%}
+.w3-col.m3,.w3-quarter{width:24.99999%}
+.w3-col.m4,.w3-third{width:33.33333%}
+.w3-col.m5{width:41.66666%}
+.w3-col.m6,.w3-half{width:49.99999%}
+.w3-col.m7{width:58.33333%}
+.w3-col.m8,.w3-twothird{width:66.66666%}
+.w3-col.m9,.w3-threequarter{width:74.99999%}
+.w3-col.m10{width:83.33333%}
+.w3-col.m11{width:91.66666%}
+.w3-col.m12{width:99.99999%}
+}
+@media (min-width: 993px) {
+.w3-col.l1{width:8.33333%}
+.w3-col.l2{width:16.66666%}
+.w3-col.l3{width:24.99999%}
+.w3-col.l4{width:33.33333%}
+.w3-col.l5{width:41.66666%}
+.w3-col.l6{width:49.99999%}
+.w3-col.l7{width:58.33333%}
+.w3-col.l8{width:66.66666%}
+.w3-col.l9{width:74.99999%}
+.w3-col.l10{width:83.33333%}
+.w3-col.l11{width:91.66666%}
+.w3-col.l12{width:99.99999%}
+}
+.w3-rest{overflow:hidden}
+.w3-stretch{margin-left:-16px;margin-right:-16px}
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto}
+.w3-content{max-width:980px}
+.w3-auto{max-width:1140px}
+.w3-cell-row{display:table;width:100%}
+.w3-cell{display:table-cell}
+.w3-cell-top{vertical-align:top}
+.w3-cell-middle{vertical-align:middle}
+.w3-cell-bottom{vertical-align:bottom}
+.w3-hide{display:none!important}
+.w3-show-block,.w3-show{display:block!important}
+.w3-show-inline-block{display:inline-block!important}
+@media (max-width: 1205px) {
+.w3-auto{max-width:95%}
+}
+@media (max-width: 600px) {
+.w3-modal-content{margin:0 10px;width:auto!important}
+.w3-modal{padding-top:30px}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
+.w3-hide-small{display:none!important}
+.w3-mobile{display:block;width:100%!important}
+.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}
+}
+@media (min-width: 993px) {
+.w3-modal-content{width:900px}
+.w3-hide-large{display:none}
+.w3-sidebar.w3-collapse{display:block!important}
+}
+@media (max-width: 992px) and (min-width: 601px) {
+.w3-hide-medium{display:none!important}
+}
+@media (max-width: 992px) {
+.w3-sidebar.w3-collapse{display:none}
+.w3-main{margin-left:0!important;margin-right:0!important}
+.w3-auto{max-width:100%}
+}
+.w3-top,.w3-bottom{position:relative;width:100%;z-index:1}
+.w3-top{top:0}
+.w3-bottom{bottom:0}
+.w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.w3-display-topleft{position:absolute;left:0;top:0}
+.w3-display-topright{position:absolute;right:0;top:0}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}
+.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-left{position:absolute;top:50%;left:0;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-display-container:hover .w3-display-hover{display:block}
+.w3-display-container:hover span.w3-display-hover{display:inline-block}
+.w3-display-hover{display:none}
+.w3-display-position{position:absolute}
+.w3-circle{border-radius:50%}
+.w3-round-small{border-radius:2px}
+.w3-round,.w3-round-medium{border-radius:4px}
+.w3-round-large{border-radius:8px}
+.w3-round-xlarge{border-radius:16px}
+.w3-round-xxlarge{border-radius:32px}
+.w3-row-padding,.w3-row-padding > .w3-half,.w3-row-padding > .w3-third,.w3-row-padding > .w3-twothird,.w3-row-padding > .w3-threequarter,.w3-row-padding > .w3-quarter,.w3-row-padding > .w3-col{padding:0 8px}
+.w3-container,.w3-panel{padding:.01em 16px}
+.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
+.w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4caf50;word-wrap:break-word}
+.w3-codespan{color:#dc143c;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.w3-card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.w3-spin{animation:w3-spin 2s infinite linear}
+@keyframes w3-spin {
+0%{transform:rotate(0deg)}
+100%{transform:rotate(359deg)}
+}
+.w3-animate-fading{animation:fading 10s infinite}
+@keyframes fading {
+0%{opacity:0}
+50%{opacity:1}
+100%{opacity:0}
+}
+.w3-animate-opacity{animation:opac .8s}
+@keyframes opac {
+from{opacity:0}
+to{opacity:1}
+}
+.w3-animate-top{position:relative;animation:animatetop .4s}
+@keyframes animatetop {
+from{top:-300px;opacity:0}
+to{top:0;opacity:1}
+}
+.w3-animate-left{position:relative;animation:animateleft .4s}
+@keyframes animateleft {
+from{left:-300px;opacity:0}
+to{left:0;opacity:1}
+}
+.w3-animate-right{position:relative;animation:animateright .4s}
+@keyframes animateright {
+from{right:-300px;opacity:0}
+to{right:0;opacity:1}
+}
+.w3-animate-bottom{position:relative;animation:animatebottom .4s}
+@keyframes animatebottom {
+from{bottom:-300px;opacity:0}
+to{bottom:0;opacity:1}
+}
+.w3-animate-zoom{animation:animatezoom .6s}
+@keyframes animatezoom {
+from{transform:scale(0)}
+to{transform:scale(1)}
+}
+.w3-animate-input{transition:width .4s ease-in-out}
+.w3-animate-input:focus{width:100%!important}
+.w3-opacity,.w3-hover-opacity:hover{opacity:.6}
+.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity-max{opacity:.25}
+.w3-opacity-min{opacity:.75}
+.w3-greyscale-max,.w3-grayscale-max,.w3-hover-greyscale:hover,.w3-hover-grayscale:hover{filter:grayscale(100%)}
+.w3-greyscale,.w3-grayscale{filter:grayscale(75%)}
+.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(50%)}
+.w3-sepia{filter:sepia(75%)}
+.w3-sepia-max,.w3-hover-sepia:hover{filter:sepia(100%)}
+.w3-sepia-min{filter:sepia(50%)}
+.w3-tiny{font-size:10px!important}
+.w3-small{font-size:12px!important}
+.w3-medium{font-size:15px!important}
+.w3-large{font-size:18px!important}
+.w3-xlarge{font-size:24px!important}
+.w3-xxlarge{font-size:36px!important}
+.w3-xxxlarge{font-size:48px!important}
+.w3-jumbo{font-size:64px!important}
+.w3-left-align{text-align:left!important}
+.w3-right-align{text-align:right!important}
+.w3-justify{text-align:justify!important}
+.w3-center{text-align:center!important}
+.w3-border-0{border:0!important}
+.w3-border{border:1px solid #ccc!important}
+.w3-border-top{border-top:1px solid #ccc!important}
+.w3-border-bottom{border-bottom:1px solid #ccc!important}
+.w3-border-left{border-left:1px solid #ccc!important}
+.w3-border-right{border-right:1px solid #ccc!important}
+.w3-topbar{border-top:6px solid #ccc!important}
+.w3-bottombar{border-bottom:6px solid #ccc!important}
+.w3-leftbar{border-left:6px solid #ccc!important}
+.w3-rightbar{border-right:6px solid #ccc!important}
+.w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-margin{margin:16px!important}
+.w3-margin-top{margin-top:16px!important}
+.w3-margin-bottom{margin-bottom:16px!important}
+.w3-margin-left{margin-left:16px!important}
+.w3-margin-right{margin-right:16px!important}
+.w3-padding-small{padding:4px 8px!important}
+.w3-padding{padding:8px 16px!important}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.w3-padding-top-64{padding-top:64px!important}
+.w3-padding-top-48{padding-top:48px!important}
+.w3-padding-top-32{padding-top:32px!important}
+.w3-padding-top-24{padding-top:24px!important}
+.w3-left{float:left!important}
+.w3-right{float:right!important}
+.w3-button:hover{color:#000!important;background-color:unset!important}
+.w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
+.w3-hover-none:hover{box-shadow:none!important}
+.w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#0ff!important}
+.w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196f3!important}
+.w3-light-blue,.w3-hover-light-blue:hover{color:#000!important;background-color:#87ceeb!important}
+.w3-brown,.w3-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.w3-cyan,.w3-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.w3-blue-grey,.w3-hover-blue-grey:hover,.w3-blue-gray,.w3-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4caf50!important}
+.w3-light-green,.w3-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.w3-indigo,.w3-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.w3-khaki,.w3-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.w3-lime,.w3-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.w3-orange,.w3-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.w3-deep-orange,.w3-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.w3-pink,.w3-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.w3-purple,.w3-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.w3-deep-purple,.w3-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.w3-sand,.w3-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#f26222!important}
+.w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.w3-pale-red,.w3-hover-pale-red:hover{color:#000!important;background-color:#fdd!important}
+.w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#dfd!important}
+.w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffc!important}
+.w3-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#dff!important}
+.w3-text-amber,.w3-hover-text-amber:hover{color:#ffc107!important}
+.w3-text-aqua,.w3-hover-text-aqua:hover{color:#0ff!important}
+.w3-text-blue,.w3-hover-text-blue:hover{color:#2196f3!important}
+.w3-text-light-blue,.w3-hover-text-light-blue:hover{color:#87ceeb!important}
+.w3-text-brown,.w3-hover-text-brown:hover{color:#795548!important}
+.w3-text-cyan,.w3-hover-text-cyan:hover{color:#00bcd4!important}
+.w3-text-blue-grey,.w3-hover-text-blue-grey:hover,.w3-text-blue-gray,.w3-hover-text-blue-gray:hover{color:#607d8b!important}
+.w3-text-green,.w3-hover-text-green:hover{color:#4caf50!important}
+.w3-text-light-green,.w3-hover-text-light-green:hover{color:#8bc34a!important}
+.w3-text-indigo,.w3-hover-text-indigo:hover{color:#3f51b5!important}
+.w3-text-khaki,.w3-hover-text-khaki:hover{color:#b4aa50!important}
+.w3-text-lime,.w3-hover-text-lime:hover{color:#cddc39!important}
+.w3-text-orange,.w3-hover-text-orange:hover{color:#ff9800!important}
+.w3-text-deep-orange,.w3-hover-text-deep-orange:hover{color:#ff5722!important}
+.w3-text-pink,.w3-hover-text-pink:hover{color:#e91e63!important}
+.w3-text-purple,.w3-hover-text-purple:hover{color:#9c27b0!important}
+.w3-text-deep-purple,.w3-hover-text-deep-purple:hover{color:#673ab7!important}
+.w3-text-red,.w3-hover-text-red:hover{color:#f44336!important}
+.w3-text-sand,.w3-hover-text-sand:hover{color:#fdf5e6!important}
+.w3-text-teal,.w3-hover-text-teal:hover{color:#009688!important}
+.w3-text-yellow,.w3-hover-text-yellow:hover{color:#d2be0e!important}
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+.w3-text-black,.w3-hover-text-black:hover{color:#000!important}
+.w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
+.w3-text-light-grey,.w3-hover-text-light-grey:hover,.w3-text-light-gray,.w3-hover-text-light-gray:hover{color:#f1f1f1!important}
+.w3-text-dark-grey,.w3-hover-text-dark-grey:hover,.w3-text-dark-gray,.w3-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.w3-border-amber,.w3-hover-border-amber:hover{border-color:#ffc107!important}
+.w3-border-aqua,.w3-hover-border-aqua:hover{border-color:#0ff!important}
+.w3-border-blue,.w3-hover-border-blue:hover{border-color:#2196f3!important}
+.w3-border-light-blue,.w3-hover-border-light-blue:hover{border-color:#87ceeb!important}
+.w3-border-brown,.w3-hover-border-brown:hover{border-color:#795548!important}
+.w3-border-cyan,.w3-hover-border-cyan:hover{border-color:#00bcd4!important}
+.w3-border-blue-grey,.w3-hover-border-blue-grey:hover,.w3-border-blue-gray,.w3-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.w3-border-green,.w3-hover-border-green:hover{border-color:#4caf50!important}
+.w3-border-light-green,.w3-hover-border-light-green:hover{border-color:#8bc34a!important}
+.w3-border-indigo,.w3-hover-border-indigo:hover{border-color:#3f51b5!important}
+.w3-border-khaki,.w3-hover-border-khaki:hover{border-color:#f0e68c!important}
+.w3-border-lime,.w3-hover-border-lime:hover{border-color:#cddc39!important}
+.w3-border-orange,.w3-hover-border-orange:hover{border-color:#ff9800!important}
+.w3-border-deep-orange,.w3-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.w3-border-pink,.w3-hover-border-pink:hover{border-color:#e91e63!important}
+.w3-border-purple,.w3-hover-border-purple:hover{border-color:#9c27b0!important}
+.w3-border-deep-purple,.w3-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.w3-border-red,.w3-hover-border-red:hover{border-color:#f44336!important}
+.w3-border-sand,.w3-hover-border-sand:hover{border-color:#fdf5e6!important}
+.w3-border-teal,.w3-hover-border-teal:hover{border-color:#009688!important}
+.w3-border-yellow,.w3-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}
+.w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
+.w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#9e9e9e!important}
+.w3-border-light-grey,.w3-hover-border-light-grey:hover,.w3-border-light-gray,.w3-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
+.w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}
+.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffc!important}
+.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.container-lienhe{float:left;width:100%;background:url(/images/vieclam/bglienhe.png)no-repeat bottom}
+.container-lienhe .row{margin:auto;width:1199px}
+.container-lienhe .lienhe-top{margin-bottom:55px}
+.container-lienhe .lienhe-left{float:left;width:43%;margin-top:19px}
+.container-lienhe .lienhe-right{float:right}
+.container-lienhe .tt-lienhe{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#00A787}
+.container-lienhe .cty{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;letter-spacing:.02em;color:#000;margin-bottom:11px}
+.container-lienhe .email,.container-lienhe .sdt,.container-lienhe .diachi{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;letter-spacing:.02em;color:#000;margin-bottom:11px}
+.container-lienhe .lienhe-bottom{float:left;width:100%;margin-bottom:87px;margin-top:54px}
+.container-lienhe .left-lh,.container-lienhe .right-lh{float:left;width:49%;margin-left:10px}
+#btn_phanhoi{background:#00A787;border-radius:5px;color:#fff;margin-top:33px;width:160px}
+.container-lienhe .right-lh label{float:left;width:22%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:30px;color:#000;height:45px}
+.container-lienhe .right-lh label span{color:red}
+.container-lienhe .right-lh input,.right-lh textarea{text-indent:22px;line-height:45px;width:78%;float:left;margin-bottom:10px;margin-bottom:10px;background:#FFF;box-shadow:0 0 20px rgba(0, 0, 0, 0.05);border-radius:5px;border:none;height:45px}
+.right-lh textarea{height:161px}
+.container-lienhe button{background:#00A787;border-radius:5px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:30px;color:#FFF}
+.container-lienhe .left-lh p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:30px;color:#000;margin-top:15px}
+.chinhsachbaomat{float:left;width:100%;margin-bottom:50px}
+.chinhsachbaomat .row{margin:auto;width:1199px}
+.chinhsachbaomat .title_chinhsach{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:26px;letter-spacing:.05em;text-transform:uppercase;color:#00A787;background:url(/images/vieclam/tt-cs.png)no-repeat right -12px;float:left;width:71%}
+.chinhsachbaomat .content{float:left;width:71%}
+.chinhsachbaomat .mucluc{float:right;width:27%;background:url(/images/vieclam/mucluc.png)no-repeat;background-size:100% 100%}
+.chinhsachbaomat .content h2{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;text-align:justify;color:#3E3E3E}
+.chinhsachbaomat .content p:first-of-type{font-family:Open Sans,sans-serif;font-style:italic;font-weight:400;font-size:15px;line-height:26px;text-align:justify;color:#3E3E3E}
+.chinhsachbaomat .content h3{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:26px;text-align:justify;color:#3E3E3E}
+.chinhsachbaomat .content p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:28px;text-align:justify;color:#3E3E3E}
+.chinhsachbaomat .title_mucluc{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;color:#F26222;text-align:center;margin-top:9px}
+.chinhsachbaomat ul{list-style:none;padding:0;margin:27px auto;width:80%}
+.chinhsachbaomat .ml_m2{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:24px;color:#3C3C3C}
+.chinhsachbaomat .ml_m3{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:24px;color:#3C3C3C;margin-left:15px}
+.chinhsachbaomat .mucluc.thoathuansudung{background:url(/images/vieclam/mucluc-ttsd.png)no-repeat;background-size:100% 100%}
+.chinhsachbaomat .content.thoathuansudung h2{text-transform:uppercase}
+.gr-luu .name img{display:none}
+.quenmatkhau{float:left;width:100%;background:url(/images/vieclam/dangki-vl.png)no-repeat;background-size:100% 100%}
+.quenmatkhau .logo{margin:24px auto;width:1136px}
+.quenmatkhau .row{margin:100px auto;width:651px;text-align:center;background:#FFF;box-shadow:0 0 20px #000;border-radius:28px}
+.quenmatkhau .tt-qmk{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#F26222;float:left;width:100%;margin-top:32px}
+.quenmatkhau p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-height:25px;color:#0F342D;margin-bottom:29px}
+.quenmatkhau p span{color:#00A787}
+.quenmatkhau #email{background:#FFF url(/images/vieclam/mail-dn.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.quenmatkhau button{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;height:47px;width:224px;margin-bottom:50px}
+.quenmatkhau .form-qmk{margin:auto;width:80%}
+.quenmatkhau #maxacthuc{background:#FFF url(/images/vieclam/maxacthuc.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.doimatkhau{float:left;width:100%;background:url(/images/vieclam/dangki-vl.png)no-repeat;background-size:100% 100%}
+.doimatkhau .main_cate{margin:100px auto;width:651px;text-align:center;background:#FFF;box-shadow:0 0 20px #000;border-radius:28px}
+.doimatkhau .container{margin:auto;width:80%}
+.doimatkhau h1{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#F26222;float:left;width:100%;margin-top:32px}
+.doimatkhau table{width:100%}
+.doimatkhau tbody{float:left;width:100%}
+.doimatkhau tr,.doimatkhau td{float:left;width:100%}
+.doimatkhau #first_password,.doimatkhau #second_password{width:100%;background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:47px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;float:left;margin-bottom:15px;text-indent:20px;outline:none}
+.doimatkhau .mktt{font-family:Open Sans,sans-serif;font-style:italic;font-weight:400;font-size:14px;line-height:26px;color:#0F342D;float:right;width:100%;text-align:right}
+.doimatkhau .btn{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;height:47px;width:224px;margin-bottom:50px;outline:none}
+.doimatkhau .logo{margin:24px auto;width:1136px}
+.group-lh .lienhevl{float:left; width: 100%;}
+.see_more,.hide_text{color:#F26222;cursor:pointer}
+.Trang_ca_nhan .row{margin:auto;width:1199px}
+.Trang_ca_nhan .stutus .showpopupvl{float:right;margin-left:7px}
+.Trang_ca_nhan .gioithieu,.Trang_ca_nhan .vieclamtuongtu{float:right;width:100%;background:#FFF url(/images/vieclam/gt-stu.png)no-repeat top left 7px;box-shadow:0 2px 2px rgba(0, 0, 0, 0.07);margin-bottom:38px}
+.Trang_ca_nhan .stutus .images{float:left}
+.Trang_ca_nhan .stutus .group .images{margin-right:10px}
+.Trang_ca_nhan .stutus .name{float:left}
+.Trang_ca_nhan .stutus .name a{float:left}
+.Trang_ca_nhan .mucluong{background:none;padding-left:0}
+.Trang_ca_nhan .item .danhgia img{margin-top:-7px}
+.Trang_ca_nhan .item .danhgia .view img{margin-top:-4px;margin-right:5px}
+.Trang_ca_nhan .item .danhgia .view{padding-top:2px}
+.Trang_ca_nhan .lienhe{background:#F26222;border-radius:100px;float:left;width:205px;padding:0;height:30px;line-height:30px;text-indent:14px;margin-top:0;margin-right:11px}
+#gioitinh_tv{width:auto;height:auto}
+.Trang_ca_nhan .showname{float:left}
+#timvieclam .gr{margin-right:14px}
+.suatimviec #timvieclam .gr-01{float:left;width:49%}
+.suatimviec #timvieclam select{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;margin-bottom:20px;padding:10px;float:left;width:100%}
+.suatimviec textarea{float:left;width:100%}
+.suatimviec .kytu,.suatimviec .divided{float:left;font-size:15px;line-height:20px;color:#000;padding:0 15px;margin-top:12px}
+.suatimviec .images{float:left;width:100%}
+#luongmin_tv,#luongmax_tv,#thang_tv{width:20%!important;float:left!important}
+.col.col-1{float:left;width:100%;}
+.Trang_ca_nhan .box-lh{float:right}
+.Trang_ca_nhan .tt-gioithieu,.Trang_ca_nhan .vltt{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;color:#00A787;width:90%;margin:24px auto}
+.Trang_ca_nhan #thongtincanhan .close{margin-top:-48px;color:#fff;    margin-right: 23px;}
+.Trang_ca_nhan .col-01{float:left;width:100%}
+.suatin-content input{width:100%;height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;margin-bottom:20px}
+.suatin-content .gr1 input{width:auto}
+.suatin-content span{color:red}
+.suatin-content #gen{height:auto}
+#btn_ttlienhe{background:#00A787;border-radius:100px;border:none;outline:none;width:210px;height:40px;color:#fff}
+.suatin-content .btn{text-align:center;margin-top:21px}
+.suatin-content .huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;width:107px;height:40px}
+.Trang_ca_nhan .gioithieu .cty,.Trang_ca_nhan .gioithieu p span{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#545454}
+.Trang_ca_nhan .gioithieu .name{background:url(/images/vieclam/name-stu.png)no-repeat left top}
+.Trang_ca_nhan .gioithieu .dg{background:url(/images/vieclam/icr1.png)no-repeat left top;text-decoration-line:none}
+.Trang_ca_nhan .gioithieu .vl{background:url(/images/vieclam/icr2.png)no-repeat left top}
+.Trang_ca_nhan .gioithieu .dc{background:url(/images/vieclam/icr3.png)no-repeat left top;border-bottom:.5px solid #EDEDED;padding-bottom:10px}
+.Trang_ca_nhan .gioithieu p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#9D9D9D;margin:auto;width:90%;text-indent:25px}
+.Trang_ca_nhan .vl-01{border-bottom:.5px solid #E3E3E3;float:left;width:100%;padding-left:15px;padding: 10px 0;}
+.Trang_ca_nhan .gr-vltt{margin:auto;width:90%;margin-top:12px}
+.Trang_ca_nhan .vieclamtuongtu .cty{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:24px;color:#949393}
+.Trang_ca_nhan .vieclamtuongtu .money{     margin-top: 0px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#F26222;background:url(/images/vieclam/icon-tv-2.png)no-repeat left;text-indent:25px;padding:10px 0;width:100%}
+.Trang_ca_nhan .vieclamtuongtu .diachi{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:22px;color:#4D4D4D;margin-bottom:12px;background:url(/images/vieclam/icon-tv-1.png)no-repeat left 0;text-indent:25px;float:left}
+.Trang_ca_nhan .avarta{background:#FFF;box-shadow:0 2px 2px rgba(0, 0, 0, 0.07);margin-bottom:41px;float:left;width:100%}
+.Trang_ca_nhan .avarta .banner img{width:100%;height:300px}
+.btn_anhbia{background:rgba(0,0,0,0.45);z-index:1;border-radius:5px;border:#ffdead;color:#fff;float:right;margin-top:-40px;position:relative}
+.btn_anhbia img{width:auto!important;height:auto!important;margin:5px 0;margin-right:10px}
+#change_avt{margin:0 auto 10px;width:100%;position:relative;cursor:pointer;top:-107px;display:flex;justify-content:center}
+#change_avt img{width:100%}
+#ico_camera{height:40px;margin-top:136px;width:40px!important;position:absolute;border-radius:45%;margin-right:-149px;background:#EDEDED;padding:10px}
+.form_ava{display:none}
+input[type=file]{display:block}
+.Trang_ca_nhan .avarta .images{text-align:center;margin-top:-95px}
+.content-gt{float:left;width:100%}
+.group-lh{float:right}
+#Danhgia img{width:58px;height:58px;border-radius:50%}
+.danh_gia{float:left;width:100%;padding:24px 0}
+.bg_rate{width:17%;height:24px;background:#C4C4C4;position:relative;float:left;margin-right:10px}
+.rate_range{background:#FFAF14;height:100%}
+.wp_rate{float:left;width:86%}
+.fake_rate{background:url(/images/vieclam/sao.png)no-repeat;background-size:100% 100%;position:absolute;width:100%;height:100%;top:0;left:0}
+.Trang_ca_nhan .cty a{float:left}
+.save_vl{float:right}
+.save_vl{width:17px;height:22px}
+.auth .name img{width:46px;height:42px;border-radius:50%;float:left;display:none;padding-right:5px}
+.hidden{display:none}
+.Trang_ca_nhan .dumb .name{width:50%;float:left}
+#ungvien .timviec a{float:left}
+.delete{float:left}
+.kinhnghiem .vtcv p{width:100%}
+.gr-luu{float:left;width:80%}
+.tcn-right{float:right;width:27%}
+.suatuyendung .tt_hv,.suatimviec .tt_hv{background:#F26222;text-align:center;height:52px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:52px;text-transform:uppercase;color:#FFF}
+.suatuyendung .close{margin-top:-46px;color:#fff}
+.suatuyendung .suatin-content,.suatimviec .suatin-content{padding:0}
+.suatuyendung .tuyen-dung{padding:10px}
+.suatuyendung .tuyen-dung .gr-01,.suatimviec .gr-01{float:left;width:50%}
+.suatimviec #gender{width:auto;height:auto}
+.suatuyendung .tuyen-dung #thanhpho_ft,.suatuyendung .tuyen-dung #quanhuyen_ft,.suatuyendung .tuyen-dung #htlv,.suatuyendung .tuyen-dung #trinhdo,.suatuyendung .tuyen-dung #kinhnghiem{width:100%;height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung #luongmin,.suatuyendung .tuyen-dung #luongmax{width:28%}
+.suatuyendung .tuyen-dung #thang{height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung #mota{width:100%;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung .btn-dangtin{background:#00A787;border-radius:100px;border:none;outline:none;color:#fff;height:40px}
+.btn-gr-02{text-align:center}
+.btn-huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;width:107px;height:40px}
+.suatuyendung .tuyen-dung .col-1{float:left;width:100%}
+.suatuyendung .tuyen-dung .col-1 span,.suatuyendung .tuyen-dung .col-2 span{color:red}
+.tab button:hover{border-bottom:2px solid #F26222}
+.tab button.active{border-bottom:2px solid #F26222}
+.suatin-content .upload input{border:none}
+.tabcontent{display:none;border-top:none}
+a{text-decoration:none}
+.modal{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.modal-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:100%;background:#fefefe url(/images/vieclam/danhgia-popup.png)no-repeat top left;    width: 525px;    height: 497px;}
+.close{color:#aaa;float:right;font-size:28px;font-weight:700}
+.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer}
+.rating{float:left;padding:0}
+.rating:not(:checked) > input{position:absolute;top:-9999px;clip:rect(0,0,0,0)}
+.rating:not(:checked) > label{float:right;width:1em;padding:0 .1em;overflow:hidden;white-space:nowrap;cursor:pointer;font-size:200%;line-height:1.2;color:#ddd;text-shadow:1px 1px #bbb,2px 2px #666,.1em .1em .2em rgba(0,0,0,.5)}
+.rating:not(:checked) > label:before{content:'★ '}
+.rating > input:checked ~ label{color:#f70;text-shadow:1px 1px #c60,2px 2px #940,.1em .1em .2em rgba(0,0,0,.5)}
+.rating:not(:checked) > label:hover,.rating:not(:checked) > label:hover ~ label{color:#ffd700;text-shadow:1px 1px goldenrod,2px 2px #B57340,.1em .1em .2em rgba(0,0,0,.5)}
+.rating > input:checked + label:hover,.rating > input:checked + label:hover ~ label,.rating > input:checked ~ label:hover,.rating > input:checked ~ label:hover ~ label,.rating > label:hover ~ input:checked ~ label{color:#ea0;text-shadow:1px 1px goldenrod,2px 2px #B57340,.1em .1em .2em rgba(0,0,0,.5)}
+.rating > label:active{position:relative;top:2px;left:2px}
+.clearfix:before,.clearfix:after{content:" ";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+#myBtn{float:left;margin:0;border:none;background:#fff;outline:none}
+.danhgia .line{float:left;padding:0 10px}
+.modal-content #status{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;text-transform:uppercase;color:#FFF;text-align:center;margin-bottom:91px}
+.modal-content .dgcb{float:left;width:100%;padding-top:20px}
+.modal-content .dgcb textarea{margin-top:14px;height:164px;margin-bottom:43px}
+.modal-content label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#000}
+.modal-content textarea{width:100%}
+.modal-content .submit.clearfix{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;color:#FFF;width:128px;height:26px}
+#thongtincanhan .mucluc{float:right;background:#fff;width:32%}
+#thongtincanhan .mucluc ul{padding:0;list-style:none;margin:16px 0}
+#thongtincanhan .tablink{border:none;background:#fff;text-indent:49px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#383838;outline:none;width:100%;text-align:left;height:54px}
+#thongtincanhan .thongtin{background:#FFF;border:.5px solid #F1F1F1;box-sizing:border-box;float:left;width:65%;margin-bottom:50px;display:none}
+#thongtincanhan #gioithieu{display:block}
+#dongthoigian{display:block}
+#thongtincanhan .thongtin .gthieu .tt-ttcn,#thongtincanhan .thongtin .ttlh .tt-ttcn{width:auto}
+#thongtincanhan .thongtin .content{float:left;width:100%;padding:19px 29px}
+.hocvan, .kinhnghiem{width:100%;float:left;    margin-bottom: 10px;}
+.kinhnghiem .noidung{width:100%;float:left}
+#thongtincanhan .thongtin p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:28px;color:#3A3A3A;float:left}
+#thongtincanhan .thongtin .ttlh p{width:100%}
+#thongtincanhan .thongtin .vtcv{float:left;border-left:2px solid #E2E2E2;padding-left:22px;margin:0 0 32px}
+#thongtincanhan #hocvan .vtcv span{text-indent:0}
+#thongtincanhan .thongtin .vtcv p{margin:0}
+#thongtincanhan #thongtinlienhe p{color:#939393}
+#thongtincanhan .thongtin p span{color:#3A3A3A;font-weight: 600;}
+.mucluc button.active{color:#F26222}
+#thongtincanhan #hocvan .thoigian{background:#00A787;border-radius:5px;color:#fff;height:32px;float:left;margin-bottom:15px}
+#thongtincanhan #hocvan .name .cuahang{color:#00A787}
+#thongtincanhan #hocvan p span{text-indent:10px;float:left}
+#thongtincanhan #hocvan p{color:#7C7C7C;float:left}
+#thongtincanhan #hocvan .tt_hv{width:100%;color:#fff}
+#thongtincanhan #Danhgia .images{float:left}
+#viecdaluu .images,#ungvien .avata{float:left}
+#ungvien .images{float:left}
+#myDIV{width:100%;padding:50px 0;margin-top:20px;display:none}
+.accordion{display:none}
+#avatar{background-size:100% 100%;height:200px;width:200px;border:4px solid #fff;border-radius:50%;transition:background ease-out 200ms;margin-bottom:16px}
+#avatar img{width:100%}
+#preview{position:relative}
+.banner input[type="file"]{position:absolute;left:-1000px}
+.uv_logo{position:relative;border-radius:50%;width:184px;height:184px;object-fit:cover}
+.suatimviec .close{margin-top:-49px;color:#fff;margin-right: 12px;}
+.tim-viec fieldset{padding:25px;}
+#gender_tv{width:auto;height:auto}
+.gr-gt{height:45px}
+#trinhdo_tv{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px;width:100%}
+.tim-viec .col-2{float:left;width:100%}
+#preview button{border-radius:50%;border:none;cursor:pointer;background-color:#EDEDED;box-shadow:0 3px 5px -1px #000 0 6px 10px 0 #000 0 1px 18px 0 #000;transition:background-color ease-out 120ms;position:absolute;right:4%;width:45px;bottom:0;height:45px;outline:none}
+.Trang_ca_nhan .avatar-images{float:left;width:100%;margin-top:-95px}
+.Trang_ca_nhan .avatar-images .anhdaidien{float:left}
+.Trang_ca_nhan .avatar-images .anh{margin:auto;width:200px}
+#dongthoigian #lienhe{background:none;padding:0;margin-bottom:36px}
+#dongthoigian #lienhe .gr-lh{background:#00A787;margin:auto;width:95%;height:44px;border-radius:5px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:15px;line-height:44px;color:#FFF;text-align:center}
+.suatindang{float:right}
+.suatindang .images{background:#00A787;width:32px;height:32px;text-align:center;border-radius:100px}
+.suatin{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.suatin-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:80%}
+.myclose{color:#aaa;float:right;font-size:28px;font-weight:700}
+.myclose:hover,.myclose:focus{color:#000;text-decoration:none;cursor:pointer}
+.box{width:40%;margin:0 auto;background:rgba(255,255,255,0.2);padding:35px;border:2px solid #fff;border-radius:20px/50px;background-clip:padding-box;text-align:center}
+.suagt{font-size:1em;color:#fff;border:2px solid #00A787;border-radius:100px;text-decoration:none;cursor:pointer;transition:all .3s ease-out;float:right;width:32px;height:32px;text-align:center}
+.overlay{position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);transition:opacity 500ms;visibility:hidden;opacity:0}
+.overlay:target{visibility:visible;opacity:1}
+.Mypopup{margin:70px auto;background:#fff;border-radius:5px;width:40%;position:relative}
+.Mypopup h2{margin-top:0;background:#F26222;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;text-transform:uppercase;color:#FFF;text-align:center;height:40px;line-height:40px}
+.Mypopup .close{position:absolute;top:20px;right:30px;transition:all 200ms;font-size:30px;font-weight:700;text-decoration:none;color:#333}
+.Mypopup .close:hover{color:#06D85F}
+.Mypopup .content{max-height:30%;overflow:auto}
+.Mypopup .nd{margin:auto;width:95%}
+.Mypopup .nd textarea{width:100%}
+.Mypopup .mybtn{text-align:center}
+.Mypopup .mybtn .luu{background:#00A787;border-radius:100px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#FFF}
+.Mypopup .mybtn .huy{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#545454;background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:40px;width:107px}
+#Btn{border:none;background:#fff;outline:none}
+#suathongtin .suatin-content{padding:0;width:45%}
+#thongtinlienhe #suathongtin .suatin-content p{background:#F26222;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;text-align:center;text-transform:uppercase;color:#FFF;height:70px;line-height:70px;width:100%}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup{margin:70px auto;width:95%;position:relative}
+fieldset{padding:0}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;padding:5px 0}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup #name,.Trang_ca_nhan #suathongtin .suatin-content .Mypopup #diachi{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;height:45px}
+.Trang_ca_nhan #suathongtin .myclose{margin-top:-74px;color:#fff}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gr1{display:flex}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gtinh label:first-of-type{float:left;width:100%;color:#0F342D;font-weight:600}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gtinh label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.Trang_ca_nhan .suatin-content{padding:0;width:50%}
+.Trang_ca_nhan #hocvan .suahocvan .suatin-content p,.Trang_ca_nhan #hocvan .suakinhnghiem .suatin-content p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;text-align:center;text-transform:uppercase;color:#FFF;background:#F26222;height:50px;line-height:50px;width:100%}
+.Trang_ca_nhan .hoc-van{margin:auto;width:95%}
+.Trang_ca_nhan .hoc-van label span{color:red}
+.Trang_ca_nhan .hoc-van label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D}
+.Trang_ca_nhan .hoc-van #school,.Trang_ca_nhan .hoc-van #cviec,.Trang_ca_nhan .hoc-van #chucvu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;width:100%;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px}
+.Trang_ca_nhan .hoc-van .gr1{display:flex;justify-content:space-around}
+.Trang_ca_nhan .hoc-van .start,.Trang_ca_nhan .hoc-van .finish{float:left;width:50%}
+.Trang_ca_nhan .hoc-van .start{margin-right:31px}
+.Trang_ca_nhan .hoc-van .gr1 select{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;height:45px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.Trang_ca_nhan .hoc-van .btn{text-align:center;margin-bottom:10px}
+.Trang_ca_nhan .hoc-van .btn .luu{background:#00A787;border-radius:100px;border:none;outline:none;width:210px;height:40px;color:#fff}
+#suagioithieu h2{background:#F26222;margin:0;text-align:center;color:#fff}
+#suagioithieu .close{margin-top:-52px}
+#suagioithieu .nd{margin:18px}
+#suagioithieu textarea{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;    padding: 10px;}
+#suagioithieu #btn_luuthongtin{background:#00A787;border-radius:100px;width:30%;border:none;height:40px;color:#fff}
+#suagioithieu .mybtn{text-align:center;    margin-bottom: 20px;}
+.Trang_ca_nhan .hoc-van .btn .huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:40px;width:107px}
+#suagioithieu label{float:left;width:100%;    font-size: 18px;
+    margin-bottom: 20px;}
+.suahocvan .myclose{margin-top:-68px;color:#fff}
+.Trang_ca_nhan .hoc-van textarea{width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:28px;color:#787878}
+.Trang_ca_nhan .hoc-van .myclose{margin-top:-60px;color:#fff}
+.suatindang p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;text-transform:uppercase;color:#FFF;background:#F26222;height:70px;line-height:70px;text-align:center}
+.suatindang .Mypopup{margin:30px auto;width:95%}
+.suatindang .Mypopup label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;float:left;width:100%}
+.suatindang .Mypopup #namecity,.suatindang .Mypopup #chitiet,.suatindang .Mypopup textarea{width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px}
+.suatindang .Mypopup textarea{height:160px}
+.popupsua{display:flex;justify-content:space-around}
+.suatindang .Mypopup input,.suatindang .Mypopup select{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px;width:100%}
+.suatindang .Mypopup .popupleft{margin-right:29px}
+.suatindang .Mypopup .popupright #nam,.suatindang .Mypopup .popupright #nu,.suatindang .Mypopup .popupright #normal,.suatindang .Mypopup .popupright .gender{width:auto;height:auto;float:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.btn_logout a{color:#000}
+.noti-error{color:red}
+.er-dc,.er-cv{float:left;width:100%}
+form .select2-search__field{margin:5px 0}
+form .select2-container{width:100%}
+.luong{float:left;width:100%}
+.rating_stars{direction:rtl;font-size:30px;unicode-bidi:bidi-override;display:inline-block;margin-left:14px;margin-top:-15px}
+.rating_stars input{opacity:0;position:relative;left:-17px;z-index:2;cursor:pointer}
+.rating_stars span{margin-left:-14px}
+.rating_stars span.star:before{color:#C4C4C4;content:'★ '}
+.rating_stars input:hover+span.star:before,.rating_stars input:hover+span.star~span.star:before,.rating_stars input:checked+span.star:before,.rating_stars input:checked+span.star~span.star:before{color:#FFAF14;content:'★ '}
+#maxacnhan{width:64%}
+.preview{width:100%;height:200px;margin:0 auto}
+.preview img{display:none}
+.button{border:0;background-color:#00bfff;color:#fff;padding:5px 15px;margin-left:10px}
+#main{float:left;width:70%;margin-bottom:252px;margin-top:22px;flex:1}
+.info,.cty{float:left;width:92%}
+.container-vieclam .info, .cty{width:100%}
+.detail-tuyendung .timviec{float:right;width:28.5%}
+.mota{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#9D9D9D}
+.container-vieclam .danhgia .images{float:left;padding-right:5px}
+.like,.view{float:left}
+.container-vieclam .lienhe,.showname{float:right;background:#F26222;border-radius:100px;padding:5px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#FFF;width:auto}
+.showname .images{float:left;padding-right:5px}
+.hidename{float:left;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;margin-top:10px;color:#F26222}
+.hidename .images{float:left;padding-right:5px}
+.container-vieclam .lienhe .images{float:left}
+.group-mb{display:none}
+.gr.gr-01{padding-right:10px}
+.timviec h3{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:25px;color:#545454;margin:0}
+.kinhnghiem{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#9D9D9D;float:left}
+.gioithieu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:26px;color:#626262}
+.box-dg .line{float:left;padding:0 18px}
+.timviec h3:hover{text-decoration-line:underline;color:#F26222}
+.dangtinmienphi{background:#F26222;float:left;width:100%;padding:45px 0}
+.dtmp{background:#fff url(/images/vieclam/bg.png)no-repeat;background-size:100% 100%;float:left;width:100%}
+.dangtinmienphi .left{float:left;width:auto;background:unset;box-shadow:none;padding:0}
+.left .images{margin:83px auto;width:60%}
+.left img{width:100%;object-fit:cover}
+.right{float:left;padding-top:100px;width:37%}
+.dangtin-mp{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:26px;line-height:35px;text-transform:uppercase;color:#F26222;margin:0;text-align:center;padding-bottom:59px}
+p{margin:0}
+.tintuyendung{border-radius:100px;float:left;width:100%;background:#00A787 url(/images/vieclam/td.png)no-repeat right;height:60px}
+.tintimviec{border-radius:100px;margin-top:20px;float:left;width:100%;background:#F26222 url(/images/vieclam/vl.png)no-repeat right;height:60px}
+.right .tintuyendung a,.right .tintimviec a{float:left;width:74.2%;text-align:center;text-decoration:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:60px;color:#FFF}
+.dangtin-mb{display:none}
+.tt-tin{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:26px;line-height:35px;text-transform:uppercase;color:#FFF;margin:0;text-align:center}
+.elipmax{margin:auto;width:70%}
+.elipmin{margin:auto;width:55%}
+.dttd form{background:#fff;margin-top:-32px}
+.dttd fieldset{border:none;margin:auto;width:90%;padding:47px 0}
+.dttd label span{color:red}
+.dttd .col,.dttd #tieude,.dttd #diachi,.dttd #ctcv,.dttd #mota,.dttd #fileupload,.dttd #thanhpho,.dttd #quanhuyen,.dttd #phone,.dttd #htlv,.dttd #hantuyen,.dttd #soluong,#trinhdo,#kinhnghiem,#ngaysinh,#chungchi{float:left;width:100%}
+.dttd .gr-01{float:left;width:49%}
+.dttd .gr{margin-right:19px}
+.dttd .col{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;padding-bottom:3px}
+.dttd input,.dttd textarea,.dttd select{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;margin-bottom:20px;padding:10px;outline:none}
+.dttd .kytu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#000;padding:0 15px}
+.dttd #fileupload{border:none}
+.select2-container--default .select2-search--inline .select2-search__field{margin-bottom:0;height:28px}
+.dttd .gr-02{float:left;width:100%;text-align:center;padding-top:54px}
+.dttd .btn-dangtin{background:#00A787;border-radius:100px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#FFF;padding:9px 22px}
+.dttd .btn-huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#545454;padding:9px 22px}
+.dttd .btn-huy span{padding-right:4px}
+.dttd #avatar{background-color:#faebd7;height:200px;width:200px;border:3px solid #0af;border-radius:50%;transition:background ease-out 200ms}
+.dttd #preview{position:relative}
+.dttd input[type="file"]{display:none}
+.dttd button{padding:24px 15px;border:none;cursor:pointer;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;transition:background-color ease-out 120ms;right:-5%;bottom:0;outline:none}
+.dttd .images,.dttd main{float:left}
+.dttd .images{padding-right:39px}
+.dttd #upload-button p{color:red;padding-top:12px}
+.dangtintuyendung{background:#F26222;float:left;width:100%;padding:23px 0 76px}
+.dangtintuyendung .row{margin:auto;width:1075px}
+.btn-02{padding-top:13px;float:left;width:100%;text-align:center}
+.dttd label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.detail-tuyendung .row{margin:auto;width:1199px}
+.left{float:left;width:70%;background:#FFF;box-shadow:0 0 20px rgba(0, 0, 0, 0.07);padding:35px}
+.salary span{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#F26222}
+.view{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#545454;float:right}
+.form-tuyendung{float:left;width:100%;border-top:.5px solid #D6D6D6;padding:10px 0;margin-top:10px}
+.form-tuyendung{float:left;width:100%}
+.form-left{float:left;width:60%}
+.form-right{float:left;width:40%}
+.gr-tuyendung{float:left;width:100%}
+.gr-tuyendung .images{float:left;width:45px;text-align:center}
+.gr-tuyendung .info{float:left;width:84%}
+p{margin:0}
+.inf-bottom{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:24px;color:#575757}
+.mota{float:left;width:100%}
+.tt-mota{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:23px;color:#000;background:url(/images/vieclam/anh3.png)no-repeat left;padding-left:10px}
+.detail-tuyendung .form-tuyendung .mota .images img{width:100%}
+.detail-tuyendung .gr-mt{border-bottom:none;    margin-top: 15px;}
+.detail-tuyendung .right{float:right;width:28.5%;padding-top:0}
+.detail-tuyendung .showname,.showname_lh{background:#00A787;width:100%;height:45px;line-height:33px;color:#fff;text-align:center;border-radius:5px}
+.detail-tuyendung .hidename,.hidename_lh{width:100%;text-align:center;color:#000;height:45px;line-height:47px;background:#FFEB36;border-radius:5px}
+.nguoidang .date{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:12px;line-height:16px;color:#9D9D9D;background:url(/images/vieclam/wall-clock.png)no-repeat left;float:left;padding-left:15px}
+.danhgia .au-r,.dangviec .au-r,.author .diachi .au-r,.ngaysinh .au-r,.hannhan .au-r,.gioitinh .au-r,.hannhanmb .au-r{color:#545454}
+.detail-tuyendung .danhgia{background:url(/images/vieclam/icr1.png)no-repeat left;padding-left:30px}
+.detail-tuyendung .dangviec{background:url(/images/vieclam/icr2.png)no-repeat left;padding-left:30px}
+.detail-tuyendung .gioitinh{background:url(/images/vieclam/icr4.png)no-repeat left;padding-left:30px;margin-bottom:10px;background-position-x: -3px;}
+.detail-tuyendung .ngaysinh{background:url(/images/vieclam/icr5.png)no-repeat left;padding-left:30px;margin-bottom:10px}
+.detail-tuyendung .hannhan{background:url(/images/vieclam/icr6.png)no-repeat left top;padding-left:30px;border-bottom:.5px solid #EDEDED;margin-bottom:10px;padding-bottom:10px}
+.timviec .diachi{padding-left:30px}
+.author .diachi{background:url(/images/vieclam/icr3.png)no-repeat left;margin-bottom:10px;padding-left:30px}
+.lienhe{float:left;width:100%;background:#00A787;border-radius:5px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#FFF;padding:13px;margin-top:32px;border:none;outline:none}
+.hotline{background:url(/images/vieclam/phone.png)no-repeat;padding-left:20px;color:#fff}
+.lienhe .au-r{float:right}
+.vllq{float:left;width:100%}
+.vllq .mucluong{width:100%}
+.cont-dg{width:86%}
+.tt-vlllq{font-family:Open Sans,sans-serif;font-style:normal;padding:27px 0;font-weight:700;font-size:20px;line-height:27px;color:#F26222;background:url(/images/vieclam/thanhngang.png)no-repeat right}
+.vllq .group{background:#FFF;box-shadow:0 0 20px rgba(0, 0, 0, 0.07);padding:18px;margin-bottom:15px;float:left;width:100%}
+.vllq .avatar{float:left;width:100%}
+.vllq .images{float:left;padding-right:13px;border-radius:50%}
+.vllq .images img{width:58PX;height:58px;border-radius: 50%;}
+.mucluong{font-family:Open Sans,sans-serif;padding:6px 0;font-style:normal;font-weight:700;font-size:15px;line-height:20px;color:#545454;float:left;background:url(/images/vieclam/dollars-money-bag.png)no-repeat left;padding-left:25px}
+.vllq .diachi{float:left;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:22px;color:#545454;background:url(/images/vieclam/map.png)no-repeat left;text-transform:capitalize;padding-left:25px}
+.mota .images{padding-top:37px}
+.kinhnghiem.gr-tuyendung{background:url(/images/vieclam/icon7.png)no-repeat left top}
+.chitietcv.gr-tuyendung{background:url(/images/vieclam/icon2.png)no-repeat left top}
+.diadiem.gr-tuyendung{background:url(/images/vieclam/icon4.png)no-repeat left top;padding-top:0}
+.totnghiep.gr-tuyendung{background:url(/images/vieclam/icon3.png)no-repeat left top}
+.chungchi.gr-tuyendung{background:url(/images/vieclam/icon8.png)no-repeat left top;height:52px;background-position-x: 7px;}
+.hinhthuclv.gr-tuyendung{background:url(/images/vieclam/icon5.png)no-repeat left top;    background-position-x: 2px;}
+.hantuyendung.gr-tuyendung{background:url(/images/vieclam/icon1.png)no-repeat left top}
+.hocvan.gr-tuyendung{background:url(/images/vieclam/icon3.png)no-repeat left top}
+.diachi.gr-tuyendung{background:url(/images/vieclam/icon4.png)no-repeat left top}
+.soluongtuyen.gr-tuyendung{background:url(/images/vieclam/icon6.png)no-repeat left top}
+.vieclam{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#00A787}
+.mucluong-tv{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#545454}
+.mucluong-tv span{color:#F26222;font-weight:400}
+.diachi-tv{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:22px;color:#545454}
+.diachi-tv span{font-weight:500}
+#lienhe{position:relative;position:relative;background:#00A787;border-radius:5px;float:left;margin-top:22px;width:100%;color:#fff;text-align:center}
+#checkbox{display:none}
+#checkbox:checked + #lienhe:after{content:"0386796785";position:absolute;top:0;left:0;right:0;bottom:0;background:#FFEB36;color:#000;border-radius:5px;padding:10px;text-align:center}
+.Trang_ca_nhan #checkbox:checked + #lienhe:after{margin:auto;width:95%}
+.Trang_ca_nhan .danhgia{width:60%}
+.viecdaluu,.ungvien,#thongtincanhan{margin:auto;width:1199px}
+.detail-tuyendung .left .images{margin:0;width:auto;padding-right:10px}
+.detail-tuyendung .left .images img{width:auto}
+.detail-tuyendung .left .form-left .images{margin:0;width:48px;padding-right:10px}
+.gioithieu,.tamnhin,.antuong,.sumenh,.giatri,.tinhnang,.danhgia{float:left;width:100%}
+.dumb,.conso,.tongquan,.group,.sumenh .noidung,.giatri .noidung,.tinhnang .noidung,.danhgia .noidung{margin:auto;width:1199px}
+.dumb .name{color:#F26222}
+.tt-tongquan{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:28px;line-height:38px;text-transform:uppercase;color:#F26222;margin:0;margin-top:97px}
+.gioithieutongquan .noidung{float:left;width:47%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+.gioithieutongquan .images{float:right;width:47%;padding-bottom:93px}
+.gioithieutongquan .images img{width:100%}
+.tt-conso{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:26px;line-height:30px;text-align:center;text-transform:uppercase;color:#F26222;margin:0;margin:112px 0 17px}
+.antuong .num{padding-right:132px}
+.antuong .num:last-child{padding-right:0}
+.antuong .num-1{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:30px;line-height:41px;letter-spacing:.05em;text-transform:uppercase;color:#00A787;margin:0}
+.antuong .num-2{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:20px;line-height:27px;color:#474747;margin:0}
+.tamnhin .images{float:left;width:50%}
+.tamnhin{margin-top:86px}
+.tamnhin .images img{width:100%}
+.tamnhin .info{float:right;width:46%}
+.tt-tamnhin{padding-top:82px}
+.tt-sumenh{padding-bottom:70px;padding-top:97px}
+.tt-tamnhin,.tt-sumenh,.tt-giatri,.tt-tinhnang,.tt-danhgia{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:28px;line-height:38px;text-transform:uppercase;color:#F26222;margin:0}
+.tamnhin .noidung{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+p{margin:0}
+.group01{float:left;width:50%}
+.sumenh .images{float:left}
+.sumenh .item p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;color:#000}
+.giatri p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:30px;text-align:justify;color:#000}
+.giatri .images{float:right;width:50%}
+.giatri{padding-bottom:155px;padding-top:114px}
+.tt-giatri{padding-bottom:18px}
+.tt-tinhnang{padding-bottom:63px}
+.gioithieu.danhgia{padding-top:112px}
+.tt-danhgia{padding-bottom:85px}
+.giatri .images img{width:100%}
+.giatri .info{float:left;width:47%;padding-top:82px}
+.gr-danhgia{display:flex;width:100%;text-align:center;justify-content:center;padding-bottom:50px}
+.gr-danhgia .group{padding-right:165px}
+.gr-danhgia .group img{width:106px;height:106px}
+.gr-danhgia .group:last-child{padding-right:0}
+.gr-danhgia .name{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;text-align:center;color:#00A787;padding-top:26px}
+.gr-danhgia p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:26px;text-align:center;color:#000}
+.gr-tinhnang{display:flex;width:100%;text-align:center;justify-content:center}
+.gr-tinhnang .group:last-child{margin-right:0}
+.gr-tinhnang .images{padding-bottom:33px;width:83%}
+.gr-tinhnang .vlnn,.gr-tinhnang .hsuv,.gr-tinhnang .dttd,.gr-tinhnang .blog{padding-bottom:34px;width:83%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:24px;text-align:center;letter-spacing:.05em;color:#00A787}
+.gr-tinhnang .des{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:25px;text-align:center;letter-spacing:.05em;color:#474747;width:83%}
+.gr-tinhnang .group.gr2 .des{padding:22px 0 54px}
+.gr-tinhnang .group.gr1,.gr-tinhnang .group.gr3{margin-top:43px}
+.container-lienhe{float:left;width:100%;background:url(/images/vieclam/bglienhe.png)no-repeat bottom}
+.container-lienhe .row{margin:auto;width:1199px}
+.container-lienhe .lienhe-top{margin-bottom:55px}
+.container-lienhe .lienhe-left{float:left;margin-top:19px}
+.container-lienhe .lienhe-right{float:right}
+.container-lienhe .tt-lienhe{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#00A787;padding-bottom:14px}
+.container-lienhe .cty{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;letter-spacing:.02em;color:#000;margin-bottom:11px}
+.container-lienhe .email,.container-lienhe .sdt,.container-lienhe .diachi{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;letter-spacing:.02em;color:#000;margin-bottom:11px}
+.container-lienhe .lienhe-bottom{float:left;width:100%;margin-bottom:87px;margin-top:54px}
+.container-lienhe .left-lh{float:left;width:49%;margin-left:10px}
+.container-lienhe .right-lh{float:left;margin-left:60px;width:45%}
+#btn_phanhoi{background:#00A787;border-radius:5px;color:#fff;text-indent:0;width:160px}
+.container-lienhe .right-lh label{float:left;width:22%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:30px;color:#000;height:45px}
+.container-lienhe .right-lh label span{color:red}
+.right-lh textarea{height:161px}
+.container-lienhe button{background:#00A787;border-radius:5px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:30px;color:#FFF}
+.container-lienhe .left-lh p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:30px;color:#000;margin-top:15px}
+.quenmatkhau{float:left;width:100%;background:url(/images/vieclam/dangki-vl.png)no-repeat;background-size:100% 100%}
+.quenmatkhau .logo{margin:24px auto;width:1136px}
+.quenmatkhau .row{margin:100px auto;width:651px;text-align:center;background:#FFF;box-shadow:0 0 20px #000;border-radius:28px}
+.quenmatkhau .tt-qmk{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#F26222;float:left;width:100%;margin-top:32px}
+.quenmatkhau p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-height:25px;color:#0F342D;margin-bottom:29px}
+.quenmatkhau p span{color:#00A787}
+.quenmatkhau #email{background:#FFF url(/images/vieclam/mail-dn.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.quenmatkhau button{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;height:47px;width:224px;margin-bottom:50px}
+.quenmatkhau .form-qmk{margin:auto;width:80%}
+.quenmatkhau #maxacthuc{background:#FFF url(/images/vieclam/maxacthuc.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.doimatkhau{float:left;width:100%;background:url(/images/vieclam/dangki-vl.png)no-repeat;background-size:100% 100%}
+.doimatkhau .main_cate{margin:100px auto;width:651px;text-align:center;background:#FFF;box-shadow:0 0 20px #000;border-radius:28px}
+.doimatkhau .container{margin:auto;width:80%}
+.doimatkhau h1{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#F26222;float:left;width:100%;margin-top:32px}
+.doimatkhau table{width:100%}
+.doimatkhau tbody{float:left;width:100%}
+.doimatkhau tr,.doimatkhau td{float:left;width:100%}
+.doimatkhau #first_password,.doimatkhau #second_password{width:100%;background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:47px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;float:left;margin-bottom:15px;text-indent:20px;outline:none}
+.doimatkhau .mktt{font-family:Open Sans,sans-serif;font-style:italic;font-weight:400;font-size:14px;line-height:26px;color:#0F342D;float:right;width:100%;text-align:right}
+.doimatkhau .btn{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;height:47px;width:224px;margin-bottom:50px;outline:none}
+.doimatkhau .logo{margin:24px auto;width:1136px}
+.Trang_ca_nhan{float:left;width:100%;background:#f6f6f6}
+.Trang_ca_nhan .avarta .name.trc-ntd{margin-top:10px}
+.Trang_ca_nhan .stutus{float:left;width:70%}
+#lienhe-tt{margin:auto;width:90%;margin-bottom:10px}
+.Trang_ca_nhan .item{background:#FFF;border:.5px solid #F1F1F1;box-sizing:border-box;float:left;width:100%;margin-bottom:16px}
+.Trang_ca_nhan .stutus .name{float:left;width:50%}
+.Trang_ca_nhan .stutus .name a{float:left}
+.stutus .auth{float:left;width:80%}
+.gioithieu_mb{display:none}
+.Trang_ca_nhan .stutus .auth .name{width:auto}
+.Trang_ca_nhan .mucluong{background:none;padding-left:0}
+.Trang_ca_nhan .view{float:left}
+.showpopupvl .images,.showpopupuv .images{background:#00A787;width:35px;height:35px;border-radius:50%;text-align:center}
+.Trang_ca_nhan .lienhe{background:#F26222;border-radius:100px;float:left;width:205px;padding:0;height:30px;line-height:30px;text-indent:14px;margin-top:0;margin-right:11px}
+.item h3:hover{text-decoration-line:underline;color:#F26222}
+#gioitinh_tv{width:auto;height:auto}
+#timvieclam .gr{margin-right:14px}
+.suatimviec #timvieclam .gr-01{float:left;width:49%}
+.suatimviec #timvieclam select{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;margin-bottom:20px;padding:10px;float:left;width:100%}
+.suatimviec textarea{float:left;width:100%}
+.suatimviec .kytu,.suatimviec .divided{float:left;font-size:15px;line-height:20px;color:#000;padding:0 15px;margin-top:12px}
+.suatimviec .images{float:left;width:100%}
+#luongmin_tv,#luongmax_tv,#thang_tv{width:20%!important;float:left!important}
+#luongmin,#luongmax{text-indent:86%}
+.col.col-1{float:left;width:100%;}
+.Trang_ca_nhan .box-lh{float:right}
+.Trang_ca_nhan .group .images img{width:58px;height:58px;object-fit:cover;border-radius:50%}
+.Trang_ca_nhan .col-01{float:left;width:100%}
+.suatin-content input{width:100%;height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;margin-bottom:20px}
+.suatin-content .gr1 input{width:auto}
+.suatin-content #gen{height:auto}
+#btn_ttlienhe{background:#00A787;border-radius:100px;border:none;outline:none;width:210px;height:40px;color:#fff}
+.suatin-content .btn{text-align:center;margin-top:21px}
+.suatin-content .huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;width:107px;height:40px}
+.Trang_ca_nhan .gioithieu .cty,.Trang_ca_nhan .gioithieu p span{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#545454}
+.Trang_ca_nhan .gioithieu .name{background:url(/images/vieclam/name-stu.png)no-repeat left top;float:left;margin-left:15px}
+.Trang_ca_nhan .gioithieu .dg{background:url(/images/vieclam/icr1.png)no-repeat left top;float:left;text-decoration-line:none;margin-left:15px}
+.Trang_ca_nhan .gioithieu .vl{background:url(/images/vieclam/icr2.png)no-repeat left top;float:left;margin-left:15px}
+.Trang_ca_nhan .gioithieu .dc{background:url(/images/vieclam/icr3.png)no-repeat left top;float:left;border-bottom:.5px solid #EDEDED;padding-bottom:10px;margin-left:15px}
+.lhmb{float:left;width:100%;padding-top:15px}
+.Trang_ca_nhan .gioithieu p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#9D9D9D;margin:auto;width:90%;text-indent:25px}
+.Trang_ca_nhan .vieclamtuongtu .cty{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:24px;color:#949393}
+.Trang_ca_nhan .vieclamtuongtu .money{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#F26222;background:url(/images/vieclam/icon-tv-2.png)no-repeat left;text-indent:25px;float:left}
+.vieclamtuongtuntd{float:left;width:100%;border-bottom:.5px solid #E3E3E3}
+.Trang_ca_nhan .vieclamtuongtu .diachi{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:22px;color:#4D4D4D;margin-bottom:12px;background:url(/images/vieclam/icon-tv-1.png)no-repeat left 1px;text-indent:25px}
+.btn_anhbia img{width:auto!important;height:auto!important;margin:5px 0;margin-right:10px}
+#change_avt img{width:100%}
+.showpopupvl .images{display:block}
+#imgch{border-radius:50%;height:200px;width:200px!important}
+.form_ava{display:none}
+input[type=file]{display:block}
+.Trang_ca_nhan .avarta .name{text-align:center;font-size:20px;line-height:27px;color:#000;font-weight:700;float:none;margin-top:-85px}
+.content-gt{float:left;width:100%}
+.group-lh{float:right}
+#Danhgia img{width:58px;height:58px;border-radius:50%}
+.danh_gia{float:left;width:100%;padding:24px 0}
+.rate_range{background:#FFAF14;height:100%}
+.fake_rate{background:url(/images/vieclam/sao.png)no-repeat;background-size:100% 100%;position:absolute;width:100%;height:100%;top:0;left:0}
+.Trang_ca_nhan .dumb a,.Trang_ca_nhan .dumb .line{float:left}
+.hidden{display:none}
+.Trang_ca_nhan .dumb .name{width:50%;float:left}
+#ungvien .timviec a{float:left;width:97%}
+#viecdaluu .cty a{width:96%}
+.gr-gr .diadiem{padding: 0;}
+.gr-gr,.gr-gr1{width:50%;float:left;padding-top:14px}
+#viecdaluu .group, #ungvien .group{float:left}
+.suatuyendung .tt_hv,.suatimviec .tt_hv{background:#F26222;text-align:center;height:52px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:52px;text-transform:uppercase;color:#FFF}
+.suatuyendung .close{margin-top:-46px;color:#fff}
+.suatuyendung .suatin-content,.suatimviec .suatin-content{padding:0}
+.suatuyendung .tuyen-dung{padding:10px}
+.suatuyendung .tuyen-dung .gr-01,.suatimviec .gr-01{float:left;width:50%}
+.suatimviec #gender{width:auto;height:auto}
+.item .group{width:100%}
+.suatuyendung .tuyen-dung #thanhpho_ft,.suatuyendung .tuyen-dung #quanhuyen_ft,.suatuyendung .tuyen-dung #htlv,.suatuyendung .tuyen-dung #trinhdo,.suatuyendung .tuyen-dung #kinhnghiem{width:100%;height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung #luongmin,.suatuyendung .tuyen-dung #luongmax{width:28%}
+.suatuyendung .tuyen-dung #thang{height:45px;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung #mota{width:100%;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px}
+.suatuyendung .tuyen-dung .btn-dangtin{background:#00A787;border-radius:100px;border:none;outline:none;color:#fff;height:40px}
+.btn-gr-02{text-align:center}
+.btn-huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;width:107px;height:40px}
+.suatuyendung .tuyen-dung .col-1,.suatuyendung .tuyen-dung .col-2{float:left;margin-bottom:10px;width:100%}
+.tab{    flex-wrap: wrap;overflow:hidden;background-color:#fff;border-top:.5px solid #E6E6E6;display:flex;justify-content:space-around;margin-top:16px}
+.tab button{background-color:inherit;float:left;border:none;outline:none;cursor:pointer;padding:0;transition:.3s;font-size:17px;font-family:OpenSans-Regular,sans-serif;padding:10px}
+.tabcontent{display:none;border-top:none}
+a{text-decoration:none}
+.modal{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.modal-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:100%;background:#fefefe url(/images/vieclam/danhgia-popup.png)no-repeat top left; width: 525px;    height: 497px;}
+.close{color:#aaa;float:right;font-size:28px;font-weight:700}
+.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer}
+.rating{float:left;padding:0}
+.rating:not(:checked) > input{position:absolute;top:-9999px;clip:rect(0,0,0,0)}
+.rating:not(:checked) > label{float:right;width:1em;padding:0 .1em;overflow:hidden;white-space:nowrap;cursor:pointer;font-size:200%;line-height:1.2;color:#ddd;text-shadow:1px 1px #bbb,2px 2px #666,.1em .1em .2em rgba(0,0,0,.5)}
+.rating:not(:checked) > label:before{content:'★ '}
+.rating > input:checked ~ label{color:#f70;text-shadow:1px 1px #c60,2px 2px #940,.1em .1em .2em rgba(0,0,0,.5)}
+.rating:not(:checked) > label:hover,.rating:not(:checked) > label:hover ~ label{color:#ffd700;text-shadow:1px 1px goldenrod,2px 2px #B57340,.1em .1em .2em rgba(0,0,0,.5)}
+.rating > input:checked + label:hover,.rating > input:checked + label:hover ~ label,.rating > input:checked ~ label:hover,.rating > input:checked ~ label:hover ~ label,.rating > label:hover ~ input:checked ~ label{color:#ea0;text-shadow:1px 1px goldenrod,2px 2px #B57340,.1em .1em .2em rgba(0,0,0,.5)}
+.rating > label:active{position:relative;top:2px;left:2px}
+.clearfix:before,.clearfix:after{content:" ";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+#myBtn{float:left;margin:0;border:none;background:#fff;outline:none}
+#myBtn .dg,.danhgia .view{font-weight:500}
+.modal-content #status{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;text-transform:uppercase;color:#FFF;text-align:center;margin-bottom:91px}
+.modal-content .dgcb{float:left;width:100%}
+.modal-content textarea{width:100%}
+.modal-content .submit.clearfix{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;line-height:26px;color:#FFF;width:128px;height:26px}
+.modal-content .submit.huy{background:#FFF;border:2px solid #F26222;box-sizing:border-box;border-radius:100px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:17px;color:#F26222;width:80px;height:37px;line-height:37px;text-align:center;margin-left:10px}
+#thongtincanhan .mucluc{float:right;background:#fff;width:32%}
+#thongtincanhan .mucluc ul{padding:0;list-style:none;margin:16px 0}
+#thongtincanhan .tablink{border:none;background:#fff;text-indent:49px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#383838;outline:none;width:100%;text-align:left;height:54px}
+#thongtincanhan .thongtin{background:#FFF;border:.5px solid #F1F1F1;box-sizing:border-box;float:left;width:65%;margin-bottom:50px;display:none}
+#thongtincanhan #gioithieu{display:block}
+#dongthoigian{display:block}
+#dongthoigian .info{float:right;width:90%}
+#thongtincanhan .thongtin .tt-ttcn{margin-right:5px;float:left;font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:28px;color:#F26222;background:url(/images/vieclam/gt-tcn.png)no-repeat bottom left}
+#Btn_hv{border:none;background:#fff}
+#thongtincanhan .thongtin .gthieu .tt-ttcn,#thongtincanhan .thongtin .ttlh .tt-ttcn{width:auto}
+#thongtincanhan .thongtin p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:28px;color:#3A3A3A;float:left}
+#thongtincanhan .thongtin .ttlh p{width:100%}
+#thongtincanhan .thongtin .vtcv{float:left;border-left:2px solid #E2E2E2;padding-left:22px;margin:0 0 32px}
+#thongtincanhan #hocvan .vtcv span{text-indent:0}
+#thongtincanhan .thongtin .vtcv p{margin:0}
+#thongtincanhan #thongtinlienhe p{color:#939393}
+#thongtincanhan .thongtin p span{color:#3A3A3A}
+.mucluc button.active{color:#F26222}
+#thongtincanhan #hocvan .thoigian{background:#00A787;border-radius:5px;color:#fff;height:32px;float:left;margin-bottom:15px}
+#thongtincanhan #hocvan .name .cuahang{color:#00A787}
+#thongtincanhan #hocvan p span{text-indent:10px;float:left}
+.Trang_ca_nhan .name,.Trang_ca_nhan .time{float:left;line-height:unset}
+#thongtincanhan #hocvan .tt_hv{width:100%;color:#fff}
+#thongtincanhan #Danhgia .images{float:left}
+#viecdaluu .images,#ungvien .avata{float:left;padding-right:10px}
+#viecdaluu .view>.images{padding-right:0px}
+#viecdaluu .mt{color:#626262}
+#ungvien .images{float:left}
+#myDIV{width:100%;padding:50px 0;margin-top:20px;display:none}
+.accordion{display:none}
+.dangtinmienphi {
+    min-height: 937px;
+}
+@media screen and (max-width: 1024px) {
+    a.tc,a.tv,a.tt,a.vgb,a.gt,a.lh,a.cs,a.ttsd {
+        position: relative;
+        left: 5px;
+    }
+.save_vl img{width:13px;height:22px}
+.group-main .right{display:none}
+.group-mb{display:block}
+.info{padding-left:0;float:left;width:90%}
+.img{float:left}
+.box-lh{float:left;text-align:center;padding-top:20px}
+.dangtin-mb{display:block;background:#F26222;float:left;width:100%;padding:45px 0}
+.dangtinmienphi{display:none}
+.dangtin-mb .right{display:block}
+.dangtin-mb .row{margin:auto;width:92%}
+.right{padding-top:106px;width:42%;margin:auto;float:none}
+.left{width:100%}
+.detail-tuyendung .row{width:95%!important}
+.detail-tuyendung .author .nguoidang .name,.detail-tuyendung .author .nguoidang .time{line-height:33px;float:left}
+.author,.left,.right{width:100%}
+.author{margin-bottom:12px}
+.danhgia{width:auto}
+.dangviec,.author .diachi{width:51%}
+.lienhe{float:right;width:40%;margin-top:-25px}
+.detail-tuyendung .right{width:100%!important;display:block}
+.vllq .avatar{padding-bottom:16px}
+.vllq .cty{padding-top:15px}
+.detail-tuyendung .tt-vlllq{padding:44px 0;background:url(/images/vieclam/thanhngangmb.png)no-repeat right;background-size:75% 2px}
+.gr-tuyendung .info{width:83%}
+.timviec .lienhe{margin-top:-50px}
+.hannhanmb{display:block;    margin-bottom: 10px;}
+.hannhan{display:none}
+.dumb,.conso,.tongquan,.group,.sumenh .noidung,.giatri .noidung,.tinhnang .noidung,.danhgia .noidung{width:90%}
+.tt-tongquan,.tt-conso,.tt-tamnhin,.tt-sumenh,.tt-giatri,.tt-tinhnang,.tt-danhgia{font-size:20px;line-height:27px}
+.gioithieutongquan .noidung,.tamnhin .noidung,.sumenh .item p,.giatri p{font-size:14px;line-height:26px}
+.antuong .num-1{font-size:24px;line-height:33px}
+.antuong .num-2{font-size:16px;line-height:22px}
+.sumenh .item{width:57%}
+.gr-tinhnang{display:unset;float:left}
+.tinhnang .noidung{width:75%}
+.gr-tinhnang .group{float:left;width:42%;margin-bottom:71px;margin-right:122px;padding:50px 40px}
+.gr-tinhnang .group:nth-child(2){margin-right:0}
+.gr-tinhnang .vlnn,.gr-tinhnang .hsuv,.gr-tinhnang .dttd,.gr-tinhnang .blog{font-size:18px;padding-bottom:50px;line-height:30px}
+.group.gr3 .dttd{padding:15px 38px 47px}
+.gioithieutongquan{background:url(/images/vieclam/gioithieu-tab.png)no-repeat;background-size:100% 100%}
+.container-lienhe{background:url(/images/vieclam/bglienhe-mb.png)no-repeat bottom;background-size:100%}
+.container-lienhe .row{margin:auto;width:90%}
+.container-lienhe .dumb{width:100%}
+.container-lienhe .lienhe-right,.container-lienhe .lienhe-left{width:100%;text-align:center}
+.container-lienhe .left-lh,.container-lienhe .right-lh{width:100%}
+.container-lienhe .lienhe-right img{width:100%}
+.container-lienhe .form-lh{float:left;width:100%}
+.container-lienhe .lienhe-bottom{margin-top:36px}
+.chinhsachbaomat .row{margin:auto;width:90%}
+.chinhsachbaomat .dumb{width:100%}
+.chinhsachbaomat .title_chinhsach{width:100%}
+.chinhsachbaomat .mucluc{float:left;width:100%;background:url(/images/vieclam/mucluc-mb.png)no-repeat;background-size:100% 100%}
+.gr-luu .name img{display:none}
+.quenmatkhau{float:left;width:100%;background:url(/images/vieclam/dangki-vl.png)no-repeat;background-size:100% 100%}
+.quenmatkhau .logo{margin:24px auto;width:1136px}
+.quenmatkhau .row{margin:100px auto;width:651px;text-align:center;background:#FFF;box-shadow:0 0 20px #000;border-radius:28px}
+.quenmatkhau .tt-qmk{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;letter-spacing:.05em;text-transform:uppercase;color:#F26222;float:left;width:100%;margin-top:32px}
+.quenmatkhau p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-height:25px;color:#0F342D;margin-bottom:29px}
+.quenmatkhau p span{color:#00A787}
+.quenmatkhau #email{background:#FFF url(/images/vieclam/mail-dn.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.quenmatkhau button{background:#F26222;border-radius:100px;border:none;outline:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;line-height:25px;color:#FFF;height:47px;width:224px;margin-bottom:50px}
+.quenmatkhau .form-qmk{margin:auto;width:80%}
+.quenmatkhau #maxacthuc{background:#FFF url(/images/vieclam/maxacthuc.png)no-repeat 20px;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;float:left;width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:22px;color:#868686;height:54px;text-indent:50px;margin-bottom:25px;outline:none}
+.tabcontent{margin:auto!important;width:90%!important}
+.tt-ttcn{display:none}
+#hocvan .tt-ttcn{display:block}
+#thongtincanhan .mucluc{display:none}
+#thongtincanhan .thongtin{width:100%;margin-bottom:0}
+.accordion{background-color:#FFF;color:#444;cursor:pointer;padding:18px;width:100%;border:none;text-align:left;outline:none;font-size:15px;transition:.4s}
+.active,.accordion:hover{background-color:#FFF1EA}
+.panel{display:none;background-color:#fff;overflow:hidden}
+.thongtin-mb button{float:left;width:100%;background:#FFF1EA url(/images/vieclam/hide.png)no-repeat 99%;border:none;height:54px;color:#F26222;text-align:left;font-weight:600;outline:none}
+.thongtin-mb .tt-ttcn{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:28px;color:#F26222;background:url(/images/vieclam/gt-tcn.png)no-repeat left bottom}
+.tcn-right{width:100%}
+.tcn-right .gioithieu{display:none}
+.gioithieu_mb{float:left;width:100%;background:#FFF url(/images/vieclam/gt-stu.png)no-repeat top left 7px;box-shadow:0 2px 2px rgba(0, 0, 0, 0.07);margin-bottom:20px;padding-left:19px;display:block!important}
+.gioithieu_mb .tt-gioithieu{width:84%!important;float:left}
+.gioithieu_mb .dg{float:right;width:15%;margin:24px auto;background:url(/images/vieclam/icr1.png)no-repeat left 3px;padding-left:20px}
+.gioithieu_mb .name{width:50%;float:left;background:url(/images/vieclam/name-stu.png)no-repeat left top;padding-left:20px;color:#9D9D9D;font-weight:500}
+.gioithieu_mb .dc{width:100%;float:left;background:url(/images/vieclam/icr3.png)no-repeat left top;padding-left:20px}
+.gioithieu_mb .vl{float:right;width:50%;background:url(/images/vieclam/icr2.png)no-repeat left 3px;padding-left:20px}
+.lhmb{float:left;width:100%}
+.gioithieu_mb #lienhe-tt{border-top:.5px solid #EDEDED;padding-top:15px;margin-top:21px}
+#gioithieu_mb .name,.gioithieu_mb .dg,.gioithieu_mb .vl,.gioithieu_mb .dc{padding-bottom:10px;color:#9D9D9D}
+#gioithieu_mb .name span,.gioithieu_mb .dg span,.gioithieu_mb .vl span,.gioithieu_mb .dc span{color:#545454}
+.gioithieu_mb .name span{color:#545454}
+.Trang_ca_nhan .gioithieu,.Trang_ca_nhan .vieclamtuongtu{width:100%}
+.Trang_ca_nhan .stutus{width:100%!important}
+.Trang_ca_nhan .stutus .name,.Trang_ca_nhan .stutus .time{line-height:normal}
+.Trang_ca_nhan .avarta .gr-trangcanhan .group #luu{display:none}
+.Trang_ca_nhan .box-lh{float:right}
+.Trang_ca_nhan #viecdaluu .name,.Trang_ca_nhan #viecdaluu .time{line-height:unset;float:left}
+.Trang_ca_nhan #checkbox:checked + #lienhe:after{width:399px}
+.Trang_ca_nhan .dumb{width:100%;float:left}
+.gioithieu_mb .dgmb{display:none}
+.right{display:none}
+.detail-tuyendung .timviec{width:100%}
+.container-vieclam .auth{float:left;width:100%}
+.container-vieclam .auth .name,.container-vieclam .auth .time{line-height:normal}
+.name,.time{line-height:58px}
+.container-vieclam .row{width:95%;margin:auto}
+#main{width:100%}
+.tt-detail{width:94%;font-size:16px;line-height:24px}
+.blog_undo{float:left;padding:16px 24px}
+.blog_undo img{width:26px;height:24px}
+.left{width:100%!important}
+.left .images{margin:95px auto;width:85%}
+.dtmp{background:#fff url(/images/vieclam/bg_tab.png)no-repeat;background-size:100% 100%}
+.dangtintuyendung .row{width:80%!important}
+.dttd .gr-01{width:48%!important}
+.nguoidang{width:60%;padding-bottom:23px}
+.mucluong{width:100%}
+.tt-vlllq{padding:44px 0}
+#dongthoigian{width:100%!important}
+.chinhsachbaomat .title_mucluc{text-align:center;width:40%}
+.chinhsachbaomat .content{width:100%}
+.chinhsachbaomat .mucluc.thoathuansudung{background:url(/images/vieclam/mucluc-mb.png)no-repeat;background-size:100% 100%}
+.quenmatkhau{background:url(/images/vieclam/dangky-vl-tab.png)no-repeat;background-size:100%}
+.quenmatkhau .logo{width:95%}
+.quenmatkhau .row{width:65%}
+.Trang_ca_nhan .gioithieu p{width:81%;text-indent:25px;float:left;margin-left:35px}
+.accordion{display:block}
+.tabcontent{margin:auto!important;width:100%!important}
+.Trang_ca_nhan .row{margin:auto;width:90%}
+.Trang_ca_nhan .stutus .group{width:100%}
+.Trang_ca_nhan .stutus .info{float:left}
+.Trang_ca_nhan #viecdaluu .group{width:100%}
+.Trang_ca_nhan .group-mb{display:none}
+.nguoidang .date{float:left;width:74%}
+}
+@media screen and (max-width: 425px) {
+.right{display:none}
+.group-mb{display:block!important}
+.info{padding-left:0}
+.img{float:left}
+.box-lh{float:left;text-align:center;padding-top:20px}
+.dangtin-mb{padding:0}
+.dangtin-mb .row{width:100%}
+.dangtin-mp{font-size:20px;line-height:27px}
+.right{width:85%;padding-top:89px}
+.right .tintuyendung a,.right .tintimviec a{width:71%;font-size:16px}
+.dangtintuyendung{padding:23px 0 0!important}
+.dangtintuyendung .row{width:100%!important}
+.tt-tin{font-size:17px!important;line-height:23px!important}
+.blog_undo{padding:0 13px}
+.elipmin{width:75%!important}
+.elipmax{width:93%!important}
+.dttd .gr{margin-right:0!important}
+.dttd .gr-01{width:100%!important}
+.dttd .images,.dttd main{float:none!important}
+.dttd main{padding-top:11px}
+#luongmax,#luongmin{width:44%}
+.dttd input,.dttd textarea,.dttd select{padding:10px}
+.divided{padding:0 10px 0 0!important}
+#thang{width:39%}
+.right .tintuyendung a,.right .tintimviec a{width:70.5%}
+legend{font-size:14px}
+.gr-danhgia{display:unset;float:left;margin-bottom:50px}
+.tt-tongquan{margin-top:0px}
+.gr-tinhnang .group{margin-right:0;width:100%}
+.group01{width:100%}
+.gr-danhgia .group{padding-right:0}
+.antuong .num{padding-right:15px}
+.antuong .num-1{font-size:18px;line-height:27px}
+.antuong .num-2{font-size:14px;line-height:20px}
+.tongquan .noidung,.tongquan .images{width:100%;padding-bottom:0}
+.tamnhin .images,.tamnhin .info,.giatri .info,.giatri .images{float:left;width:100%}
+.tt-sumenh,.tt-tinhnang,.tt-danhgia{margin:70px 0 30px}
+.tt-tamnhin,.giatri .images{padding-top:20px}
+.gioithieutongquan .images{padding:20px 0}
+.chinhsachbaomat .mucluc{background:url(/images/vieclam/mucluc.png)no-repeat;background-size:100% 100%}
+.quenmatkhau{background:url(/images/vieclam/dangky-vl-mb.png)no-repeat;background-size:100% 100%}
+.quenmatkhau .row{margin:39px auto;width:92%}
+.chinhsachbaomat .title_mucluc{width:70%}
+.nguoidang .date{float:left;width:auto}
+.group>.images{display: none;}
+.delete {
+    float: right;
+}
+#viecdaluu .cty a {
+    width: 90%;
+
+}
+.danhgia {
+    padding-top: 112px;
+}
+.cty {
+    margin-bottom: 30px;
+}
+.Trang_ca_nhan .item .danhgia .view{padding-top: 2px;}
+.Trang_ca_nhan .item .danhgia .view img {
+    margin-top: -4px;
+    margin-right: 0px;
+}
+.danhgia>.view>.images{padding-right: 5px!important;margin-top:2px;}
+}
+@media screen and (max-width: 375px) {
+.right .tintuyendung a,.right .tintimviec a{width:68%;line-height:56px}
+#luongmax,#luongmin{width:43%}
+.nguoidang .date{width:74%!important}
+.chinhsachbaomat .title_mucluc{width:50%}
+.popup{left:55%}
+}
+@media screen and (max-width: 540px) {
+    #luongmin, #luongmax {
+        text-indent: 81%;
+    }
+    .gr.gr-01 {
+        padding-right: 0px;
+    }
+    .container-vieclam .item {
+        border-bottom: 4px dotted #F1F1F1 !important;
+        border: none;
+        width: 100%;
+    }
+    #thongtincanhan #hocvan .tt_hv {
+        width: 100%;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .Trang_ca_nhan .hoc-van {
+        padding: 10px 0;
+    }
+    span.close {
+        margin-right: 10px;
+    }
+    .cty {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+.container-vieclam .danhgia{width:100%;display:flex;justify-content:center}
+.info{width:100%!important}
+.Trang_ca_nhan .suatin-content,#suathongtin .suatin-content,.Trang_ca_nhan .suatin-content{width:95%!important}
+.right{width:86%}
+.btn_anhbia{font-size:8px}
+.stutus .auth .name,.stutus .auth .time{line-height:40px!important}
+.dangtin-mb .row{width:100%}
+.dangtin-mb{padding:0}
+.right .tintuyendung a,.right .tintimviec a{width:78%}
+.dangtintuyendung{padding:23px 0 0!important}
+.dangtintuyendung .row{width:100%!important}
+.tt-tin{font-size:17px!important;line-height:23px!important}
+.blog_undo{padding:0 13px}
+.elipmin{width:75%!important}
+.elipmax{width:93%!important}
+.dttd .gr{margin-right:0!important}
+.gioithieu_mb .name,.gioithieu_mb .vl,.gioithieu_mb .dc{width:100%!important;padding-bottom:10px;color:#9D9D9D}
+.gioithieu_mb .name span,.gioithieu_mb .vl span,.gioithieu_mb .dc span,.gioithieu_mb .dgmb span{color:#545454}
+.gioithieu_mb .dg{display:none}
+.gioithieu_mb #lienhe-tt{border-top:.5px solid #EDEDED;padding-top:15px;margin-top:21px}
+.dangtin-mb .right{width:86%}
+.nguoidang{width:100%}
+.lienhe{width:100%;margin-top:34px}
+.salary{width:100%}
+.Trang_ca_nhan .danhgia{display:flex;justify-content:center;width:100%!important}
+.group-lh{width:100%;display:flex;justify-content:center}
+.lienhevl{width:100%;display:flex;justify-content:center;margin-top:25px!important}
+.form-left,.form-right{width:100%}
+.gr-tuyendung .info{width:85%!important}
+.gr-tuyendung{padding-bottom:15px}
+.timviec .lienhe{margin-top:22px}
+.author .diachi{border-bottom:.5px solid #EDEDED;padding-bottom:18px;background:url(/images/vieclam/icr3.png)no-repeat left 4px}
+.detail-tuyendung .tt-vlllq{background:url(/images/vieclam/thanhngangmb.png)no-repeat right;background-size:45% 2px}
+.auth .name img{display:block}
+.detail-tuyendung .view{float:left}
+.wp_rate{width:80%}
+.bg_rate{width:35%}
+.gr-luu .name img{width:42px;height:42px;border-radius:50%;display:block;float:left}
+.gr-luu .time,.gr-luu .name{line-height:40px!important}
+.item .avata{display:none}
+.gioithieu_mb .dgmb{width:100%;float:left;background:url(/images/vieclam/icr1.png)no-repeat left 3px;padding-left:20px;padding-bottom:10px;color:#9D9D9D}
+.dttd .gr-01{width:100%!important}
+.dttd .images,.dttd main{float:none!important}
+.dttd main{padding-top:11px}
+#luongmax,#luongmin{width:44%}
+.divided{padding:0 10px 0 0!important}
+#thang{width:39%}
+.nguoidang img{width:58px;height:58px}
+.danhgia,.dangviec,.author .diachi{width:100%}
+}
+#avatar{background-size:100% 100%;height:200px;width:200px;border:4px solid #fff;border-radius:50%;transition:background ease-out 200ms;margin-bottom:16px}
+#avatar img{width:100%}
+#preview{position:relative}
+.banner input[type="file"]{position:absolute;left:-1000px}
+.uv_logo{position:relative;border-radius:50%;width:184px;height:184px;object-fit:cover}
+.suatimviec .close{margin-top:-45px;color:#fff}
+.tim-viec fieldset{padding:25px}
+#gender_tv{width:auto;height:auto}
+.gr-gt{height:45px}
+#trinhdo_tv{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px;width:100%}
+.tim-viec .col-2{float:left;width:100%}
+#preview button{border-radius:50%;border:none;cursor:pointer;background-color:#EDEDED;box-shadow:0 3px 5px -1px #000 0 6px 10px 0 #000 0 1px 18px 0 #000;transition:background-color ease-out 120ms;position:absolute;right:4%;width:45px;bottom:0;height:45px;outline:none}
+.Trang_ca_nhan .avatar-images{float:left;width:100%;margin-top:-95px}
+.Trang_ca_nhan .avatar-images .anhdaidien{float:left}
+.Trang_ca_nhan .avatar-images .anh{margin:auto;width:200px}
+#dongthoigian #lienhe{background:none;padding:0;margin-bottom:36px}
+#dongthoigian #lienhe .gr-lh{background:#00A787;margin:auto;width:95%;height:44px;border-radius:5px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:15px;line-height:44px;color:#FFF;text-align:center}
+.suatindang{float:right}
+.suatindang .images{background:#00A787;width:32px;height:32px;text-align:center;border-radius:100px}
+.suatin{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.suatin-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:60%}
+.myclose{color:#aaa;float:right;font-size:28px;font-weight:700}
+.myclose:hover,.myclose:focus{color:#000;text-decoration:none;cursor:pointer}
+.box{width:40%;margin:0 auto;background:rgba(255,255,255,0.2);padding:35px;border:2px solid #fff;border-radius:20px/50px;background-clip:padding-box;text-align:center}
+.suagt{font-size:1em;color:#fff;border:2px solid #00A787;border-radius:100px;text-decoration:none;cursor:pointer;transition:all .3s ease-out;float:right;width:32px;height:32px;text-align:center}
+.overlay{position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);transition:opacity 500ms;visibility:hidden;opacity:0}
+.overlay:target{visibility:visible;opacity:1}
+.Mypopup{margin:70px auto;background:#fff;border-radius:5px;width:40%;position:relative}
+.Mypopup h2{margin-top:0;background:#F26222;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;text-transform:uppercase;color:#FFF;text-align:center;height:40px;line-height:40px}
+.Mypopup .close{position:absolute;top:20px;right:30px;transition:all 200ms;font-size:30px;font-weight:700;text-decoration:none;color:#333}
+.Mypopup .close:hover{color:#06D85F}
+.Mypopup .content{max-height:30%;overflow:auto}
+.Mypopup .nd{margin:auto;width:95%}
+.Mypopup .nd textarea{width:100%}
+.Mypopup .mybtn{text-align:center}
+.Mypopup .mybtn .luu{background:#00A787;border-radius:100px;border:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#FFF}
+.Mypopup .mybtn .huy{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:22px;color:#545454;background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:40px;width:107px}
+#Btn{border:none;background:#fff;outline:none}
+#suathongtin .suatin-content{padding:0;width:45%}
+#thongtinlienhe #suathongtin .suatin-content p{background:#F26222;font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:18px;text-align:center;text-transform:uppercase;color:#FFF;height:50px;line-height:50px;width:100%}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup{margin:70px auto;width:95%;position:relative}
+fieldset{padding:0}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;padding:5px 0}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup #name,.Trang_ca_nhan #suathongtin .suatin-content .Mypopup #diachi{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;height:45px}
+.Trang_ca_nhan #suathongtin .myclose{margin-top:-74px;color:#fff}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gr1{display:flex;justify-content: space-between;}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gtinh label:first-of-type{float:left;width:100%;color:#0F342D;font-weight:600}
+.Trang_ca_nhan #suathongtin .suatin-content .Mypopup .gtinh label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.Trang_ca_nhan .suatin-content{padding:0;width:50%}
+.Trang_ca_nhan .hoc-van{margin:auto;width:95%}
+.Trang_ca_nhan .hoc-van label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:500;font-size:16px;line-height:22px;color:#0F342D}
+.Trang_ca_nhan .hoc-van #school,.Trang_ca_nhan .hoc-van #cviec,.Trang_ca_nhan .hoc-van #chucvu{font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;width:100%;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px}
+.Trang_ca_nhan .hoc-van .gr1{display:flex;justify-content:space-around}
+.Trang_ca_nhan .hoc-van .start,.Trang_ca_nhan .hoc-van .finish{float:left;width:50%}
+.Trang_ca_nhan .hoc-van .start{margin-right:31px}
+.Trang_ca_nhan .hoc-van .gr1 select{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;height:45px;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.Trang_ca_nhan .hoc-van .btn{text-align:center;margin-bottom:10px}
+.Trang_ca_nhan .hoc-van .btn .luu{background:#00A787;border-radius:100px;border:none;outline:none;width:210px;height:40px;color:#fff}
+#suagioithieu h2{background:#F26222;margin:0;height:50px;line-height:50px;text-align:center;color:#fff}
+#suagioithieu .close{margin-top:-52px}
+#suagioithieu .nd{margin:18px}
+#suagioithieu textarea{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;width:100%;    padding: 10px;}
+#suagioithieu #btn_luuthongtin{background:#00A787;border-radius:100px;width:30%;border:none;height:40px;color:#fff}
+#suagioithieu .mybtn{text-align:center;    margin-bottom: 20px;}
+.Trang_ca_nhan .hoc-van .btn .huy{background:#FFF;border:1px solid #00A787;box-sizing:border-box;border-radius:100px;height:40px;width:107px}
+#suagioithieu label{float:left;width:100%;    font-size: 18px;
+    margin-bottom: 20px;}
+.suahocvan .myclose{margin-top:-68px;color:#fff}
+.Trang_ca_nhan .hoc-van textarea{width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:28px;color:#787878}
+.Trang_ca_nhan .hoc-van .myclose{margin-top:-60px;color:#fff}
+.thongtin #Btn{background:#FFF;border:2px solid #00A787;box-sizing:border-box;width:32px;height:32px;border-radius:100px;float:right}
+#hocvan #Btn{float:left;border:none;margin-right:5px}
+.suatindang p{font-family:Open Sans,sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:27px;text-transform:uppercase;color:#FFF;background:#F26222;height:70px;line-height:70px;text-align:center}
+.suatindang .Mypopup{margin:30px auto;width:95%}
+.suatindang .Mypopup label{font-family:Open Sans,sans-serif;font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#0F342D;float:left;width:100%}
+.suatindang .Mypopup #namecity,.suatindang .Mypopup #chitiet,.suatindang .Mypopup textarea{width:100%;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878;background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px}
+.suatindang .Mypopup textarea{height:160px}
+.popupsua{display:flex;justify-content:space-around}
+.suatindang .Mypopup input,.suatindang .Mypopup select{background:#FFF;border:.5px solid #D3D3D3;box-sizing:border-box;border-radius:5px;height:45px;width:100%}
+.suatindang .Mypopup .popupleft{margin-right:29px}
+.suatindang .Mypopup .popupright #nam,.suatindang .Mypopup .popupright #nu,.suatindang .Mypopup .popupright #normal,.suatindang .Mypopup .popupright .gender{width:auto;height:auto;float:none;font-family:Open Sans,sans-serif;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:#787878}
+.rating_stars input{opacity:0;position:relative;left:-17px;z-index:2;cursor:pointer}
+.rating_stars span.star{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;position:relative;z-index:1}
+.rating_stars span{margin-left:-14px}
+.rating_stars span.star:before{color:#C4C4C4;content:'★ '}
+.rating_stars input:hover+span.star:before,.rating_stars input:hover+span.star~span.star:before,.rating_stars input:checked+span.star:before,.rating_stars input:checked+span.star~span.star:before{color:#FFAF14;content:'★ '}
+#maxacnhan{width:64%}
+.captcha{float:left;margin-left:10px}
+.preview{width:100%;height:200px;margin:0 auto}
+.preview img{display:none}
+.button{border:0;background-color:#00bfff;color:#fff;padding:5px 15px;margin-left:10px}
+.range-slide{position:relative;margin:40px auto;height:4px;width:100%}
+.range-slide .slide{position:absolute;top:0;height:28px;background:url(/images/vieclam/ruler.png)no-repeat;background-size:100% 100%;left:9px;right:9px}
+.range-slide .line{position:absolute;left:0;right:0;top:0;height:4px;background-color:#F26222}
+.range-slide .thumb{position:absolute;z-index:2;text-align:left;background-color:#00A787;border-radius:50%;outline:none;top:-7px;height:18px;width:18px;margin-left:-9px}
+.range-slide input{-webkit-appearance:none;appearance:none;position:absolute;pointer-events:none;z-index:3;height:3px;top:0;width:100%;opacity:0;margin:0}
+.range-slide input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;pointer-events:all;border-radius:50%;cursor:pointer;width:18px;height:18px}
+.loc-timkiem .display{margin-top:-82px;float:left}
+#btn-top{background:url(https://timviec365.vn/images/len.png);width:47px;height:47px;margin-top:42px;position:fixed;cursor:pointer;    bottom: 31px;
+    right: 10px;z-index:9999999}
+.container-vieclam .cty a{float:left;width:92%}
+.group-main{display:flex}
+.avarta {
+    margin-top: 20px;
+}
+.dumb>span.line {
+    font-size: 16px;
+    line-height: 21px;
+    color: #545454;
+    font-weight: 600;
+    padding: 0px 5px;
+    margin: 0 4px;
+}
+p.title_mo_ta {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: #545454;
+    margin-bottom: 15px;
+}
+#Btn_hv {
+    border: none;
+    float: right;
+    background: #fff;
+}
+.showname{
+    padding: 5px 20px;
+}
+.lienhevl .images {
+    position: relative;
+    top: -1px;
+}
+.dumb {
+    margin-top: 15px;
+}
+span.dd {
+    color: #F26222;
+}
+.hidden_bv>p.mt{
+    max-height: 50px;
+    overflow: hidden;
+}
+span.hide,span.see {
+    color: #F26222;
+    cursor: pointer;
+    font-weight: 600;
+}
+a.showpopupvl .images img {
+    position: relative;
+    top: 4px;
+}
+label.images::after {
+    content: "*";
+    color: red;
+}
+
+.suatuyendung .suatin-content .tuyen-dung {
+    padding: 15px 25px;
+}
+.suatuyendung .suatin-content p.tt_hv {
+    font-size: 20px;
+}
+.suatuyendung .suatin-content .close {
+    margin-top: -48px;
+    color: #fff;
+    margin-right: 22px;
+}
+#luongmin, #luongmax {
+    text-indent: 2%;
+}
+div#suatuyendung {
+    padding-bottom: 100px;
+}
+.gr-01 {
+    margin: 15px 0;
+}
+.danhgia .view .images {
+    position: relative;
+    top: 2px;
+}
+.menu-01 .images {
+    position: relative;
+    top: -2px;
+}
+.dttd .images {
+    font-weight: 600;
+    color: #000;
+}
+.aaa {
+    float: left;
+    width: 30%;
+}
+.luong {
+    clear: both;
+}
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 150px;
+    z-index: 1;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+.popup-login {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 150px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .popup-login-1 {
+    display: none; 
+
+  }
+  .upload {
+    float: left;
+}
+  .popup_thanh_cong {
+    display: none;  
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.popup_thanh_cong_1 {
+    display: none;  
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.pop_tc {
+    margin: auto;
+    height: 155px;
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #f26222;
+}
+p.tt_tc {
+    font-weight: 700;
+    color: #f26222;
+    text-align: center;
+    margin: 30px 0;
+}
+a.ok_tt_tc {
+    line-height: 32px;
+    color: #fff;
+}
+.nut_ok {
+    width: 62px;
+    height: 35px;
+    background: #f26222;
+    border-radius: 8px;
+    margin: auto;
+}
+span.huy {
+    cursor: pointer;
+    line-height: 32px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+button#btn_ttlienhe {
+    margin-right: 20px
+
+}
+.s_2_nut {
+    display: flex;
+    justify-content: center;
+}
+.s_2_nut>.nut_ok{
+    margin: unset;
+}
+.s_2_nut span.huy {
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #f26222;
+    padding: 0 10px;
+    margin-left:20px;
+}
+a.s_delete {
+    cursor: pointer;
+}
+.s_none{
+    display: none;
+}
+.s-none{display: none;}
+.Mypopup input {
+    padding-left: 20px;
+}
+.btn-gr-02 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.btn-huy {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.gtinh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+#suathongtin select#gender {
+    height: 45px;
+    background: #FFF;
+    border: .5px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* margin-bottom: 20px; */
+    padding: 0 20px;
+    margin-left: 15px;
+}
+.gr1 .col-02 {
+    display: flex;
+    align-items: center;
+}
+.gr1>.col-02>input#tel{
+    margin-bottom: 0px;
+}
+.group-lh {
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main>p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.btn_logout {
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #F26222;
+    margin-bottom: 10px;
+}
+.btn_logout>a {
+    color: #F26222;
+    font-weight: 600;
+}
+.suatin-content input,textarea#mota {
+    padding-left: 10px;
+}
+.name-usc {
+    float: left;
+    color: #000;
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    margin-right: 7px;
+}
+.showname_lh {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 45px;
+}
+select.nn_to {
+    width: 100%;
+    height: 45px;
+    background: #FFF;
+    border: .5px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.suatin-content .tim-viec label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+select.nn_ct {
+    width: 100%;
+    height: 45px;
+    background: #FFF;
+    border: .5px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.tuyen-dung select{
+    padding-left: 10px;
+
+}
+img.sua_tin_tv {
+    position: relative;
+    top: 3px;
+}
+.upload {
+    float: left;
+    margin-top: 20px;
+}
+.suatimviec textarea {
+    border-radius: 5px;
+}
+.time {
+    margin-left: 10px;
+}
+button.btn-timviec {
+    background: #00A787;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 40px;
+}
+.suatimviec textarea {
+    border-radius: 5px;
+    padding: 10px;
+}
+@media screen and (max-width: 779px){
+    .suatin-content {
+        width: 80%;
+    }
+    .suatuyendung .tuyen-dung .gr-01, .suatimviec .gr-01 {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .suatuyendung .tuyen-dung #luongmin, .suatuyendung .tuyen-dung #luongmax {
+        width: 43%;
+    }
+    #luongmin, #luongmax {
+        text-indent: 2%;
+    }
+    .suatuyendung .suatin-content .tuyen-dung {
+        padding: 10px 20px;
+    }
+    .suatuyendung .suatin-content p.tt_hv {
+        padding-top: 7px;
+        font-size: 18px;
+    }
+    .suatuyendung .suatin-content .close {
+        margin-top: -32px;
+        color: #fff;
+    }
+
+    
+}

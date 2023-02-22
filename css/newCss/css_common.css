@@ -1,0 +1,214 @@
+.content-register {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-image: url('/images/newImages/banner-regis.png');
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.register-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 40px;
+    width: 100%;
+}
+.box-regis {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.box-choose {
+    width: 300px;
+    left: 333px;
+    bottom: 604px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.box-choose:hover {
+    box-shadow: 0px 3px 92px rgb(0 0 0 / 17%);
+}
+
+.box-choose:first-child {
+    margin-right: 100px;
+}
+
+.box-choose .text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #F26222;
+    margin-bottom: 30px;
+}
+
+.box-choose .image {
+    width: 100%;
+    min-height: 240px;
+}
+
+.box-choose .choose {
+    background: #F26222;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    padding: 8px 0px;
+    border: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.box-choose .choose:hover {
+    background: #f26222d1;
+}
+/*=========dang ky tai khoan mua===========*/
+.box_title_register,.form_regis_buy {
+    width: 50%;
+}
+
+.register_buy {
+    width: 90%;
+    padding: 30px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.register_buy .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register_buy .form-control:last-child {
+    padding-top: 30px;
+}
+.register_buy .label_form, .register_buy .input_form{
+    width: 100%;
+    display: block;
+}
+.register_buy .input_form {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 36px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.register_buy .btn_regist_buy {
+    background: #F26222;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+.control_captcha {
+    display: flex;
+    justify-content: space-between;
+}
+.register_buy .label_form {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #474747;
+}
+.register_buy .input_captcha {
+    width: calc(100% - 200px);
+}
+.register_buy .div_captcha .captcha {
+    height: 36px;
+    line-height: 54px;
+}
+.register_buy .div_captcha .reset-icon {
+    top: 5px;
+    right: 6px;
+    background: url(/images/newImages/icon_refresh.png) no-repeat;
+}
+.title_register {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+.title_register .break {
+    display: block;
+}
+.control_birth_gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control_birth_gender .control_input {
+    width: 49%;
+}
+.form_pass {
+    position: relative;
+}
+
+.eye_pass {
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    cursor: pointer;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 36px;
+    background: url(/images/newImages/icon_down.png) no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+}
+.content-register .select2-container--default .select2-selection--single {
+    height: 36px;
+}
+.content-register .select2-container {
+    width: 100% !important;
+}
+.error_password{color: #F33333; margin-top: 5px; font-size: 14px; line-height: 16px; font-weight: 500; font-style: italic;}
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 768px) {
+    .box-choose:first-child {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .box-regis{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-choose:first-child {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .content-register{
+        padding: 30px 40px;
+    }
+}

@@ -1,0 +1,67 @@
+.tca_tdang_cnhan .ben_phai {
+    width: calc(100% - 300px);
+    margin-top: 30px;
+}
+
+.ben_phai .box-right,
+.benphai_tren {
+    width: 100%;
+}
+
+.ben_phai .box-right {
+    margin-top: 0;
+}
+
+.benphai_tren {
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tieude_lket {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #474747;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tieude_lket .xact_lket {
+    padding: 9px 23px;
+    background: #00CE2D;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.chiatin_muaban {
+    padding-left: 55px;
+    display: none;
+}
+
+.chiatin_muaban.active {
+    display: block;
+    background: none;
+}
+
+.chiatin_muaban li {
+    padding: 15px 0px;
+}
+
+.chiatin_muaban li.active_tin a {
+    color: red;
+}
+
+.box-left .chiatin_muaban li:hover {
+    background-color: unset;
+}

@@ -1,0 +1,191 @@
+.box_nang_cap {
+    float: left;
+    width: 100%;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+}
+.box_nang_cap h1 {
+    float: left;
+    width: 100%;
+    line-height: 46px;
+    border-bottom: 1px solid #e1e2e1;
+    font-size: 17px;
+    padding-left: 29px;
+}
+.box_nang_cap h1, .edit_config {
+    height: 46px;
+    background: #f3f3f3;
+    color: #f26222;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main_nangcap {
+    float: left;
+    width: 100%;
+    padding: 21px 0;
+}
+.left_nangcap {
+    float: left;
+    width: 565px;
+}
+.right_nangcap {
+    float: left;
+    width: 555px;
+    border-left: 1px solid #e1e2e1;
+}
+.right_nangcap h2 {
+    float: left;
+    width: 100%;
+    padding-left: 54px;
+    font-size: 15px;
+    color: #f26222;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+.form_control {
+    float: left;
+    width: 100%;
+    padding-right: 115px;
+    margin-bottom: 10px;
+}
+.left_nangcap .form_control {
+    margin-bottom: 10px;
+}
+.right_nangcap .form_control {
+    padding-right: 0;
+}
+.control1, .sao {
+    font-size: 13px;
+    font-weight: 600;
+}
+.sao {
+    color: #f26222;
+    padding-right: 6px;
+}
+.control1 {
+    float: left;
+    width: 225px;
+    text-align: right;
+    padding-right: 14px;
+    color: #666766;
+    height: 29px;
+    line-height: 29px;
+}
+.control2 {
+    float: left;
+    width: 316px;
+}
+.main_edit .control1 {
+    width: 144px;
+}
+.left_nangcap .control1 {
+    width: 194px;
+}
+.right_nangcap .control1 {
+    float: left;
+    width: 186px;
+}
+.left_nangcap .control2 input[type=text], .left_nangcap .control2 input[type=password] {
+    font-weight: 500;
+}
+.right_nangcap .control2 input[type=text], .right_nangcap .control2 input[type=password], .right_nangcap .control2 select {
+    font-weight: 500;
+    font-family: Roboto,sans-serif;
+}
+
+.control2 select {
+    background: url(/images/icrow_den.png) 296px 7px no-repeat;
+    cursor: pointer;
+    color: #999;
+}
+.right_nangcap label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666766;
+    float: left;
+    margin-left: 11px;
+    position: relative;
+    padding-left: 21px;
+    margin-top: 7px;
+    line-height: 15px;
+    cursor: pointer;
+}
+.check_cb input {
+    position: relative;
+    top: 1.5px;
+    display: none;
+}
+.control__indicator {
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background: #fff;
+    border: 1px solid #989898;
+    cursor: pointer;
+}
+.dangky_store {
+    border: none;
+    margin: 20px auto 50px;
+    display: block;
+    width: 117px;
+    height: 27px;
+    border-radius: 2px;
+    background: #00a787 url(/images/bg_regis.png)no-repeat;
+    position: relative;
+    top: 15px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: Roboto,sans-serif;
+    padding-left: 45px;
+    text-align: left;
+    cursor: pointer;
+}
+.list_tag ul, .main_list_new {
+    border-top: 1px solid #f26222;
+    padding-top: 20px;
+}
+.list_tag {
+    float: left;
+    width: 100%;
+}
+.list_tag ul li {
+    float: left;
+    width: 102px;
+    height: 102px;
+    position: relative;
+    margin-right: 11px;
+}
+.list_tag ul li img {
+    height: 100%;
+}
+.list_new, .list_tag ul li img, .list_tag ul li span, .main_list_new {
+    float: left;
+    width: 100%;
+}
+.w146 {
+    width: 146px!important;
+}
+@media only screen and (min-width: 1124px) and (max-width: 1439px) {
+    .list_new, .list_tag ul {
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1123px){
+    .left_nangcap, .right_nangcap {
+        width: 50%;
+    }
+    .main_edit.right_nangcap {
+        width: 100%;
+    }
+    .control2.phone_restyle {
+        width: 316px !important;
+    }
+}
+@media only screen and (min-width: 374px) and (max-width: 424px){
+    .dk_thanhcong .popup_delete .div_btn_thongbao, .left_nangcap, .right_nangcap {
+        width: 100%;
+    }
+}

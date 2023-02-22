@@ -1,0 +1,656 @@
+/*=========dang ky tai khoan mua===========*/
+
+.register_buy {
+    width: 90%;
+    padding: 30px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.text{
+    display: none;
+}
+.register_buy .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.register_buy .form-control:last-child{margin-bottom: unset;}
+.register_buy .form-control:last-child {
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.register_buy .label_form,
+.register_buy .input_form {
+    width: 100%;
+    display: block;
+    outline: none;
+}
+.dangky_nban{
+    margin-top: 20px;
+}
+
+.register_buy .input_form {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 36px;
+    padding-left: 20px;
+}
+.select2-container--default .select2-selection--single{
+    border: 1px solid #CCCCCC;
+}
+.register_buy .btn_regist_buy {
+    background: #F26222;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.control_captcha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_buy .label_form {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #474747;
+    margin-bottom: 5px;
+}
+
+.register_buy .input_captcha {
+    width: calc(100% - 170px);
+}
+.control_input-sdt{width: 100%;display: flex;}
+.control_captcha_input{width: calc(100% - 170px);}
+.control_captcha_input .input_captcha{width: 100%;}
+.register_buy .div_captcha .t_captcha {
+    height: 36px;
+    line-height: 54px;
+    float: right;
+    width: 150px;
+    border-radius: 3px;
+    border: 1px solid #e1e2e1;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+.register_buy .div_captcha .reset-icon {
+    top: 5px;
+    right: 6px;
+    background: url(/images/newImages/icon_refresh.png) no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.title_register {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.title_register .break {
+    display: block;
+}
+.mg_b0{
+    margin-bottom: 0 !important;
+}
+input#captcha_input{
+    width: 80%;
+    height: 36px;
+    padding-left: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #ccc;
+}
+
+.control_birth_gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control_birth_gender .control_input {
+    width: calc(100%/2 - 10px);
+}
+
+.form_pass {
+    position: relative;
+}
+
+.eye_pass {
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+    cursor: pointer;
+}
+#register_buy_enterprise .eye_pass{top: 8px;}
+.title_form {
+    display: none;
+}
+
+/*-----đăng ký doanh nghiệp----*/
+.head_regis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_head_regis {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F26222;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.prevStep:before {
+    content: " ";
+    background-image: url("/images/newImages/icon_prev.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.step .num_step {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ccc;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step .active_step {
+    background: #F26222;
+}
+
+.step .active_step_prev {
+    background: #2ECC71;
+}
+
+.step {
+    display: flex;
+}
+
+.tab {
+    display: none;
+}
+
+.register_buy .phone_shop {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    float: left;
+}
+.control_input_phone_shop {   width: calc(50% - 20px);margin-right: 20px;}
+.control_input_phone_shop .phone_shop {width: 100%;}
+.register_buy .control_input_checkbox {
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.register_buy .text-phone {
+    font-weight: 400;
+    font-size: 14px;
+    color: #474747;
+}
+
+.register_buy .giay_phep {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.register_buy .giay_phep .upfile {
+    background: #F26222;
+    border: 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    width: 95px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    border: 1px solid #CCCCCC;
+}
+
+.register_buy .giay_phep .name_file {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 20px 0px 20px;
+}
+
+.register_buy .giay_phep .name_file .name_img {
+    background: #FFE6D3;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #F26222;
+    margin-bottom: 5px;
+}
+
+
+.register_buy .div_logo {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.register_buy .div_logo .logo_shop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*---------end doanh nghiệp---------*/
+/* --------------------Xác thực thành công-------- */
+.box_sucsess{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    height: 257px;
+}
+
+.img_tc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 37px 0px;
+}
+.box_sucsess p{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 150.19%;
+        text-align: center;
+        padding: 0px 72px 27px 72px;
+}
+.btn_dong{
+    background: #F26222;
+    border-radius: 5px;
+    color: #fff;
+    width: 369px;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+/*=========end dang ky tai khoan nguoi mua========*/
+/*=============popup========*/
+.popup_choose {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000002e;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+
+.popup_choose_sell .register-title {
+    color: #F26222;
+}
+
+.popup_choose_sell {
+    z-index: 1;
+    width: 800px;
+    margin: auto;
+    background: #fff;
+    margin-top: 50px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 600px;
+}
+.register_buy_container{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-image: url(/images/newImages/banner-regis.png);
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 30px 100px;
+}
+.content-register{width: 100%;display: flex;justify-content: space-between;max-width: 1520px;margin: auto;}
+.content_register1{
+    /* width: 550px; */
+    max-width: 1520px;
+    margin: auto;
+    height: 600px;
+}
+.content_register1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box_title_register{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.select2-container .select2-search--inline .select2-search__field{
+    padding-left: 20px;
+    font-size: 88%;
+    line-height: 20px;
+}
+/* .select2-container--default .select2-selection--multiple{
+    height: 36px;
+} */
+.title_tc{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F26222;
+    padding: 20px 20px 0px 20px;
+}
+.register_buy{width: 100%;}
+.register_buy{max-width: 550px;width: 100%;}
+.form_regis_buy{display: flex;justify-content: flex-end;width: 50%;}
+.select2-container .select2-selection--single{height: 36px;}
+.select2-container .select2-selection--single .select2-selection__rendered{height: 100%;display: flex;align-items: center;}
+.register_buy_container .select2-container{width: 100%!important;}
+.form-control .sao{color: red;}
+.nav-li a{color: #474747;}
+.form-control_position{position: relative;}
+.noti-error{
+      color: #FF3333;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: italic;
+    font-weight: 500;
+    /* display: none; */
+}
+/* input.input_form.error{border: 1px solid red;} */
+/* .form-control .error ~ .select2-container {border: 1px solid red !important;border-radius: 4px;background: #fff;} */
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 1;
+    display: block;
+    /* background: url(/images/icon/calendar.svg) no-repeat; */
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    margin-right: 10px;
+}
+.form_regis_buy-title{display: none;}
+.register_buy .giay_phep{position: relative;}
+input#usePhoneCaNhan{width: 24px;height: 24px;border: 1px solid #CCCCCC;margin-right: 10px;}
+
+#regis_step3 .form-control:last-child{margin-top: 50px;}
+.khung_do{
+    border: 1px solid #FF0000 !important;
+    background: #fff;
+}
+.div_captcha{position: relative;}
+.form-control_position.form-control{padding-top: 0px !important;}
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 20px;
+    width: 20px;
+    clear: both;
+}
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox-label input:checked~.checkbox-custom {
+    background-color: #F26222;
+    border-radius: 4px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 1px solid #F26222;
+}
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    border: 1px solid #666;
+}
+.checkbox-label input:checked~.checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 5px;
+    top: -1px;
+    width: 6px;
+    height: 13px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0;
+    width: 0;
+    border-radius: 4px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+/*===========end popup============*/
+@media screen and (max-width: 1024px) {
+    .form_regis_buy-title{font-size: 24px;line-height: 28px;color: #F26222;margin-bottom: 30px;display: block;font-weight: 600;}
+    .box_title_register {
+        display: none;
+    }
+
+    .form_regis_buy,
+    .register_buy {
+        width: 100%;
+    }
+
+    .title_register {
+        font-size: 24px;
+        line-height: 28px;
+        color: #F26222;
+    }
+
+    .content-register {
+        justify-content: center;
+    }
+
+    .form_regis_buy {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title_form {
+        display: block;
+    }
+    .content_register1{
+        display: flex;
+        justify-content: center;
+        width: 550px;
+        max-width: 1520px;
+        height: 600px;
+    }
+    .text{
+        display: block;
+    }
+    .no_text{
+        display: none;
+    }
+    .img_tc{
+        padding: 20px 0px;
+    }
+    .box_sucsess p{
+        padding: 0px 72px 20px 72px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-register {
+        padding: 50px 0px;
+    }
+    .register_buy_container{padding: 0px 20px;}
+    .form_regis_buy {
+        width: 100%;
+    }
+
+    .box-choose:first-child {
+        margin-right: 50px;
+    }
+    .popup_choose {padding: 20px;}
+
+    .popup_choose_sell {width: 100%;}
+}
+@media screen and (max-width: 580px) {
+
+    .box_sucsess_text,
+    .content_register1 {
+        width: 305px;
+    }
+
+    .title_tc {
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    .box_sucsess p {
+        padding: 0px 15px 20px 15px;
+    }
+
+    .btn_dong {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title_register {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #F26222;
+    }
+
+    .content-register {
+        padding: 40px 0px;
+    }
+
+    .register_buy {
+        padding: 30px 20px;
+    }
+
+    .form_regis_buy {
+        width: 100%;
+    }
+
+    .control_birth_gender {
+        flex-wrap: wrap;
+    }
+
+    .control_birth_gender .control_input {
+        width: 100%;
+    }
+
+    .control_birth_gender .control_input:first-child {
+        margin-bottom: 20px;
+    }
+    .register_buy .input_captcha {
+        width: calc(100% - 138px);
+    }
+    .control_captcha_input { width: calc(100% - 138px);}
+    .control_captcha_input .input_captcha{width: 100%;}
+    .register_buy .div_captcha .t_captcha {
+        width: 118px;
+        text-align: left;
+    }
+
+    .box-choose {
+        margin-bottom: 50px;
+    }
+
+    .box-choose:first-child {
+        margin-right: 0px;
+    }
+
+    .popup_choose {
+        overflow-y: scroll;
+        padding: 20px;
+    }
+
+    .popup_choose_sell {
+        width: 100%;
+        height: auto;
+    }
+    .title_head_regis{font-size: 18px;line-height: 21px;}
+    .form_regis_buy-title{display: none;}
+    .step .num_step{width: 21px;height: 21px;margin-left: 10px;font-size: 16px;}
+    .register_buy .label_form{font-size: 14.5px;}
+    .register_buy .phone_shop{width: 100%;float: unset;}
+    .register_buy .control_input_checkbox{margin-top: 6px;}
+    .prevStep:before{height: 16px;}
+}
+@media screen and (max-width: 325px){
+    .popup_choose {
+        padding: 10px;
+    }
+}

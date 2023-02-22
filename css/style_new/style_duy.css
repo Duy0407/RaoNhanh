@@ -1,0 +1,360 @@
+*{color:#333}
+
+.bggt_td_cb {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.bggt_td_cb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1.5px solid #292D32;
+}
+
+/* On mouse-over, add a grey background color */
+.bggt_td_cb:hover input ~ .checkmark {
+  border: 1.5px solid #2758DD;
+}
+
+/* When the radio button is checked, add a blue background */
+.bggt_td_cb input:checked ~ .checkmark {
+  background-color: #fff;
+    border: 1px solid #2758DD;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.bggt_td_cb input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.bggt_td_cb .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 4px;
+  height: 7px;
+  border: solid #2758DD;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cr_weight {font-weight: 500;}
+
+
+
+img{width:100%;height:100%}
+.icon_us_show1024{width: 40px; height: 40px;}
+a{color:#333}
+.color1{color:#E90037}
+.color2{color:#B60BE1}
+.color3{color:#456EFF}
+.color4{color:#00B695}
+.color5{color:#FF7B02}
+.color6{color:#6AC259}
+img.icon_post {width: 24px;height: 24px;}
+.ft_betw_chil_two img{width: 258px !important;height: 79px;}
+.post_new .post-new p{color: #F26222;}
+.main_content_danhmuc{display:flex;align-items:center;margin-bottom:48px}
+.main_content_danhmuc a{cursor:pointer}
+.arout_right{width:15px;height:15px;margin:0 10px}
+.main_content_padding{padding:24px 66px}
+.main_content_noidung_heading{margin-bottom:30px;font-weight:700;font-size:35px;line-height:41px;text-align:center}
+.bg_dv_gimtin_dh{font-weight:500;font-size:20px;line-height:23px;margin-bottom:30px}
+.bg_dv_gimtin{width:fit-content;margin-bottom:48px}
+.bg_dichvu_chung{width:280px;background:#FFF;box-shadow:0 2px 18px rgba(233,0,55,0.15);border-radius:20px}
+.bg_dichvu_chung_div2{margin-right:2.5%;margin-bottom:40px}
+.bg_dichvu_chung_div2:nth-child(4){margin-right:unset}
+.bg_dichvu_chung_bg_suv{text-align:center;padding:32px 33px 30px}
+.bg_dichvu_chung_h1{font-weight:700;font-size:16px;line-height:19px;margin-bottom:32px;text-align:center}
+.bg_dichvu_chung_p{padding: 0 6px;}
+.bg_dichvu_chung_p_suv{display:flex;align-items:center;margin-bottom:15px}
+.bg_dichvu_chung_p_suv:last-child{margin-bottom:unset}
+.bg_dichvu_chung_p_suv_img{width:19px;height:19px}
+.bg_dichvu_chung_p_suv_tex{font-weight:400;font-size:14px;line-height:24px;margin-left:10px}
+.bg_dichvu_chung_img{width:100%;height:143px;position:relative}
+.xemthem_dichvu{position:absolute;bottom:0;display:flex;justify-content:center;width:100%;margin-bottom:30px}
+.xemthem_dichvu_sub{display:flex;align-items:center;background:#FFF;box-shadow:2px 2px 4px rgba(0,0,0,0.18);border-radius:35px;width:fit-content;padding:13px 29px}
+.xemthem_dichvu_tex{font-weight:700;font-size:14px;line-height:16px;margin-right:5px}
+.xemthem_dichvu_img{width:15px;height:15px}
+.bg_dv_dangtin{width:100%}
+.bg_dv_dangtin_sub{display:flex;flex-wrap:wrap;align-items:center}
+.bg_dv_dangtin_bg_suv{padding:20px 33px 30px}
+.bg_dv_dangtin_bg_suv_tex{margin-bottom:20px;text-align:center}
+.bg_dv_dangtin_h1{font-weight:700;font-size:16px;line-height:19px}
+.bg_dv_dangtin_text_p{font-size:13px;line-height:19px;font-weight:400;color:#666}
+.bg_dichvu_chung_bg_suv_6{padding:20px 33px 30px;width:100%}
+
+
+
+/* Bảng giá ghim tin */
+.main_bggt_content{padding:24px 70px 60px;}
+.main_bggt_noidung_hd{font-weight:500;font-size:20px;line-height:23px;margin-bottom:20px}
+.bggt1_th_img{width:48px;height:48px;margin:0 auto}
+.main_bggt_content_noidung{margin-bottom:48px}
+.main_bggt_content_noidung_table{border:10px solid #E5E5E5;border-radius:21px;padding:10px}
+.main_bggt_content_noidung_table table{width:100%;text-align:center;padding:16px 10px 10px;border-collapse:collapse}
+.noidung_table_tr{border-bottom:.5px solid #AFAFAF}
+.noidung_table_tr_pd{height: 59px; cursor:pointer}
+.bggt_text .bggt_text1{font-weight:500;font-size:16px;line-height:19px;margin-bottom:10px}
+.bggt_text p{color:#828282;font-weight:500;font-size:14px;line-height:16px}
+/* td.bggt_td{padding:20px} */
+.w100pxd{width:100%;height:1px;background-color:red}
+th.bggt_th{padding:26px 0 21px}
+.active{border:1px solid #B4C6E7;border-radius:15px;background:#FBFBFF}
+tr.active td:first-child{border-top-left-radius:10px}
+tr.active td:last-child{border-top-right-radius:10px}
+
+
+.main_bggt_thanhtoan_buoc1_box2 {width: 47.8%;}
+.main_bggt_thanhtoan_buoc1_suv{display: flex;width: 85.3%; margin: 0 auto;}
+.main_bggt_thanhtoan_buoc1_box2 {margin: 0 4%;}
+.main_bggt_thanhtoan_buoc1_box_sub{cursor: pointer; width: 230px;height: 73px;background: #FFFF;margin-bottom: 31px;box-shadow: 0px 0px 8px rgba(242, 98, 34, 0.25);border-radius: 10px;display: flex;justify-content: center;align-items: center;}
+/* .main_bggt_thanhtoan_buoc1_box_sub:hover{background: rgba(242, 98, 34, 0.35);} */
+.thanhtoan_buoc1_box_bank1 img{width: unset;height: unset;}
+
+.thanhtoan_buoc1_info{background: #FFF;box-shadow: 0px 0px 15px rgba(242, 98, 34, 0.15);border-radius: 10px;margin-bottom: 32px;}
+.thanhtoan_buoc1_info_sub {width: 72%;margin: 0 auto;padding: 94px 0 20px;position: relative;}
+.thanhtoan_buoc1_info_img {display: flex;justify-content: center;position: absolute;
+    top: 25px;
+    width: 100%;}
+/* .thanhtoan_buoc1_info_img img{width: 63px;} */
+.thanhtoan_buoc1_info_img .img_bank100px{width: 110px;}
+.thanhtoan_buoc1_info_text{font-weight: 700;font-size: 16px;line-height: 150%;color: #F26222;margin-bottom: 10px;text-align: center;}
+.thanhtoan_buoc1_info_main_ok{display: flex;margin-bottom: 10px;}
+.thanhtoan_buoc1_info_main_ok_p1{font-weight: 500;font-size: 13px;line-height: 150%;color: #000;margin-right: 6px;}
+.thanhtoan_buoc1_info_main_ok_p2{font-weight: 400;font-size: 13px;line-height: 17px;color: #F26222;}
+.thanhtoan_buoc1_info_main_ok_p2.df {width: 50%;}
+.main_bggt_thanhtoan_buoc1_bank2{display: flex;justify-content: space-between;}
+.thanhtoan_luu_y{font-weight: 500;font-size: 16px;line-height: 150%;color: #FF0000;margin-bottom: 30px;}
+
+.main_bggt_thanhtoan_buoc_hd{font-weight: 500;font-size: 16px;line-height: 23px;color: #333;margin-bottom: 26px;}
+.thanhtoan_buoc2_box_hd{font-weight: 600;font-size: 18px;line-height: 160%;color: #F26222;margin-bottom: 36px;}
+.main_bggt_thanhtoan_buoc2_box {width: 85.5%;margin: 0 auto;}
+.thanhtoan_buoc2_box_tb{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.thanhtoan_buoc2_box_tb1{cursor: pointer; display: flex; align-items: center;width: 245px;height: 98px;background: #FFF;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);border-radius: 10px;justify-content: center;margin-bottom: 20px;}
+.thanhtoan_buoc2_box_tb1_img{width: 35px;height: 35px;}
+.thanhtoan_buoc2_box_tb1_text{font-weight: 600;font-size: 16px;line-height: 160%;margin-left: 15px;}
+
+
+/* DỊCH VỤ BẢNG GIÁ */
+.dvbg_content_noidung{margin-bottom: 48px;}
+.dvbg_content{padding: 24px 70px 60px;}
+.dvbg_ghim{
+    background: #FFFFFF;
+box-shadow: 0px 0px 9px rgba(102, 102, 102, 0.25);
+border-radius: 10px;
+padding: 20px 20px 55px;
+margin-bottom: 24px;
+}
+.dvbg_ghim_hd{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+margin-bottom: 40px;
+}
+
+.dvbg_ghim_main_gio-text, .dvbg_ghim_main_ngay-text{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+margin-right: 25px;
+}
+.dvbg_ghim_main_gio-text{margin-right: 45px;}
+.dvbg_ghim_main_gio-select{width: 99px;}
+.dvbg_ghim_main_gio-select .select2-container{width: 100% !important;height: 36px;}
+.dvbg_ghim_main_gio-select .select2-container--default .select2-selection--single{height: 36px;border-radius: 10px;border: 1px solid #F26222;background: rgba(242, 98, 34, 0.07);}
+.dvbg_ghim_main_gio-select .select2-container .select2-selection--single .select2-selection__rendered{line-height: 34px;color: #F26222;} 
+.dvbg_ghim_main_gio-select .select2-container--default .select2-selection--single .select2-selection__arrow b{border-color: #F26222 transparent transparent transparent;}
+.dvbg_ghim_main_gio{display: flex;align-items: center;}
+.dvbg_ghim_main_ngay-click{width: 140px;height: 36px;display: flex;;justify-content: space-between;align-items: center;position: relative;border: 1px solid #F26222;
+    border-radius: 10px;}
+.dvbg_ghim_main_ngay-tru, .dvbg_ghim_main_ngay-cong{cursor: pointer; color: #F26222;width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;}
+.dvbg_ghim_main_ngay-tru{padding-left: 14px;}
+.dvbg_ghim_main_ngay-cong{justify-content: flex-end;padding-right: 14px;}
+
+.dvbg_ghim_main_ngay-so-sub input{outline: none;width: 60px;height: 36px;text-align: center;border: 1px solid #F26222;border-radius: 10px;cursor: inherit;color: #F26222;}  
+.dvbg_ghim_main_ngay-so-sub input::placeholder{color: #F26222;}
+.dvbg_ghim_main_ngay{display: flex; align-items: center;}
+.dvbg_ghim_main_sub {display: flex;align-items: center;justify-content: space-around;}
+.dvbg_ghim_main-money{font-weight: 500;font-size: 18px;line-height: 21px;}
+
+.dvgt_themhinhthuc{margin-bottom: 25px;}
+.dvgt_themhinhthuc_1{display: flex;align-items: flex-end;}
+.dvgt_themhinhthuc_hoac{font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 150%;}
+.dvgt_themhinhthuc_text_to{font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;color: #F26222;margin-right: 30px;}
+.dvgt_themhinhthuc_text_con{font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;color: #333;
+}
+.active_bg_bank{
+    background: rgba(242, 98, 34, 0.35);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1520px) {
+    .main_content_padding {padding: 24px 0;width: 1234px;margin: 0 auto;}
+    .main_bggt_content {
+        padding: 24px 0px 60px;
+        max-width: 1226px;
+        margin: 0 auto;
+    }
+    .dvbg_content {
+        padding: 24px 0px 60px;
+        max-width: 1226px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1343px){
+    .bg_dichvu_chung_div2:last-child{margin-left: 2.5%;}
+}
+@media(max-width: 1024px){
+    .main_content_padding{padding: 24px 52px;}
+    .bg_dichvu_chung_div2{margin-right: 3%;}
+    .bg_dichvu_chung_div2:nth-child(3){margin-right: unset;}
+    .bg_dichvu_chung_div2:last-child{margin-left: 3%;}
+    .bg_dichvu_chung_div2 {width: 30.44%;overflow: hidden;}
+    .bg_dichvu_chung_img{height: 144px;}
+    /* .bg_dv_dangtin_bg_suv{padding-bottom: 28px;margin-bottom: 2px;} */
+
+
+    .main_bggt_content{padding: 24px 46px 60px;}
+    .main_bggt_thanhtoan_buoc1_box_sub{width: 100%;}
+    /* .thanhtoan_buoc1_info_sub{padding: 30px 0;} */
+    .main_bggt_thanhtoan_buoc1_suv{width: 89.3%;}
+    .main_bggt_thanhtoan_buoc1_box2 {margin: 0px 2.7%;}
+    .main_bggt_thanhtoan_buoc1_box1, .main_bggt_thanhtoan_buoc1_box3{width: 24%;}
+
+
+
+    .dvbg_content{padding: 24px 42px 60px;}
+    .dvbg_ghim_main_gio-text, .dvbg_ghim_main_ngay-text, .dvbg_ghim_main-money{font-size: 16px;
+        line-height: 19px;}
+
+}
+@media(max-width: 768px){
+    .main_content_padding{padding: 24px 20px;}
+    .bg_dv_dangtin_bg_suv{padding: 20px 0px 30px;}
+    .bg_dichvu_chung_img{height: 124px;}
+    .bg_dichvu_chung_bg_suv{padding: 30px 0;}
+    .bg_dv_dangtin_h1{margin-bottom: 5px;}
+    .bg_dichvu_chung_h1{margin-bottom: 30px;}
+    .bg_dichvu_chung_bg_suv_6{padding: 18px 0 30px;}
+    .bg_dichvu_chung_h1_f_678_1{margin-bottom: 18px;}
+    .xemthem_dichvu{margin-bottom: 22px;}
+    .bg_dichvu_chung_div1{width: 222px;overflow: hidden;}
+    .bg_dichvu_chung_div2{margin-right:30px;width: 222px;}
+    .main_content_noidung_heading{font-size: 24px;line-height: 28px;margin-bottom: 28px;}
+    .bg_dv_gimtin_dh{font-size: 18px;line-height: 21px;margin-bottom: 28px;}
+    .bg_dichvu_chung_p{padding: 0 10px;}
+    .bg_dichvu_chung_div2{margin-bottom: 29px;}
+    .bg_dichvu_chung_div2:last-child {margin-left: 31px;}
+
+
+    .main_bggt_content{padding: 24px 20px 60px;}
+    .main_bggt_thanhtoan_buoc1_suv{width: 100%;justify-content: space-between;}
+    .main_bggt_thanhtoan_buoc1_box1, .main_bggt_thanhtoan_buoc1_box3 {width: 21.3%;}
+    .main_bggt_thanhtoan_buoc1_box2{margin: unset;}
+    .main_bggt_thanhtoan_buoc1_box_sub.df2 {width: 47.2%;}
+    .main_bggt_thanhtoan_buoc2_box{width: 100%;}
+    .thanhtoan_buoc2_box_tb1{width: 230px;}
+    .main_bggt_content_noidung_table_sub {
+        overflow-x: scroll;
+        width: 728px;
+    }
+    .main_bggt_content_noidung_table{overflow: auto;}
+
+    .dvbg_content{padding: 24px 20px 60px;}
+    .dvbg_ghim_main_gio-text, .dvbg_ghim_main_ngay-text{margin-right: 10px;}
+    .dvbg_ghim_main_sub{justify-content: space-between;}
+    /* .dvbg_ghim_main_sub{flex-direction: column;align-items: flex-start;} */
+}
+@media(max-width: 700px){
+    .bg_dichvu_chung_div2{margin-right: 30px !important;}
+}
+@media(max-width: 680px){
+    .main_bggt_thanhtoan_buoc1_suv{flex-direction: column;}
+    .main_bggt_thanhtoan_buoc1_box2{order: 1;width: 100%;}
+    .main_bggt_thanhtoan_buoc1_box1 {order: 2;width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+    /* .main_bggt_thanhtoan_buoc1_box1  */
+    .main_bggt_thanhtoan_buoc1_box_sub{width: 47%;}
+    .main_bggt_thanhtoan_buoc1_box3 {order: 3;width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+
+
+    .dvbg_ghim_main_sub{flex-direction: column;align-items: flex-start;}
+    .dvbg_ghim_main_gio, .dvbg_ghim_main_ngay{margin-bottom: 20px;}
+    .dvbg_ghim_hd{font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 30px;
+    }
+    /* .dvbg_ghim_main_gio-text, .dvbg_ghim_main_ngay-text, .dvbg_ghim_main-money */
+    .dvbg_ghim{margin-bottom: 20px;padding: 20px 20px 30px;}
+    
+}
+@media(max-width: 480px){
+    .main_content_padding{padding: 14px 21px;}
+    .bg_dichvu_chung_div2{margin-right: unset !important;}
+    .bg_dichvu_chung_img{height: 170px;}
+    .bg_dichvu_chung_div2{margin-bottom: 24px;}
+
+    .thanhtoan_buoc2_box_tb1{width: 100%;}
+    .thanhtoan_buoc2_box_hd{font-size: 14px;
+        line-height: 160%;margin-bottom: 20px;
+    }
+    .dvgt_themhinhthuc_text_to{font-size: 48px;
+        line-height: 66px;}
+    .dvgt_themhinhthuc_text_con{font-size: 16px;
+        line-height: 42px;}
+}
+@media(max-width: 376px){
+    .bg_dichvu_chung{width: 100%;}
+}

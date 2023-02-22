@@ -1,0 +1,263 @@
+.box-right {
+    width: calc(100% - 300px);
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+    margin-right: 30px;
+}
+
+.div_tong_bao_2_box .box-right_df_dl {
+    margin-right: unset;
+}
+
+section.select_tong {
+    display: flex;
+    flex-direction: column;
+}
+
+.his_table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    min-width: 960px;
+}
+
+.title-his {
+    margin: 30px;
+}
+
+.ngay-giao-dich {
+    text-align: left;
+}
+
+.chu-his {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #474747;
+}
+
+.content-lsgd {
+    margin: 0 30px;
+}
+
+.font-th {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #AAAAAA;
+    padding-bottom: 10px;
+}
+
+.img-lsgd {
+    width: 60px;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.quang-cao {
+    width: 46%;
+    text-align: left;
+}
+
+.gia-tri-giao-dich {
+    width: 20%;
+    text-align: left;
+}
+
+.thanh-toan {
+    width: 23%;
+    text-align: left;
+}
+
+.text-lsgd {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #474747;
+}
+
+.box-td {
+    border-top: 1px solid #ddd;
+    vertical-align: top;
+    padding: 10px 0px;
+}
+
+.font-td {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+section.select_tong {
+    max-width: 1306px;
+    margin: 0 auto;
+}
+
+.div_tong_bao_2_box {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1366px) {
+    .box-right_df {
+        margin-right: unset;
+        max-width: 1006px;
+    }
+}
+
+/* ==================== 1024 px ========================== */
+@media screen and (max-width: 1024px) {
+    .box-right {
+        /* width: 66%; */
+        padding-left: 30px;
+        margin-right: 25px;
+    }
+
+    .box-right_df {
+        margin-right: unset;
+    }
+
+    footer {
+        /* display: none; */
+    }
+
+    .title-his {
+        margin: 30px 0;
+    }
+
+    .box-td {
+        border-top: 0px;
+    }
+
+    .quang-cao {
+        width: 40%;
+        text-align: left;
+    }
+
+    .gia-tri-giao-dich {
+        width: 22%;
+        text-align: left;
+    }
+
+    .padding-quang-cao {
+        border-top: 0px;
+        padding-right: 20px;
+    }
+
+    .thanh-toan {
+        width: 29%;
+        text-align: left;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    /* scroll  */
+    .content-lsgd::-webkit-scrollbar-thumb {
+        background-color: #F26222;
+        border-radius: 5px;
+    }
+
+    .content-lsgd {
+        overflow: scroll;
+        max-height: 532px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .content-lsgd::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: #ECECEC;
+        border-radius: 5px;
+    }
+}
+
+/* ============================= 768 px =============================  */
+@media screen and (max-width: 768px) {
+    .box-right {
+        width: 100%;
+    }
+
+    .div_tong_bao_2_box {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .box-right_df {
+        width: 100%;
+        margin: unset;
+    }
+}
+
+/* ============================= 480 px =============================  */
+@media screen and (max-width: 480px) {
+    .box-right_df {
+        padding: 15px;
+    }
+
+    .text-lsgd {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .img-lsgd {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-lsgd {
+        max-height: 480px;
+    }
+
+    .title-his {
+        margin-top: 0px;
+    }
+
+    .quang-cao {
+        width: 29%;
+    }
+
+    .gia-tri-giao-dich {
+        width: 17%;
+    }
+
+    .thanh-toan {
+        width: 25%;
+    }
+
+    /* DUY RESPONSIVE Ở ĐÂY */
+    .div_tong_bao_2_box {
+        margin: 30px 20px;
+    }
+
+}
+
+/* ============================= 375 px =============================  */
+@media screen and (max-width: 375px) {
+    .quang-cao {
+        width: 26%;
+    }
+
+}
+
+/* ============================= 320 px =============================  */
+@media screen and (max-width: 320px) {
+    .quang-cao {
+        width: 23%;
+    }
+
+    .content-lsgd {
+        max-height: 400px;
+    }
+}

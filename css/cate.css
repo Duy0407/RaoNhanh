@@ -1,0 +1,235 @@
+.right_box {
+    float: left;
+    width: 884px;
+    padding-left: 18px;
+}
+
+.top_r {
+
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #e1e2e1;
+    padding-bottom: 4px;
+    margin-bottom: 29px;
+    justify-content: center;
+}
+
+.loai_ht {
+    float: right;
+    width: 125px;
+    padding-right: 9px;
+}
+
+.loai_ht span, .top_r h1 {
+    color: #666766;
+    font-weight: 500;
+}
+
+
+
+.loai_ht span {
+    float: left;
+    font-size: 13px;
+    padding-top: 6px;
+    padding-right: 9px;
+}
+.top_r h1 {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 4px;
+    float: left;
+}
+.loai_ht ul {
+    float: left;
+    width: 60px;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid #e3e3e3;
+    margin-top: -3px;
+}
+.loai_ht ul .ht1 {
+    float: left;
+    padding-left: 12px;
+    padding-top: 7px;
+    padding-right: 5px;
+    width: 10px;
+    height: 10px;
+}
+.ht2 {
+    float: left;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.item_r, .main_r {
+    width: 100%;
+    float: left;
+}
+.item_r {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.left_r, .left_r img, .left_r p {
+    border-radius: 2px;
+}
+.left_r {
+    float: left;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.left_r img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+}
+.right_r {
+    float: left;
+    width: 666px;
+    padding-left: 15px;
+}
+.popup_register span, .t_1 {
+    border-bottom: 1px solid #e1e2e1;
+}
+.t_1 {
+    float: left;
+    width: 100%;
+    padding-bottom: 7px;
+}
+.tit_pro {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #666766;
+    font-weight: 600;
+    padding-top: 10px;
+    line-height: 23px;
+    height: 56px;
+}
+.time_post {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+.time_post i, .view_post {
+    font-size: 12px;
+    font-weight: 500;
+    float: left;
+}
+.time_post i {
+    color: #929292;
+}
+.view_post {
+    background: url(/images/ic_view_2.png) 0 3px no-repeat;
+    color: #5f6160;
+    margin-left: 9px;
+    padding-left: 18px;
+}
+.price_post {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    color: #f36e21;
+    font-size: 14px;
+    font-weight: 500;
+}
+.add_post, .name_post, .pagination_wrap a {
+    font-size: 13px;
+    font-weight: 500;
+}
+.add_post {
+    float: left;
+    color: #666766;
+    background: url(/images/ic_ad.png) 2px 2px no-repeat;
+    padding-left: 19px;
+    margin-top: 15px;
+}
+.name_post {
+    float: right;
+    margin-top: 10px;
+    color: #666766;
+    background: url(/images/ic_user.png) 0 1px no-repeat;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 32px;
+}
+.count_img, .count_img2, .name_post i {
+    font-style: normal;
+}
+.name_post i {
+    color: #f26222;
+    margin-right: 32px;
+}
+.tim_do {
+    float: right;
+    width: 18px;
+    height: 16px;
+    background: url(/images/timdo.png) no-repeat;
+    margin-right: 12px;
+    margin-top: 2px;
+}
+.pagination_wrap {
+    float: left;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.pagination_wrap .clr {
+    float: right;
+}
+.jp-current {
+    background: #f36e21!important;
+    color: #fff!important;
+}
+.pagination_wrap a {
+    padding: 0 9px;
+    background: #ebebeb;
+    line-height: 26px;
+    height: 25px;
+    color: #555;
+    margin-left: 5px;
+}
+.pagination_wrap a {
+    float: none;
+    display: inline-block;
+}
+.left_r p, .t_1 a, .t_1 span {
+    font-size: 13px;
+    font-weight: 500;
+}
+.t_1 a {
+    float: left;
+    color: #f26222;
+    padding-top: 8px;
+}
+.left_r p {
+    position: absolute;
+    left: 0;
+    width: 136px;
+    height: 30px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding-left: 11px;
+    line-height: 31px;
+}
+@media screen and (max-width: 1123px){
+    .right_box {width: 75%;}
+    .right_r {width: 70%;}
+    .left_r {width: 30%; }
+}
+@media screen and (max-width: 768px){
+    .right_box {width: 100%; padding: 5px;}
+
+}
+@media screen and (max-width: 480px){
+    .left_r {
+        width: 100%;
+        height: auto;
+    }
+    .right_r {width: 100%;}
+    .name_post {
+        float: left;
+        width: 100%;
+    }
+}

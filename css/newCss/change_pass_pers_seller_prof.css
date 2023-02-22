@@ -1,0 +1,250 @@
+.box-right {
+    width: 74%;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+    margin-right: 20px;
+}
+.noti-error {
+    float: left;
+    color: red;
+}
+.df_div_mk{align-items: center;}
+.khung_input_capcha{display: flex; justify-content: space-between;}
+.bao_p_capcha{position: relative;}
+.img_df{position: absolute;top: 0;
+    right: 0;
+    margin-top: 6px;
+    margin-right: 10px;}
+.div_bao_ma_xacnhan{height: 36px;width: 62.3%}
+.div_bao_ma_xacnhan input{width: 100%;height: 100%;border-radius: 5px; border: 1px solid #CCC;padding: 10px 20px;}
+.bao_p_capcha{height: 36px;width: 33.4%;}
+.bao_p_capcha input{height: 100%;width: 100%;border-radius: 5px;border: 1px solid #ccc;padding: 10px 20px; letter-spacing: 5px;}
+/* .bao_p_capcha .ht_so_capcha{height: 100%;width: 100%;border-radius: 5px;border: 1px solid #ccc;padding: 10px 30px 10px; font-size: 14px; letter-spacing: 5px;} */
+
+/* .error {
+    border: 1px solid red !important;
+} */
+.color_error{
+    color: red;
+}
+
+/* POPUP ĐỔI MẬT KHẨU */
+.popup_doimk_tc{position: fixed; top: 0;left: 0;right: 0;bottom: 0;}
+.popup_doimk_tc_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.popup_doimk_tc_padding_to{background: #FFF;box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;width: 469px; height: 257px;
+    margin: 100px auto 0;
+}
+.popup_doimk_tc_padding{display: flex; justify-content: center; align-items: center; flex-direction: column;padding: 36px 50px 0;}
+.popup_doimk_tc_padding_btn {
+    padding: 9px 0;
+    background: #00CE2D;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup_doimk_tc_padding_text {
+    text-align: center;margin-bottom: 30px;
+}
+.popup_doimk_tc_padding_img{margin-bottom: 30px;}
+
+
+
+.chu-change {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px;
+    margin-left: 0px;
+}
+
+.label_form {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #474747;
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+}
+
+.input_form {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 36px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.t_captcha {
+    line-height: 54px;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    margin-left: 20px;
+    height: 36px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.div_captcha .reset-icon {
+    background: url(/images/newImages/icon_refresh.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 14%;
+    right: 4%;
+    position: absolute;
+}
+
+.control_captcha {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
+
+.div_captcha {
+    width: 34%;
+    position: relative;
+}
+
+.input_captcha {
+    width: 62%;
+}
+
+.form-change {
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 210px;
+}
+#btn-change {
+    background: #F26222;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 9px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* ----- change pass word pers seller prof */
+.show_pass.active::after {
+    background: url(/images/anh_moi/exp_see.png)no-repeat;
+
+}
+
+.show_pass::after {
+    content: '';
+    position: absolute;
+    background: url(/images/anh_moi/exp_nosee.png)no-repeat;
+
+    width: 24px;
+    height: 24px;
+    top: 29px;
+    right: 10px;
+}
+.change_pas_pers{max-width: 1366px;padding: 0px 30px;display: flex;margin: auto;}
+.box-right{margin-right: 0px;width: calc(100% - 300px);padding: 0px 30px;}
+.box-left{height: 100%;position: sticky;}
+.form-control{position: relative;}
+#btn-change{margin-top: 10px;}
+/* ================================ 1024 PX ================================================ */
+@media screen and (max-width: 1024px) {
+
+    .form-change {
+       max-width: 450px;
+       margin: auto;
+       width: 100%;
+    }
+    .change_pas_pers{padding: 0px 20px;}
+}
+
+/* =============================== 768 PX ========================================  */
+@media screen and (max-width: 768px) {
+    .box-right {
+        width: 100%;
+    }
+    .form-change {
+        width: 100%;
+        margin-bottom: 145px;
+    }
+    .change_pas_pers{flex-direction: column;}
+    .box-left{}
+}
+
+/* =============================== 480 PX ========================================  */
+@media screen and (max-width: 480px) {
+    .chu-change {
+        margin: 0px 0px 20px 0px;
+    }
+    .box-right {
+        width: 100%;
+        box-shadow: 0px 0px;
+        padding: unset;
+    }   
+    .form-change {
+        width: 100%;
+        margin: 0px;
+    }
+    .t_captcha {
+        width: 99%;
+    }
+    .input_captcha {
+        width: 53%;
+    }
+    .div_captcha {
+        width: 42%;
+    }
+    .change_pas_pers{margin-top: 30px;}
+    .chu-change{font-size: 20px;line-height: 23px;}
+    .div_bao_ma_xacnhan {
+        height: 36px;
+        width: 58.3%;
+    }
+    .bao_p_capcha {
+        height: 36px;
+        width: 38.4%;
+    }
+}
+
+/* =============================== 375 PX ========================================  */
+@media screen and (max-width: 375px) {
+    .t_captcha {
+        width: 98%;
+    }
+    .box-right {
+        margin-bottom: 60px;
+    }
+}
+
+/* =============================== 320 PX ========================================  */
+@media screen and (max-width: 320px) {
+    .input_captcha {
+        width: 52%;
+    }
+}

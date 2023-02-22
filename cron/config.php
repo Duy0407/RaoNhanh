@@ -1,0 +1,10 @@
+<? 
+require_once("../functions/functions.php"); 
+ob_start();
+require_once("../functions/function_rewrite.php");
+require_once("../classes/user.php");
+require_once("../classes/database.php");
+require_once("../classes/config.php");
+include('../functions/simple_html_dom.php');
+require_once("../classes/curl.php");
+?>

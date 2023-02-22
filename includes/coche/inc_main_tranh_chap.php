@@ -1,0 +1,13 @@
+<div class="main_content descquydinh">
+<p>Người cung cấp tự chịu trách nhiệm về việc cung cấp thông tin lên webite, nếu chủ thể thông tin vi phạm chúng tôi sẻ ngừng cung cấp dịch vụ. Việc giao dịch mua bán thì người cung cấp và khách hàng tự chịu trách nhiệm. Chúng tôi không tham gia vào việc mua bán. Chúng tôi chỉ Công khai cơ chế giải quyết các tranh chấp phát sinh trong quá trình giao dịch trên sàn giao dịch thương mại điện tử Raonhanh365.vn. Khi người tiêu dùng mua hàng hóa hoặc dịch vụ phát sinh mâu thuẫn với người cung cấp hoặc bị tổn hại lợi ích hợp pháp, Raonhanh365.vn sẽ cung cấp cho người tiêu dùng thông tin đăng ký của người bán ngay sau khi nhận được yêu cầu của khách hàng, tích cực hỗ trợ khách hàng bảo vệ quyền và lợi ích hợp pháp của bản thân.
+<p>Raonhanh365.vn không chịu trách nhiệm và không giải quyết các khiếu nại, tranh chấp của người mua và người bán liên quan chất lượng hàng hóa, dịch vụ của người bán đã mua/bán trên Raonhanh365.vn.
+<p>Raonhanh365.vn chỉ giải quyết các khiếu nại của người bán hoặc người mua liên quan tới dịch vụ mà Raonhanh365.vn cung cấp (nếu có).
+<p>Bước 1: Tiếp nhận khiếu nại của người bán hoặc người mua qua mail hotro@Raonhanh365.vn hoặc qua 0466.871.323.
+<p>Bước 2: Chuyển cho phòng ban chịu trách nhiệm giải quyết
+<p>Bước 3: Trong thời hạn 10 ngày làm việc kể từ ngày nhận được khiếu nại của người khiếu nại, Raonhanh365.vn trả lời cho người khiếu nại về kết quả giải quyết khiếu nại.
+<p>Tranh chấp giữa người bán với người mua trong quá trình thực hiện hợp đồng phải được giải quyết trên cơ sở các điều khoản của hợp đồng công bố tại website Raonhanh365.vnvào thời điểm giao kết hợp đồng và quy định của pháp luật có liên quan.
+<p>Trong trường hợp người bán hoặc/và người mua lựa chọn Trọng tài hoặc Tòa án là cơ quan giải quyết tranh chấp giữa người bán và người mua, Raonhanh365.vn cam kết sẽ cung cấp các thông tin cần thiết cho Trọng tài hoặc Tòa án để hỗ trợ cho quá trình giải quyết tranh chấp đó.
+<p>Người bán không được lợi dụng các ưu thế của mình trên môi trường điện tử để đơn phương giải quyết những vấn đề tranh chấp khi chưa có sự đồng ý của người mua.
+<p>Việc giải quyết tranh chấp phải thông qua thương lượng giữa các bên, hòa giải, trọng tài hoặc tòa án theo các thủ tục, quy định hiện hành về giải quyết tranh chấp.
+<p>Raonhanh365.vnđược tham gia hòa giải tranh chấp phát sinh giữa người mua với người bán trên website Raonhanh365.vn của mình nhất là cho khách hàng.
+</div>

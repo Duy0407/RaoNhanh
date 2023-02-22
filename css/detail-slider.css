@@ -1,0 +1,131 @@
+        /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+/*    .jssort101 > div > div div:nth-child(2) div:nth-child(2) .p{
+        left: 145px!important;
+    }*/
+/*    .jssort101 > div > div div:nth-child(2) div:nth-child(n+4){
+        top: 290px!important;
+    }
+     .jssort101 > div > div div:nth-child(2) div:nth-child(3){
+        top: 145px!important;
+    }*/
+/*    .jssort101 > div > div div:nth-child(2) div:nth-child(2){
+        top:145px!important;
+    }*/
+/*    .jssort101 > div > div div:nth-child(2) > div:nth-child(n+3){
+        top:190px!important;
+    }*/
+    .jssora093 {display:block;position:absolute;cursor:pointer;}
+    .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+    .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+    .jssora093:hover {opacity:.8;}
+    .jssora093.jssora093dn {opacity:.6;}
+    .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+    .jssort101 .p {position: absolute;width: 124px;height: 120px}
+    .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+    .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+    .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+    .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+    .jssort101 .p:hover.pdn{padding:0;}
+    .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+    .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+    .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+    .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;object-fit: cover;}
+    .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+.jssort101 .p:hover,#zoon:hover
+{
+   cursor: pointer;
+}
+
+/*css zoon*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

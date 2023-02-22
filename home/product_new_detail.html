@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/css/style_new/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style_new/style.css?v=<?= $version ?>">
+    <link rel="stylesheet" type="text/css" href="/css/style_new/style_b.css?v=<?= $version ?>">
+    <link rel="stylesheet" type="text/css" href="/css/style_new/app.css?v=<?= $version ?>">
+    <link rel="stylesheet" type="text/css" href="/css/style_new/style_t.css?v=<?= $version ?>">
+    <link rel="stylesheet" type="text/css" href="/css/newCss/m_new_dangtin_chung.css?v=<?= $version ?>">
+    <link rel="stylesheet" type="text/css" href="/css/newCss/m_raonhanh_chitiettin.css?v=<?= $version ?>">
+    <title>Chi tiết sản phẩm</title>
+</head>
+<body>
+    <section id="m_trangchitiettin">
+        <div class="continer">
+            <div class="thongtin_tindang d_flex fl_row gap20">
+                <div class="box_chitiettin d_flex fl_cl gap20">
+                    <div class="thongtin_danhmuc_tin d_flex fl_cl gap20">
+                        <div class="title_danhmuc d_flex fl_row gap_5 al_ct">
+                            <p class="title_chitiettin p500_s14_l17">Danh mục lớn</p>
+                            <img src="/images/m_raonhanh_imgnew/arrow-right.png" class="">
+                            <p class="title_chitiettin p500_s14_l17">Danh mục nhỏ</p>
+                            <img src="/images/m_raonhanh_imgnew/arrow-right.png" class="">
+                            <p class="title_chitiettin p500_s14_l17">Danh mục con</p>
+                        </div>
+                        <div class="anh_tin d_flex fl_row gap_15">
+                            <div class="img_sidebar d_flex fl_cl gap_10">
+                                <img src="/images/m_raonhanh_imgnew/avt_sm_ctdm2.png" class="img123 cursor_Pt small_img_tin">
+                                <img src="/images/m_raonhanh_imgnew/avt_sm_ctdm3.png" class="img123 cursor_Pt small_img_tin">
+                                <img src="/images/m_raonhanh_imgnew/avtsm_ctdm.png" class="img123 cursor_Pt small_img_tin">
+                                <img src="/images/m_raonhanh_imgnew/avtsm_ctdm.png" class="img123 cursor_Pt small_img_tin small_img">
+                                <p class="txt_more_img">+3</p>
+                            </div>
+                            <div class="img_tin">
+                                <img src="/images/m_raonhanh_imgnew/avt_bigctdm.png" class="cursor_Pt big_image_tin">
+                                <img src="/images/m_raonhanh_imgnew/avt_bigctdm.png" class="cursor_Pt big_image_tin">
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="text_tin d_flex fl_cl gap_10">
+                            <p class="title_sanpham p_600_s20_l26">Bộ sạc IP PD, Sạc nhanh IP PD 20W, Sạc ổn định an toàn cho IP 6 đến 13 pro max</p>
+                            <div class="box_gia d_flex fl_row jtf_spb">
+                                <p class="title_sanpham p_600_s22_l26 cl_cam">150.000.000.000 <sup class="cl_cam p_600_s22_l26">đ</sup></p>
+                                <div class="like_tin d_flex fl_row al_ct cursor_Pt" onclick="thich_tin(this)">
+                                    <img src="/images/m_raonhanh_imgnew/Favorite_fill.svg" class="url_img_red icon_like_tin img_24" id="icon_liketin" >
+                                    <p class="txt_like_tin pdl_8 cl_red p_400_s14_l17">
+                                        Yêu thích
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="name_toanha_dangsp d_flex fl_row al_ct">
+                                <img src="/images/m_raonhanh_imgnew/City_ctt.svg" class="icon_name_toanha img_18">
+                                <p class="txt_name_toanha pdl_5 p_500_s16_l19">Vehement Capital Partners</p>
+                            </div>
+                            <div class="address_dangsp d_flex fl_row al_ct">
+                                <img src="/images/m_raonhanh_imgnew/location_ctt.svg" class="icon_address_dang img_18">
+                                <p class="txt_address_dang pdl_5 p_400_s15_l18">Thanh Xuân, Hà Nội <a href="#" class="link_address_dang p_400_s15_l18">Xem trên bản đồ</a></p>
+                            </div>
+                            <div class="time_dangsp d_flex fl_row al_ct">
+                                <img src="/images/m_raonhanh_imgnew/timer_tin.svg" class="icon_time_dang img_18">
+                                <p class="txt_time_dang pdl_5 p_400_s14_l17">Đăng 12 phút trước</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chitiet_danhmuc_tin">
+                        <div class="m_thongtin_chitiet">
+                            <p class="txt_thongtinct p_600_s20_l23 d_flex fl_row gap_10"><img src="/images/m_raonhanh_imgnew/linectt1.svg" class="ic_line">Thông tin chi tiết</p>
+                            <div class="container_thongtinchitiet">
+                                <div class="thongtinchitiet">
+                                    <div class="d_flex fl_row al_ct fl_wrap_w">
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_canban_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Cần bán/Cho thuê
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_dtsudung_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Diện tích sử dụng
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    250 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_dientichdat_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Diện tích đất
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_chieudai_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Chiều dài
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    40 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_chieungang_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Chiều ngang
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    5 m
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_sophongngu_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Số phòng ngủ
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    4
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_sotang_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Tổng số tầng
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_sovs_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Số nhà vệ sinh
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    200 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_huongcua_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Hướng cửa chính
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Nam
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_giaytopl_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Giấy tờ pháp lý
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    200 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_noithat_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                   Tình trạng nội thất
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_macan_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Mã căn
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    200 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_tenpklo_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Tên phân khu/lô
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_loaihinhnha_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Loại hình nhà ở
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    200 m<sup>2</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ttct_frame d_flex fl_row al_ct gap_10">
+                                            <img src="/images/m_raonhanh_imgnew/m_ddnha_ctt.svg" class="ttct_fr_icon img28">
+                                            <div class="ttct_fr_txt">
+                                                <p class="ttct_fr_title p_400_s16_l19 cl_66666">
+                                                    Đặc điểm nhà đất
+                                                </p>
+                                                <p class="ttct_fr_content p_400_s16_l19 mgt_4">
+                                                    Cần bán
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_mota_chitiet">
+                            <p class="txt_thongtinct p_600_s20_l23 d_flex fl_row gap_10"><img src="/images/m_raonhanh_imgnew/linectt1.svg" class="ic_line">Mô tả</p>
+                            <div class="motachitiet">
+                                <div class="mtct_content p_400_s16_l26 w100">
+                                    Hàng không có sẵn, ĐẶT 5-10 NGÀY MỚI CÓ HÀNG ĐỂ SHIP - CAM KẾT HÀNG Y HÌNH, MÀU SẮC CÓ THỂ KHÁC CHÚT SO VỚI ẢNH DO ÁNH SÁNG KHI CHỤP. 
+                                    TRẢ LẠI NẾU SAI HÌNH. - KHÔNG ĐỔI TRẢ SIZE. CAM KẾT BÁN HÀNG CHẤT LƯỢNG , 
+                                    CHUẨN NHƯ HÌNH ẢNH CUNG CẤP VÀ CHẤT LƯỢNG 100% NHƯ TƯ VẤN KHÁCH MUỐN NHẬP SỈ VUI LÒNG INBOX NHÉ 580006155109 ĐẾ CAO 3CM
+                                </div>
+                                <div class="box_mtct_text d_flex fl_row al_ct gap_10">
+                                    <p class="mtct_tilte p_400_s16_l19">
+                                        Số điện thoại liên hệ:
+                                    </p>
+                                    <p class="mtct_show p_400_s16_l19 cl_cam cursor_Pt">
+                                        0123456789 Bấm để xem thông tin
+                                    </p>
+                                </div>
+                                <div class="box_mtct_text d_flex fl_row al_ct gap_10">
+                                    <p class="mtct_tilte p_400_s16_l19">
+                                        Email liên hệ:
+                                    </p>
+                                    <p class="mtct_show p_400_s16_l19 cl_cam cursor_Pt">
+                                        taaaa *** Bấm để xem thông tin
+                                    </p>
+                                </div>
+                                <div class="box_mtct_text d_flex fl_row al_ct gap_10">
+                                    <p class="mtct_tilte p_400_s16_l19">
+                                        Địa chỉ liên hệ:
+                                    </p>
+                                    <p class="mtct_show mtct_show_add p_400_s16_l19">
+                                        72, Ngõ 114, Phố Trần Quốc Toản, Quang trung, Hà Nội
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_danhmuc_chitiet">
+                            <p class="txt_thongtinct p_600_s20_l23 d_flex fl_row gap_10"><img src="/images/m_raonhanh_imgnew/linectt1.svg" class="ic_line">Chi tiết danh mục</p>
+                            <div class="danhmucchitiiet">
+                                <span class="dmct_text p_400_s16_l19 cl_cam">
+                                    Nhà phố liền kề giá rẻ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_human">
+                    <div class="d_flex fl_cl gap20">
+                        <div class="container_nguoiban">
+                            <div class="m_thongtin_nguoi">
+                                <div class="box_nguoi d_flex fl_row al_ct gap_10">
+                                    <div class="anhdaidien">
+                                        <img src="/images/m_raonhanh_imgnew/chat365.png" class="avatar_nguoi img60 rdu50">
+                                        <div class="m_trangthai_hd">
+                                            <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                            <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                        </div>
+                                    </div>
+                                    <div class="thongtinnguoi d_flex fl_cl gap_5">
+                                        <p class="human_ten p_500_s16_l19">Mạnh</p>
+                                        <p class="human_banla p_400_s14_l16 cl_66666">Cá nhân</p>
+                                        <p class="human_thamgia p_400_s14_l16 cl_66666">tham gia: 01/10/2022</p>
+                                        <a href="" class="human_trangcn cursor_Pt p_500_s14_l16 cl_cam">Xem trang cá nhân</a>
+                                    </div>
+                                </div>
+                                <div class="danhgianguoi d_flex fl_row al_ct gap_15">
+                                    <div class="m_danhgia d_flex fl_cl gap_10">
+                                        <p class="txt_danhgia p_500_s13_l15 cl_99999 txt_al_ct">
+                                            Đánh giá (65)
+                                        </p>
+                                        <div class="box_img_sao d_flex fl_row al_ct gap_3 jtf_ct">
+                                            <img src="/images/m_raonhanh_imgnew/sao3.png" class="icon_sao_danhgia img20">
+                                            <img src="/images/m_raonhanh_imgnew/sao3.png" class="icon_sao_danhgia img20">
+                                            <img src="/images/m_raonhanh_imgnew/sao3.png" class="icon_sao_danhgia img20">
+                                            <img src="/images/m_raonhanh_imgnew/sao3.png" class="icon_sao_danhgia img20">
+                                            <img src="/images/m_raonhanh_imgnew/sao2.png" class="icon_sao_danhgia img20">
+                                        </div>   
+                                    </div>
+                                    <img src="/images/m_raonhanh_imgnew/Line 19.png">
+                                    <div class="m_phanhoi_chat d_flex fl_cl gap_10">
+                                        <p class="txt_phanhoi p_500_s13_l15 cl_99999 txt_al_ct">
+                                            Phản hồi chat
+                                        </p>
+                                        <p class="phantran_phanhoi txt_al_ct p_500_s20_l24">
+                                            87%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_maQR_nguoi">
+                                <div class="box_QR_nguoi d_flex fl_cl gap_7 al_ct">
+                                    <img src="/images/m_raonhanh_imgnew/QR.png" class="img_QR_nguoi img110">
+                                    <p class="mtxt_QR_nguoi p_400_s15_l18 txt_al_ct">Quét mã QR chat ngay</p>
+                                </div>
+                            </div>
+                            <div class="m_Lienhe_nguoi d_flex fl_cl w100 al_ct gap_15">
+                                <div class="lhn_chatngay d_flex fl_row gap_10 cursor_Pt">
+                                    <img src="/images/m_raonhanh_imgnew/lhn_chat.png" class="icon_lhn_chat img_22">
+                                    <p class="txt_chatngay p_500_s15_l18">Chat ngay</p>
+                                </div>
+                                <div class="lhn_sodienthoai d_flex fl_row gap_10">
+                                    <img src="/images/m_raonhanh_imgnew/lhn_sdt.png" class="icon_lhn_sdt img_22">
+                                    <div class="box_lhn_sdt">
+                                        <p class="lhn_show_sdt d_none"></p>
+                                        <p class="lhn_hide_sdt cl_green p_500_s15_l18 cursor_Pt">Nhấn để hiện số</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_khachhang">
+                            <div class="title_khachhang_online d_flex fl_row al_ct jtf_ct gap_8">
+                                <img src="/images/m_raonhanh_imgnew/icon_khonline.svg" class="ic_khol img30">
+                                <p class="txt_kh_online p_500_s16_l19 cl_fffff">
+                                    Khách hàng online
+                                </p>
+                            </div>
+                            <div class="show_khachhang_online">
+                                <p class="title_more_khonl d_flex fl_row gap_5 jtf_end pdr_10">
+                                    Xem thêm <img src="/images/m_raonhanh_imgnew/more_kh.svg" class="icon_more_khonl img_18">
+                                </p>
+                                <div class="box_show_khonl d_flex fl_cl gap_24">
+                                    <div class="fr_show_khonl d_flex fl_row al_ct gap_10">
+                                        <div class="anhdaidien_khonl">
+                                            <img src="/images/m_raonhanh_imgnew/chat365.png" class="avt_khonl img55 rdu50">
+                                            <div class="m_trangthai_hd">
+                                                <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16">
+                                            </div>
+                                        </div>
+                                        <div class="thongtin_khonl d_flex fl_cl gap_5">
+                                            <p class="ttkhonl_name p_500_s16_l19">
+                                                Mạnh
+                                            </p>
+                                            <p class="ttkhonl_diachi p_400_s14_l16 cl_99999">
+                                                Hà Nội
+                                            </p>
+                                            <p class="ttkhonl_tindang p_400_s14_l16">
+                                                Bán tủ lạnh, điều hòa, máy giặt, máy sấy, lò vi sóng
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="fr_show_khonl d_flex fl_row al_ct gap_10">
+                                        <div class="anhdaidien_khonl">
+                                            <img src="/images/m_raonhanh_imgnew/chat365.png" class="avt_khonl img55 rdu50">
+                                            <div class="m_trangthai_hd">
+                                                <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16">
+                                            </div>
+                                        </div>
+                                        <div class="thongtin_khonl d_flex fl_cl gap_5">
+                                            <p class="ttkhonl_name p_500_s16_l19">
+                                                Mạnh
+                                            </p>
+                                            <p class="ttkhonl_diachi p_400_s14_l16 cl_99999">
+                                                Hà Nội
+                                            </p>
+                                            <p class="ttkhonl_tindang p_400_s14_l16">
+                                                Bán tủ lạnh, điều hòa, máy giặt, máy sấy, lò vi sóng
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="morong_tindang">
+                <div class="box_mrtd d_flex fl_row al_ct gap_15">
+                    <div class="mrtd_sosanh d_flex fl_row al_ct gap_5 cursor_Pt bg_blue_nhat">
+                        <img src="/images/m_raonhanh_imgnew/sosanh.svg" class="icon_mrtd_sosanh">
+                        <p class="txt_sosanh p_400_s15_l18 cl_blue_nhat">So sánh</p>
+                    </div>
+                    <div class="mrtd_baocao d_flex fl_row al_ct gap_5 cursor_Pt bg_blue_nhat">
+                        <img src="/images/m_raonhanh_imgnew/baocao.svg" class="icon_mrtd_baocao">
+                        <p class="txt_baocao p_400_s15_l18 cl_blue_nhat">Báo cáo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="binhluan_tindang">
+
+            </div>
+            <div class="tintuongtu_tindang d_flex fl_cl gap_20">
+                <p class="title_tindangtuongtu p_500_s20_l24">
+                    Tin đăng tương tự
+                </p>
+                <div class="box_tindangtuongtu d_flex fl_row fl_wrap_w gap_15">
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                        Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                        100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18 d_none">
+                                        <p class="txt_chat_tdtt p_400_s15_l18">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                        Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                        100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18 d_none">
+                                        <p class="txt_chat_tdtt p_400_s15_l18">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                        Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                        100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18 d_none">
+                                        <p class="txt_chat_tdtt p_400_s15_l18">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                        Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                        100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18 d_none">
+                                        <p class="txt_chat_tdtt p_400_s15_l18">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                        Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                        100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18 d_none">
+                                        <p class="txt_chat_tdtt p_400_s15_l18">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="show_tdtt">
+                        <div class="d_flex fl_row gap_8">
+                            <div class="avatar_tdtt">
+                                <a href="">
+                                    <img src="/images/m_raonhanh_imgnew/avatar_tdtt.png" class="avt_tdtt img_131 rdu10">
+                                <div class="m_trangthai_hd">
+                                    <span class="m_dangoff p_500_s8_l9 cl_green">12 phút</span>
+                                    <img src="/images/m_raonhanh_imgnew/trangthaihd.svg" class="m_danghoatdong img_16 d_none">
+                                </div>
+                                <div class="tdtt_slanh">
+                                    <img src="/images/m_raonhanh_imgnew/sl_anh_tdtt.png" class="ic_slanh">
+                                    <p class="txt_slanh_tdtt p_500_s12_l14">4</p>
+                                </div>
+                                <div class="tdtt_yeuthich">
+                                    <img src="/images/m_raonhanh_imgnew/fvr_fill.svg" class="ic_like_img img20 cursor_Pt">
+                                </div>
+                                <div class="tdtt_xacthucttdb">
+                                    <img src="/images/m_raonhanh_imgnew/xt_ttdb.svg" class="">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="thongtin_tdtt">
+                                <p class="title_tdtt p_500_s16_l19 cursor_Pt">
+                                    <a href="">Bán nhà mặt phố ở định công hoàng mai Hà Nội Việt Nam</a>
+                                </p>
+                                <div class="user_tdtt d_flex fl_row al_ct gap_5">
+                                    <img src="/images/m_raonhanh_imgnew/us_td.svg" class="ic_ustdtt img_18">
+                                    <p class="txt_name_ustdtt p_400_s15_l18">
+                                        Mạnh
+                                    </p>
+                                </div>
+                                <div class="tdtt_time_location d_flex fl_row al_ct">
+                                    <div class="tdtt_time d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/timer_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_time_tdtt p_400_s15_l18">
+                                            2 giờ trước
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_location d_flex fl_row al_ct gap_5">
+                                        <img src="/images/m_raonhanh_imgnew/location_td.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_location_tdtt p_400_s15_l18">
+                                           Hà Nội
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tdtt_price_message d_flex fl_row al_ct">
+                                    <div class="tdtt_price d_flex fl_row al_ct">
+                                        <p class="txt_price_tdtt p_600_s15_l18 cl_cam">
+                                           100.000.000 đ
+                                        </p>
+                                    </div>
+                                    <div class="tdtt_message d_flex fl_row al_ct gap_5 cursor_Pt">
+                                        <img src="/images/m_raonhanh_imgnew/chat_td.svg" class="ic_ustdtt img_18 d_none">
+                                        <img src="/images/m_raonhanh_imgnew/chat_xanh.svg" class="ic_ustdtt img_18">
+                                        <p class="txt_chat_tdtt p_400_s15_l18 cl_green">
+                                            Chat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--  -->
+                    
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <style>
+                    .show_tdtt {
+                        animation-name: fade;
+                        animation-duration: 1.5s;
+                    }
+
+                    @keyframes fade {
+                        from {
+                            opacity: .4
+                        }
+
+                        to {
+                            opacity: 1
+                        }
+                    }
+                    .active,
+                        .dot:hover {
+                            background-color: #717171;
+                        }
+                </style>
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="tttd_ketnoimuaban">
+            <div class="box_knmb d_flex fl_row al_ct jtf_spb">
+                <div class="fr_knmb d_flex fl_row gap_20 al_ct">
+                    <img src="/images/m_raonhanh_imgnew/daux.svg" class="thoat_knmb img30 cursor_Pt">
+                    <p class="knmb_txt p_500_s20_l24 cl_fffff">
+                        Kết nối người bán và người mua
+                    </p>
+                </div>
+                <div class="box_chatvoinguoiban d_flex fl_row al_ct cursor_Pt gap_10">
+                    <p class="chatnguoiban_txt p_500_s16_l19 cl_fffff">
+                        Chat với người bán
+                    </p>
+                    <img src="/images/m_raonhanh_imgnew/chat_trang.svg" class="icon_chatnb img_18">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/js/style_new/jquery-3.4.1.min.js"></script>
+    <script src="/js/slickslider/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="../js/newJs/admin.main.js"></script> -->
+    <!-- <script src="/js/m_raonhanh_new.js"></script> -->
+    <script>
+         $('.img_tin').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+            });
+            function thich_tin(e){
+               
+               var url_img_red = `/images/m_raonhanh_imgnew/Favorite_fill.svg`;
+               var url_img_white = `/images/m_raonhanh_imgnew/Favorite_fill_1.svg`;
+               var da_like = `Đã yêu thích`;
+               var chua_like = `Yêu thích`;
+               if($('#icon_liketin').hasClass('url_img_red')){
+                console.log(1111)
+                $('#icon_liketin').removeClass('url_img_red');
+                $('#icon_liketin').addClass('url_img_white');
+                $('#icon_liketin').attr("src",url_img_white);
+                $('.txt_like_tin').text(da_like);
+                $('.txt_like_tin').addClass('cl_fffff');
+                $(e).addClass('bg_red');
+               }else{
+                console.log(1111)
+                $('#icon_liketin').addClass('url_img_red');
+                $('#icon_liketin').removeClass('url_img_white');
+                $('#icon_liketin').attr("src",url_img_red);
+                $('.txt_like_tin').text(chua_like);
+                $(e).removeClass('bg_red');
+                $('.txt_like_tin').removeClass('cl_fffff');
+               }
+            }
+            $(document).ready(function(){
+                var height_human = $('.box_human').height();
+                var height_chitiettin = $('.box_chitiettin').height();
+                var container_khachhang = $('.container_khachhang').height();
+                var container_nguoiban = $('.container_nguoiban').height();
+                if(height_human < height_chitiettin){
+                    var height = height_chitiettin - height_human;
+                    $('.box_human').height(height_human + height);
+                    var height2 = (height_human + height) - (container_khachhang + container_nguoiban + 20);
+                    $('.container_khachhang').height(container_khachhang + height2)
+                }
+            })
+
+            $('.thoat_knmb').click(function(){
+                $('.box_knmb').hide();
+            })
+
+
+            let slideIndex = 1;
+            showSlides(slideIndex+1);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i ;
+                let slides = document.getElementsByClassName("show_tdtt");
+                console.log(slides);
+                let dots = document.getElementsByClassName("dot");
+                console.log(dots);
+                if (n > slides.length) {
+                    slideIndex = 1;
+                    console.log(slides.length + ';');
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                // dots[slideIndex - 1].className += "active";
+            }
+    </script>
+</body>
+</html>

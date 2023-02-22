@@ -1,0 +1,190 @@
+.clear{clear: both;}
+.add_menu,.edit_menu{display: inline-block;width: 48%;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    padding: 25px 20px;
+    margin-left: 200px;
+  }
+
+.add_menu{float: left;}
+.add_menu table{width: 100%}
+.add_menu tr:not(:first-child) td{padding-top:   12px}
+.add_menu input[name = add_menu]{background-image: url(/images/add_menu_bg.png);}
+.add_menu tr td p{text-align: left;font-size: 13px;color: #666766;font-weight: bold;}
+.add_menu tr td:first-child{width: 120px}
+.add_menu tr:last-child{padding: 12px 0px 20px 0px}
+.edit_menu{float: right}
+.btn_submit{padding-left: 10px;text-align: center;}
+.add_menu tr:last-child td input{margin: auto;}
+.edit_menu input[name = edit]{float: left;background-image: url(/images/edit_bg.png);}
+.edit_menu input[name = add_child]{float: right;background-image: url(/images/add_menu_child.png);color: #444545;font-weight: bold;font-size: 12px;padding-left: 20px}
+input[name = name_product],input[name = stt]{
+    width: 100%;
+    height: 29px;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    padding-left: 15px;
+    line-height: 30px;
+    font-family: Roboto,sans-serif;
+    font-style: italic;}
+input[name = stt]{width: 50px}
+.check_box_ct{-webkit-transition:all 0.5s;transition: all 0.5s;margin-top: 5px;;float: right;width: 15px;height: 15px;background-image: url(/images/checked_box.png);display: inline-block;vertical-align: middle;}
+.text_after{font-size: 13px;color: #666766;font-weight: bold; margin-left: 20px  }
+.table_product{margin-top: 30px}
+.table_product table{width: 100%;border: 1px solid #e1e2e1;border-radius: 3px;border-collapse: collapse;}
+.table_product table,.table_product table tr,.table_product table td{border: 1px solid #e1e2e1}
+.table_product table td{text-align: center;padding: 10px}
+.table_product table tbody tr:first-child td{background-color: #f3f3f3;font-size: 13px;font-weight: bold;color: #666766;}
+.group_name_product{width: 100%;
+    height: 29px;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666766;
+    padding-left: 15px;
+    line-height: 30px;
+    font-family: Roboto,sans-serif;
+
+
+  }
+  .stt_group{display: inline-block;  border: 1px solid #e1e2e1;border-radius: 3px;height: 29px;line-height: 30px;width: 24px;font-size: 15px;color: #f26222}
+  .link_to_group{color: #0e83be;font-size: 13px;font-style: italic;font-weight: 500;}
+  .table_product .check_box_ct{float: none;}
+  .delete_group_btn{-webkit-transition:all 0.5s;transition: all 0.5s;background-image: url(/images/delete_btn_nomal.png);width: 89px;height: 24px;border: 0px;font-weight: bold;color: #444545;padding-left:10px;font-size: 13px;}
+  .delete_group_btn:hover{cursor: pointer;background-image: url(/images/delete_btn_bg.png);font-weight: 500;color: #fff;padding-left:10px;font-size: 13px;}
+
+  
+  .main_info tr select{
+    height: 29px;
+    width: 100%;
+    line-height: 29px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #666766;
+    font-weight: bold;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    background: url(../images/icrow_den.png)no-repeat;
+    background-position: 215px 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+}
+.table_product tr select{
+    width: 170px;
+    background-position: 150px 8px;
+}
+.checked_false{
+    background-image: url(/images/check_box.png);
+    -webkit-transition:all 0.5s;
+    transition: all 0.5s;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.checked_true{
+    background-image: url(/images/checked_box.png);
+    -webkit-transition:all 0.5s;
+    transition: all 0.5s;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.hidden{
+    display: none;
+}
+.active{
+    display: block;
+}
+.dm_name_gh{
+    line-height: 29px;
+    height: 29px;
+    padding-left: 15px;
+    width: 100%;
+    text-align: left;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666766;
+}
+.stt_input{
+    line-height: 29px;
+    height: 29px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666766;
+    width: 24px;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    text-align: center;
+}
+.check_box_ct2{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.table_product input{
+    box-shadow:  0px 0px 2px #7bc5e3;
+}
+.table_product select{
+    box-shadow:  0px 0px 2px #7bc5e3;
+}
+.add_cate_con select{
+    width: 100%;
+    height: 29px;
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    padding-left: 15px;
+    line-height: 30px;
+    font-family: Roboto,sans-serif;
+    font-style: italic;
+    background: url(../images/icrow_den.png)no-repeat;
+    background-position: 215px 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+}
+.add_cate_con .btn_dangky{
+    margin-left: 130px!important;
+}
+.table_product tr span{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666766;
+    padding-left: 15px;
+    font-family: Roboto,sans-serif;
+}
+.table_product tr .danhmuc_cha{
+    background-position: 200px 6px;
+}
+.table_product tr .dm_order{
+    border: 1px solid #e1e2e1;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666766;
+    font-family: Roboto,sans-serif;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}

@@ -1,0 +1,410 @@
+.left_box {
+    float: left;
+    width: 240px;
+}
+.filter {
+    float: left;
+}
+.btn_button, .col3 p, .cuoi_fil, .filter h2 {
+    text-align: center;
+}
+.box, .filter h2, .top_box {
+    float: left;
+    width: 100%;
+}
+.filter h2 {
+    height: 42px;
+    background: #f26222;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 43px;
+}
+.bot_box, .top_box {
+    border-bottom: 1px solid #e1e2e1;
+}
+.box, .filter h2, .top_box {
+    float: left;
+    width: 100%;
+}
+.box {
+    border-left: 1px solid #e1e2e1;
+    border-right: 1px solid #e1e2e1;
+}
+.top_box {
+    height: 40px;
+    background: #f3f3f3;
+    color: #666766;
+    font-size: 13px;
+    line-height: 41px;
+}
+.lbox {
+    background: url(/images/ic_l.png) 11px no-repeat;
+    padding-left: 30px;
+    color: #666766;
+    font-weight: 500;
+}
+.rbox {
+    float: right;
+    background: url(/images/ic_re.png) no-repeat;
+    width: 12px;
+    height: 13px;
+    margin-top: 16px;
+    margin-right: 11px;
+}
+.slcity {
+    background: url(/images/icon_city.png) 24px 28px no-repeat;
+}
+.bot_box, .top_box {
+    border-bottom: 1px solid #e1e2e1;
+}
+.bot_box {
+    float: left;
+    width: 100%;
+    padding: 13px 9px;
+}
+#select_cate, #select_city, #select_price, #select_view {
+    float: left;
+    width: 100%;
+    border: 0;
+    border: 1px solid #e1e2e1;
+    height: 44px;
+    border-radius: 5px;
+    font-family: Roboto,sans-serif;
+    line-height: 45px;
+    padding-left: 40px;
+    background: url(/images/icrow.png) 193px 13px no-repeat;
+    font-weight: 500;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+.cuoi_fil, .datepick input, .rule {
+    float: left;
+    width: 100%;
+}
+.cuoi_fil {
+    height: 80px;
+    background: #f3f3f3;
+    border-left: 1px solid #e1e2e1;
+    border-bottom: 1px solid #e1e2e1;
+    border-right: 1px solid #e1e2e1;
+}
+.box_uutien h2, .btn_button {
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn_button {
+    width: 175px;
+    height: 36px;
+    background: #f26222;
+    display: inline-block;
+    line-height: 37px;
+    color: #fff;
+    margin-top: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0;
+    font-family: Roboto,sans-serif;
+}
+.datepick input {
+    height: 44px;
+    border: 1px solid #e1e2e1;
+    line-height: 45px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: Roboto,sans-serif;
+    padding-left: 46px;
+    margin-bottom: 6px;
+    background: url(/images/ic_date.png) 21px 13px no-repeat;
+}
+.main_cate #filter-left-uutien {
+    width: 100%;
+    height: 408px;
+    background-color: #f3f3f3;
+    margin-top: 25px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.main_cate #filter-left-uutien h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    padding: 15px 0 15px 10px;
+}
+.main_cate .uutien-main {
+    width: 231px!important;
+    margin: 0 10px 30px 15px;
+    background-color: #fff;
+    position: relative;
+    float: left;
+    object-fit: cover;
+    padding: 10px;
+}
+.img_qt, .img_qt img {
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+}
+.img_qt {
+    float: left;
+    height: 143px;
+    background: #f2f2f2;
+    line-height: 141px;
+}
+.uutien-main-top {
+    height: 143px;
+}
+.img_qt span {
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    background: url(/images/bg_ct.png) no-repeat;
+    width: 97px;
+    height: 27px;
+    font-size: 10.21px;
+    color: #f4f4f4;
+    line-height: 18px;
+}
+.img_qt img {
+    vertical-align: middle;
+    object-fit: cover;
+    height: 100%;
+}
+.main_cate .uutien-main-top .img1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.cate_qt {
+    width: 100%;
+    line-height: 29px;
+    border-bottom: 1px solid #e8e7e7;
+}
+.cate_qt, .cate_qt a {
+    float: left;
+    height: 28px;
+}
+.cate_qt a {
+    font-size: 11px;
+    color: #7c481f;
+    line-height: 28px;
+    width: 105px;
+}
+.box_left h3, .cate_qt a, .cate_qt span, .div_show_phone p, .img_qt span, .price_qt, .time_qt {
+    font-weight: 500;
+}
+.box_left, .cate_qt a, .menu_qt ul, .ulmenu li a {
+    overflow: hidden;
+}
+.banner h1, .img_qt span, .menu_qt ul li span, .mm_top, .ulmenu li {
+    text-transform: uppercase;
+}
+.cate_qt span {
+    float: right;
+    font-size: 12px;
+    background: url(/images/ic_view.png) 7px 9px no-repeat;
+    padding-left: 25px;
+}
+.cate_qt span, .main_qt h3 a {
+    color: #5f6160;
+}
+.main_qt h4, .uutien-main h4 {
+    float: left;
+    width: 100%;
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 14px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    height: 65px;
+}
+.time_qt {
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    color: #929292;
+    line-height: 11px;
+    padding-bottom: 5px;
+}
+.price_qt {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: #f36e21;
+    padding-bottom: 23px;
+}
+.img_top, .lh_qt {
+    position: relative;
+}
+.lh_qt {
+    float: left;
+    width: 100%;
+}
+.address_qt, .phone_qt {
+    border-radius: 2px;
+    line-height: 22px;
+    color: #f4f4f4;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.address_qt {
+    float: left;
+    width: 90px;
+    height: 22px;
+    background: url(/images/ic_address.png) 12px 4px no-repeat #00a787;
+    padding-left: 26px;
+    margin-right: 10px;
+}
+.phone_qt {
+    float: right;
+    width: 90px;
+    height: 22px;
+    background: url(/images/ic_phone.png) 11px 6px no-repeat #f36e21;
+    padding-left: 25px;
+}
+.div_show_phone {
+    position: absolute;
+    width: 210px;
+    height: 97px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #e1e2e1;
+    top: -110px;
+    right: -15px;
+}
+.div_show_phone p {
+    width: 100%;
+    line-height: 32px;
+    color: #fff;
+    background-color: #f26222;
+    height: 32px;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.div_show_phone span {
+    height: 44px;
+    width: 189px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #e1e2e1;
+    float: left;
+    color: #f26222;
+    font-size: 21px;
+    font-weight: 500;
+}
+.thongbao_diachi {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(1,1,1,.5);
+}
+.popup_diachi {
+    width: 406px;
+    height: 322px;
+    margin: 100px auto 0;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+.thongbao_diachi .popup_diachi>span {
+    float: left;
+    width: 100%;
+    height: 35px;
+    background: #f26222;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    line-height: 36px;
+    text-align: left;
+    border-bottom: 1px solid #f26222;
+    padding-left: 15px;
+}
+.thongbao_diachi .close_btn {
+    background: url(../images/SDT-DIACHI_close.png) no-repeat;
+    top: 10px;
+    right: 10px;
+}
+.thongbao_diachi i {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+}
+.popup_diachi_main {
+    width: calc(100% - 20px);
+    padding: 9px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    height: calc(100% - 55px);
+}
+.slcate, .slview {
+    background: url(/images/ic_view_top.png) 24px 28px no-repeat;
+}
+.slprice {
+    background: url(/images/ic_price.png) 24px 28px no-repeat;
+}
+.check_cb input {
+    position: relative;
+    top: 1.5px;
+    display: none;
+}
+.check_cb label, .datepick input, .rule {
+    font-size: 12px;
+    color: #999;
+}
+.check_cb label {
+    float: left;
+    width: 100%;
+    margin-left: 18px;
+    padding-left: 25px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+.check_cb label {
+    position: relative;
+    cursor: pointer;
+}
+.control__indicator {
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background: #fff;
+    border: 1px solid #989898;
+    cursor: pointer;
+}
+.boxAddMoney_content .clr:after, .control__indicator:after, .listOpt a.active:before {
+    content: '';
+}
+.check_cb label:last-of-type {
+    margin-bottom: 0;
+}
+.check_cb input:checked~.control__indicator {
+    background: #f26222;
+    border: 0;
+}
+button.slick-prev.slick-arrow {
+    display: none !important;
+}
+@media screen and (max-width: 1123px){
+    .left_box {width: 25%;}
+}
+@media screen and (max-width: 768px){
+    .left_box,.filter,.filter h2 {width: 100%;}
+    .main_filter{display: none;}
+}

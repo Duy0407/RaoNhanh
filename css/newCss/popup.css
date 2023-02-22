@@ -1,0 +1,1054 @@
+.t_popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+    padding-top: 10%;
+    background: #33333361;
+}
+
+.t_popup .box-check {
+    width: 40%;
+    margin: auto;
+}
+
+.t_popup .box-check .modal-content {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+
+.t_popup .box-check .modal-content .title_modal {
+    font-weight: 700;
+    font-size: 36px;
+
+    text-align: center;
+
+    color: #474747;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+
+.t_popup .box-check .modal-content .text-check-mail {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.btn_modal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn_modal .btn_general {
+    background: #FFFFFF;
+    border: 1px solid #F26222;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn_modal .btn_backHome {
+    text-align: center;
+    color: #F26222;
+    cursor: pointer;
+}
+
+.btn_modal .btn_resendMail {
+    background: #F26222;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+/* ----  */
+.modalmarkedAsSold {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 6%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup_resell {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 6%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalmarkedAsSold .box-check,
+.popup_resell .box-check {
+    margin: auto;
+    width: 100%;
+    max-width: 469px;
+}
+
+.modalmarkedAsSold .modal-content,
+.popup_resell .modal-content {
+    background-color: #fefefe;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.modalmarkedAsSold .close,
+.popup_resell .close {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    margin-right: 13px;
+}
+
+.modalmarkedAsSold .close:hover,
+.modalmarkedAsSold .close:focus,
+.popup_resell .close:hover,
+.popup_resell .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalmarkedAsSold .title-modal,
+.popup_resell .title-modal {
+    background: #F26222;
+    color: #FFFFFF;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modalmarkedAsSold .text_title_modal,
+.popup_resell .text_title_modal {
+    width: 96%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modalmarkedAsSold .text-check-mail,
+.popup_resell .text-check-mail {
+    padding: 30px 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.modalmarkedAsSold .btn_modal,
+.popup_resell .btn_modal {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center !important;
+}
+
+.modalmarkedAsSold .btn-cancel,
+.popup_resell .btn-cancel {
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FF0000;
+    padding: 9px 26px;
+}
+
+.modalmarkedAsSold .btn-success,
+.popup_resell .btn-success {
+    background: #00CE2D;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 9px 26px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* số dư tài khoản  */
+.modalSdkd {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 6%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalSdkd .box-check {
+    margin: auto;
+    max-width: 469px;
+    width: 100%;
+}
+
+.modalSdkd .modal-content {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
+.modalSdkd .close {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    margin-right: 13px;
+}
+
+.modalSdkd .close:hover,
+.modalSdkd .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalSdkd .title-modal {
+    background: #F26222;
+    color: #FFFFFF;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modalSdkd .text_title_modal {
+    width: 96%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modalSdkd .text-check-mail {
+    padding: 30px 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.modalSdkd .btn_modal {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.modalSdkd .btn-cancel {
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FF0000;
+    padding: 8px 30px;
+    width: 23%;
+    height: 36px;
+    cursor: pointer;
+}
+
+.modalSdkd .btn-success {
+    background: #04E928;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 36px;
+    padding: 9px 30px;
+    margin-left: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+/* xác nhận thanh toán */
+.modalPaymentConf {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 6%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalPaymentConf .box-check {
+    margin: auto;
+    width: 34.5%;
+}
+
+.modalPaymentConf .modal-content {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
+.modalPaymentConf .close {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    margin-right: 13px;
+}
+
+.modalPaymentConf .close:hover,
+.modalPaymentConf .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalPaymentConf .title-modal {
+    background: #F26222;
+    color: #FFFFFF;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modalPaymentConf .text_title_modal {
+    width: 96%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modalPaymentConf .text-check-mail {
+    padding: 30px 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.modalPaymentConf .btn_modal {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.modalPaymentConf .btn-cancel {
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FF0000;
+    padding: 8px 30px;
+    width: 23%;
+    height: 36px;
+}
+
+.modalPaymentConf .btn-success {
+    background: #04E928;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 36px;
+    padding: 9px 30px;
+    margin-left: 30px;
+    width: 26%;
+    text-align: center;
+}
+
+/* ghim tin */
+.modalPinNew {
+    display: none;
+    position: fixed;
+    z-index: 31;
+    padding: 6% 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.click {
+    width: 100%;
+}
+
+.modalPinNew .main-content {
+    /* padding: 20px 20px 30px 20px; */
+}
+.modalPinNew .n_box_top {
+    padding: 30px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 30px;
+}
+.main-content.df{flex-direction: column;}
+
+.modalPinNew .box-check {
+    margin: auto;
+    max-width: 730px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.modalPinNew .modal-content {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
+.modalPinNew .close,
+.modalPaymentConf .close-tt,
+.modalSdkd .close-sd {
+    color: #FFFFFF;
+    font-size: 28px;
+    float: right;
+    margin-right: 18px;
+    width: 3%;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 17px;
+    border: 0px;
+    background: #F26222;
+}
+
+.modalPinNew .close:hover,
+.modalPinNew .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalPinNew .title-modal {
+    background: #F26222;
+    color: #FFFFFF;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-p2 {
+    padding: 20px 20px 30px 20px;
+}
+
+.modalPinNew .text_title_modal {
+    width: 96%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modalPinNew .box-click {
+    background: #F2F2F2;
+    border-radius: 10px;
+    padding: 21px 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ghimtin_chek {
+    outline: 0;
+    width: 0;
+    height: 0;
+}
+
+.modalPinNew .text-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    width: 100%;
+    color: #474747;
+}
+
+.modalPinNew .box-select {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #474747;
+    opacity: 0.5;
+}
+
+.modalPinNew .box-switch {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.modalPinNew .text-switch {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 10px;
+
+}
+
+.btn-switch {
+    background: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+input#checkedAll {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalPinNew .selected {
+    background: rgba(242, 98, 34, 0.2) !important;
+    color: #F26222 !important;
+}
+
+.modalPinNew .so-ngay {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    align-items: center;
+}
+
+.border-box {
+    border: 1px solid #F26222;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    height: 36px;
+}
+
+.tru {
+    float: left;
+    width: 29% !important;
+    font-size: 24px;
+}
+
+.btn {
+    border: 0px;
+    background: #FFF;
+    cursor: pointer;
+    color: #F26222;
+    height: 34px;
+    border-radius: 10px;
+}
+
+.slc {
+    color: #F26222 !important;
+}
+
+.so {
+    border: 1px solid #F26222;
+    width: 42%;
+    text-align: center;
+    height: 35px;
+    position: absolute;
+    left: 30%;
+    top: -2%;
+}
+/* -------------popup dịch vụ---------------- */
+.popup_cha {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.popup_bg {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+}
+.space_b{justify-content: space-between;}
+.img_close {
+    position: absolute;
+    right: 17px;
+}
+.popup_title {
+    color: #FFFFFF;
+    background: #F26222;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+.container_popup {
+    width: 563px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51;
+}
+.khoi_ghimtin,.khoi_daytin{width: 48%;}
+.title_pp{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #474747;
+}
+.text_pp{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    width: 185px;
+}
+.ghim_daytin{
+    padding: 47px 20px 40px 20px;
+}
+.btn_pp{
+    border: 1px solid #F26222;
+    border-radius: 6px;
+    color: #F26222;
+    width: 48%;
+    padding: 10px 76px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_select{margin-top: 30px;}
+/* ------------------------------------ */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    display: none;
+}
+
+.selected .page,
+.selected .moneyHour {
+    color: #F26222 !important;
+}
+
+.cong {
+    float: right;
+    width: 29%;
+}
+
+.ten-khac {
+    display: none;
+}
+
+.btn-payment {
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 9px 20px;
+    background: #00CE2D;
+    border: 0px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.modalPinNew .so-du-tk {
+    text-align: right;
+}
+
+.box-noi-ghim {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.modalPinNew .font {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    color: #474747;
+    opacity: 0.5;
+}
+
+.modalPinNew .ngay-ghim {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.modalPinNew .select-hour {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.modalPinNew .hour-day {
+    background: #9d9d9d29;
+    border-radius: 10px;
+    width: 21.5%;
+    height: 36px;
+    color: #9D9D9D;
+    text-align: center;
+    padding: 9px 0px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.modalPinNew .hour-day input.checkbox {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hour-day:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.modalPinNew .page {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #474747;
+    opacity: 0.5;
+}
+
+.modalPinNew .moneyHour {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    float: right;
+    color: #474747;
+    opacity: 0.5;
+}
+
+.modalPinNew .tab {
+    display: none;
+}
+
+.modalPinNew .title {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.modalPinNew .box-hour, .modalPinNew .so-ngay, .modalPinNew .box-noi-ghim {
+    padding: 0 20px;
+}
+
+.modalPinNew .btn_modal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.modalPinNew .btn-cancel {
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FF0000;
+    padding: 7px 0px;
+    width: 23%;
+    height: 36px;
+}
+
+.modalPinNew .btn-success {
+    background: #00CE2D;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 36px;
+    padding: 7px 30px;
+    margin-left: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .t_popup .box-check {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .t_popup .box-check {
+        width: 72%;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    .container_popup{
+        width: 490px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .modalPaymentConf .box-check {
+        margin: auto;
+        width: 90%;
+    }
+    .modalmarkedAsSold,
+    .popup_resell {
+        padding: 15px;
+    }
+
+    .modalPinNew {
+        padding: 15px;
+    }
+    .container_popup {
+        width: 350px;
+    }
+    .btn_pp {padding: 10px 20px;}
+    .text_pp {width: 130px;}
+    .modalPinNew .box-click {
+        padding: 13px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .modalPaymentConf .btn-cancel, .modalPaymentConf .btn-success{
+        height: auto;
+    }
+    .modalPinNew .page {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .modalPinNew .main-content {
+        padding: 20px 15px 20px;
+        margin-bottom: unset;
+    }
+
+    .modalPinNew .moneyHour {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .modalPinNew .btn-cancel,
+    .modalSdkd .btn-success,
+    .modalSdkd .btn-cancel {
+        width: 111px;
+        padding: 8px;
+    }
+
+    .modalPinNew .btn-success {
+        width: 111px;
+    }
+
+    .modalPinNew .text-title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    .modalPinNew .text_title_modal {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .modalPinNew .box-select {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+
+    .modalPinNew .hour-day {
+        width: 70px;
+        margin-right: unset;
+    }
+
+    .modalPinNew .select-hour {
+        justify-content: space-between;
+    }
+
+    .main-content-p2 {
+        padding: 20px 15px;
+    }
+
+    .modalPinNew .text-switch {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .modalPinNew .text-title {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .main-content-p2 .text-title {
+        margin-bottom: unset;
+    }
+
+    .modalPinNew .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .option_inner .name {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .modalPinNew .ngay-ghim {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .modalPinNew .font {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .modalPinNew .so-du-tk {
+        font-size: 11px;
+        line-height: 12px;
+        color: #666666;
+    }
+
+    .modalSdkd {
+        padding: 15px;
+    }
+
+    .modalSdkd .text-check-mail {
+        padding: 20px 15px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .modalSdkd .btn_modal {
+        margin-bottom: unset;
+    }
+
+    .modalSdkd .text_title_modal {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .modalPinNew .so-ngay {
+        margin-bottom: 20px;
+    }
+
+    .box-noi-ghim {
+        margin-bottom: 20px;
+    }
+
+    .modalmarkedAsSold .text-check-mail,
+    .popup_resell .text-check-mail {
+        font-size: 13px;
+    }
+
+    .t_popup .box-check {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .t_popup .box-check .modal-content {
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    .t_popup .box-check .modal-content .title_modal {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .t_popup .box-check .modal-content .text-check-mail {
+        margin-bottom: 25px;
+    }
+
+    .modalmarkedAsSold .text-check-mail {
+        padding: 30px 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width:325px) {
+    .t_popup .box-check {
+        padding: 10px;
+    }
+
+    .t_popup .box-check .modal-content {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .btn_modal .btn_general {
+        padding: 5px 13px;
+    }
+}
+
+.khoicon_ndban {
+    position: relative;
+    display: flex;
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.anh_avt_tin {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.modalPinNew .img_tinban{
+    width: 138px;
+    height: 138px;
+    margin-right: 5px;
+    padding: 10px;
+}
+.modalPinNew .khoi_text_ban{
+    flex: 1;
+}
+.modalPinNew .close {
+    position: unset;
+}
+.modalPinNew span.close img {
+    position: unset;
+    background: unset;
+}

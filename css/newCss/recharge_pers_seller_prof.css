@@ -1,0 +1,1270 @@
+.chu-recharge {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+section.select_tong {
+    display: flex;
+    flex-direction: column;
+}
+/* ngân hàng  */
+.content-left {
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 194px;
+}
+
+.box-right {
+    width: calc(100% - 351px);
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+    /* margin-right: 20px;   */
+    padding: 30px 15px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 194px;
+
+}
+.box_nap_the_sub svg path{
+    stroke: #FF0505;
+}
+
+.box-img {
+    width: 112px;
+    height: 37px;
+}
+
+.img-content-center {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.content {
+    position: relative;
+    min-height: 350px;
+}
+
+.bank_1 {
+    width: 100%;
+    margin-bottom: 19px;
+    height: 72px;
+}
+
+.btn-vietcombank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 14px 30px;
+}
+
+.btn-mb {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 9px 56px;
+}
+
+.btn-acb {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 17px 49px;
+}
+
+.btn-bank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.chu-title-tech {
+    margin: 0px 15px 17px 15px;
+    width: 70%;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #F26222;
+}
+
+.box-techcombank {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.title-tech {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F26222;
+    margin-left: 11px;
+}
+
+.sacombank {
+    float: left;
+    margin-right: 20px;
+    width: 194px;
+    height: 72px;
+}
+
+.btn-sacombank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.vib {
+    float: left;
+    width: 194px;
+    height: 72px;
+}
+
+.btn-vib {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-techcombank .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003333;
+}
+
+.bot-tech {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 29%;
+    top: 80%;
+}
+
+.content-center {
+    width: 54%;
+    margin: auto;
+    top: 0;
+}
+
+.ol-nap-tien {
+    margin: auto;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.noti-nap-tien {
+    color: #474747;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    list-style-image: url(/images/newImages/cham-li.png);
+}
+
+.here {
+    color: #F26222;
+    font-style: italic;
+}
+
+.title-left {
+    padding-bottom: 13px;
+}
+
+.noti-error {
+    float: left;
+    color: red;
+}
+
+.note {
+    width: 80%;
+    margin-left: 76px;
+    margin-top: 50px;
+}
+
+.content-luu-y {
+    font-weight: 400;
+}
+
+.luu-y {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* text-transform: capitalize; */
+    color: #FF0505;
+    /* display: flex; */
+    margin-bottom: 10px;
+}
+
+.note-notification {
+    font-weight: 600;
+    font-size: 16px;
+    width: 80%;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #F26222;
+    margin-bottom: 30px;
+}
+
+.notification {
+    width: 89%;
+    margin: 0px 57px;
+    float: left;
+}
+
+.box-noti {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 21.5%;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.box-noti .anh {
+    padding-left: 15px;
+}
+
+.box-noti .chu {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 15px;
+}
+
+.box-noti:nth-child(4) {
+    margin: 0;
+}
+
+.text-divider {
+    margin-bottom: 50px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    --text-divider-gap: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #CCCCCC;
+    font-style: italic;
+}
+
+.text-divider::before,
+.text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: #CCCCCC;
+    flex-grow: 1;
+    margin: 0px 50px;
+}
+
+.text-divider::before {
+    margin-right: var(--text-divider-gap);
+}
+
+.text-divider::after {
+    margin-left: var(--text-divider-gap);
+}
+
+.btn_the.active {
+    background: rgba(242, 98, 34, 0.2) !important;
+}
+
+.the-dien-thoai {
+    margin: auto;
+    width: 62.5%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box-the {
+    margin-right: 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+
+}
+
+.btn-the {
+    background: #fff;
+    border-radius: 10px;
+    border: 0px;
+    height: 100%;
+}
+
+.img-viettel {
+    padding: 16px 20px;
+}
+
+.img-vinaphone {
+    padding: 18px 19px;
+}
+
+.img-mobifone {
+    padding: 21px 20px;
+}
+
+.img-vnmb {
+    padding: 13.5px 19.5px;
+}
+
+/* nạp thẻ  */
+.chu-change {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px;
+}
+
+.label_form {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #474747;
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+}
+
+.input_form {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 36px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.t_captcha {
+    /* line-height: 54px; */
+    float: left;
+    width: 99%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    margin-left: 20px;
+    height: 36px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.div_captcha .reset-icon {
+    background: url(/images/newImages/icon_refresh.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    right: 11px;
+    position: absolute;
+}
+
+.control_captcha {
+    display: flex;
+    /* align-content: space-between; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.input_captcha {
+    width: 62%;
+}
+
+.form-change {
+    margin: auto;
+    width: 52%;
+    margin-bottom: 30px;
+}
+
+.input_form-color {
+    background: #F26222;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 9px 0px;
+    border-radius: 10px;
+}
+.div_bao_max_width {max-width: 1307px;display: flex; justify-content: center;margin: 0 auto;}
+
+.div_bank_1{width: 21%;}
+.div_bank_2 {width: 54%;}
+.khung_bank{display: flex; justify-content: space-between; margin-bottom: 36px;}
+.div_bank_2_tt{padding: 23.69px; background: #FFFFFF;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border-radius: 10px;}
+.div_bank_2_tt_hd{display: flex; margin-bottom: 4.74px;justify-content: space-between;}
+.div_bank_2_tt_hd_tex{font-size: 18px;font-weight: 700;line-height: 24px; color: #F26222; margin-left: 15.16px;}
+.color_tk{color: #F26222; font-size: 16px;line-height: 24px;font-weight: 400;}
+.span_tk{color: #003333; font-size: 16px;line-height: 24px;font-weight: 600;}
+.div_bank_1_sub{width: 100%;height: 72px; border-radius: 10px;background: #FFFFFF;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); margin-bottom: 18px;}
+.div_bank_1_img{width: 100%; height: 100%; border: none; outline: none; background: unset;}
+.div_bank_2_tt_tk1{margin-bottom: 12.45px;}
+.div_bank_2_tt_tk_sub2{display: flex; justify-content: center; margin-top: 29px;}
+.div_bank_1_img_moi{margin-right: 19px;}
+.div_bank_2_tt_tk1 .color_tk{margin-left: 11px;}
+
+.text_luuy {width: 87%;display: flex;flex-direction: column;margin: 0 auto 30px;}
+.text_luuy_1{font-weight: 400;color: #FF0505; line-height: 27px;}
+.text_luuy_1 span{font-weight: 700;}
+.text_luuy_2{font-size: 20px;font-weight: 600;line-height: 32px; color: #F26222;}
+
+.div_gui_tb_sub {padding: 0 42px; display: flex; justify-content: space-between;}
+.div_gui_tb_sub_background{width: 23%;height: 82px; background: #FFF;border-radius: 10px;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); display: flex;align-items: center; justify-content: center;}
+.div_gui_tb_img{width: 35px;height: 35px;}
+.div_gui_tb_img img{width: 100%;height: 100%;}
+.div_gui_tb_text{font-size: 16px;font-weight: 600;line-height: 24px;width: 53%; margin-left: 13px;}
+
+.text_divider{margin: 30px 42px; position: relative;}
+.text_divider_border{width: 100%; height: 1px; background: #CCC; }
+.text_divider_text{position: absolute;width: 100%;display: flex;justify-content: center; top: -15px;}
+.text_divider_textday{width: 46px;height: 32px;background: #FFF;font-size: 16px;font-style: italic; color: #CCC; line-height: 32px;display: flex;justify-content: center !important;}
+
+.div_the_dien_thoai_sub {width: 67%; margin: 0 auto;}
+.div_the_dien_thoai_1{display: flex;}
+.div_the_dien_thoai_1_sub{width: 130px; height: 65px;background: #FFFFFF;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);border-radius: 10px; margin-right: 30px;}
+.div_the_dien_thoai_1_sub:last-child{margin-right: unset;}
+.bg_the1{width: 100%;height: 100%; display: flex;justify-content: center;align-items: center;}
+.block_the{margin-bottom: 30px;}
+
+.div_captcha{position: relative; width: 31.2%;}
+.div_captcha input{height: 36px; border: 1px solid #CCC; outline: none; width: 100%; border-radius: 5px;}
+.img_df{position: absolute; top: 0;right: 0; width: 24px;height: 24px; margin-top: 6px;margin-right: 10px;}
+.img_df img{width: 100%; height: 100%;}
+
+.div_baoloi {
+    width: 65%;
+    margin: 0 auto;
+}
+.div_baoloi ul li{font-size: 14px; line-height: 28px;font-weight: 500; list-style: circle; list-style: disc; color: #FF0505;}
+.div_baoloi ul li p{color: #474747;}
+.div_baoloi ul li a{color: #F26222; font-style: italic;}
+.footer_boc{}
+.d_bg_the, .div_gui_tb_sub_background, .div_bank_1_img{cursor: pointer;}
+
+.cusor_p{cursor: pointer;}
+.div_captcha_napthe input{
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;font-weight: 400;
+}
+/* ================================ 1024 PX ================================================ */
+@media screen and (max-width: 1024px) {
+    .box-right {
+        width: 66.6%;
+    }
+
+    .note {
+        width: 95%;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .note-notification {
+        text-align: justify;
+    }
+
+    .box-noti {
+        width: 43.5%;
+        margin-bottom: 20px;
+        height: 74px;
+    }
+    .bank_2 {
+        width: 23%;
+        margin-bottom: 20px;
+    }
+
+    .notification {
+        width: 78%;
+        margin: 0px 76px;
+        margin-bottom: 47px;
+    }
+
+    .form-change {
+        width: 70%;
+    }
+
+    .box-noti:nth-child(3n),
+    .box-noti:nth-child(1n) {
+        margin-right: 60px;
+    }
+
+    .box-noti:nth-child(2n),
+    .box-noti:nth-child(4n) {
+        margin: 0px
+    }
+
+    .text-divider::before,
+    .text-divider::after {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .the-dien-thoai {
+        width: 90.5%;
+        margin: 0px 21px 31px 21px;
+    }
+
+    .noti-nap-tien {
+        line-height: 28px;
+    }
+
+    .ol-nap-tien {
+        width: 88%;
+        margin: 0px 41px 163px 26px;
+    }
+
+    .form-change {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        min-height: 750px;
+    }
+
+    .bank_1:nth-child(1),
+    .bank_1:nth-child(2),
+    .bank_1:nth-child(3) {
+        margin-right: 17px;
+    }
+
+    .sacombank {
+        width: 22.5%;
+    }
+
+    .btn-sacombank {
+        padding: 17.5px 0px;
+    }
+
+    .btn-vib {
+        padding: 8.5px 29.5px;
+    }
+
+    .content-center {
+        width: 81%;
+        top: 47%;
+        left: 11%;
+        margin-top: 30px;
+        position: absolute;
+    }
+
+    .chu-title-tech {
+        width: 78%;
+    }
+
+    .btn-acb {
+        padding: 17.5px 25px;
+    }
+
+    .btn-bidv {
+        padding: 18px 14.5px;
+    }
+
+    .btn-vietcombank {
+        padding: 15px 5.5px;
+    }
+
+    .btn-mb {
+        padding: 9.5px 32px;
+    }
+
+    .content-left {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .content-right {
+        flex-direction: row;
+        top: 17%;
+        width: 100%;
+    }
+
+    .bank_2:nth-child(1),
+    .bank_2:nth-child(2),
+    .bank_2:nth-child(3) {
+        margin-right: 17px;
+    }
+
+    .bot-tech {
+        top: 34%;
+        flex-direction: row;
+        justify-content: unset;
+        bottom: unset;
+        left: 0;
+        width: 100%;
+    }
+
+    .bank_1 {
+        width: 23%;
+        margin-bottom: 19px;
+    }
+
+    .btn-agribank {
+        padding: 13.5px 1.5px;
+    }
+
+    .btn-msb {
+        padding: 19.5px 2.5px;
+    }
+
+    .btn-techcombank {
+        padding: 15.5px 7.5px;
+    }
+
+    .btn-vietinbank {
+        padding: 15px 5.5px;
+    }
+
+    .content {
+        min-height: 555px;
+    }
+
+
+
+    /* DUY */
+    .khung_bank{flex-direction: column; margin-bottom: 30px;}
+    .div_bank_1{width: 100%; display: flex; justify-content: space-between;}
+    .div_bank_1_sub{margin-right: 20px; width: 22%;}
+    .div_bank_1_sub:nth-child(4),.div_bank_1_sub:nth-child(8){margin-right: unset;}
+    .div_bank_2.div_bank_2_order{order: 3;display: flex; flex-direction: column-reverse; width: 100%;}
+    .div_bank_2_tt_tk_sub2{margin-top: unset;justify-content: unset;}
+    .fig_tren_1024{width: 23%;}
+    .div_bank_2_tt{width: 80.7%; margin: 0 auto;}
+    .div_gui_tb_sub{flex-wrap: wrap;}
+    .div_gui_tb_sub_background{width: 42%;margin-bottom: 20px;}
+    .div_gui_tb_text{font-size: 14px;line-height: 22px;width: unset;}
+    .text_luuy{width: unset;}
+    .text_luuy_1{font-size: 18px;margin-bottom: 34px;}
+    .text_divider {margin: 47px 0 45px;}
+    .div_the_dien_thoai_sub{width: 95%;}
+    .div_baoloi{width: unset;margin: 0 20px;}
+    .div_bao_max_width{margin: 0 20px;}
+    .div_bank_1_img img{width: 70%;}
+}
+/* =============================== 768 PX ========================================  */
+@media screen and (max-width: 768px) {
+    .box-right {
+        width: 95%;
+        margin: 0px 20px;
+    }
+
+    .form-change {
+        width: 64%;
+        margin-bottom: 30px;
+    }
+
+    .box-noti {
+        width: 23.5%;
+        margin-right: 13px;
+    }
+
+    .notification {
+        width: 99%;
+        margin: 0px 5px;
+    }
+
+    .box-noti:nth-child(2),
+    .box-noti:nth-child(3),
+    .box-noti:nth-child(1) {
+        margin-right: 13px;
+    }
+
+    .box-noti .chu {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Nunito';
+    }
+
+    .img-telegram {
+        width: 30px;
+        height: 30px;
+    }
+
+    .box-noti .anh {
+        padding-left: 13px;
+        width: 31%;
+    }
+
+    .the-dien-thoai {
+        margin: 0px 43px 31px 43px;
+    }
+
+    .btn-bidv {
+        padding: 18px 19.5px;
+    }
+
+    .btn-vietcombank {
+        padding: 15px 10.5px;
+    }
+
+    .btn-mb {
+        padding: 9.5px 37px;
+    }
+
+    .btn-acb {
+        padding: 17.5px 30px;
+    }
+
+    .btn-agribank {
+        padding: 13.5px 6.5px;
+    }
+
+    .btn-msb {
+        padding: 19.5px 7.5px;
+    }
+
+    .btn-techcombank {
+        padding: 15.5px 12.5px;
+    }
+
+    .btn-vietinbank {
+        padding: 15px 10.5px;
+    }
+
+    .btn-sacombank {
+        padding: 17.5px 3.5px;
+    }
+
+    .btn-vib {
+        padding: 8.5px 34.5px;
+    }
+    .div_the_dien_thoai_1{flex-wrap: wrap; justify-content: space-between;}
+    .div_the_dien_thoai_1_sub{width: 19.6%;}
+    .div_bao_max_width{flex-direction: column;}
+    .box-right_df_nap_tien{width: 100%;margin: unset;}
+    .div_gui_tb_sub{padding: unset;}
+    .div_gui_tb_sub_background{width: 163px;}
+    .div_gui_tb_text{width: 56%;margin-left: 10px;}
+
+}
+/* =============================== 480 PX ========================================  */
+@media screen and (max-width: 480px) {
+    .chu-change {
+        margin: 0px 0px 20px 0px;
+        font-size: 20px;
+        line-height: 23px;
+        margin-left: 0px;
+    }
+
+    .box-right {
+        width: 90%;
+        margin: 0px 20px;
+        box-shadow: 0px 0px;
+    }
+
+    .text-divider {
+        margin-bottom: 43px;
+    }
+
+    .form-change {
+        width: 96%;
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .box-noti:nth-child(2),
+    .box-noti:nth-child(3),
+    .box-noti:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .t_captcha {
+        width: 99%;
+    }
+
+    .input_captcha {
+        width: 53%;
+    }
+
+    .div_captcha {
+        width: 42%;
+    }
+
+    .note {
+        margin-top: 20px;
+    }
+
+    .box-right {
+        padding: 0px
+    }
+
+    .box-noti:nth-child(1),
+    .box-noti:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .box-noti:nth-child(1),
+    .box-noti:nth-child(3) {
+        margin-right: 30px;
+    }
+
+    .box-noti {
+        width: 44%;
+    }
+
+    .notification {
+        margin-bottom: 48px;
+    }
+
+    .the-dien-thoai {
+        margin: 0px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .box-the {
+        width: 42.5%;
+        margin-right: 19px;
+        height: 60px;
+    }
+
+    .img-viettel {
+        padding: 13.5px 34px;
+    }
+
+    .img-vinaphone {
+        padding: 15.5px 33px;
+    }
+
+    .img-vnmb {
+        padding: 11px 33.5px;
+    }
+
+    .box-the:nth-child(1),
+    .box-the:nth-child(2) {
+        margin-bottom: 26px;
+    }
+
+    .img-mobifone {
+        padding: 19.5px 34px;
+    }
+
+    .box-the:nth-child(1),
+    .box-the:nth-child(3) {
+        margin-right: 29px;
+    }
+
+    .ol-nap-tien {
+        width: 93%;
+        margin: 0px 41px 163px 21px;
+    }
+
+    .note-notification {
+        width: 100%;
+    }
+
+    .content-left {
+        flex-direction: column;
+        width: 47%;
+    }
+
+    .content-right {
+        flex-direction: column;
+        top: 0%;
+        width: 46%;
+    }
+
+    .content {
+        min-height: 750px;
+    }
+
+    .bank_1 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .bank_2 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .bank_2:nth-child(1),
+    .bank_2:nth-child(2),
+    .bank_2:nth-child(3) {
+        margin-right: 0px;
+    }
+
+    .btn-bidv {
+        padding: 18px 26.5px;
+    }
+
+    .btn-vietcombank {
+        padding: 15px 17.5px;
+    }
+
+    .btn-mb {
+        padding: 9.5px 44px;
+    }
+
+    .btn-acb {
+        padding: 17.5px 37px;
+    }
+
+    .btn-agribank {
+        padding: 13.5px 13.5px;
+    }
+
+    .btn-msb {
+        padding: 19.5px 14.5px;
+    }
+
+    .btn-techcombank {
+        padding: 15.5px 19.5px;
+    }
+
+    .btn-vietinbank {
+        padding: 15px 17.5px;
+    }
+
+    .content-center {
+        left: 0%;
+        top: 57%;
+        width: 100%;
+    }
+
+    .bot-tech {
+        top: 48%;
+    }
+
+    .sacombank {
+        width: 46.5%;
+        margin-right: 25px;
+    }
+
+    .btn-sacombank {
+        padding: 17.5px 10.5px;
+    }
+
+    .btn-vib {
+        padding: 8.5px 41.5px;
+    }
+
+    .div_bank_1{flex-wrap: wrap;}
+    .div_bank_1_sub{width: 47%;margin-right: 5%;}
+    .div_bank_1_sub:nth-child(even) {margin-right: unset;}
+    .div_bank_2_tt{width: unset;}
+    .div_bank_2_tt_hd{flex-direction: column; margin-bottom: 20px;}
+    .div_bank_2_tt_hd_tex{margin-bottom: 10px;}
+    .div_bank_2_tt{padding: 24px 10px 20px;}
+    .div_bank_2_tt_tk1{margin-bottom: 11px;}
+    .div_gui_tb_sub{padding: unset;}
+    .div_gui_tb_sub_background{width: 48%;}
+    .div_gui_tb_text{width: 54%;margin-left: 10px;}
+    .khung_bank{margin-bottom: 20px;}
+    .text_luuy_1{margin-bottom: 10px;font-size: 16px;}
+    .text_luuy_2{font-size: 16px;}
+    .div_the_dien_thoai_sub{width: unset;}
+    .div_the_dien_thoai_1_sub{width: 47%;margin-bottom: 25px; margin-right: unset;}
+    .block_the{margin-bottom: 10px;}
+
+    .div_bank_1_img img {width: unset;}
+    .box-right_df_nap_tien{width: 100%;margin: unset;}
+    .div_bao_max_width_df{margin: 20px;}
+
+}
+/* =============================== 375 PX ========================================  */
+@media screen and (max-width: 380px) {
+    .t_captcha {
+        width: 98%;
+    }
+
+    .box-right {
+        margin-bottom: 60px;
+    }
+
+    .box-noti:nth-child(1),
+    .box-noti:nth-child(3) {
+        margin-right: 11px;
+    }
+
+    .box-noti {
+        width: 48%;
+    }
+
+    .text-divider::before,
+    .text-divider::after {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .box-the:nth-child(1),
+    .box-the:nth-child(3) {
+        margin-right: 19px;
+    }
+
+    .box-the {
+        width: 47%;
+    }
+
+    .the-dien-thoai {
+        width: 100%;
+    }
+
+    .form-change {
+        width: 99%;
+    }
+
+    .ol-nap-tien {
+        width: 90%;
+    }
+
+    .box-the {
+        margin-right: 0px;
+    }
+
+    .btn-bidv {
+        padding: 11px 20.5px;
+    }
+
+    .btn-vietinbank {
+        padding: 8px 11.5px;
+    }
+
+    .btn-techcombank {
+        padding: 8.5px 13.5px;
+    }
+
+    .btn-vietcombank {
+        padding: 8px 11.5px;
+    }
+
+    .btn-mb {
+        padding: 2.5px 38px;
+    }
+
+    .btn-acb {
+        padding: 10.5px 31px;
+    }
+
+    .bot-tech {
+        top: 49%;
+    }
+
+    .btn-msb {
+        padding: 12.5px 8.5px;
+    }
+
+    .btn-agribank {
+        padding: 6.5px 7.5px;
+    }
+
+    .btn-sacombank {
+        padding: 10.5px 4.5px;
+    }
+
+    .btn-vib {
+        padding: 1.5px 35.5px;
+    }
+
+    .bank_2 {
+        width: 100%;
+    }
+
+    .content-right {
+        width: 47%;
+    }
+
+    .content-center {
+        width: 100%;
+        margin-top: 20px;
+        left: 0%;
+        top: 59%;
+    }
+
+    .img-content-center {
+        display: none;
+    }
+
+    .box-techcombank {
+        padding: 24px 8px 7px 10px;
+    }
+
+    .chu-title-tech {
+        width: 94%;
+        font-size: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .main-content {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .content-techcombank .title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .content {
+        min-height: 615px;
+    }
+}
+/* =============================== 320 PX ========================================  */
+@media screen and (max-width: 320px) {
+    .input_captcha {
+        width: 52%;
+        padding-left: 15px;
+    }
+
+    .box-the {
+        width: 45%;
+    }
+
+    .img-viettel {
+        padding: 13.5px 20px;
+    }
+
+    .box-the {
+        width: 45.2%;
+    }
+
+    .img-vinaphone {
+        padding: 15.5px 19px;
+    }
+
+    .img-mobifone {
+        padding: 18.5px 20px;
+    }
+
+    .img-vnmb {
+        padding: 11px 19.5px;
+    }
+
+    .box-the:nth-child(1),
+    .box-the:nth-child(3) {
+        margin-right: 25px;
+    }
+
+    .form-change {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .box-noti .chu {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .btn-bidv {
+        padding: 8.5px 10.5px;
+    }
+
+    .img-bidv,
+    .img-vietcombank,
+    .img-mb,
+    .img-acb,
+    .img-agribank,
+    .img-msb,
+    .img-techcombank,
+    .img-vietinbank,
+    .img-sacombank,
+    .img-vib {
+        width: 90%;
+    }
+
+    .btn-agribank {
+        padding: 6.5px 4.5px;
+    }
+
+    .btn-msb {
+        padding: 12px 8.5px;
+    }
+
+    .btn-vietcombank {
+        padding: 9px 11.5px;
+    }
+
+    .btn-mb {
+        padding: 7.5px 38px;
+    }
+
+    .btn-acb {
+        padding: 12px 31px;
+    }
+
+    .btn-techcombank {
+        padding: 9px 13.5px;
+    }
+
+    .btn-vietinbank {
+        padding: 9px 11.5px;
+    }
+
+    .bot-tech {
+        top: 44%;
+    }
+
+    .btn-sacombank {
+        padding: 9px 0px;
+    }
+
+    .sacombank {
+        width: 54.5%;
+        margin-right: 17px;
+    }
+
+    .btn-vib {
+        padding: 6px 35.5px;
+    }
+
+    .content-center {
+        top: 53%;
+    }
+
+    .content {
+        min-height: 600px;
+    }
+
+}

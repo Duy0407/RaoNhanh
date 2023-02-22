@@ -1,0 +1,194 @@
+.title_login{display: none}
+.forgot-password{
+    color: #F26222;
+    text-align: right;
+    float: right;
+    width: 100%;
+    padding-bottom: 21px;
+}
+.register{
+    color: #F26222;
+}
+.input1 {
+    padding-top: 7px;
+}
+.input2 {
+    padding-top: 7px;
+}
+.register_buy .input_login {
+    border-radius: 10px;
+}
+.form-forgot {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+.form-register {
+    width: 100%;
+    padding-bottom: 3px;
+    text-align: right;
+    font-weight: bold;
+}
+.btn_regist_buy.input_form.input_login {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.box_title_forgot_pass .title_login {
+    padding-bottom: 20px;
+}
+/* IPad Pro max width 1024 */
+@media screen and (max-width:1024px){
+    .title_register {
+        display: none;
+    }
+    .title_login {
+        display: block;
+        color: #F26222;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+    }
+   
+    .register_buy{
+        width: 100%;
+        padding: 30px 50px;
+        background: #fff;
+        box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+        border-radius: 20px;
+    }
+    .box_title_register, .form_regis_buy{
+        width: 65%;
+        margin-left: 172px;
+    }
+    .email{
+        padding-top: 30px;
+    }
+    .register_buy .input_form{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;    
+        line-height: 16px;
+        /* display: flex; */
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+
+}
+/* ---------------- */
+@media screen and (max-width:768px){
+    
+    .title_login {
+        padding-bottom: 0px;
+        font-size: 24px;
+        line-height: 28px;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .control_form {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .content-register{
+        padding: 0px;
+        display: flex;
+        align-content: start;
+        justify-content: space-evenly;
+    }
+    .form_regis_buy {
+        width: 75%;
+        margin-top: 50px;
+    }
+    .form-register {
+        width: 100%;
+        text-align: right;
+    }
+    .register_buy .label_form {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .box_title_register, .form_regis_buy{
+        width:75%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .title_login {
+        display: block;
+        color: #F26222;
+        padding-bottom: 0px;
+        font-size: 18px;
+        line-height: 21px;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+
+    }
+    .forgot-password{
+        padding-bottom: 28px;
+        
+    }
+    .register_buy{
+        display: block;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .form_control{
+        padding-top: 30px;
+    }
+    .mail .input_mail{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .form_regis_buy{
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .content-register{
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width:320px){
+    .form_regis_buy{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .title_login{
+        font-size: 15px;
+        line-height: 28px;
+        padding-bottom: 0px;
+    }
+    .btn_regist_buy.input_form.input_login{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .forgot-password{
+        padding-bottom: 23px;
+    }
+    .mail .input_mail{
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .form_pass .input_pass{ 
+        font-size: 12px;
+        padding-left: 15px;
+    }
+}

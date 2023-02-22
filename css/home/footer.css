@@ -1,0 +1,2152 @@
+<
+?
+require_once
+(
+"../functions/functions.php"
+)
+;
+ob_start
+(
+)
+;
+require_once
+(
+"../functions/function_rewrite.php"
+)
+;
+require_once
+(
+"../classes/database.php"
+)
+;
+require_once
+(
+"../classes/config.php"
+)
+;
+require_once
+(
+"../classes/user.php"
+)
+;
+date_default_timezone_set
+(
+'Asia/Ho_Chi_Minh'
+)
+;
+require_once
+(
+"../classes/resize-class.php"
+)
+;
+$
+home
+
+=
+'home'
+;
+$
+fotter_change
+
+=
+2
+;
+
+/
+/
+$
+db_vl
+
+=
+new
+
+db_query
+(
+"SELECT new_title,new_user_id,new_city,new_address,new_type,new_desc,new_money_min,new_money_max,new_picture,save_time_vl
+/
+/
+from vieclam
+
+/
+/
+join user on vieclam.new_user_id
+
+=
+user.usc_id
+
+/
+/
+join city2 on vieclam.new_city
+
+=
+city2.cit_id where new_type
+
+=
+1
+and new_picture
+
+!=
+''
+ORDER BY new_id DESC LIMIT
+
+5
+");
+?
+>
+<
+
+!
+DOCTYPE html >
+< html lang
+
+=
+"vi"
+>
+< head >
+< link rel
+
+=
+"dns-prefetch"
+href
+
+=
+"https://www.google.com.vn"
+>
+< link rel
+
+=
+"dns-prefetch"
+href
+
+=
+"https://www.google-analytics.com"
+>
+< link rel
+
+=
+"preconnect"
+href
+
+=
+"https://www.google.com.vn"
+>
+< link rel
+
+=
+"preconnect"
+href
+
+=
+"https://www.google-analytics.com"
+>
+
+<!--
+-----tvt them
+
+27
+/
+05
+--- >
+< link rel
+
+=
+"preload"
+href
+
+=
+"/fonts/roboto-v16-vietnamese_latin-ext-500.woff2"
+as
+
+=
+"font"
+type
+
+=
+"font/woff2"
+crossorigin >
+< link rel
+
+=
+"preload"
+href
+
+=
+"/fonts/roboto-v16-vietnamese_latin-ext-regular.woff2"
+as
+
+=
+"font"
+type
+
+=
+"font/woff2"
+crossorigin >
+< link rel
+
+=
+"preload"
+href
+
+=
+"/fonts/roboto-v16-vietnamese_latin-ext-700.woff2"
+as
+
+=
+"font"
+type
+
+=
+"font/woff2"
+crossorigin >
+< link rel
+
+=
+"preload"
+as
+
+=
+"image"
+href
+
+=
+"/images/banner.webp"
+>
+< link rel
+
+=
+"preload"
+as
+
+=
+"image"
+href
+
+=
+"/images/cv_trangchu1.webp"
+>
+< link rel
+
+=
+"preload"
+href
+
+=
+"/css/restyle.css"
+as
+
+=
+"style"
+>
+< link rel
+
+=
+"preload"
+href
+
+=
+"/css/home/header.css"
+as
+
+=
+"style"
+>
+< link rel
+
+=
+"preload"
+href
+
+=
+"https://raonhanh365.vn"
+/
+>
+
+<!--
+------------- >
+< link rel
+
+=
+"stylesheet"
+href
+
+=
+"/css/restyle.css"
+as
+
+=
+"style"
+>
+< title > Rao vặt miễn phí
+
+-
+Mua bán tức thì | RAONHANH365.VN<
+
+/
+title >
+< meta name
+
+=
+"keywords"
+content
+
+=
+"Raonhanh365, rao vặt miễn phí, trang rao vặt, kênh mua bán, quảng cáo, mua ban, quang cao, rao vat, đăng tin miễn phí"
+/
+>
+< meta name
+
+=
+"description"
+content
+
+=
+"Mạng xã hội Rao vặt miễn phí Việt, Kênh mua bán trực tuyến rao vặt các loại đồ cũ, đồ mới, đồ Secondhand, rao vặt miễn phí cùng các dịch vụ giá cực rẻ ưu đã tốt. Quảng cáo gian hàng của bạn một cách tốt nhất uy tín nhất, giúp sản phẩm của bạn tiếp cận nhiều người hơn, là cầu nối tốt nhất giữa người mua và người bán."
+/
+>
+< meta property
+
+=
+"og:title"
+content
+
+=
+"Rao vặt miễn phí - Mua bán tức thì | RAONHANH365.VN"
+/
+>
+< meta property
+
+=
+"og:description"
+content
+
+=
+"Mạng xã hội Rao vặt miễn phí Việt, Kênh mua bán trực tuyến rao vặt các loại đồ cũ, đồ mới, đồ Secondhand, rao vặt miễn phí cùng các dịch vụ giá cực rẻ ưu đã tốt. Quảng cáo gian hàng của bạn một cách tốt nhất uy tín nhất, giúp sản phẩm của bạn tiếp cận nhiều người hơn. Raonhanh365 'đăng tin miễn phí - mua bán tức thì, nơi kết nối giữa người mua kẻ bán.'"
+/
+>
+< meta property
+
+=
+"og:url"
+content
+
+=
+"https://raonhanh365.vn/"
+/
+>
+< meta name
+
+=
+"copyright"
+content
+
+=
+"Copyright © 2017 by raonhanh365.vn"
+/
+>
+< meta name
+
+=
+"abstract"
+content
+
+=
+"Rao vặt miễn phí - Mua bán tức thì | RAONHANH365.VN<"
+/
+>
+< meta name
+
+=
+"author"
+itemprop
+
+=
+"author"
+content
+
+=
+"raonhanh365.vn"
+/
+>
+< meta http-equiv
+
+=
+"Content-Type"
+content
+
+=
+"text/html; charset=utf-8"
+/
+>
+< meta http-equiv
+
+=
+"X-UA-Compatible"
+content
+
+=
+"IE=edge"
+/
+>
+< meta name
+
+=
+"robots"
+content
+
+=
+"index, follow,noodp"
+/
+>
+< meta name
+
+=
+"viewport"
+content
+
+=
+"initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no, minimal-ui"
+/
+>
+< meta property
+
+=
+"og:image:url"
+content
+
+=
+"https://raonhanh365.vn/images/banner_raonhanh365.jpg"
+/
+>
+< meta property
+
+=
+"og:image:width"
+content
+
+=
+"476"
+/
+>
+< meta property
+
+=
+"og:image:height"
+content
+
+=
+"249"
+/
+>
+< meta property
+
+=
+"og:type"
+content
+
+=
+"website"
+/
+>
+< meta property
+
+=
+"og:locale"
+content
+
+=
+"vi_VN"
+/
+>
+< meta name
+
+=
+"revisit-after"
+content
+
+=
+"1 days"
+/
+>
+< meta name
+
+=
+"page-topic"
+content
+
+=
+"Mua bán rao vặt"
+/
+>
+< meta name
+
+=
+"resource-type"
+content
+
+=
+"Document"
+/
+>
+< meta name
+
+=
+"distribution"
+content
+
+=
+"Global"
+/
+>
+< link rel
+
+=
+"canonical"
+href
+
+=
+"https://raonhanh365.vn"
+/
+>
+< meta name
+
+=
+"google-site-verification"
+content
+
+=
+"8HoYLGUD3DXbNpPr7JHZjAxMghKbHnuSClcHal7OnRA"
+/
+>
+<
+
+/
+head >
+< body >
+<
+
+?
+$
+file
+
+=
+'../cache_file/sql_cache.json'
+;
+$
+arraytong
+
+=
+json_decode
+(
+file_get_contents
+(
+$
+file
+
+)
+,
+true
+
+)
+;
+$
+arrcity
+
+=
+$
+arraytong[
+
+'db_city'
+]
+;
+$
+db_cat
+
+=
+$
+arraytong[
+
+'db_cat'
+]
+;
+
+include
+(
+"../includes/common/inc_header.php"
+)
+;
+?
+>
+< section >
+< div class
+
+=
+"banner"
+>
+< h1 > RAO VẶT MIỄN PHÍ
+
+-
+MUA BÁN TỨC THÌ<
+
+/
+h1 >
+< h2 > Hệ thống mua bán tìm kiếm dựa trên
+
+1.540
+.788
+bản tin rao vặt đã được xác minh<
+
+/
+h2 >
+<
+
+/
+div >
+< div class
+
+=
+"menu_qt"
+>
+< h3 > DANH MỤC SẢN PHẨM ĐANG ĐƯỢC QUAN TÂM<
+
+/
+h3 >
+< ul >
+<
+
+?
+foreach
+(
+$
+db_cat as $ item
+
+=
+> $ type
+
+)
+{
+if
+(
+$
+type[
+
+'cat_parent_id'
+]
+=
+=
+0
+&
+&
+$
+type[
+
+'cat_img2'
+]
+!=
+''
+)
+{
+    ? > < li > < a href = "<?= rewrite_cate($type['cat_id'],$type['cat_name']) ?>" title = "<?= $type['cat_name'] ?>" > < img src = "/images/loading.gif" class = "lazyload" data-src = "<?= $type['cat_img2'] ?>" / > < span > < ? = $ type [ 'cat_name' ] ? > < / span > < / a > < / li > < ?
+}
+}
+unset
+(
+$
+item,
+
+$
+type
+
+)
+;
+?
+>
+<
+
+/
+ul >
+< i class
+
+=
+"bg_menu"
+> <
+
+/
+i >
+<
+
+/
+div >
+< div class
+
+=
+"pro_qt"
+>
+< div class
+
+=
+"container"
+>
+< div class
+
+=
+"timviec365"
+>
+< a target
+
+=
+"_blank"
+href
+
+=
+"https://timviec365.vn/cv-xin-viec"
+> < img style
+
+=
+"max-width:100%;margin-bottom:10px"
+class
+
+=
+"lazyload"
+src
+
+=
+"/images/loading.gif"
+data-src
+
+=
+"/images/cv_trangchu1.webp"
+alt
+
+=
+"Tạo Cv Online"
+> <
+
+/
+a >
+<
+
+/
+div >
+< div class
+
+=
+"box_left"
+>
+< h3 > SẢN PHẨM ĐANG ĐƯỢC QUAN TÂM<
+
+/
+h3 >
+< div class
+
+=
+"main_qt"
+>
+<
+
+?
+$
+db_qritem
+
+=
+new
+
+db_query
+(
+"
+SELECT new_id, new_image, new_title, new_authen, new_cate_id, new_money, usc_store_phone, usc_phone, new_create_time
+FROM new LEFT JOIN user ON new.new_user_id
+
+=
+user.usc_id LEFT JOIN map ON new.new_user_id
+
+=
+map.usc_id WHERE new_active
+
+=
+1
+AND new_type IN
+
+(
+1
+,
+2
+,
+3
+,
+4
+)
+ORDER BY new_type DESC, new_update_time DESC LIMIT
+
+4
+");
+$
+sp
+
+=
+array
+(
+)
+;
+While
+(
+$
+item
+
+=
+mysql_fetch_assoc
+(
+$
+db_qritem- > result
+
+)
+)
+{
+    $ sp [] = $ item [ 'new_id' ]
+;
+    $ image = explode(";", $ item [ 'new_image' ])
+;
+    $ nameimg = explode("/", $ image [ 0 ])
+;
+    $ nameimg = $ nameimg [ count($ nameimg) -1 ]
+;
+?
+>
+< div class
+
+=
+"item_qt"
+>
+< div class
+
+=
+"img_qt"
+>
+< a href
+
+=
+"<?= rewriteNews($item['new_id'],$item['new_title']) ?>"
+title
+
+=
+"<?= $item['new_title'] ?>"
+>
+< img class
+
+=
+"lazyload"
+src
+
+=
+"/images/loading.gif"
+onerror
+
+=
+'this.onerror=null;this.src="/images/noimage.jpg";'
+data-src
+
+=
+"<?= gethumbnail($image[0],$nameimg,$item['new_create_time'],192,143,85) ?>"
+alt
+
+=
+"<?= $item['new_title'] ?>"
+/
+>
+<
+
+?
+if
+(
+$
+item[
+
+'new_authen'
+]
+=
+=
+1
+)
+{
+    ? > < span > Đã chứng thực < / span > < ?
+}
+?
+>
+<
+
+/
+a >
+<
+
+/
+div >
+< div class
+
+=
+"cate_qt"
+>
+< a href
+
+=
+"<?= rewrite_cate($item['new_cate_id'],$db_cat[$item['new_cate_id']]['cat_name']) ?>"
+title
+
+=
+"<?= $db_cat[$item['new_cate_id']]['cat_name'] ?>"
+> <
+
+?
+=
+$
+db_cat[$ item[
+
+'new_cate_id'
+]
+]
+[
+
+'cat_name'
+]
+?
+> <
+
+/
+a >
+<
+
+/
+div >
+< h4 > < a href
+
+=
+"<?= rewriteNews($item['new_id'],$item['new_title']) ?>"
+title
+
+=
+"<?= $item['new_title'] ?>"
+> <
+
+?
+=
+cut_string
+(
+$
+item[
+
+'new_title'
+]
+,
+60
+,
+'...'
+)
+?
+> <
+
+/
+a > <
+
+/
+h4 >
+< i class
+
+=
+"time_qt"
+> Đăng cách đây <
+
+?
+=
+time_elapsed_string
+(
+$
+item[
+
+'new_update_time'
+]
+)
+?
+> <
+
+/
+i >
+< p class
+
+=
+"price_qt"
+> $
+
+<
+?
+=
+(
+$
+item[
+
+'new_money'
+]
+=
+=
+0
+)
+?
+'Liên hệ'
+:
+
+(
+format_number
+(
+$
+item[
+
+'new_money'
+]
+)
+.
+
+' đ'
+)
+?
+> <
+
+/
+p >
+< div class
+
+=
+"lh_qt"
+>
+< a class
+
+=
+"address_qt"
+data_id_user
+
+=
+"<?=$item['new_id']?>"
+> ĐỊA CHỈ<
+
+/
+a >
+< a class
+
+=
+"phone_qt"
+phon_qt
+
+=
+'<?=$item['
+new_id
+
+']?>'
+> GỌI ĐIỆN<
+
+/
+a >
+< div class
+
+=
+"div_show_phone hidden div_phone_<?=$item['new_id']?>"
+>
+< p > SỐ ĐIỆN THOẠI GIAN HÀNG<
+
+/
+p >
+< span >
+<
+
+?
+if
+(
+$
+item[
+
+'usc_store_phone'
+]
+!=
+0
+)
+{
+    echo (substr($ item [ 'usc_store_phone' ], 0, 1) != 0
+)
+?
+"0"
+.
+$
+item
+[
+'usc_store_phone'
+]
+:
+$
+item
+[
+'usc_store_phone'
+]
+;
+}
+else {
+    echo (substr($ item [ 'usc_phone' ], 0, 1) != 0) ? "0" . $ item [ 'usc_phone' ]: $ item [ 'usc_phone' ];
+}
+
+?
+>
+<
+
+/
+span >
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+?
+unset
+(
+$
+image,
+
+$
+nameimg
+
+)
+;
+}
+?
+>
+<
+
+/
+div >
+<
+
+/
+div >
+< div class
+
+=
+"thongbao_diachi hidden diachi_<?=$item['new_id']?>"
+>
+< div class
+
+=
+"popup_diachi"
+>
+< span > ĐỊA CHỈ GIAN HÀNG<
+
+/
+span >
+< i class
+
+=
+"fa fa-times close_btn"
+> <
+
+/
+i >
+< div class
+
+=
+"clear"
+> <
+
+/
+div >
+< div class
+
+=
+"popup_diachi_main"
+>
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+div >
+< div class
+
+=
+"box_right"
+>
+< h3 > TOP CÁC GIAN HÀNG MỚI NHẤT<
+
+/
+h3 >
+< div class
+
+=
+"main_gh"
+>
+<
+
+?
+$
+db_qrc
+
+=
+new
+
+db_query
+(
+"SELECT usc_id,usc_time,usc_city,usc_store_name,usc_logo FROM user WHERE usc_type = 5 ORDER BY usc_id DESC LIMIT 15"
+)
+;
+While
+(
+$
+rowc
+
+=
+mysql_fetch_assoc
+(
+$
+db_qrc- > result
+
+)
+)
+{
+?
+>
+< div class
+
+=
+"item_gh"
+>
+< a href
+
+=
+"<?= rewrite_home_dn($rowc['usc_id'],$rowc['usc_store_name']) ?>"
+title
+
+=
+"<?= $rowc['usc_store_name'] ?>"
+class
+
+=
+"img_gh"
+>
+< img class
+
+=
+"lazyload"
+src
+
+=
+"/images/loading.gif"
+data-src
+
+=
+"<?
+if
+(
+$
+rowc[
+
+'usc_logo'
+]
+!=
+''
+)
+{
+    $ nameimg = explode("/", $ rowc [ 'usc_logo' ])
+;
+    $ nameimg = $ nameimg [ count($ nameimg) -1 ]
+;
+    echo gethumbnail($ rowc [ 'usc_logo' ], $ nameimg, $ rowc [ 'usc_time' ], 60, 60, 75)
+;
+}
+else {
+    echo "/images/detai-avata.png";
+}
+
+?
+>
+
+" alt="
+<
+?
+=
+$
+rowc[
+
+'usc_store_name'
+]
+?
+>
+
+" /></a>
+<
+div class
+
+=
+"right_gh"
+>
+< h4 > < a href
+
+=
+"<?= rewrite_home_dn($rowc['usc_id'],$rowc['usc_store_name']) ?>"
+title
+
+=
+"<?= $rowc['usc_store_name'] ?>"
+> <
+
+?
+=
+$
+rowc[
+
+'usc_store_name'
+]
+?
+> <
+
+/
+a > <
+
+/
+h4 >
+< span class
+
+=
+"location"
+> <
+
+?
+=
+(
+isset
+(
+$
+arrcity[$ rowc[
+
+'usc_city'
+]
+]
+[
+
+'cit_name'
+]
+)
+)
+?
+$
+arrcity[$ rowc[
+
+'usc_city'
+]
+]
+[
+
+'cit_name'
+]
+:
+
+"Chưa cập nhật"
+?
+> <
+
+/
+span >
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+?
+}
+unset
+(
+$
+db_qrc,
+
+$
+rowc
+
+)
+;
+?
+>
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+div >
+
+<!--
+<
+div class
+
+=
+"vieclamnew"
+>
+< h3 > VIỆC LÀM MỚI NHẤT<
+
+/
+h3 >
+<
+
+?
+/
+/
+while
+
+(
+$
+rowvl
+
+=
+mysql_fetch_assoc
+(
+$
+db_vl- > result
+
+)
+)
+{
+    ? > < div class = "item" > < div class = "images" > < img class = "lazyload" src = "/images/loading.gif" data-src = "<?/*= $rowvl['new_picture'] */?>" alt = "" > < / div > < div class = "title" > < ? /*= cut_string(removeHTML($rowvl['new_title']),50,'...')*/ ? > < / div > < div class = "username" > < ? /*= $rowvl['usc_name']*/ ? > < / div > < div class = "time" > < ? /*= time_elapsed_string($rowvl['save_time_vl'])*/ ? > < / div > < div class = "city" > < ? /*= $rowvl['cit_name']*/ ? > < / div > < div class = "address" > < ? /*= cut_string(removeHTML($rowvl['new_address']),20,'...')*/ ? > < / div > < div class = "money" > $ < ? /*= $rowvl['new_money_min']*/ ? > -$ < ? /*= $rowvl['new_money_max']*/ ? > < / div > < div class = "desc" > < ? /*= cut_string(removeHTML($rowvl['new_desc']),20,'...')*/ ? > < / div > < / div > < ? / /
+}
+?
+>
+<
+
+/
+div >
+
+-->
+<
+div class
+
+=
+"cate_home"
+>
+< div class
+
+=
+"container"
+>
+<
+
+?
+$
+sp
+
+=
+'('
+.
+
+implode
+(
+','
+,
+$
+sp
+
+)
+.
+
+')'
+;
+$
+k
+
+=
+1
+;
+$
+db_qrc_1
+
+=
+new
+
+db_query
+(
+"SELECT cat_id,cat_name FROM category WHERE cat_parent_id = 0 AND cat_type <> '' ORDER BY cat_type ASC"
+)
+;
+While
+(
+$
+rowc
+
+=
+mysql_fetch_assoc
+(
+$
+db_qrc_1- > result
+
+)
+)
+{
+    ? > < div class = "item_home item_home_<?=$k?>" > < ? $ db_qr5 = new db_query("SELECT new_id,new_title,new_image,new_create_time,new_address,new_money FROM new LEFT JOIN category ON new.new_cate_id = category.cat_id WHERE ( new_active = 1 AND new_cate_id = " . $ rowc [ 'cat_id' ] . " AND new_type IN (1,2,3,4)) OR (new_active = 1 AND cat_parent_id = " . $ rowc [ 'cat_id' ] . " AND new_type IN (1,2,3,4)) AND new_id NOT IN " . $ sp . " ORDER BY new_update_time DESC LIMIT 3")
+;
+    $ i = 0
+;
+While
+(
+$
+row5
+
+=
+mysql_fetch_assoc
+(
+$
+db_qr5- > result
+
+)
+)
+{
+    $ image = explode(";", $ row5 [ 'new_image' ])
+;
+    $ nameimg = explode("/", $ image [ 0 ])
+;
+    $ nameimg = $ nameimg [ count($ nameimg) -1 ]
+;
+    $ i + +
+;
+if
+(
+$
+i
+
+=
+=
+1
+)
+{
+    ? > < div class = "left_h" > < div class = "img_top" > < img class = "lazyload" src = "/images/loading.gif" onerror = 'this.onerror=null;this.src="/images/noimage.jpg";' data-src = "<?= gethumbnail($image[0],$nameimg,$row5['new_create_time'],215,252,85) ?>" alt = "<?= $row5['new_title'] ?>" / > < span class = "cate_name" > < ? = $ rowc [ 'cat_name' ] ? > < / span > < a href = "<?= rewriteNews($row5['new_id'],$row5['new_title']) ?>" class = "view_more" title = "Xem chi tiết" > Xem chi tiết < b > & #155
+;
+    & #155
+;
+    < / b > < / a > < / div > < div class = "item_bot item_bot_<?=$k?>" > < h3 > < a href = "<?= rewriteNews($row5['new_id'],$row5['new_title']) ?>" title = "<?= $row5['new_title'] ?>" > < ? = cut_string($ row5 [ 'new_title' ], 50, '...') ? > < / a > < / h3 > < span class = "location_item" > < ? = $ row5 [ 'new_address' ] != '' ? $ row5 [ 'new_address' ]: "Chưa cập nhật" ? > < / span > < div class = "price_item" > < span > $ < ? =($ row5 [ 'new_money' ] = = 0
+)
+?
+'Liên hệ'
+:
+(
+format_number
+(
+$
+row5
+[
+'new_money'
+]
+)
+.
+' đ'
+)
+?
+>
+<
+/
+span
+>
+<
+i
+class
+=
+"tim"
+>
+<
+/
+i
+>
+<
+i
+class
+=
+"count_img"
+>
+<
+?
+=
+count
+(
+$
+image
+)
+?
+>
+<
+/
+i
+>
+<
+/
+div
+>
+<
+/
+div
+>
+<
+/
+div
+>
+
+<
+div
+class
+=
+"mid_h mid_h_mb_l"
+>
+<
+?
+}
+else
+
+if
+(
+$
+i >
+
+1
+)
+{
+    ? > < div class = "tem_h" > < a href = "<?= rewriteNews($row5['new_id'],$row5['new_title']) ?>" title = "<?= $row5['new_title'] ?>" > < img class = "lazyload" src = "/images/loading.gif" onerror = 'this.onerror=null;this.src="/images/noimage.jpg";' data-src = "<?= gethumbnail($image[0],$nameimg,$row5['new_create_time'],110,110,80) ?>" alt = "<?= $row5['new_title'] ?>" / > < / a > < div class = "right_h2" > < span class = "loca2" > < ? = $ row5 [ 'new_address' ] != '' ? $ row5 [ 'new_address' ]: "Chưa cập nhật" ? > < / span > < span class = "price_2" > $ < ? =($ row5 [ 'new_money' ] = = 0
+)
+?
+'Liên hệ'
+:
+(
+format_number
+(
+$
+row5
+[
+'new_money'
+]
+)
+.
+' đ'
+)
+?
+>
+<
+/
+span
+>
+<
+a
+href
+=
+"<?= rewriteNews($row5['new_id'],$row5['new_title']) ?>"
+title
+=
+"Xem chi tiết"
+>
+Xem
+chi
+tiết
+<
+b
+>
+&
+#155
+;
+    & #155
+;
+    < / b > < / a > < i class = "count_img2" > < ? = count($ image) ? > < / i > < i class = "tim2" > < / i > < / div > < h3 > < a title = "<?= $row5['new_title'] ?>" href = "<?= rewriteNews($row5['new_id'],$row5['new_title']) ?>" > < ? = cut_string($ row5 [ 'new_title' ], 58, '...') ? > < / a > < / h3 > < / div > < ?
+}
+unset
+(
+$
+image
+
+)
+;
+}
+unset
+(
+$
+db_qr5,
+
+$
+row5,
+
+$
+i
+
+)
+;
+?
+>
+<
+
+/
+div >
+< div class
+
+=
+"bot_h"
+>
+<
+
+?
+$
+db_qr6
+
+=
+new
+
+db_query
+(
+"SELECT cat_id,cat_name FROM category WHERE cat_parent_id = "
+.$ rowc[
+
+'cat_id'
+]
+.
+
+""
+)
+;
+While
+(
+$
+row6
+
+=
+mysql_fetch_assoc
+(
+$
+db_qr6- > result
+
+)
+)
+{
+    ? > < a href = "<?= rewrite_cate($row6['cat_id'],$row6['cat_name']) ?>" title = "<?= $row6['cat_name'] ?>" > < ? = $ row6 [ 'cat_name' ] ? > < / a > < ?
+}
+unset
+(
+$
+db_qr6,
+
+$
+row6
+
+)
+;
+?
+>
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+?
+if
+(
+$
+k
+
+=
+=
+6
+)
+{
+    ? > < div class = "clear" > < / div > < div class = "qc" > < a > < img class = "lazyload" src = "/images/loading.gif" data-src = "/images/img-banner3.jpg" alt = "Đăng tin mua bán rao vặt miễn phí" > < / a > < a > < img class = "lazyload" src = "/images/loading.gif" data-src = "/images/img-banner4.jpg" alt = "Đăng tin mua bán rao vặt miễn phí" > < / a > < / div > < ?
+}
+$
+k + +
+
+;
+}
+?
+>
+
+<!--
+banner-- >
+< div class
+
+=
+"item_home"
+>
+< img class
+
+=
+"lazyload"
+src
+
+=
+"/images/loading.gif"
+data-src
+
+=
+"/images/banner_home_001.jpg"
+style
+
+=
+"width: 100%;object-fit: cover;"
+>
+<
+
+/
+div >
+
+<!--
+end banner-- >
+<
+
+/
+div >
+<
+
+/
+div >
+< div class
+
+=
+"container"
+>
+< div class
+
+=
+"qc"
+id
+
+=
+"qc_gg"
+> <
+
+/
+div >
+<
+
+?
+include
+(
+"../includes/home/inc_tag.php"
+)
+?
+>
+< div class
+
+=
+"list_new"
+>
+< h3 > Tin tức sản phẩm<
+
+/
+h3 >
+< div class
+
+=
+"main_list_new"
+>
+<
+
+?
+$
+db_qrc
+
+=
+new
+
+db_query
+(
+"SELECT new_id,new_date,new_title,new_teaser,new_picture FROM news ORDER BY new_id DESC LIMIT 4"
+)
+;
+While
+(
+$
+rowc
+
+=
+mysql_fetch_assoc
+(
+$
+db_qrc- > result
+
+)
+)
+{
+    $ nameimg = explode("/", $ rowc [ 'new_picture' ])
+;
+    $ nameimg = $ nameimg [ count($ nameimg) -1 ]
+;
+    ? > < div class = "item_new" > < a href = "/tin-tuc/<?= replaceTitle($rowc['new_title']) ?>-p<?= $rowc['new_id'] ?>.html" title = "<?= $rowc['new_title'] ?>" class = "img_new" > < img class = "lazyload" src = "/images/loading.gif" onerror = 'this.onerror=null;this.src="/images/noimage.jpg";' data-src = "<?= gethumbnail(" /pictures/ news / ".$rowc['new_picture'],$nameimg,$rowc['new_date'],241,170,85).'?v=1' ?>" alt = "<?= $rowc['new_title'] ?>" / > < / a > < a href = "/tin-tuc" title = "Tin tức" class = "cate_new" > Tin tức < / a > < h4 > < a href = "/tin-tuc/<?= replaceTitle($rowc['new_title']) ?>-p<?= $rowc['new_id'] ?>.html" title = "<?= $rowc['new_title'] ?>" > < ? = $ rowc [ 'new_title' ] ? > < / a > < / h4 > < p > < ? = cut_string(removeHTML($ rowc [ 'new_teaser' ]), 190, '...') ? > < / p > < / div > < ?
+}
+?
+>
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+div >
+<
+
+/
+section >
+< script src
+
+=
+"/js/lazysizes.min.js"
+> <
+
+/
+script >
+< script src
+
+=
+"/js/jquery-1.8.3.min.js"
+> <
+
+/
+script >
+< script defer src
+
+=
+"/js/dangky.js?v=1"
+> <
+
+/
+script >
+<
+
+?
+include
+(
+"../includes/common/inc_footer.php"
+)
+?
+>
+<
+
+/
+body >
+<
+
+/
+html >
+
+<!--
+<
+script defer >
+
+-->
+<!--
+/
+/
+$
+(
+"a"
+)
+.
+
+not
+(
+".timviec365 a"
+)
+.
+
+attr
+(
+"rel"
+,
+"nofollow"
+)
+;
+-->
+<!--
+<
+/
+script >
+
+-->
+
+<
+script defer src
+
+=
+"/js/dangnhap_2.js"
+type
+
+=
+"text/javascript"
+> <
+
+/
+script >
+< script defer src
+
+=
+"/js/dangnhap.js"
+> <
+
+/
+script >
+< script defer >
+$
+
+(
+".address_qt"
+)
+.
+
+click
+(
+function
+
+(
+)
+{
+    var id = $(this
+)
+.
+attr
+(
+"data_id_user"
+)
+;
+    $(".thongbao_diachi"
+)
+.
+removeClass
+(
+"hidden"
+)
+;
+$
+.
+
+post
+(
+"/ajax/load_diachi.php"
+,
+{
+    id: id
+}
+,
+function
+(
+data
+
+)
+{
+    $(".popup_diachi_main"
+)
+.
+html
+(
+data
+)
+;
+}
+)
+;
+}
+)
+;
+$
+(
+".close_btn"
+)
+.
+
+click
+(
+function
+(
+)
+{
+    $(".thongbao_diachi"
+)
+.
+addClass
+(
+"hidden"
+)
+;
+}
+)
+;
+$
+(
+".popup_diachi"
+)
+.
+
+click
+(
+function
+
+(
+e
+
+)
+{
+    e . stopPropagation()
+;
+}
+)
+;
+$
+(
+".thongbao_diachi"
+)
+.
+
+click
+(
+function
+(
+)
+{
+    $(".thongbao_diachi"
+)
+.
+addClass
+(
+"hidden"
+)
+;
+}
+)
+;
+
+<
+/
+script >

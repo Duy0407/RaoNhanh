@@ -1,0 +1,117 @@
+.box-right {
+    margin-top: 30px;
+    width: 75%;
+    float: left;
+}
+a{color: #474747;}
+
+.no-news {
+    width: 100%;
+    text-align: center;
+}
+
+.text-no-news {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titlt-nn {
+    width: 100%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #474747;
+}
+
+.content-nn {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 30px;
+}
+
+.content-fav {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 30px;
+}
+
+.text-box-un {
+    width: 12%;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #F26222;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 7px 33px;
+    color: #F26222;
+}
+
+.text-box-return {
+    padding: 9px 19px;
+    background: #FFF;
+    border: 1px solid #F26222;
+    border-radius: 5px;
+    font-size: 15px;line-height: 17px;font-weight: 500;
+    color: #F26222;
+    margin-top: 20px;
+}
+
+.box-up-news {
+    display: flex;
+    justify-content: center;
+}
+/* -------------D-------------- */
+.themdivkhongtimyeuthich{
+    display: flex;
+    max-width: 1306px;
+    margin: 0 auto;
+}
+
+
+/* ---------------------- 1024 PX ---------------------------  */
+@media screen and (max-width: 1024px) {
+    .box-right {
+        width: 68%;
+    }
+    .text-box-un {
+        width: 18%;
+    }
+    .themdivkhongtimyeuthich{margin: 0 20px;}
+}
+/* ---------------------- 768 PX ---------------------------  */
+@media screen and (max-width: 768px) {
+    .box-right {
+        width: 100%;
+    }
+
+    .text-box-un {
+        width: 16%;
+    }
+    .themdivkhongtimyeuthich{flex-direction: column;}
+}
+/* ---------------------- 480 PX ---------------------------  */
+@media screen and (max-width: 480px) {
+
+    .lsgd {
+        padding: 0 44px !important;
+    }
+
+    .text-box-un {
+        width: 30%;
+    }
+
+    .text-no-news {
+        margin-bottom: 466px;
+    }
+    .themdivkhongtimyeuthich{margin-top: 30px;}
+    .text-no-news_df .titlt-nn{font-size: 20px;line-height: 23px;font-weight: 700;}
+    .text-no-news_df .content-fav{font-size: 14px;line-height: 16px;margin-top: 10px;}
+    .text-box-return{margin-top: 50px;}
+}

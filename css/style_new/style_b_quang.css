@@ -1,0 +1,539 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";
+@font-face{font-family:Roboto;font-display:swap;src:url(/fonts/Roboto-Regular.woff2) format("woff2")}
+@font-face{font-family:Roboto;font-display:swap;src:url(/fonts/Roboto-Medium.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Roboto;font-display:swap;src:url(/fonts/Roboto-Bold.woff2) format("woff2");font-weight:700}
+*{font-family:Roboto;padding:0;margin:0;box-sizing:border-box}
+.df_file_nay{display:flex;justify-content:space-between;align-items:center}
+.df_file_nay .df_file_nay2 input{border:1px solid #ccc;border-radius:5px;padding:10px 20px;width:100%}
+.df_file_nay2{width:40.6%}
+.div_select_dv.dvgia_tin_dang.position_u{position:unset}
+.khung_input_capcha{display:flex;width:100%;justify-content:space-between}
+.div_bao_ma_xacnhan{width:65.7%}
+.bao_p_capcha{position:relative;width:30.5%}
+.ma_dcap_2_df{width:100%}
+.img_df{position:absolute;width:24px;height:24px;top:0;right:0;margin-top:6px;margin-right:10px}
+.hd-clor-white{color:#fff}
+li{list-style-type:none}
+a{list-style:none}
+.position_ral{position:relative}
+.font-12{font-size:12px}
+.font-14{font-size:14px}
+.font-16{font-size:16px}
+.font-18-24{font-size:18px;line-height:24px}
+.font-16-19{font-size:16px;line-height:19px}
+.font-24-28{font-size:24px;line-height:28px}
+.background-none{background:none}
+.font-32-37{font-size:32px;line-height:37px}
+.font-32-38{font-size:32px;line-height:38px}
+.font-dam{font-weight:700;color:#474747}
+.font-bold{font-weight:500}
+.liheght-18{line-height:18px}
+.color_red{color:red}
+.color_dolom{color:#FF0505;padding-bottom:34px}
+.j_between{justify-content:space-between}
+.item_end{align-items:self-end}
+.mb20{margin-bottom:20px}
+.mb10{margin-bottom:10px}
+.mb5{margin-bottom:5px}
+.color_text{color:#474747}
+.color_999{color:#999}
+.color_cam{color:#F26222}
+.j_end{justify-content:end}
+.hd-disflex{display:flex}
+.hd-align-center{align-items:center}
+.hd_modal_tindang ul li span{margin-right:20px}
+.hd_modal_tindang ul li{border-bottom:1px solid #ccc;padding:10px 0}
+.hd-padding-20{padding:0 20px}
+.hd_modal_tindang .hd_modal_header{justify-content:center;height:40px;background:#F26222;border-radius:10px 10px 0 0;position:relative}
+.hd_content_curspoint ul li{cursor:pointer;position:relative}
+.tat-dang-tin-md{position:absolute;right:25px}
+.tro-ve-dmuc-tdang{position:absolute;left:20px}
+.tindang-container{max-width:944px;min-height:764px;margin:30px auto;background:#FFF;box-shadow:0 2px 30px rgba(0,0,0,0.15);border-radius:20px;padding:30px 41px 11px 59px}
+.tindang-header{justify-content:space-between;margin-bottom:30px}
+#danh-muc-san-pham{width:100%;height:36px;border:1px solid #CCC;border-radius:5px;padding:10px}
+input:checked+.slider1{background-color:#D9D9D9}
+.slider1.round1{border-radius:34px}
+.slider1{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#C1C1C4;-webkit-transition:.4s;transition:.4s}
+.switch-124{position:relative;display:inline-block;width:31px;height:17px;margin:0;width:50px;height:28px}
+.switch-124 input{opacity:0;width:0;height:0}
+.show-480-mobile{display:none}
+.switch-124 input{width:100%;height:37px;padding:10px;border:1px solid #1F1F1F;border-radius:5px;color:#474747}
+.slider1.round1:before{border-radius:50%}
+.slider1:before{position:absolute;content:"";height:20px;width:20px;left:3px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s;box-shadow:0 1px 4px #000 0 1px 1px #000}
+input:checked+.slider1:before{-webkit-transform:translateX(22px);-ms-transform:translateX(22px);transform:translateX(22px)}
+input:checked+.slider1{background-color:#F26222}
+.rd-tbi-tminh,.rn_hide_dtin_field,.noti-tat-dmuc,.linh-pkien-show{display:none}
+.w-125{display:flex;align-items:center;gap:10px;font-weight:500}
+.hd_content_tb{margin:0 auto;background:#fff;overflow:hidden;width:469px;border-radius:10px;box-shadow:0 4px 8px 0 #000 0 6px 20px 0 #000}
+.hd_modal_rn{position:fixed;display:none;z-index:3;padding-top:70px;left:0;top:0;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;background-color:#000;background-color:rgba(0,0,0,0.4)}
+.hd_cspointer{cursor:pointer}
+.hd_content_curspoint ul li:active{background:#eee}
+.image-tin-dang-error{width:50%;margin:50px auto}
+.noti-tat-dmuc{text-align:center}
+.noti-tat-dmuc .tieu-de-error{margin-bottom:30px}
+.color-blk{color:#474747}
+.dmsp-p{margin-bottom:5px}
+.tindang-col-right{width:64%}
+.tindang-col-left{width:39%;margin-right:30px;text-align:center}
+.form-dtin-cont .row-tin-dang{width:100%;margin:20px 0}
+.row-tin-dang.row-o-cung,.row-tin-dang.row-loai-o-cung{max-width:237px;margin:unset}
+.tt-o-cung{gap:20px}
+.input_active{outline:1px solid #F26222!important;border:none!important}
+.tindang-col-right .row-tin-dang input[type="text"],.cl-input-add{width:100%;padding:10px 20px;display:inline-block;height:36px;border:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:16px;color:#474747}
+.ma-captcha-cont input{letter-spacing:3px;color:#474747}
+.tindang-col-right .row-tin-dang #gia-ban-sp{padding:10px 5px 10px 20px;margin:5px 0;display:inline-block;border-radius:5px;border:none;line-height:36px;height:30px;background-color:#fff}
+.ma_dcap_2{height:36px;padding:10px 19px;letter-spacing:5px;border:1px solid #CCC}
+.sh_border_rdu_two{border-radius:10px}
+.b_radius_5{border-radius:5px}
+.sh_clr_five{color:#666}
+.sh_size_five{font-size:14px;line-height:16px}
+.input-gia-cont{width:48%;border:1px solid #ccc;display:inline-block;border-radius:5px;margin-right:20px;height:38px;position:relative}
+.tindang-col-right .row-tin-dang input[type="checkbox"]{width:24px;height:24px;border:1px solid #CCC;border-radius:5px}
+.hd-textalign{text-align:center}
+.dang-tin-image,.dang-tin-video{height:200px;border:2px dashed #F26222;margin-bottom:30px;border-radius:10px;display:flex;justify-content:center;align-items:center;max-width:300px}
+.hd_widh100{width:100%!important}
+.form-dtin-cont .select2-container .select2-selection--single,.select-change .select2-container .select2-selection--single{height:36px!important;border:none;outline:1px solid #ccc}
+.form-dtin-cont .select2-container--default .select2-selection--single .select2-selection__rendered,.select-change .select2-container--default .select2-selection--single .select2-selection__rendered{line-height:36px!important}
+.hd_font15-17{font-size:15px;line-height:17px;margin-bottom:5px}
+.font-15-18{font-size:15px;line-height:18px}
+textarea.texa-mo-ta{width:100%;height:100px;border:1px solid #CCC;border-radius:5px;padding:10px 20px}
+.span_checkbox_time{vertical-align:middle;width:48%}
+.sp-lienhe-nban{vertical-align:middle;position:relative;display:inline-block;width:47%}
+.sp-lienhe-nban label{position:absolute;left:31px;top:2px}
+.hd-padding30-50{padding:30px 50px}
+.div-ma-xac-nhan input.ma-xac-nhan{width:65%!important;margin-right:20px!important}
+.div-ma-xac-nhan input.ma-captcha{width:30%!important}
+#gia-ban-sp{outline:none!important;border:none;background-color:transparent}
+.select2-search__field{outline:1px solid #F26222;border:none!important;border-radius:5px}
+.btn-submit{width:235px;height:36px;border-radius:5px;border:1px solid #F26222}
+select.dt-money-up{-moz-appearance:none;-webkit-appearance:none;text-align:center}
+select.dt-money-up::-ms-expand{display:none}
+.td-xem-truoc{background-color:#fff;color:#F26222}
+.td-dang-tin{background:#F26222;color:#fff}
+.position-relative{width:86px;height:86px;border:2px dashed #F26222;border-radius:5px}
+span.close img{position:absolute;right:-9px;top:-7px}
+.img-wrap{position:relative}
+.after-upload-imgage,.after-upload-video{display:none;margin-bottom:30px}
+.list_img.mb-4.show-btn{display:flex;flex-direction:row-reverse;justify-content:start;gap:20px;margin-bottom:20px}
+.img-wrap-box img{width:86px;height:86px;object-fit:cover;border-radius:5px}
+.btn-xac-nhan{width:123px;height:36px;background:#00CE2D;border-radius:5px;border:none;color:#fff}
+.after-upload-imgage input[type=file]{position:absolute;left:-1000vw}
+.md-dia-chi{margin-bottom:20px}
+.dang-tin-image-after,.dang-tin-video-after{margin-bottom:30px;gap:20px;flex-wrap:wrap}
+.form-dtin-cont{max-width:494px}
+.display_none{display:none}
+.continue_upload_image_2{width:86px;height:86px;position:relative}
+.preview_images_upload{width:100%;height:100%;object-fit:cover}
+.append-iamges-preview{display:flex;gap:20px;flex-wrap:wrap}
+.preview_images_upload{border-radius:5px}
+.hd_modal_dia_chi .select2.select2-container.select2-container--default,.row-tin-dang .select2.select2-container.select2-container--default{width:100%!important}
+.select2-container--default .select2-selection--single .select2-selection__arrow{display:block;background-color:#fff}
+img.xoa-anh-upload{position:absolute;right:-9px;top:-8px}
+.ma-captcha-cont{position:relative;display:inline}
+.li_file_hide{display:none}
+span.close img{background:#fff;border-radius:53%}
+.hoso_quangcao span.close img{background: none;}
+.hoso_quangcao .dong_ddau{top: 20px;}
+.ma-captcha-cont img{position:absolute;top:-3px;left:109px}
+.hd-jtify-center{justify-content:center}
+.j_eve{justify-content:space-evenly}
+.tindang-content-cont{justify-content:space-between;gap:20px}
+.frame_img{gap:20px;flex-wrap:wrap}
+.form-group{gap:20px;flex-wrap:wrap}
+.bnt-cont-dc-poup{text-align:center}
+.cont-btn-sb{justify-content:space-between;gap:20px}
+.list-money-rn{background:#fff;box-shadow:0 2px 30px #000;width:90px;text-align:center;border-radius:10px;position:absolute;right:-20px}
+.list-money-rn p{padding:8px 5px}
+.list-money-rn p:hover{background:#EDEDED}
+.div_select_dv{position:absolute;top:2px;right:2px}
+.div_select_dv .select2.select2-container.select2-container--default{background:#EDEDED;border-radius:6px;height:30px;padding-left:0;width:50px!important}
+.div_select_dv .select2-container .select2-selection--single{outline:none}
+.div_select_dv .select2-container--default .select2-selection--single .select2-selection__rendered{padding-right:0;padding-left:12px;margin-top:-3px;color:#474747;background-position-x:150%}
+.rowflex2{width:48%!important;margin:0}
+.danhmuc_tt{margin:0 0 20px!important}
+.ma_dcap_2{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}
+.donvi_dt{position:absolute;right:10px;top:29px}
+.label_time{padding-left:10px;padding-top:8px}
+.khoitime{width:48%}
+.input_time{width:100%;padding-left:10px;height:36px;border:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:14px;color:#474747}
+input[type="date"]{width:100%;padding-left:10px;height:36px;border:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:14px;color:#474747}
+.img_line{margin:17px 15px;width:11px;height:3px}
+.d_none{display:none}
+.khoi_thongbao,.khoi_thongbao_no_ythich{display:none;position:fixed;top:100px;left:0;right:0;bottom:0;z-index:9}
+.khoi_yeuthich{margin:auto;background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);width:241px;height:36px;border-radius:20px}
+.text_thongbao{font-weight:400;font-size:14px;color:#FFF;padding:10px 0;text-align:center}
+input[type="time"]::-webkit-calendar-picker-indicator{opacity:0;width:5px}
+input[type="date"]::-webkit-calendar-picker-indicator{opacity:0}
+.input_ngaysinh::-webkit-calendar-picker-indicator{opacity:1!important}
+.all_day{margin-top:5px;height:24px;width:24px;border:1px solid #CCC;-webkit-appearance:none;-webkit-transition:box-shadow 200ms;-webkit-border-radius:5px}
+.lien-he-ngban{height:24px;width:24px;border:1px solid #CCC;-webkit-appearance:none;-webkit-transition:box-shadow 200ms;-webkit-border-radius:5px}
+.lien-he-ngban:focus{outline:none}
+.lien-he-ngban:checked{border-color:#F26222;background-color:#F26222}
+.lien-he-ngban:checked:before{content:'';display:block;width:6px;height:12px;border:solid #fff;border-width:0 2px 3px 0;-webkit-transform:rotate(45deg);transform:rotate(45deg);margin-left:8px;margin-top:2px}
+.all_day:focus{outline:none}
+.all_day:checked{border-color:#F26222;background-color:#F26222}
+.all_day:checked:before{content:'';display:block;width:6px;height:12px;border:solid #fff;border-width:0 2px 3px 0;-webkit-transform:rotate(45deg);transform:rotate(45deg);margin-left:8px;margin-top:2px}
+.gianhang_container{max-width:1306px;margin:30px auto;background:#FFF}
+.khoitrai_gh{width:280px;height:542px;background:#FFF;box-shadow:0 2px 30px rgba(0,0,0,0.15);border-radius:20px;position:-webkit-sticky;position:sticky;top:0}
+.khoiphai_gh{width:calc(100% - 300px)}
+.avt_nguoiban{margin:15px 10px 15px 15px}
+.avt_nguoiban img{height:80px;width:80px;border-radius:50%}
+.name_user_gh{font-weight:500;padding-top:15px}
+.thongtin_ngban p{font-size:13px;color:#999;padding-top:5px}
+.khoi_list_thongtin{height:54px;padding:15px}
+.khoi_list_thongtin img{height:24px;width:24px}
+.tt_thongtin{padding-left:15px}
+.khoi_list_thongtin:hover{background:#FFE4D8;border-radius:10px}
+.khoi_list_thongtin:hover p{color:#F26222}
+.khoihover_fill:hover svg path{stroke:#F26222;fill:#F26222}
+.bg_menu{background:#FFE4D8;border-radius:10px}
+.active_menu{background:#FFE4D8;border-radius:10px}
+.cover_img{width:100%;height:357px;box-shadow:0 2px 30px rgba(0,0,0,0.15);border-radius:20px}
+.chinhsua_img{width:40px;height:40px;background:rgba(255,255,255,0.4);backdrop-filter:blur(4px);position:absolute;right:10px;top:10px;border-radius:10px}
+.chinhsua_img img{padding:7px}
+.avatar_img{position:absolute;bottom:-50px;left:50px;width:170px;height:170px}
+.chinhsuatt_img img{position:absolute;top:-210px;width:48px;height:48px;display:none}
+.chinhsuatt_img{width:48px;margin:0 auto;justify-content:center;backdrop-filter:blur(4px)}
+.po1:hover .chinhsuatt_img img{display:block}
+.po1:hover .imgcs_tt{opacity:.5}
+.po2:hover .imgcs_tt2{display:block}
+.po2:hover .avatar_img{opacity:.5}
+.avatar_img .imgcs_tt2{position:absolute;left:65px;top:65px;width:48px;height:48px;border:none;border-radius:unset;display:none}
+.avatar_img img{width:170px;height:170px;border-radius:50%;border:2px solid #fff}
+.ten_cuahang{position:absolute;bottom:10px;left:240px;color:#FFF;text-shadow:0 2px 10px #000;font-weight:700;font-size:26px}
+.khoi_internet{padding-top:80px}
+.khoi_chinhsua{width:100%;padding-top:30px;padding-right:50px}
+.btn_trangchu{position:absolute;z-index:2;width:150px;height:46px;background:#FDE7DE;border-radius:10px;text-align:center;font-weight:500;font-size:20px;padding-top:10px}
+.btn_danhgia{position:absolute;z-index:1;left:142px;width:150px;height:46px;background:#d8d8d8;border-top-right-radius:10px;border-bottom-right-radius:10px;text-align:center;font-weight:500;font-size:20px;padding-top:10px}
+.btn_trangchu_a{position:absolute;z-index:2;width:150px;height:46px;background:#d8d8d8;border-radius:10px;text-align:center;font-weight:500;font-size:20px;padding-top:10px}
+.btn_danhgia_a{position:absolute;z-index:1;left:142px;width:150px;height:46px;background:#FDE7DE;border-top-right-radius:10px;border-bottom-right-radius:10px;text-align:center;font-weight:500;font-size:20px;padding-top:10px}
+.btn_facebook{width:146px;height:46px;background:#FFF;border:1px solid #1977F3;border-radius:49px;margin-right:20px;align-items:center}
+.nut_facebook .btn_facebook{width:146px;height:46px;background:#FFF;border:1px solid #1977F3;border-radius:49px;margin-right:0;align-items:center}
+.img_cmt_danhgia{align-items:center;gap:10px}
+.img_cmt_danhgia .img_anh_danhgia{width:40px;height:40px;border-radius:50%}
+.btn_web{width:134px;height:46px;background:#FFF;border:1px solid #F26222;border-radius:49px;align-items:center}
+.btn_facebook img{width:26px;height:26px;margin:0 10px 0 20px}
+.btn_facebook p{font-weight:700;font-size:16px;color:#1977F3}
+.btn_web img{width:26px;height:26px;margin:0 10px 0 20px}
+.btn_web p{font-weight:700;font-size:16px;color:#F26222}
+.khoigioithieu{margin-top:30px;width:100%;min-height:215px;padding:24px 30px;background:#FFF;border:1px solid #CCC;border-radius:20px}
+.bg_chung{border-radius:10px;width:40px;height:40px}
+.bg_6f{background:#FFF}
+.bg_user{background:#d8d8d8}
+.bg_cam{background:#FFECE3}
+.bg_xanhla{background:#D6FFD7}
+.bg_vang{background:#fef4d5}
+.bg_tim{background:#f6d3ff}
+.bg_do{background:#FFD7D7}
+.bg_xanhduong{background:#dafcff}
+.bg_xanhduong img,.bg_vang img,.bg_tim img,.bg_do img,.bg_xanhla img{padding-left:4px;padding-top:4px}
+.bg_cam img{padding-left:5px;padding-top:4px}
+.bg_user img{padding-left:5px;padding-top:4px}
+.gioithieu{font-weight:700;font-size:24px;padding-left:20px}
+.chinhsua_thongtin_gt{width:187px;height:36px;background:#FFF;border:1px solid #F26222;backdrop-filter:blur(4px);border-radius:10px}
+.chinhsua_thongtin_gt img{width:24px;height:24px;margin-left:10px}
+.chinhsua_thongtin_gt p{font-weight:500;font-size:15px;color:#F26222;padding-left:10px}
+.flex_w{flex-wrap:wrap}
+.khoithongtin_ct{width:314px;padding-top:20px;font-weight:400;font-size:16px;color:#666}
+.khoitin_con{width:315px;height:189px;background:#FFF;border:1px solid #CCC;border-radius:20px;padding:24px 10px 10px 30px;margin-top:30px}
+.soluong_tt{padding-top:35px;padding-bottom:15px;font-weight:500;font-size:36px}
+.color_xanhla{color:#00CE2D}
+.color_do{color:#FF4343}
+.color_xanhduong{color:#22A6B3}
+.color_vang{color:#F1C644}
+.color_tim{color:#BE2EDD}
+.tin30ngay{font-weight:400;font-size:15px;color:#666}
+.overflow_scroll_ban{overflow-y:scroll;max-height:1133px}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{border-radius:10px}
+::-webkit-scrollbar-thumb{background:#F26222;border-radius:10px}
+.des_detail{padding-top:30px}
+.tt_des{font-weight:700;font-size:16px;color:#AAA}
+.show_text_ct{padding-top:10px;display:none;font-weight:400;font-size:16px;line-height:19px;text-align:justify;color:#474747}
+.khoi_dangtinban{width:100%;background:#FFF;border-radius:20px;border:1px solid #CCC;padding:25px 0 25px 19px;margin-top:30px}
+.tin_dangban{margin-left:10px;margin-bottom:15px}
+.khoinho_dangtin{width:475px;height:148px;background:#FFF;border:1px solid #DFDFDF;border-radius:10px;margin-top:20px;margin-right:16px}
+.khoinho_dangtin:nth-child(2n){margin-right:unset}
+.khoi_anhdangtin{position:relative;margin:10px 15px 10px 9px}
+.img_dangtinto{width:121px;height:128px;border-radius:10px}
+.khoi_sl_mayanh{position:absolute;top:8px;right:6px}
+.soluong_anh{position:absolute;left:8px;top:3px;color:#fff}
+.title_ban{padding:15px 0px 0px 0px;font-weight:500;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.color_a{color:#AAA;font-style:italic}
+.color_A{color:#AAA}
+.time_ban{padding-bottom:5px}
+.address_ban{padding-bottom:10px}
+.khoi_text_ban{padding-right:10px}
+.tien_ban{font-weight:700;font-size:18px}
+.khoi_khong_face{max-width:1006px;margin:0 auto}
+.khoi_khong_face_a{width:calc(100% - 300px)}
+.tt_hoatdong{position:absolute;width:20px;height:20px;right:9px;background:#00CE2D;bottom:23px;border:3px solid #FFF;border-radius:50%}
+.text_trangthai{position:absolute;right:-110px;bottom:23px;font-weight:400;font-size:13px;align-items:center;color:#666}
+.khoi_vietdanhgia{margin-top:30px;border:1px solid #CCC;border-radius:20px}
+.khoitong_nhapma{gap:20px}
+.khoicon_danhgia{width:100%;padding:24px 30px 50px}
+.khoicon_danhgia_b{width:100%;padding:24px 30px 30px}
+div,label{margin:0;padding:0}
+body{}
+h1{font-size:1.5em;margin:10px}
+#rating{border:none;float:left;margin-left:30px}
+#rating>input{display:none}
+#rating>label:before{margin:5px;font-size:40px;font-family:FontAwesome;display:inline-block;content:"\f005"}
+#rating>.half:before{content:"\f089";position:absolute}
+#rating>label{color:#e6e6e6;float:right}
+#rating>input:checked~label,#rating:not(:checked)>label:hover,#rating:not(:checked)>label:hover~label{color:#F1C644}
+#rating>input:checked+label:hover,#rating>input:checked~label:hover,#rating>label:hover~input:checked~label,#rating>input:checked~label:hover~label{color:#F1C644}
+#rating_1{border:none;display:flex;flex-direction:row-reverse;justify-content:left;margin-top:10px}
+#rating_1>input{display:none}
+#rating_1>label:before{margin:5px;font-size:30px;font-family:FontAwesome;display:inline-block;content:"\f005"}
+#rating_1>label{color:#e6e6e6;float:right}
+#rating_1>input:checked~label,#rating_1:not(:checked)>label:hover,#rating_1:not(:checked)>label:hover~label{color:#F1C644}
+#rating_1>input:checked+label:hover,#rating_1>input:checked~label:hover,#rating_1>label:hover~input:checked~label,#rating_1>input:checked~label:hover~label{color:#F1C644}
+#rating_2{border:none;display:flex;flex-direction:row-reverse;justify-content:center;margin-top:10px}
+#rating_2>input{display:none}
+#rating_2>label:before{margin:5px;font-size:45px;font-family:FontAwesome;display:inline-block;content:"\f005"}
+#rating_2>label{color:#e6e6e6;float:right}
+#rating_2>input:checked~label,#rating_2:not(:checked)>label:hover,#rating_2:not(:checked)>label:hover~label{color:#F1C644}
+#rating_2>input:checked+label:hover,#rating_2>input:checked~label:hover,#rating_2>label:hover~input:checked~label,#rating_2>input:checked~label:hover~label{color:#F1C644}
+.text_danhgia{padding-top:10px;font-weight:400}
+.so_sao{font-weight:500;font-size:48px;color:#F1C644}
+.name_rate{font-weight:500;font-size:18px}
+.time_rate{font-weight:400;font-size:12px;color:#AAA;margin-left:10px}
+.khoi_cmt_danhgia{padding-top:30px}
+textarea:focus{border:1px solid #F1C644;outline:#F1C644}
+.khoitraidanhgia{width:64%}
+.row-dang-tin-nd .row-tin-dang{width:100%;margin:10px 0}
+.row-tin-dang-dientich{position:relative;width:100%;margin:20px 0}
+.row-tin-dang-dientich .input-gia-cont{width:85%;border:1px solid #ccc;display:inline-block;border-radius:5px;margin-right:30px;height:36px;position:relative;padding:8px 20px}
+.row-tin-dang-dientich .div_select_dv .select2-container .select2-selection--single{outline:none;background:#EDEDED;width:53px!important;height:36px!important}
+.row-tin-dang-dientich .div_select_dv{position:absolute;right:2px;top:25px;background:url(/images/anh_moi/m2.png) no-repeat}
+.khoiphai_danhgiasao{width:34%}
+.ma_xac_nhan{padding-left:10px;width:184px;height:36px;border:1px solid #CCC;border-radius:5px}
+.khoinhapma{width:57%}
+.khoicapcha{width:38%;height:36px;border:1px solid #CCC;border-radius:5px;letter-spacing:5px;padding-left:10px}
+.xoay361{margin-left:5px}
+.btn_guidanhgia{width:116px;height:36px;background:#F26222;border-radius:5px;outline:none;border:none;margin-top:20px;font-weight:500;font-size:15px;color:#FFF}
+.khoilon_danhgia{border-bottom:1px solid #CCC;padding-bottom:20px}
+.khoiphai_quanly{width:calc(100% - 300px);background-color:#fff;box-shadow:0 2px 30px rgba(0,0,0,0.15);border-radius:20px}
+.modal_dangtin{padding:20px 15px 0}
+.chu_dohong{text-align:center;width:205px;height:43px;background:#FFE4D8;border-radius:15px;font-weight:500;font-size:20px;color:#F26222}
+.chu_thuong{text-align:center;width:205px;height:43px;border-radius:15px;font-weight:400;font-size:20px;color:#474747}
+.pt10{padding-top:10px}
+.khoi_noidungban{padding:20px 30px}
+.khoi_noidung_tindangdang,.khoi_noidung_tin_daban{padding:20px 30px;display:none}
+.khoicon_ndban{width:100%;height:148px;background:#FFF;border:1px solid #DFDFDF;border-radius:10px}
+.img_tinban{padding:10px;position:relative}
+.anh_avt_tin{width:128px;height:128px;border-radius:10px}
+.btn_green{width:101px;height:36px;background:#FFF;border:1px solid #00CE2D;border-radius:5px;padding:0 10px}
+.btn_cam{width:102px;height:36px;background:#FFF;border:1px solid #F26222;border-radius:5px;padding:0 8px}
+.btn_cam_a{width:111px;height:36px;background:#FFF;border:1px solid #F26222;border-radius:5px;padding:0 8px}
+.btn_cam_b{width:164px;height:36px;background:#FFF;border:1px solid #F26222;border-radius:5px;padding:0 8px}
+.btn_cam_a:hover{background:#F26222}
+.btn_cam_a:hover p{color:#fff}
+.btn_blue:hover p{color:#fff}
+.btn_cam:hover p{color:#fff}
+.btn_green:hover p{}
+.btn_cam:hover{background:#F26222}
+.btn_blue:hover{background:#4C5BD4}
+.btn_green:hover{}
+.btn_blue{width:138px;height:36px;background:#FFF;border:1px solid #4C5BD4;border-radius:5px;padding:0 8px}
+.btn_green img,.btn_cam img,.btn_cam_a img,.btn_cam_b img{width:20px;height:20px}
+.color_green{font-weight:500;font-size:15px;color:#00CE2D}
+.j_around{justify-content:space-around}
+.khoi_3btn{width:38%;align-items:end;justify-content:end;padding:20px 0}
+.d_flex.khoi_3btn_df {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: unset;
+}
+.color_blue{color:#4C5BD4}
+.ml20{margin-left:20px}
+.ml15{margin-left:15px}
+.ml10{margin-left:10px}
+.icon_dgcheo{position:absolute;top:0;left:0}
+.chu_nghieng45{top:-10px;width:100%;height:36px;-ms-transform:rotate(20deg);transform:rotate(-45deg);position:absolute;left:0;font-weight:500;font-size:14px;color:#FFF;text-transform:uppercase}
+.nghiengcam{top:0;left:-8px}
+.noidung_tbban{font-weight:400;font-size:14px;line-height:21px;text-align:justify;padding:30px 32px;color:#474747}
+.btn_popup{width:108px;height:36px;border-radius:5px;margin-bottom:30px}
+.btn_huy{background:#FFF;border:1px solid red;color:red}
+.btn_dongy{background:#00CE2D;border:1px solid #00CE2D;color:#fff}
+.img_tick{margin-top:30px;text-align:center}
+.btn_dong_y{width:369px;height:36px;background:#00CE2D;border:1px solid #00CE2D;border-radius:5px;color:#fff;margin-bottom:30px}
+.bg_trang{background-color:#fff;box-shadow:0 2px 30px rgba(0,0,0,0.15);border-radius:20px}
+.khoiphaicon{width:606px}
+.tt_chu{font-weight:700;font-size:24px;padding-bottom:30px}
+.input_text{width:100%;padding:10px 20px;display:inline-block;height:36px;border:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:16px;color:#474747}
+.chinhsuatt .select2-container .select2-selection--single{height:36px!important}
+.chinhsuatt .select2-container--default .select2-selection--single .select2-selection__rendered{line-height:36px!important}
+.pl20{padding-left:20px!important}
+.pt30{padding-top:30px}
+.input_text:focus{outline:1px solid #F26222;border:1px solid #F26222}
+.input_file{position:absolute;width:95px;right:0;z-index:2;opacity:0}
+.nhaptext{font-weight:400;font-size:12px;line-height:14px;color:#AAA}
+.btn_sub{width:100px;height:36px;border-radius:5px}
+.sub_huy{background:#FFF;border:1px solid red;color:red;margin-right:20px}
+.sub_luu{background:#F26222;border:1px solid #F26222;color:#fff}
+.khoibtn_sub{margin:30px 0}
+#imageName{position:absolute;top:26px;left:5px;font-weight:500;font-size:14px;color:#F26222;border-radius:5px;padding:5px}
+.label_input{text-align:center;padding-top:7px;display:inline-block;color:#fff;width:95px;height:36px;background:#F26222;border:1px solid #CCC;border-radius:5px;cursor:pointer;position:absolute;right:0;z-index:1}
+.input_ngaysinh{background:url(../images/anh_moi/anh003.png)!important;background-repeat:no-repeat}
+.text_center{text-align:center}
+button{cursor:pointer}
+a:hover svg path{stroke:#F26222}
+a:hover .item-icf-fill svg path{fill:#F26222}
+.tongkhoitrai .active,.tongkhoitrai .active_a{background:#FFE4D8;border-radius:10px}
+.tongkhoitrai .active p,.tongkhoitrai .active_a p{color:#F26222}
+.active svg path{stroke:#F26222}
+.active_a svg path{fill:#F26222}
+.tindayeuthich,.dichvuquangcaogianhang,.lichsugiaodich,.doimatkhau,.naptienvaotaikhoan{font-weight:700;font-size:24px;line-height:28px;color:#474747;padding-left:15px}
+.img_trong{margin:30px auto}
+.h1_text{margin:0 auto;font-weight:700;font-size:32px;line-height:38px;text-align:center;color:#474747}
+.text_rong{text-align:center;font-weight:400;font-size:16px;line-height:19px;color:#474747;padding-top:30px;padding-bottom:20px}
+.vetrangchu{width:122px;height:36px;background:#FFF;border:1px solid #F26222;border-radius:5px;padding:0 8px;font-weight:500;font-size:15px}
+.khoi_ghim_gian_hang{background:#84D8A8;border-radius:20px;position:relative;margin:20px 30px}
+.khoi_ghim_gian_hang .pt_quangcao{background:#1FDE70;border-radius:20px}
+.pt_quangcao {
+    height: 137px;
+}
+.khung_text_quangcao{position: absolute;width: 100%;top: 0;left: 0;}
+.title_ghim{padding:20px;font-weight:700}
+.full_qc{width:100%}
+.time_ghim{font-size:20px;line-height:23px;margin-bottom:8px;padding-left:20px}
+.font-14-16{font-size:14px;line-height:16px}
+.date_h_ghim{padding-left:20px;padding-bottom:12px}
+.dauhoi::after{content:'';position:absolute;background:url(/images/anh_moi/clarity_help-solid.png)no-repeat;width:24px;height:24px;top:106px;right:10px}
+.vitri_ghim{position:absolute;right:45px;top:110px}
+.tb_dauhoi.active{display:block}
+.active .ct_dauhoi p{color:#000;opacity:.7}
+.tb_dauhoi{position:absolute;background:#FFF!important;border-radius:10px!important;top:50px;box-shadow:0 2px 30px #000;right:15px;opacity:.7;display:none}
+.ct_dauhoi{padding:10px;font-size:12px;line-height:14px;text-align:center;color:#000;background:none!important}
+.khoi_dichvu_qcdt{padding:20px 30px;padding-top:30px}
+.mb30{margin-bottom:30px}
+.khoi_dichvu_qcdt .title_ban{display:block;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis; line-height: 19px;}
+.khoi_dvqc_con_chung{display:block;overflow:auto;max-height:1000px}
+.khoi_dvqc_con_chung::-webkit-scrollbar{width:0}
+.thongbao_dvquangcao_gh{padding:51px 30px 22px;text-align:center}
+.khoi_4btn{width:100%;justify-content:center;padding:30px 0 0}
+.khoi_4btn .btn_xem_bgia{width:122px;height:36px;border:1px solid #F26222;border-radius:5px;padding:9px 14px}
+.khoi_4btn .btn_lien_he{width:79px;height:36px;background:#F26222;border-radius:5px;padding:9px 15px}
+.khoi_lichsu_giaodich{padding:30px 40px 0 30px}
+.header_trai_lsgd{width:45%}
+.header_phai_lsgd1{width:15%}
+.header_phai_lsgd2{width:21%}
+.header_phai_lsgd3{width:12%}
+.khoi_lsgd{padding:10px 0;gap:20px}
+.khoi_lsgd_duoi{padding:10px 0;border-top:1px solid #AAA;gap:20px}
+.avt_lsqc .img{width:60px;height:60px;border-radius:5px}
+.avt_lsqc{margin-right:10px}
+.khoi_lsgd_duoi_chung{display:block;overflow:auto;max-height:1000px}
+.khoi_lsgd_duoi_chung::-webkit-scrollbar{width:0}
+.text_ghd{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+form.cha_row_dmk{margin:30px}
+.chas_row_dmk{max-width:450px;margin:0 auto}
+.row_dmk input[type="password"],.row_dmk input[type="text"]{width:100%;padding:10px 20px;display:inline-block;height:36px;outline:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:16px;border:none}
+.row_dmk.active .form-control{background:#FFF;border:1px solid #F26222;outline:1px solid #F26222}
+.row_dmk.div-ma-xac-nhan input.ma-xac-nhan{width:280px!important;height:36px}
+.row_dmk .ma_dcap_2{width:150px;height:36px;padding:10px 19px;letter-spacing:5px;border:1px solid #CCC}
+.show_pass::after{content:'';position:absolute;background:url(/images/anh_moi/exp_nosee.png)no-repeat;width:24px;height:24px;top:29px;right:10px}
+.show_pass.active::after{background:url(/images/anh_moi/exp_see.png)no-repeat}
+.row_dmk{width:100%;margin-bottom:20px;position:relative}
+button.btn-doi-mk{background:#F26222;border-radius:10px;width:450px;height:36px;border:none;text-align:center}
+button.btn-nap-tien{background:#F26222;border-radius:10px;width:450px;height:36px;border:none;text-align:center;margin-top:10px}
+.khoi_the_atm_a_mot{box-shadow:0 2px 15px rgba(0,0,0,0.1);max-width:194.25px;width: 100%;;height:72.02px;padding:17px;margin-bottom:18.95px}
+.khoi_the_atm{margin:30px 15px;justify-content:space-between}
+.khoi_the_atm_b_hai{justify-content:center;gap:18.95px}
+.khoi_the_atm_b_mot{box-shadow:0 2px 15px rgba(0,0,0,0.1);width:526.85px;height:auto;padding:23.69px;margin-bottom:18px}
+.text_atm{font-weight:600;font-size:16px;line-height:24px;color:#033}
+.text_ht_atm{font-weight:400;font-size:16px;line-height:24px}
+.title_atm{font-weight:700;text-transform:uppercase}
+.khoi_the_atm_b_ba{justify-content:space-evenly;align-items:center;margin-bottom:15px}
+.tb_atm{margin:0 91px 30px}
+.f_weight6{font-weight:600}
+.f_weight7{font-weight:700}
+.tb_atm_canhbao{font-size:20px;line-height:32px}
+.khung_nhomchat.d_flex{justify-content:space-between}
+.tb_nhomchat{margin:auto 57px}
+.khoi_thedt{margin:50px auto 30px;justify-content:center;gap:30px}
+.khoi_thedt_a{width:130px;height:65px;background:#FFF;box-shadow:0 2px 15px rgba(0,0,0,0.15);border-radius:10px}
+.thedt_img{padding:0 20px}
+.khoi_ke_ngang{position:relative;margin:30px 50px 50px}
+p.text_khoi_kn{color:#CCC;font-size:16px;line-height:200%;width:46px;height:32px;background:#fff;position:absolute;margin:auto 418px;top:-3px}
+.canhbao_ruttien li{color:#F26222;list-style-type:inherit}
+.canhbao_ruttien{margin:30px auto;font-size:14px;line-height:28px}
+.tl_tkdanhgia{color:#4C5BD4;width:90px;height:25px;background:none;border:none;background:url(../../images/anh_moi/anh024.png) 0 6px no-repeat}
+.danhgia_hscn2{width:100%;background:#FFF;border-radius:20px;border:1px solid #CCC;padding:30px;padding-top:24px;margin-top:30px;display:none}
+.phanhoikh{margin-bottom:20px}
+.phanhoikh{position:relative}
+textarea.text-phan-hoi{width:100%;height:119px;border:1px solid #CCC;border-radius:5px;padding:10px 20px}
+.form-control{outline:0}
+.ghichu{font-weight:700;font-size:24px;line-height:28px;padding-left:20px}
+.k_anh_chung{border-radius:10px;width:40px;height:40px}
+.p5{padding-left:5px}
+.nut_cancel{position:absolute;right:5px}
+.btn-phan-hoi-kh{justify-content:end;margin-top:20px}
+button.btn-gui-ph{background:#F26222;border-radius:10px;width:116px;height:36px;border:none;font-size:15px;line-height:18px;text-align:center;color:#FFF}
+.o-phanhoikh.active .form-control{background:#FFF;border:1px solid #F26222}
+.a_chinhsua_tkdanhgia{padding-left:30px;gap:10px;padding-top:10px}
+p.chinhsua_tkdanhgia{line-height:14px;color:#4C5BD4}
+.b_chinhsua_tkdanhgia{width:5px;height:72px;background:#C4C4C4;border-radius:2.5px}
+.d_chinhsua_tkdanhgia{gap:10px}
+.khoilon_danhgia_scroll{display:block;overflow:auto;max-height:990px}
+.khoilon_danhgia_scroll::-webkit-scrollbar{width:0}
+.chua_tk_danhgia{margin:56px 0 64px;text-align:center}
+.kengang_gia{width:11px;height:2px;background:#474747}
+.row-tin-dang-gia .div_select_dv .select2.select2-container.select2-container--default{width:52px!important}
+.row-tin-dang-gia .input-gia-cont{width:40%;border:1px solid #ccc;display:inline-block;border-radius:5px;margin-right:30px;height:36px;position:relative;padding:8px 20px}
+.row-tin-dang-gia .div_select_dv .select2-container--default .select2-selection--single .select2-selection__rendered{margin-top:-3px}
+.row-tin-dang-gia{position:relative;width:100%;margin:20px 0}
+.row-tin-dang-gia .div_select_dv{position:absolute;right:2px;top:25px}
+.row-tin-dang-gia .div_select_dv .select2-container .select2-selection--single{outline:none;background:#EDEDED;width:53px!important;height:36px!important}
+.form-dtin-cont .row-tin-dang-btn{width:100%;margin:30px 0}
+.upload-media-cont p{padding-top:10.18px}
+
+
+.khoicon_ndban.d_flex.mb20{position: relative;}
+.df_khoitim{width: 26px;height: 26px;position: absolute;right: 0;bottom: 0;margin-bottom: 20px;margin-right: 20px;}
+.df_khoitim img{word-wrap: 100%;height: 100%;}
+
+
+@media(max-width: 1366px) {
+.tindang-container{padding:30px 50px 10px}
+}
+@media(max-width: 1024px) {
+.tindang-container{padding:29px 41px 11px 59px}
+.tindang-col-left{margin-right:6%}
+.dang-tin-image,.dang-tin-video{max-width:300px}
+.input-gia-cont{width:47%}
+}
+@media(max-width: 768px) {
+.tindang-container{padding:30px 20px 10px}
+.dang-tin-image,.dang-tin-video{height:173px}
+.div-ma-xac-nhan input.ma-xac-nhan{margin-right:unset!important}
+.tindang-container{max-width:728px}
+.tindang-col-right{width:58%}
+.tindang-col-left{width:42%;margin-right:8px}
+}
+@media(max-width: 480px) {
+.tindang-header{display:block}
+.tindang-content-cont{flex-direction:column-reverse}
+.dang-tin-video,.dang-tin-image{width:142px;height:94px}
+.tindang-col-right{width:100%}
+.show-480-mobile{display:inline-block}
+.hide-480-mobile{display:none}
+.btn-submit{width:145px}
+.tindang-col-left,.sp-lienhe-nban{width:100%}
+.upload-media-content{display:flex;gap:16px;justify-content:center}
+.td-xem-truoc{margin:10px}
+.ma-xac-nhan{width:66%}
+.div-ma-xac-nhan input.ma-xac-nhan{margin-right:10px!important}
+.input-gia-cont{width:100%;margin-bottom:20px}
+.tindang-content-cont{gap:10px}
+.tindang-col-right .row-tin-dang input[type="text"]{padding:6px 10px}
+.tindang-container{padding:20px 17px 30px 20px}
+.df_file_nay2{width:36.1%}
+.ma_dcap_2_df{font-size:13px;padding:10.5px 10px}
+
+}

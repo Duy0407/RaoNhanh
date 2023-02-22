@@ -1,0 +1,198 @@
+.content-left {
+    /* margin-left: 15px; */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.box-right {
+    width: 74%;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+    margin-right: 20px;
+    padding: 30px 15px;
+}
+.content-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin-right: 15px; */
+}
+.content {
+    position: relative;
+    min-height: 350px;
+}
+.chu-recharge {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px;
+}
+.bidv,
+.vietcombank,
+.mb,
+.acb {
+    width: 96%;
+    margin-bottom: 19px;
+}
+
+.btn-vietcombank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 14px 30px;
+}
+
+.btn-mb {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 9px 56px;
+}
+
+.btn-acb {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 17px 49px;
+}
+
+.btn-bidv {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 17px 38px;
+}
+.btn-agribank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 13px 25px;
+}
+
+.agribank,
+.msb,
+.techcombank,
+.vietinbank {
+    width: 96%;
+    margin-bottom: 19px;
+}
+
+.btn-msb {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 19px 26px;
+}
+
+.btn-techcombank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 15px 31px;
+}
+.btn-vietinbank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 14px 29px;
+}
+
+.chu-title-tech {
+    margin: 0px 15px 17px 15px;
+    width: 70%;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #F26222;
+}
+
+.box-techcombank {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 24px;
+    /* margin-bottom: 18px; */
+}
+
+.title-tech {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F26222;
+    margin-left: 11px;
+}
+
+.sacombank {
+    /* width: 37%; */
+    /* margin-bottom: 19px; */
+    float: left;
+    /* margin-left: 59px; */
+    margin-right: 20px;
+}
+
+.btn-sacombank {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 17px 22px;
+}
+
+.vib {
+    /* width: 37%; */
+    /* margin-bottom: 19px; */
+    float: left;
+    /* margin-left: 19px; */
+}
+
+.btn-vib {
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 8px 53px;
+}
+
+.content-techcombank .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003333;
+}
+.bot-tech {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content-center {
+    width: 55%;
+    margin: auto;
+    top: 0;
+}

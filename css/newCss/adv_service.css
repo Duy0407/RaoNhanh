@@ -1,0 +1,550 @@
+.title-adv {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #474747;
+    margin: 30px;
+}
+
+.df_anh_ll {
+    width: 128px;
+    height: 128px;
+}
+
+.df_anh_ll img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.time-adv {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+    padding-bottom: 6px;
+}
+
+.anh_qc {
+    width: 160px;
+    height: 160px;
+    margin: 10px 15px 10px 10px;
+
+}
+
+.anh_qc .img-adv {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-ddldb:hover {
+    background: #00CE2D;
+    color: #FFFFFF;
+}
+
+.btn-ctgg:hover {
+    background: #F26222;
+    color: #FFFFFF;
+}
+
+.border-ddldb {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.img-adv {
+    width: 100%;
+}
+
+.btn-ddldb {
+    color: #00CE2D;
+    background: #FFFFFF;
+    border: 1px solid #00CE2D;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+}
+
+.verify {
+    padding-right: 10px;
+}
+
+.border-ddldb:hover .verify {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.border-ctgg:hover .info-circle {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.btn-adv {
+    float: right;
+    margin-bottom: 20px;
+    width: 53%;
+    margin-top: 28px;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.info-circle {
+    padding-right: 12px;
+}
+
+.text-ctgg {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.text-ddldb {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.border-ctgg {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.btn-ctgg {
+    color: #F26222;
+    background: #FFFFFF;
+    border: 1px solid #F26222;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+}
+
+.box-right {
+    width: calc(100% - 300px);
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+}
+
+.money-adv {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F26222;
+    padding-top: 11px;
+
+}
+
+.text-main-content-ghim {
+    position: absolute;
+    transform: rotate(-45deg);
+    color: #FFFF;
+    font-weight: 500;
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+    top: 16%;
+    left: -3%;
+    width: 122px;
+    text-align: center;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 22px solid #F26222;
+}
+
+.address-adv {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-tilte {
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main-content .text-title-adv {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    width: 90%;
+    height: 20px;
+}
+
+.ddldb,
+.ctgg {
+    border: 0;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.content-ul-adv {
+    margin: 30px 30px 0 30px;
+}
+
+.chu .menu-bot {
+    width: 90%;
+    float: left;
+}
+
+.main-content {
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main-content .anh {
+    width: 128px;
+    height: 128px;
+    margin: 10px 15px 10px 10px;
+}
+
+.main-content .chu {
+    margin-top: 10px;
+    width: calc(100% - 173px);
+    margin-right: 20px;
+}
+
+.menu-btn {
+    float: right;
+    font-size: 26px;
+    margin-top: -11px;
+    font-weight: bold;
+    border: 0;
+    background: #FFF;
+    padding-top: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.thanh-menu {
+    display: none;
+}
+
+/* ----------------Quang */
+.advertising_service {
+    padding: 0px 30px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+}
+
+.main-content .text-title-adv {
+    color: #474747;
+}
+
+/* =================== 1024px ======================= */
+@media screen and (max-width: 1024px) {
+    .text-main-content-ghim {
+        top: 18%;
+        left: -4.5%;
+        width: 122px;
+    }
+
+    .thanh-menu {
+        width: 38%;
+        z-index: 1;
+        right: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    .adv_service .thanh-menu {
+        width: 160px;
+    }
+
+    .btn-ddldb {
+        color: #000000;
+        border: #FFFFFF;
+        padding: 0px;
+    }
+
+    .btn-ddldb:hover {
+        background: #FFFFFF;
+        color: #000;
+    }
+
+    .thanh-menu .text-ddldb {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+    }
+
+    .thanh-menu .text-ctgg {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+        padding-top: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .main-content .text-title-adv {
+        width: 96%;
+    }
+
+    .btn-adv {
+        display: none;
+    }
+
+    .content-ul-adv {
+        margin: 30px 20px 0 30px;
+    }
+
+    .content-ul-adv {
+        margin: 30px 20px 0 30px;
+    }
+
+    .advertising_service {
+        padding: 0px 20px;
+    }
+}
+
+/* =================== 768px ======================= */
+@media screen and (max-width: 768px) {
+    .advertising_service {
+        flex-direction: column;
+    }
+
+    .box-right {
+        width: 100%;
+    }
+
+    .text-main-content-ghim {
+        top: 18%;
+        left: -4%;
+        width: 122px;
+    }
+
+    .menu-btn {
+        margin-top: -10px;
+        position: absolute;
+        padding-top: 5px;
+        right: 0px;
+    }
+
+    .thanh-menu {
+        width: 34%;
+        right: 30px;
+    }
+
+    .anh_qc {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* =================== 480px ======================= */
+@media screen and (max-width: 480px) {
+    .advertising_service {
+        margin-top: 24px;
+    }
+
+    .box-right {
+        width: 100%;
+        margin: 0px;
+        box-shadow: 0 0;
+    }
+
+    .text-main-content-ghim {
+        top: 21%;
+        left: -6%;
+        width: 122px;
+    }
+
+    .anh_qc {
+        width: 95px;
+        height: 95px;
+    }
+
+    .btn-adv {
+        margin-bottom: 12px;
+        margin-top: 43px;
+    }
+
+    .time-adv {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 10px;
+    }
+
+    .address-adv {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .main-content .anh {
+        margin-right: 10px;
+        width: 95px;
+        height: 95px;
+    }
+
+    .main-content .chu {
+        margin-right: 10px;
+        width: calc(100% - 125px);
+    }
+
+    .text-tilte {
+        height: 17px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    .thanh-menu {
+        width: 71%;
+        right: 15px;
+    }
+
+    .chu .menu-bot {
+        width: 84%;
+        float: left;
+    }
+
+    .main-content .text-title-adv {
+        width: 94%;
+        font-size: 14px;
+        line-height: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .content-ul-adv {
+        margin: 30px 0px 0 0px;
+    }
+
+    .title-adv {
+        margin: unset;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+}
+
+/* =================== 375px ======================= */
+@media screen and (max-width: 375px) {
+    .box-right {
+        box-shadow: 0px 0px 0px;
+    }
+
+    .thanh-menu {
+        width: 82%;
+        right: 20px;
+    }
+
+    .main-content .anh {
+        width: 28%;
+    }
+
+    .money-adv {
+        padding-top: 10px;
+    }
+
+    .chu .menu-bot {
+        width: 88%;
+    }
+
+    .time-adv {
+        padding-bottom: 10px;
+    }
+
+    .main-content .chu {
+        width: 62%;
+        margin-right: 10px;
+    }
+
+    .text-tilte {
+        width: 100%;
+    }
+
+    .main-content .text-title-adv {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* =================== 320px ======================= */
+@media screen and (max-width: 320px) {
+    .main-content .chu {
+        width: 57%;
+    }
+
+    .main-content .anh {
+        width: 32%;
+    }
+
+    .text-main-content-ghim {
+        top: 24%;
+        left: -9.5%;
+        width: 44%;
+    }
+
+    .thanh-menu {
+        width: 92%;
+        right: 16px;
+        padding: 10px;
+    }
+
+    .chu .menu-bot {
+        width: 86%;
+    }
+
+    .btn-adv {
+        margin-bottom: 0px;
+        margin-top: 38px;
+    }
+
+    .main-content .text-title-adv {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .money-adv {
+        font-size: 15px;
+        line-height: 18px;
+        padding-top: 7px;
+    }
+}

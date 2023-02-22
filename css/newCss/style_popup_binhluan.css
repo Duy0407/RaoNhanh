@@ -1,0 +1,329 @@
+.scroll-doc {
+    overflow-y: auto;
+}
+
+.scroll-doc::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll-doc::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+.scroll-doc::-webkit-scrollbar-thumb {
+    background: #C6C6C6;
+    border-radius: 50px;
+}
+
+
+
+.share-vitri {
+    position: absolute;
+    z-index: 1;
+    top: 320px;
+    right: 50px;
+}
+
+.like-vitri {
+    position: absolute;
+    z-index: 1;
+    bottom: -200px;
+    left: 480px;
+}
+
+.luot-share-vitri {
+    position: absolute;
+    z-index: 1;
+    bottom: -210px;
+    right: 90px;
+}
+
+.popup-share {
+    width: 415px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+}
+
+.share-title {
+    margin: 5px;
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.popup-share-top,
+.luot-share-top {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+span.close {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+span.close :hover {
+    cursor: pointer;
+    color: red;
+}
+
+.popup-share-c {
+    padding: 10px 0px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px dashed #CCCCCC;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+.share-friends {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avt-user {
+    width: 50px;
+    height: 50px;
+}
+
+.inp-share {
+    width: 100%;
+}
+
+input.input-share {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 28px;
+    border: 1px solid #D1D4DC;
+}
+
+.popup-share-bot {
+    height: 350px;
+    padding-right: 10px;
+}
+
+.ds-share {
+    height: auto;
+}
+
+.avt-name-share {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avt-friends img {
+    width: 30px;
+    height: 30px;
+}
+
+.name-fr {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.sent-share {
+    background: #FFE7DD;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    color: #F26222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.bgxam {
+    background: #E1E1E1;
+}
+
+
+
+/* click vào lượt like */
+.popup-luot-like,
+.popup-luot-share {
+    width: 415px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+}
+
+.list-1 {
+    height: 350px;
+}
+
+.list-person {
+    height: auto;
+}
+
+.luot-like-top {
+    position: relative;
+    display: flex;
+    padding-bottom: 13px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+.sum-all {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2758DD;
+}
+
+.sum-like,
+.sum-love,
+.sum-haha,
+.sum-wow,
+.sum-love2,
+.sum-angry,
+.sum-sad,
+.read-more-like {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.sum-like img,
+.sum-love img,
+.sum-haha img,
+.sum-wow img,
+.sum-love2 img {
+    width: 14px;
+    height: 14px;
+}
+
+.mt-17 {
+    margin-top: 17px;
+}
+
+.like-person {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.avt-person {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.emotion {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.avt-person img {
+    width: 30px;
+    height: 30px;
+}
+
+.avt-person .emotion img {
+    width: 8px;
+    height: 8px;
+}
+
+.avt-name-person {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-person {
+    width: 74px;
+    padding: 7px 10px;
+    background: #33A348;
+    border-radius: 30px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.bgxam {
+    background: #AFAFAF;
+}
+
+p.chat-txt,
+p.add-fr-txt,
+p.un-friends-txt {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.add-fr .add-friends {
+    background: #F26222;
+    border-radius: 30px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 70px;
+    padding: 7px 10px;
+}
+
+.add-fr .un-friends {
+    background: #EBB9A3;
+    border-radius: 30px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100px;
+    padding: 7px 10px;
+}
+
+.box-read-more {
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    position: absolute;
+    right: -70px;
+    top: 0px;
+}
+
+/* show khi hover */
+.hover-share{
+    width: 133px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+:hover + .hide{
+    display: block;
+}
+
+
+
+.d_none {
+    display: none;
+}

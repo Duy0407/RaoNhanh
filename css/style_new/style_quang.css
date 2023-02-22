@@ -1,0 +1,391 @@
+/* POPUP ĐỔI MẬT KHẨU THÀNH CÔNG */
+.popup_doimk_tc{position: fixed;top: 160px;left: 0;right: 0;bottom: 0;z-index: 10;display: none;}
+.popup_doimk_tc_overlay{position: fixed;top: 0;right: 0;left: 0;bottom: 0;background: #000;opacity: 0.4;width: 100%;height: 100%;}
+.popup_doimk_tc_padding_to{display: flex;justify-content: center;}
+.popup_doimk_tc_padding{width: 469px;padding: 30px 50px;background: #FFF;box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);border-radius: 10px;display: flex;flex-direction: column;align-items: center;z-index: 11;}
+.popup_doimk_tc_padding_text{margin: 30px 0;}
+.popup_doimk_tc_padding_btn {width: 100%;background: #00CE2D;text-align: center;padding: 9px 0;color: #FFF;border-radius: 5px;font-weight: 500;font-size: 15px;line-height: 18px;}
+.popup_doimk_tc_padding_img{width: 80px;height: 80px;}
+.popup_doimk_tc_padding_img img{width: 100%;height: 100%;}
+
+/* ---------------------------- */
+
+.danhgia_hskx2{width:100%;background:#FFF;border-radius:20px;border:1px solid #CCC;padding:30px;padding-top:24px;margin-top:30px}
+.danhgia_kh{margin-bottom:20px}
+.hd-align-center{align-items:center}
+.btn-danh-gia-kx{justify-content:end;margin-top:20px}
+.bg_vang{background:#fef4d5}
+.k_anh_chung{border-radius:10px;width:40px;height:40px;display: flex;align-items: center;justify-content: center;}
+.ghichu{font-weight:700;font-size:24px;line-height:28px;padding-left:20px}
+.hd_font15-17{font-size:15px;line-height:17px;margin-bottom:5px}
+.font-dam{font-weight:700;color:#474747}
+.color_red{color:#F33}
+.p5{padding-left:5px}
+.div-text-danh-gia-kx{width:100%;justify-content:space-between;gap:20px}
+.o-phanhoikh.active .form-control,.o-danhgia_kh.active .form-control,.row-rtbm.active .form-control{background:#FFF;border:1px solid #F26222}
+textarea.text-danh-gia-kx{width:606px;height:119px;border:1px solid #CCC;border-radius:5px;padding:10px 20px}
+.form-control{outline:0}
+div.stars{width:270px;display:inline-block}
+.title_row_rtbm{width:100%}
+.hd_font15-17{font-size:15px;line-height:17px;margin-bottom:5px}
+.font-dam{font-weight:700;color:#474747}
+.gap_20{gap:20px}
+input.star{display:none}
+label.star{float:right;padding:8px;font-size:35px;color:#F1C644;transition:all .2s}
+input.star-5:checked~label.star:before{color:#F1C644}
+input.star:checked~label.star:before{content:'\f005';color:#FD4;transition:all .25s}
+label.star:before{content:'\f006';font-family:FontAwesome}
+.row-hskx.div-ma-xac-nhan input.ma-xac-nhan{width:184px}
+.o-phanhoikh.active .form-control,.o-danhgia_kh.active .form-control,.row-rtbm.active .form-control{background:#FFF;border:1px solid #F26222}
+.row-hskx input[type="text"]{width:100%;padding:10px 20px;display:inline-block;height:36px;border:1px solid rgba(51,51,51,0.2);border-radius:5px;line-height:36px;font-size:16px;color:#474747}
+.people_buy_support .ma-captcha-cont{width:116px;position:relative}
+.row-hskx .ma_dcap_2{width:116px;height:36px;padding:10px 14px;letter-spacing:5px;border:1px solid #CCC}
+.ma_dcap_2{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}
+.sh_size_five{font-size:14px;line-height:16px}
+.sh_clr_five{color:#666}
+.b_radius_5{border-radius:5px}
+.ma_dcap_2{width:30%;float:right;height:36px;padding:10px 19px;letter-spacing:5px;border:1px solid #CCC}
+.background-none{background:none}
+.sh_clr_five{color:#666}
+.sh_size_five{font-size:14px;line-height:16px}
+.btn-danh-gia-kx{justify-content:end;margin-top:20px}
+button.btn-gui-dg{background:#F26222;border-radius:5px;width:116px;height:36px;border:none;font-weight:500;font-size:15px;line-height:18px;text-align:center;color:#FFF}
+.hd_cspointer{cursor:pointer}
+.ma-captcha-cont {
+    position: relative;
+}
+.avt_icon_lh_cp{position: absolute;right: 10px;top: 6px;}
+
+/* .gianhang_container{padding: 0px 20px;} */
+.enterprise_favorite_news{padding: 0px 20px;}
+.rotate{transform: rotate(180deg);}
+.khoicon_ndban{height: unset;}
+.form-search .select2-container--default .select2-selection--single{background: unset;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{background: none;}
+.arrow_show_768 {display: none;}
+.service_advertisement_enterprise{padding: 0px 20px;}
+.popup_three_dots{display: none;}
+.popup_three_dots-click {position: absolute;border-radius: 10px;background-color: #FFF; padding: 10px;box-shadow: 0px 15px 30px rgb(0 0 0 /15%);top: 13px;right: 14px;display: none;}
+.popup_three_dots-click p{padding: 10px;padding-left: 20px;text-align: right;}
+.stall_history_transaction{padding: 0px 20px;}
+.not_favorite_news{padding-bottom: 50px;}
+.ma-captcha-cont img{position: unset;}
+.password__capcha{display: flex;}
+.change_password_stall{padding: 0px 20px;}
+.stall_recharge_account{padding: 0px 20px;}
+.khoi_ke_ngang{width: 100%;margin: unset;padding: 0px 50px;margin-top: 50px;}
+.khoi_ke_ngang img{width: 100%;}
+.khung_nhomchat.d_flex .khoi_the_atm_a_mot{margin-bottom: unset;}
+p.text_khoi_kn{position: absolute;left: 50%;margin: unset;}
+.khoi_the_atm_b_mot{max-width: 527px;width: 100%;}
+.active_recharge {
+    background: rgba(242, 98, 34, 0.2);
+}
+.khoi_thedt_a input{opacity: 0;}
+.khoi_the_atm{gap: 10px;}
+.khoicon_danhgia_b .d_flex.j_between{align-items: flex-end;}
+textarea.texa-mo-ta{height: 119px;}
+.khoinhapma{flex-direction: column;align-items: flex-start;}
+.khoitong_nhapma{margin-top: 20px;}
+/* .df_hs_khach_dg .btn_trangchu_a{background-color: ;} */
+.df_hs_khach_dg .btn_danhgia_a{width: 139px;}
+button.btn-doi-mk{max-width: 450px;width: 100%;}
+
+
+@media screen and (max-width: 1024px){
+    .enterprise_favorite_news .anh_avt_tin{width: 106px;height: 106px;}
+    .enterprise_favorite_news .khoicon_ndban{position: relative;padding: 8px;margin-bottom: 15px;}
+    .enterprise_favorite_news .khoicon_ndban:last-child{margin-bottom: unset;}
+    .enterprise_favorite_news .khoi_3btn{position: absolute;right: 10px; bottom: 10px;padding: unset;}
+    .enterprise_favorite_news .title_ban{font-size: 14px;line-height: 16px;padding: unset;margin-bottom: 18px;margin-top: 6px;}
+    .enterprise_favorite_news .time_ban{font-size: 10px;line-height: 12px;padding-bottom: 9px;}
+    .enterprise_favorite_news .address_ban{font-size: 11px;line-height: 13px;padding-bottom: 8px;}
+    .enterprise_favorite_news .tien_ban {font-size: 15px;line-height: 18px;}
+    .enterprise_favorite_news .img_tinban{padding: unset;padding-right: 10px;}
+    .enterprise_favorite_news .khoi_noidungban{padding: 20px 15px;}
+    .enterprise_favorite_news .hd_cspointer{font-size: 20px;line-height: 23px;}
+    /* -------------- service advertisement enterprise*/
+    .thongbao_dvquangcao_gh >p:first-child{font-size: 14px;line-height: 16px;}
+    .thongbao_dvquangcao_gh{padding: 25px 13px 0px 14px;}
+    .dichvuquangcaogianhang{font-size: 20px;line-height: 23px;}
+    .khoiphai_quanly .font-dam{font-size: 20px;line-height: 23px;}
+    .khoi_dichvu_qcdt{padding-top: 40px;}
+    .khoi_dichvu_qcdt .title_ban{font-size: 14px;line-height: 16px;margin-bottom: unset;padding-bottom: 18px;}
+    .chu_nghieng45{font-size: 12px;line-height: 14px;}
+    .nghiengcam{top: 0px;left: -1px;}
+    .icon_dgcheo{top: -7px;left: -1px;}
+    .img_tinban{overflow: hidden;}
+    .anh_avt_tin{width: 106px;height: 106px;}
+    .service_advertisement_enterprise .khoicon_ndban{position: relative;}
+    .service_advertisement_enterprise .khoi_3btn{position: absolute;right: 14px;bottom: 8px;padding: unset;}
+    .khoi_text_ban{width: calc(100% - 123px);}
+    .time_ban{font-size: 10px;line-height: 12px;padding-bottom: 9px;}
+    .address_ban{font-size: 11px;line-height: 13px;}
+    .tien_ban{font-size: 15px;line-height: 18px;}
+    .khoi_3btn{width: unset;}
+    .btn_green .color_green,.btn_cam_b .color_cam{font-size: 13px;line-height: 15px;}
+   .btn_cam_b {width: unset;}
+   .btn_cam_b p{padding-left: 6px;}
+   .btn_green ,.btn_cam_b {height: 26px;}
+   .h1_text{font-size: 26px;line-height: 30px;}
+   .text_rong{font-size: 14px;line-height: 16px;}
+   .vetrangchu{font-size: 14px;line-height: 16px;}
+   /* stall history transaction */
+   .lichsugiaodich{padding-left: 0px;font-size: 20px;line-height: 23px;}
+   .khoi_lichsu_giaodich{padding: 17px 15px 0px 15px;}
+   .font-15-18{font-size: 14px;line-height: 16px;}
+   .text_ghd{font-size: 14px;line-height: 16px;}
+   .font-16-19{font-size: 14px;line-height: 16px;}
+   .header_phai_lsgd3{width: 15%;}
+   .header_phai_lsgd2{width: 18%;}
+   .header_phai_lsgd1{width: 18%;}
+   .header_trai_lsgd{width: 43%;}
+   .row_dmk input[type="password"], .row_dmk input[type="text"]{font-size: 14px;}
+    /* -------- stall recharge account */
+    .khoi_the_atm{flex-wrap: wrap;justify-content: unset;margin: 30px 20px;}
+    .khoi_the_atm_a_mot{width: 22%;}
+    .khoi_the_atm_a_mot img{width: 100%;height: 100%;object-fit: contain;}
+    .khoi_the_atm_a .khoi_the_atm_a_mot{width: 146px;}
+    .khoi_the_atm_a{order: 1;display: flex;width: 100%;gap: 20px;flex-wrap: nowrap;}
+    .khoi_the_atm_b{order: 2;width: 100%;display: flex;flex-direction: column-reverse;}
+    .khoi_the_atm_b_hai{justify-content: flex-start;}
+    .khoi_the_atm_b_mot{margin: auto;margin-top: 30px;}
+    .khoi_the_atm_b .khoi_the_atm_a_mot{margin-bottom: 0;}
+    .tb_atm{margin: 0px 20px 30px 20px;}
+    .tb_nhomchat .khoi_the_atm_a_mot{width: 236px;max-width: 236px;}
+    .khung_nhomchat.d_flex{flex-wrap: wrap;}
+    .tb_nhomchat .khoi_the_atm_a_mot img{width: 30px;height: 30px;}
+    .tb_nhomchat{max-width: 532px;margin: auto;}
+    .khung_nhomchat.d_flex .khoi_the_atm_a_mot{margin-bottom: 20px;}
+    .khoi_ke_ngang{margin-top: 30px;}
+    .khoi_ke_ngang{padding: 0px 20px;}
+    .khoi_thedt{flex-wrap: wrap;}
+    .khoi_the_atm_b_mot{max-width: 527px;width: 100%;}
+    button.btn-nap-tien{width: 100%; max-width: 450px;margin-top: 0;}
+    .canhbao_ruttien{justify-content: unset;padding-left: 41px;margin-top: 50px;}
+    .tb_atm_canhbao br{display: none;}
+    .tb_atm{margin-bottom: 25px;}
+    .stall_recharge_account .font-15-18{font-size: 15px;line-height: 18px;}
+    /* --------- shop has not website */
+    .khoi_khong_face{max-width: 684px;}
+    .avatar_img img{width: 133px;height: 133px;}
+    .avatar_img {width: 133px;height: 133px;}
+    .ten_cuahang{font-size: 20px;line-height: 23px;left: 210px;}
+    .tt_hoatdong{right: 2px;}
+    .df_hs_khach_dg .btn_trangchu_a, .df_hs_khach_dg .btn_danhgia_a{width: 138px;height: 40px;font-size: 14px;line-height: 16px;padding-top: unset;display: flex;align-items: center;justify-content: center;padding-left: unset;}
+    .btn_danhgia_a{left: 125px;}
+    .nut_facebook .btn_facebook{width: 126px;height: 40px;}
+    .btn_facebook img{width: 23px;height: 22px;}
+    .btn_facebook p{font-size: 14px;line-height: 16px;}
+    .bg_vang.bg_chung{width: 30px;height: 30px;}
+    .bg_vang.bg_chung img{width: 100%;height: 100%;padding-top: 0px;padding-left: 0px;}
+    .gioithieu{font-size: 18px;line-height: 19px;padding-left: 10px;}
+    .khoicon_danhgia{padding: 29px 12px;}
+    .so_sao{font-size: 36px;}
+    #rating>label:before{font-size: 32px;}
+    .name_rate{font-size: 16px;line-height: 18px;}
+    .texttl_tkdanhgia1 ,.text_danhgia{font-size: 14px;line-height: 20px}
+    #rating_2>label:before{font-size: 30px;}
+    .ma_xac_nhan{width: 100%;}
+    .khoicapcha{width: 116px;padding-left: 8px;}
+    .show_macapcha{font-size: 14px;line-height: 16px;}
+    .khoicon_danhgia_b{padding: 24px 12px 30px 12px;}
+    img.hd_cspointer.xoay360.xoay361{width: 20px;height: 20px;margin-left: 0px;}
+    .khoitong_nhapma {gap: 8px;}
+    p.font-dam.hd_font15-17{font-size: 14px;}
+    .btn_guidanhgia{font-size: 14px;}
+    .cover_img{height: 243px;}
+    .btn_trangchu_a{padding-left: unset;}
+    .btn_facebook_img{width: 23px;height: 23px;}
+    .text_trangthai{display: block;}
+    .khoicon_danhgia_b .d_flex.j_between{align-items: flex-end;}
+    #rating_2{margin-bottom: 0px;}
+    .khoinhapma{width: 116px;}
+    .khoiphai_danhgiasao{width: 252px;}
+    .khoitraidanhgia{width: calc(100% - 272px);}
+
+}
+@media screen and (max-width :768px) {
+    .gianhang_container>div{flex-direction: column;margin: unset;}
+    .tongkhoitrai{width: 100%;}
+    .khoitrai_gh{width: 100%;}
+    .khoiphai_quanly{width: 100%;}
+    .khoitrai_gh>.d_flex{width: 100%;box-shadow: 0 4px 4px rgb(0 0 0 /25%);border-radius: 20px;}
+    .thongtin_ngban{display: flex;margin-right: 20px;}
+    .avt_nguoiban img{width: 39px;height: 39px;}
+    .tongkhoitrai >.khoitrai_gh>.d_flex>div+div{width: calc(100% - 73px);}
+    .avt_nguoiban{margin-right: 20px;}
+    .thongtin_ngban p{width: calc(100%/3);}
+    .arrow_show_768{width: 20px;height: 20px;position: absolute;right: 20px;top: 34%;display: flex;}
+    .khoitrai_768{position: relative;}
+    .khoi_list_thongtin{border-bottom: 0.5px solid #F26222;padding: 15px 0px;}
+    .khoi_list_thongtin:last-child{border-bottom: unset;}
+    .khoitrai_gh{height: unset;}
+    #id_active{padding: 0px 30px;}
+    .menu_hoso_768{display: none;}
+    .khoiphai_quanly{margin-top: 23px;}
+    .enterprise_favorite_news .hd_cspointer{font-size: 18px;line-height: 21px;padding-left: unset;padding-top: unset;}
+    .enterprise_favorite_news .modal_dangtin{padding-top:33px ;}
+    .enterprise_favorite_news .khoicon_ndban{margin-bottom: 10px;}
+    .arrow_show_768 {display: block;}
+    /* ------------- */
+    .khoiphai_quanly .font-dam{font-size: 18px;line-height: 21px;}
+    .dichvuquangcaogianhang{font-size: 18px;line-height: 21px;}
+    .thongbao_dvquangcao_gh >p:first-child{font-size: 13px;line-height: 15px;}
+    .khoi_dichvu_qcdt{padding: 40px 15px 20px 15px;}
+    .service_advertisement_enterprise .khoi_3btn{display: none;}
+    .popup_three_dots{display: block;position: absolute;top: 7px;right: 0px;width: 20px;height: 20px;}
+    .no_goods_advertisement{padding-bottom: 80px;}
+    /* --------- */
+    .header_phai_lsgd2 {
+        width: 25%;
+    }
+    /* -------- */
+    .password__capcha .ma-captcha-cont{margin-left: 20px;}
+   .change_password_stall .font-15-18{font-size: 15px;line-height: 18px;}
+   /* --------- stall recharge accuont*/
+   .naptienvaotaikhoan{font-size: 18px;line-height: 21px;padding-left: 0px;}
+   .khoi_the_atm{margin: 30px 15px;}
+   .khoi_the_atm_a{justify-content: space-between;}
+   .khoi_the_atm_b_hai{gap: 38px;}
+   .khoi_the_atm_a .khoi_the_atm_a_mot{margin-bottom: 15px;}
+   .khoi_the_atm_b_mot{margin-top: 20px;}
+   .khoi_the_atm{margin-bottom: 20px;}
+   .tb_atm .color_dolom{padding-bottom: 25px;}
+   .tb_atm_canhbao{font-size: 18px;line-height: 29px;}
+   .khoi_khong_face{max-width: 728px;}
+   .cover_img{height: 256px;}
+   .stall_no_website .gianhang_container>div{margin: auto;}
+   .khoi_vietdanhgia{margin: unset;margin-top: 25px;}
+   img.hd_cspointer.xoay360.xoay361{margin-left: 10px;}
+   .btn_guidanhgia{margin-right: 30px;}
+  .df_hs_khach_dg .btn_trangchu_a,.df_hs_khach_dg .btn_danhgia_a,.btn_facebook.hs_df_10,.btn_web.hs_df_10{height: 35px;}
+   .khoi_internet{padding-top: 70px;}
+   .ten_cuahang{font-size: 18px;line-height: 21px;}
+   .btn_web_img{width: 23px;height: 23px;}
+   section.stall_no_website{padding: 0px 20px;}
+   .d_flex.code_capcha_number {
+    justify-content: space-between;
+    }
+}
+@media screen and (max-width :480px) {
+    .thongtin_ngban{flex-direction: column;margin-right: 0px;}
+    .thongtin_ngban p{width: unset;}
+    .avt_nguoiban img{width: 79px;height: 79px;}
+    .avt_nguoiban{margin-bottom: 22px;}
+    .enterprise_favorite_news .anh_avt_tin{width: 93px;height: 97px;}
+    .title_ban{-webkit-line-clamp:1; }
+    .enterprise_favorite_news .address_ban{font-size: 10px;line-height: 12px;    display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-bottom: unset;
+    }
+    .enterprise_favorite_news .tien_ban{margin-top: 8px;}
+    .select2-container--default .select2-selection--single .select2-selection__arrow{right: 9px;}
+    .enterprise_favorite_news .tien_ban{font-size: 14px;line-height: 16px;}
+    .enterprise_favorite_news .khoi_noidungban{padding: 20px 10px;}
+    .enterprise_favorite_news .khoi_3btn img{width: 18px;height: 19px;}
+    .enterprise_favorite_news .khoi_3btn{right: 5px;bottom: 5px;}
+    /* -------------------  service advertisement enterprise*/
+    .dichvuquangcaogianhang{padding-left: 0px;padding-top: 0px;}
+    .modal_dangtin{padding: 30px 12px 0px 12px;}
+    .thongbao_dvquangcao_gh >p:first-child{line-height: 20px;}
+    .thongbao_dvquangcao_gh{padding: 30px 24px 0px 23px;}
+    .khoi_dichvu_qcdt{padding: 40px 12px 20px 12px;}
+    .khoi_dichvu_qcdt .title_ban{padding-bottom: unset;padding-top: 10px;}
+    .time_ban{margin-top: 20px;padding-bottom: 8px;}
+    .address_ban{font-size: 10px;line-height: 12px;display: -webkit-box;overflow: hidden;-webkit-line-clamp: 1;-webkit-box-orient: vertical;padding-bottom: unset;}
+    .tien_ban{margin-top: 8px;font-size: 14px;line-height: 16px;}
+    .anh_avt_tin{width: 93px;height: 97px;}
+    .nghiengcam {top: 3px;}
+    .img_tinban{padding: 7px;}
+    .h1_text{font-size: 20px;line-height: 23px;}
+    .text_rong{font-size: 14px;line-height: 17px;}
+    .no_goods_advertisement{padding-bottom: 50px;}
+    .khoi_lichsu_giaodich{overflow-x: scroll;}
+    .khoi_lichsu_giaodich_375{width: 768px;}
+    .header_trai_lsgd {width: 39%;}
+    .lichsugiaodich{font-size: 18px;line-height: 21px;padding-top: 0px;}
+    ::-webkit-scrollbar{height: 10px;}
+    /* -------- */
+    .row_dmk .ma_dcap_2{width: 107px;}
+    .row_dmk .ma_dcap_2{padding: 10px 13px;}
+    .password__capcha .ma-captcha-cont{margin-left: unset;}
+    .row_dmk.div-ma-xac-nhan input.ma-xac-nhan{width: calc(100% - 113px)!important;}
+    .doimatkhau{padding-left: 0px;font-size: 18px;line-height: 21px;}
+    .avt_icon_lh_cp{right: 5px;}
+    .row_dmk .ma_dcap_2{padding: 10px;}
+    form.cha_row_dmk{margin: 20px 10px 40px 10px;}
+    /* ------stall recharge account */
+    .khoi_the_atm_a .khoi_the_atm_a_mot{width: calc(100%/2 - 6px);}
+    .khoi_the_atm_a{flex-wrap: wrap;gap: 12px;}
+    .khoi_the_atm{margin: 30px 10px;}
+    .stall_recharge_account{padding: 0px 16px;}
+    .naptienvaotaikhoan{padding-top: 0px;}
+    .khoi_the_atm{margin-top: 20px;}
+    .khoi_the_atm_a .khoi_the_atm_a_mot{margin-bottom: 10px;}
+    .khoi_the_atm_a{row-gap: unset;max-width: 320px;margin: auto;}
+    .khoi_the_atm_b_hai{gap: 12px;justify-content: space-between;max-width: 320px;margin: auto;}
+    .khoi_the_atm_b .khoi_the_atm_a_mot{width: 154px;}
+    .khoi_the_atm_b_ba{flex-direction: column-reverse;}
+    .title_atm{font-size: 14px;line-height: 21px;margin-top: 15px;}
+    .text_atm ,.text_ht_atm{font-size: 13px;line-height: 20px;}
+    .khoi_the_atm_b_mot{padding: 15px 8px 11px 11px;}
+    .tb_atm .color_dolom{font-size: 14px;line-height: 21px;padding-bottom: 14px;}
+    .tb_atm{margin: 0px 20px 23px 17px;}
+    .tb_atm_canhbao{font-size: 14px;line-height: 21px;text-align: justify;}
+    .khung_nhomchat.d_flex .khoi_the_atm_a_mot{width: 100%;max-width: unset;}
+    .khung_nhomchat.d_flex{padding: 0px 20px 0px 17px;}
+    .khung_nhomchat.d_flex .khoi_the_atm_a_mot{justify-content: flex-start;align-items: center;}
+    p.text_khoi_kn{left: 46%;}
+    .khoi_thedt{gap: unset;column-gap: 29px;margin-bottom: unset;margin-top: 41px;padding: 0px 11px;}
+    .khoi_thedt_a{margin-bottom: 15px;}
+    form.cha_row_dmk{margin-top: 15px;margin-bottom: unset;}
+    .div-ma-xac-nhan{margin-bottom: 35px;}
+    .canhbao_ruttien{margin-top: 20px;padding-left: 32px;}
+    .khoi_ke_ngang{margin-top: 5px;}
+    /* ------- */
+    .stall_no_website{padding: 0px 20px;}
+    .cover_img{height: 119px;}
+    .avatar_img ,.avatar_img img{width: 80px;height: 80px;}
+    .avatar_img{left: 12px;bottom: -23px;}
+    .tt_hoatdong{right: 0;bottom: 4px;}
+    .text_trangthai{bottom: 5px;}
+    .ten_cuahang{font-size: 14px;line-height: 16px;}
+    .ten_cuahang{left: 100px;}
+    .khoi_internet{padding-top: 45px;}
+    .btn_trangchu_a, .btn_danhgia_a{width: 86px;font-size: 13px;}
+    .btn_danhgia_a{left: 79px;}
+    .text_trangthai{display: none;}
+    .btn_trangchu_a, .btn_danhgia_a, .btn_facebook.hs_df_10, .btn_web.hs_df_10{height: 30px;}
+    .btn_danhgia_a{justify-content: flex-end;padding-right: 11px;left: 71px;width: 89px;}
+    .btn_facebook p{font-size: 13px;line-height: 15px;}
+    .btn_facebook img,.btn_facebook_img{width: 18px;height: 18px;}
+    .btn_web.hs_df_10{width: 97px;}
+    .hs_df_10 p{font-size: 13px;}
+    .btn_web_img{width: 18px;height: 18px;}
+    .khoicon_danhgia .d_flex.hd-jtify-center.hd-align-center{margin-top: 10px;}
+    .so_sao{display: none;}
+    #rating{margin-left: 0px;}
+    #rating #rating>label:before{font-size: 30px;}
+    .img_cmt_danhgia .img_anh_danhgia{width: 36px;height: 36px;}
+    .time_rate{display: none;}
+    .name_rate{width: 57%;}
+    .ghichu{font-size: 18px;}
+    .danhgia_hscn2{padding: 8px;}
+    .khoicon_danhgia_b > .d_flex.j_between{flex-direction: column;}
+    .khoitraidanhgia{width: 100%;}
+    .khoiphai_danhgiasao{width: 100%;}
+    .khoinhapma{width: calc(100% - 126px);}
+    img.hd_cspointer.xoay360.xoay361{margin-right: 8px;margin-left: 0;}
+    .btn_guidanhgia{margin-right: 0px;}
+    .khoinhapma{margin-top: 0px;}
+    #rating_2{margin-top: 15px;}
+    .tt_hoatdong{right: 3px;width: 16px;height: 16px;}
+    .df_hs_khach_dg .btn_danhgia_a{width: 86px;}
+    .btn_danhgia_a {left: 80px;}
+    .df_hs_khach_dg .btn_trangchu_a{width: 100%; justify-content:unset;padding-left: 14px;}
+    .ghichu{padding-left: 12px;}
+}

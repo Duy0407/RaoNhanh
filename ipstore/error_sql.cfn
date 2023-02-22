@@ -1,0 +1,101 @@
+16/02/2023 09:37:41 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `id_parent` = 0' at line 1
+SELECT `tags_id`, `ten_tags`  FROM `key_tags` WHERE `id_danhmuc` =  AND `id_parent` = 0  /dang-tin-tim-ung-vien.html
+18/02/2023 03:03:08 AM Column count doesn't match value count at row 1
+INSERT INTO `new`(`new_title`, `new_money`, `new_cate_id`, `new_city`, `new_user_id`, `new_image`,
+                                        `new_create_time`, `new_type`, `new_active`, `new_unit`, `new_name`, `new_phone`, `new_email`, `new_address`,
+                                        `chotang_mphi`, `quan_huyen`, `phuong_xa`, `new_sonha`, `dia_chi`, `new_video`, `new_ctiet_dmuc`,`new_tinhtrang`, 
+                                        `link_title`,`new_buy_sell`,`new_update_time`,`thoigian_kmbd`,`thoigian_kmkt`,`soluong_min`,`soluong_max`
+                                        ,`thoigian_kmbd`,`thoigian_kmkt`,`soluong_min`,`soluong_max`)
+                                        VALUES ('Bán thời trang nam giá rẻ tại Hà Nội,HCM,TB','100000','43',0,'197257','/pictures/thoi_trang/1676689388_banhtraicay.jpg','1676689388','1',
+                                        '1','1','Đỗ Xuân mạnh','0353148870','manh555@gmail.com','Hà Nội','0',0,0,'',
+                                        'Hà Nội','','5823','1','Bán thời trang nam giá rẻ tại Hà Nội,HCM,TB','2','1676689388'
+                                        ,'1676726580','1676726580','1','2') /ajax_thoitrang/dtin_ttrang_nam.php
+21/02/2023 01:52:29 AM Column count doesn't match value count at row 1
+INSERT INTO `new`(`new_title`,`link_title`, `new_money`, `new_cate_id`, `new_city`, `new_user_id`, `new_image`,
+                                    `new_create_time`, `new_type`, `new_active`, `new_unit`, `new_name`, `new_phone`, `new_email`, `new_address`, `quan_huyen`,
+                                    `phuong_xa`, `new_sonha`, `dia_chi`, `new_video`, `new_ctiet_dmuc`,`new_tinhtrang`,`new_buy_sell`,
+                                    `new_update_time`,`chotang_mphi`,`thoigian_kmbd`,`thoigian_kmkt`,`soluong_min`,`soluong_max`,`thoigian_kmbd`,`thoigian_kmkt`,
+                                    `soluong_min`,`soluong_max`)
+                                    VALUES ('Bán nội thất cho sân vườn tại thành phố Hà Nội, HCM','ban-noi-that-cho-san-vuon-tai-thanh-pho-ha-noi-hcm','1000000','83','0','197257','/pictures/dangtin_dodung/1676857394_crepe-tao.jpg','1676944349','1',
+                                    '1','1','Đỗ Xuân mạnh','0353148870','manh555@gmail.com','Hà Nội;','0','0','',
+                                    'Hà Nội;','','1455','1',2,'1676944349','0'
+                                    ,'1676985780','1676985780','1','5') /ajax_noithat_ngoaithat/dtin_vuon.php
+21/02/2023 02:32:27 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''',
+                                                                `so_luong_k' at line 3
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = '',
+                                                                `phan_loai`= '',
+                                                                `loai` = ,'',
+                                                                `so_luong_kho` = '',
+                                                                `loai_khuyenmai` = '0',
+                                                                `giatri_khuyenmai` = 'undefined',
+                                                                `van_chuyen` = '0',
+                                                                `phi_van_chuyen` = 'undefined',
+                                                                `gia_sanpham_xt` = '',
+                                                                `donvi_tien_xt` = ''
+                                                        WHERE   `id_new` = ''  /ajax_xeco/edit_xeco_xemay.php
+21/02/2023 07:05:14 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '''.$item_ar.'',
+                                                               ' at line 3
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = '',
+                                                                `phan_loai`= '',
+                                                                `loai` = ,''.$item_ar.'',
+                                                                `so_luong_kho` = '',
+                                                                `loai_khuyenmai` = '1',
+                                                                `giatri_khuyenmai` = '5',
+                                                                `van_chuyen` = '2',
+                                                                `phi_van_chuyen` = '100000',
+                                                                `gia_sanpham_xt` = '',
+                                                                `donvi_tien_xt` = '1'
+                                                        WHERE   `id_new` = ''  /ajax_xeco/edit_xeco_xemay.php
+21/02/2023 09:27:03 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Đỏ;,xanh',
+                                                                ' at line 3
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = 'màu sắc',
+                                                                `phan_loai`= 'Đỏ,xanh',
+                                                                `loai` = ,'Đỏ;,xanh',
+                                                                `so_luong_kho` = '100;,100;,100;,100',
+                                                                `loai_khuyenmai` = '1',
+                                                                `giatri_khuyenmai` = '5',
+                                                                `van_chuyen` = '2',
+                                                                `phi_van_chuyen` = '100000',
+                                                                `gia_sanpham_xt` = '15555555;20000000',
+                                                                `donvi_tien_xt` = '1;,1',
+                                                                `donvi_tien_vc` = '1',
+                                                        WHERE   `id_new` = ''  /ajax_xeco/edit_xeco_xemay.php
+21/02/2023 09:27:54 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE   `id_new` = ''' at line 12
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = 'màu sắc',
+                                                                `phan_loai`= 'Đỏ,xanh',
+                                                                `loai` = 'Đỏ;,xanh',
+                                                                `so_luong_kho` = '100;,100;,100;,100',
+                                                                `loai_khuyenmai` = '1',
+                                                                `giatri_khuyenmai` = '5',
+                                                                `van_chuyen` = '2',
+                                                                `phi_van_chuyen` = '100000',
+                                                                `gia_sanpham_xt` = '15555555;20000000',
+                                                                `donvi_tien_xt` = '1;,1',
+                                                                `donvi_tien_vc` = '1',
+                                                        WHERE   `id_new` = ''  /ajax_xeco/edit_xeco_xemay.php
+21/02/2023 09:29:42 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE   `id_new` = '611023'' at line 12
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = 'màu sắc',
+                                                                `phan_loai`= 'Đỏ,xanh',
+                                                                `loai` = 'Đỏ;,xanh',
+                                                                `so_luong_kho` = '100;,100;,100;,100',
+                                                                `loai_khuyenmai` = '1',
+                                                                `giatri_khuyenmai` = '5',
+                                                                `van_chuyen` = '2',
+                                                                `phi_van_chuyen` = '100000',
+                                                                `gia_sanpham_xt` = '15555555;20000000',
+                                                                `donvi_tien_xt` = '1;,1',
+                                                                `donvi_tien_vc` = '1',
+                                                        WHERE   `id_new` = '611023'  /ajax_xeco/edit_xeco_xemay.php
+21/02/2023 09:30:06 AM You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE   `id_new` = 611023' at line 12
+UPDATE `thongtin_banhang` SET `nhom_phan_loai` = 'màu sắc',
+                                                                `phan_loai`= 'Đỏ,xanh',
+                                                                `loai` = 'Đỏ;,xanh',
+                                                                `so_luong_kho` = '100;,100;,100;,100',
+                                                                `loai_khuyenmai` = '1',
+                                                                `giatri_khuyenmai` = '5',
+                                                                `van_chuyen` = '2',
+                                                                `phi_van_chuyen` = '100000',
+                                                                `gia_sanpham_xt` = '15555555;20000000',
+                                                                `donvi_tien_xt` = '1;,1',
+                                                                `donvi_tien_vc` = '1',
+                                                        WHERE   `id_new` = 611023  /ajax_xeco/edit_xeco_xemay.php

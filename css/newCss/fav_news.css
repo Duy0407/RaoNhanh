@@ -1,0 +1,357 @@
+.box-right {
+    width: calc(100% - 300px);
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+    margin-top: 30px !important;
+}
+
+.favorite_news_seller {
+    padding: 0px 30px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+}
+
+.title-fav {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #474747;
+    margin: 30px;
+}
+
+.themdiv_noclass1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 77%;
+}
+
+.themdiv_noclass2 img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.themdiv_noclass2 h1.h1_text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.themdiv_noclass2 .text_rong {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.themdiv_noclass2 .text_center {
+    display: flex;
+    justify-content: center;
+}
+
+.themdiv_noclass2 .text_center a {
+    padding: 9px 18px;
+    border: 1px solid #F26222;
+    border-radius: 5px;
+    color: #F26222;
+    font-size: 15px;
+}
+
+.content-ul-fav {
+    margin: 30px 30px 0 30px;
+}
+
+.main-content {
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.main-content .anh {
+    margin: 10px 15px 10px 10px;
+    width: 128px;
+    height: 128px;
+}
+
+.main-content .chu {
+    width: calc(100% - 173px);
+}
+
+.main-content .text-title-fav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    height: 20px;
+
+}
+
+.img-fav {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text-tilte {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.chu .menu-bot {
+    width: 100%;
+    float: left;
+}
+
+.time-fav {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+    padding-bottom: 6px;
+}
+
+.address-fav {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.money-fav {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F26222;
+
+}
+
+.tca_ythich_tin {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-tim {
+    background: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.text_btn_yc {
+    width: 100%;
+}
+
+.ythich_tienyc {
+    margin-top: 10px;
+}
+
+
+/* ================= 1024 ===================== */
+@media screen and (max-width:1024px) {
+    /* footer {
+        display: none;
+    } */
+
+    .content-ul-fav {
+        margin: 30px 20px 0 30px;
+    }
+
+    .favorite_news_seller {
+        padding: 0px 20px;
+    }
+
+    .themdiv_noclass1 {
+        width: 72%;
+    }
+}
+
+/* =================768 ======================  */
+@media screen and (max-width: 768px) {
+    .box-right {
+        width: 100%;
+    }
+
+    .favorite_news_seller {
+        flex-direction: column;
+    }
+
+    .themdiv_noclass1 {
+        width: 100%;
+    }
+
+    .anh.anhcon_df_dl {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+/* ================= 480 ======================  */
+@media screen and (max-width: 480px) {
+    .anh.anhcon_df_dl {
+        width: 79px;
+        height: 79px;
+    }
+
+    .themdiv_noclass2 img {
+        margin-bottom: 30px;
+    }
+
+    .chu_fig_dl {
+        flex-direction: column;
+    }
+
+    .themdiv_noclass2 h1.h1_text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .themdiv_noclass2 .text_rong {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 50px;
+    }
+
+    .favorite_news_seller {
+        margin-top: 24px;
+    }
+
+    .box-right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .title-fav {
+        margin: unset;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .content-ul-fav {
+        margin: 30px 0px 0 0px;
+    }
+
+    .main-content .chu {
+        width: calc(100% - 125px);
+    }
+
+    .main-content .text-title-fav {
+        width: 94%;
+        font-size: 14px;
+        line-height: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .text-tilte {
+        height: 17px;
+        margin-bottom: 10px;
+
+    }
+
+    .time-fav {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .address-fav {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btn-fav {
+        margin: 0;
+    }
+
+    /* ---------------Quang */
+    .main-content .anh {
+        width: 95px;
+        height: 95px;
+        margin: 10px;
+    }
+
+    .box-right {
+        box-shadow: unset;
+        background-color: transparent;
+    }
+}
+
+/* ================= 375 ======================  */
+@media screen and (max-width:375px) {
+
+    .main-content .anh {
+        margin-right: 7px;
+    }
+
+    .main-content .chu {
+        width: 61%;
+    }
+
+    .chu .menu-bot {
+        width: 88%;
+    }
+
+    .main-content .text-title-fav {
+        width: 100%;
+    }
+
+    .box-right {
+        box-shadow: 0px 0px 0px;
+    }
+
+    .money-fav {
+        padding-top: 10px;
+    }
+}
+
+/* ================= 320 ======================  */
+@media screen and (max-width:320px) {
+    .main-content .chu {
+        width: 60%;
+    }
+
+    .main-content .text-title-fav {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .money-fav {
+        font-size: 16px;
+        line-height: 18px;
+        padding-top: 7px;
+    }
+
+    .text-tilte {
+        margin-bottom: 5px;
+    }
+
+    .chu .menu-bot {
+        width: 86%;
+    }
+
+    .btn-fav {
+        margin-bottom: 0px;
+        margin-top: 38px;
+    }
+}
