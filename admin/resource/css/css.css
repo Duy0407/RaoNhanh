@@ -1,0 +1,549 @@
+body {
+	margin: 0px;
+	font-family: Arial;
+	font-size: 11px;
+}
+
+body * {
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.bold,
+.textBold {
+	font-weight: bold;
+	color: #15428B;
+}
+
+.bg {
+	background: url(../images/grid3-hrow.gif) repeat-x scroll 0 0 transparent;
+	font-size: 11px;
+}
+
+.hide,
+.hidden {
+	display: none;
+}
+
+/* Form */
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+.form_asterisk {
+	font-size: 12px;
+	color: #FF0000;
+}
+
+.form_button {
+	border: none;
+	font-size: 11px;
+	color: #D93404;
+	padding-bottom: 2px;
+	width: 85px;
+	height: 20px;
+}
+
+.form_button_arrow {
+	font-size: 11px;
+	font-weight: normal;
+	width: 26px;
+}
+
+.form_control,
+.form_search {
+	padding: 1px;
+}
+
+input.form,
+textarea.form,
+select.form,
+.textbox {
+	font-size: 12px;
+	border: solid 1px #CCC;
+}
+
+.form_control {
+	background-color: #F2F2F2;
+	border: 1px #CCCCCC solid;
+	font-size: 11px;
+}
+
+.form_errorMsg {
+	font-size: 8pt;
+	color: #FF0000;
+}
+
+.form_name,
+.form_name_2 {
+	font-size: 12px;
+	color: #004000;
+	text-align: right;
+}
+
+.form_name_2 {
+	white-space: nowrap;
+}
+
+.form_name_3 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #004000;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.form_search {
+	font-size: 11px;
+	color: #004000;
+	text-decoration: none;
+}
+
+.form_text {
+	font-size: 11px;
+	color: #004000;
+}
+
+.form_text_note {
+	font-size: 10px;
+	color: #666666;
+}
+
+/* Phan trang */
+.page .s {
+	color: #F00;
+	font-size: 13px;
+}
+
+.page a {
+	text-decoration: none;
+}
+
+.page span {
+	color: #333;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 14px;
+}
+
+/* Table */
+.table * {
+	font: Tahoma, Verdana;
+	font-size: 11px;
+	color: #1C3A70;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	border: solid 1px #EEE;
+}
+
+.table td {
+	color: #15428B;
+	font-size: 11px;
+}
+
+.table tr:hover {
+	background-color: #D9EDF7;
+}
+
+.table form {
+	margin: 0px;
+	padding: 0px;
+}
+
+.table button {
+	border: solid 1px #CCC;
+	margin-left: 2px;
+}
+
+.table span input {
+	padding-right: 5px;
+}
+
+.table .h {
+	background: url(../images/grid/fhbg.gif);
+	padding: 4px;
+	white-space: nowrap;
+}
+
+.table_footer {
+	background: url(../images/grid/bg.gif);
+	font-weight: bold;
+	padding: 9px;
+}
+
+.table .vnd {
+	text-align: right;
+	color: #FF0000;
+	font-weight: bold;
+	width: 130px;
+}
+
+.table .date {
+	text-align: center;
+	width: 100px;
+}
+
+.table .check {
+	width: 15px;
+	text-align: center;
+}
+
+.table .textbox {
+	padding-left: 5px;
+	padding-right: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.table .check input {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Tooltip */
+#tooltip {
+	position: absolute;
+	z-index: 9999;
+	color: #fff;
+	font-size: 10px;
+}
+
+#tooltip .tipHeader {
+	height: 0px;
+}
+
+#tooltip .tipBody {
+	background-color: #FFC;
+	padding: 2px;
+	border: solid 1px #900;
+	text-align: center;
+	color: #900;
+}
+
+#tooltip .tipFooter {
+	height: 0px;
+}
+
+#dhtmltooltip {
+	border-right: black 1px solid;
+	padding-right: 4px;
+	border-top: black 1px solid;
+	padding-left: 4px;
+	font-size: 10pt;
+	z-index: 100;
+	filter: alpha(opacity=99);
+	-moz-opacity: .99;
+	-khtml-opacity: .99;
+	opacity: .99;
+	left: 300px;
+	visibility: hidden;
+	padding-bottom: 4px;
+	border-left: black 1px solid;
+	padding-top: 4px;
+	border-bottom: black 1px solid;
+	font-family: Arial;
+	position: absolute;
+	background-color: lightyellow;
+}
+
+#dhtmlpointer {
+	z-index: 101;
+	left: -300px;
+	visibility: hidden;
+	position: absolute;
+}
+
+/* Teplate 1 */
+.template1 .t1 {
+	background: url(../template/1.jpg) no-repeat left;
+	padding-left: 5px;
+}
+
+.template1 .t2 {
+	background: url(../template/1.jpg) no-repeat right;
+	padding-top: 5px;
+	padding-bottom: 8px;
+	color: #15428B;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 7px;
+}
+
+.template1 .t3 {
+	border-bottom: solid 1px #99BBE8;
+	border-left: solid 1px #99BBE8;
+	border-right: solid 1px #99BBE8;
+	padding: 5px;
+	padding-right: 7px;
+}
+
+/* Teplate 2 */
+.template2 {
+	margin: 5px;
+}
+
+.template2 .t4 * {
+	font-size: 12px;
+}
+
+.template2 .t1 {
+	padding-left: 5px;
+	height: 30px;
+	padding-top: 1px;
+}
+
+.template2 .t2 {
+	background: url(../template/3.jpg) no-repeat left;
+	padding-left: 10px;
+	float: left;
+	margin-left: 5px;
+}
+
+.template2 .t3 {
+	background: url(../template/3.jpg) no-repeat right;
+	padding-top: 5px;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	color: #15428B;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+}
+
+.template2 .t3 a {
+	text-decoration: none;
+	color: #15428B;
+}
+
+.template2 .t5 {
+	width: 99%;
+	padding-left: 10px;
+	float: left;
+}
+
+.template2 .t6 {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 10px;
+	color: #15428B;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+}
+
+.template2 .t6 input {
+	margin-left: 3px;
+}
+
+.template2 input {
+	font-size: 12px;
+	border: solid 1px #CCC;
+	padding-left: 3px;
+	color: #333;
+}
+
+.template2 .bottom {
+	background: #E17009;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	border: none;
+	padding: 2px 10px;
+}
+
+.template2 form {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* More */
+.price {
+	font-weight: bold;
+	color: red;
+	font-size: 13px;
+}
+
+.inputexcel {
+	margin: 0 0 10px 10px;
+}
+
+.pagebar {
+	margin: 10px;
+}
+
+.exportsuccase {
+	margin-left: 400px;
+	width: 300px;
+	text-align: center;
+}
+
+/* moi them */
+#listing .anh_xacthuc_to:hover {
+	transform: scale(4);
+	top: 100px;
+	position: relative;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	border: 1px solid #888;
+	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+.popup_dathang .modal-content {
+	width: 500px;
+}
+
+.btx_dongpou {
+	width: 140px;
+	height: 36px;
+	background: #00CE2D;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	border: 0;
+}
+
+.huydon-header {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px 10px 0px 0px;
+	background: #F26222;
+	position: relative;
+}
+
+.huydon-header p {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-weight: 500;
+	margin: 0;
+}
+
+.huydon-header .close {
+	position: absolute;
+	top: 2px;
+	right: 14px;
+	font-size: 32px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.huydon-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.huydon-content p{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #474747;
+}
+.huydon-footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.huydon-footer button{
+	width: 140px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	border-radius: 20px;
+	color: #474747;
+	cursor: pointer;
+	border: 1px solid #CCCCCC;
+}
+/* end */
+/* Calendar */
+.dpTable {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #009;
+	background-color: #E4E9EC;
+	border: 1px solid #FD9800
+}
+
+.dpTD {
+	border: 1px solid #ece9d8
+}
+
+.dpDayHighlightTD {
+	background-color: #CCC;
+	border: 1px solid #AAA
+}
+
+.dpTDHover {
+	background-color: #aca998;
+	border: 1px solid #888;
+	cursor: pointer;
+	color: red
+}
+
+.dpDayTD {
+	background-color: #CCC;
+	border: 1px solid #AAA;
+	color: red
+}
+
+.dpTitleText {
+	font-size: 11px;
+	color: #FD9800;
+	font-weight: 700
+}
+
+.dpDayHighlight {
+	color: 4060ff;
+	font-weight: 700
+}
+
+.dpButton,
+.dpTodayButton {
+	BORDER-RIGHT: #a4a6a9 1px solid;
+	BORDER-TOP: #a4a6a9 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: #a4a6a9 1px solid;
+	COLOR: #333;
+	BORDER-BOTTOM: #a4a6a9 1px solid;
+	FONT-FAMILY: Arial;
+	BACKGROUND-COLOR: #FFF;
+	TEXT-DECORATION: none
+}

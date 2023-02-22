@@ -1,0 +1,140 @@
+body{
+	font-family: Arial;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+.hide {
+	display: none;
+}
+
+/* Login */
+.forumlogin *{
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#333333;
+}
+.forumlogin input{ 
+	border:solid 1px #CCCCCC
+}
+.title_login{
+	vertical-align:top;
+	font-weight:bold;
+	color:#15428B;
+	font:bold 11px tahoma,arial,verdana,sans-serif;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+/* Header */
+.header {
+	color: #27635D;
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 5px;
+}
+.header a {
+	color: #FF3300;
+	text-decoration: none;
+}
+
+/* Left Title */
+.left_title {
+	background: #5C9CCC;
+	height: 34px;
+	line-height: 34px;
+	color: #27635D;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Left - Danh mục */
+#test-list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#test-list li {
+	border-bottom: dotted 1px #79C5EB;
+}
+#test-list li .t a {
+	font-weight: bold;
+	color: #27635D;
+	text-decoration: none;
+	outline: none;
+}
+#test-list li .m a {
+	text-decoration: none;
+	color: #27635D;
+	outline: none;
+	font-size: 11px;
+}
+#test-list li img.handle {
+	cursor: move;
+}
+
+
+/**
+ *	Basic Layout Theme
+ */
+.ui-layout-pane-west {
+	padding: 0px;
+	background-color: #f9f9f9 !important;
+	overflow: auto;
+}
+.ui-tabs .ui-tabs-panel {
+	padding: 0;
+}
+.ui-tabs-anchor {
+	outline: none;
+}
+.ui-widget-content {
+	border: none;
+	padding: 0;
+}
+.ui-tabs-nav {
+	border-radius: 0;
+}
+.ui-layout-toggler-west-open {
+	background: url(../images/bar_close.gif) no-repeat;
+}
+.ui-layout-toggler-west-closed {
+	background: url(../images/bar_open.gif) no-repeat;
+}
+.ui-layout-toggler-north-open {
+	background: url(../images/bar_up.gif) no-repeat;
+}
+.ui-layout-toggler-north-closed {
+	background: url(../images/bar_down.gif) no-repeat;
+}
+body .ui-layout-center * {
+	font-family: Tahoma;
+}
+body .ui-layout-north * {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+body .ui-layout-west * {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+/* Right - Tabs */
+.relo {
+	float: left;
+	width: 14px;
+	height: 14px;
+	padding: 0;
+	cursor: pointer;
+	background: url(../images/reload.png) no-repeat;
+}
+.ui-tabs-active .relo {
+	display: block;
+	margin-left: -7px;
+	padding-right: 4px;
+}
+#raquo {
+	color: #051BDA;
+	padding: 0 4px 4px;
+}

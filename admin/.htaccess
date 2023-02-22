@@ -1,0 +1,17 @@
+RewriteEngine off
+order deny,allow
+deny from all
+allow from 123.24.206.25
+allow from 123.16.13.110
+allow from 113.190.232.100
+allow from 42.115.215.177
+allow from 1.55.74.114
+allow from 118.70.126.231
+allow from 222.255.236.80
+allow from 14.162.144.184
+allow from 14.232.208.241
+allow from 210.245.75.51
+allow from 118.70.126.138
+allow from 14.248.82.205
+allow from 123.24.0.194
+allow from ::1
