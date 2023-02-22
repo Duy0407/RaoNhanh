@@ -1,0 +1,788 @@
+Options +FollowSymlinks
+RewriteEngine off
+order deny,allow
+deny from all
+
+allow from 14.162.144.184
+allow from 118.70.126.231
+allow from 27.3.179.20
+allow from 123.24.206.25
+allow from 43.239.223.157
+allow from 43.239.223.187
+allow from 43.239.223.60
+allow from 210.245.75.51
+allow from 14.248.82.205
+allow from 118.70.126.138
+allow from 14.232.208.241
+
+allow from 43.239.223.102
+allow from 123.24.142.145
+allow from 171.224.179.252
+allow from 171.255.66.94
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule  ^$ home/index.php
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+ErrorDocument 404 /
+
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#    RewriteCond %{HTTPS} off
+#    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#    RewriteCond %{HTTP_HOST} www\.(.+)$ [NC]
+#    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+#</IfModule>
+
+#RewriteRule  ^amp-tin-tuc$                               /home/amp_list_blog.php [NE,L]
+#RewriteRule  ^amp-tin-tuc/([^/]+)-p([0-9]+)\.html        /home/amp_detail_blog.php?newid=$2&%{QUERY_STRING} [NE,L]
+
+RewriteRule  ^doanh-nghiep/dang-ky-tai-khoan-doanh-nghiep$ /home/dang_ky_ttdn.php [NE,L]
+RewriteRule  ^xac-thuc-tai-khoan.html$ /home/xac_thuc.php
+RewriteRule  ^xac-thuc-tai-khoan-thanh-cong.html$ /home/xac_thuc_ok.php
+# RewriteRule  ^quen-mat-khau.html$                         /home/quenmatkhau.php [NE,L]
+RewriteRule  ^doi-mat-khau.html$                          /home/doimk.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^doanh-nghiep/tong-quan-tai-khoai$        /home/tq-tk-doanh-nghiep.php [NE,L]
+RewriteRule  ^doanh-nghiep/thay-doi-thong-tin$         /home/cap-nhap-tk-doanh-nghiep.php [NE,L]
+RewriteRule  ^doanh-nghiep/quan-ly-danh-muc$          /home/quanly_danhmuc.php [NE,L]
+RewriteRule  ^doanh-nghiep/quan-ly-danh-muc-con$      /home/quanly_danhmuc_con.php [NE,L]
+RewriteRule  ^doanh-nghiep/dang-san-pham$             /home/import_product.php [NE,L]
+RewriteRule  ^gian-hang/chi-tiet-gian-hang$           /home/tttk_doanhnghiep.php [NE,L]
+RewriteRule  ^ca-nhan/nang-cap$                      /home/nangcap.php [NE,L]
+RewriteRule  ^tai-khoan/doi-mat-khau$                /home/info_doimk.php [NE,L]
+RewriteRule  ^ca-nhan/dang_tin_rao_vat$              /home/dang_tin_rao_vat.php [NE,L]
+RewriteRule  ^ca-nhan/cap-nhap-thong-tin$            /home/info.php [NE,L]
+RewriteRule  ^nap-tien/nap-tien$                     /home/info_naptien.php [NE,L]
+RewriteRule  ^nap-tien/lich-su-nap-tien$             /home/info_lichsu_naptien.php [NE,L]
+RewriteRule  ^nap-tien/lich-su-giao-dich$            /home/info_lichsu_giaodich.php [NE,L]
+RewriteRule  ^san-pham/lich-su-tin-rao$              /home/info_lichsu_tinrao.php [NE,L]
+#RewriteRule  ^tin-tuc$                               /home/list_blog.php [NE,L]
+#RewriteRule  ^dang-tin-quang-cao-mien-phi.html      /home/dangtinquangcao.php
+#RewriteRule  ^dang-tin-rao-vat.html                 /home/dangtinraovat.php
+#RewriteRule  ^dang-tin-mien-phi.html                 /home/dangtinmienphi.php
+#RewriteRule  ^([^/]+)-e([0-9]+)\.html                /home/detail_list_chinhsach.php?coche=$2&%{QUERY_STRING} [NE,L]
+#RewriteRule  ^tin-tuc/([^/]+)-p([0-9]+)\.html        /home/detail_blog.php?newid=$2&%{QUERY_STRING} [NE,L]
+#RewriteRule ^gian-hang/([0-9]+)/([^/]+)\.html        /home/tttk_doanhnghiep.php?uscid=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^gian-hang/([^/]+)-cua-([^/]+)-d([0-9]+)-n([0-9]+)\.html        /home/cate_doanhnghiep.php?uscid=$3&catid=$4&%{QUERY_STRING} [NE,L]
+#RewriteRule ^([^/]+)-c([0-9]+)\.html                 /home/detail.php?newid=$2&%{QUERY_STRING} [NE,L]
+#RewriteRule  ^lien-he$                               /home/lienhe.php [NE,L]
+#RewriteRule ^ca-nhan/([0-9]+)/([^/]+)\.html          /home/cate_canhan.php?canhan=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^chinh-sua/([^/]+)-s([0-9]+)\.html                      /home/dang_tin_rao_vat_edit.php?edit=$2&%{QUERY_STRING} [NE,L]
+#RewriteRule ^chinh-sua/([^/]+)-g([0-9]+)\.html                      /home/import_product_edit.php?edit=$2&%{QUERY_STRING} [NE,L]
+#RewriteRule ^s/([^/]+)-thuoc-([^/]+)-w([0-9]+)\.html                /home/cate_search.php?catid=$3&sp=$1&%{QUERY_STRING} [NE,L]
+
+#RewriteRule ^s/([^/]+)-thuoc-([^/]+)-e([0-9]+)-h([0-9]+)\.html      /home/cate_search.php?city=$3&catid=$4&sp=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^s/w([0-9]+)/([^/]+)\.html                               /home/cate_search.php?catid=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^s/c([0-9]+)/([^/]+)\.html                               /home/cate_search.php?city=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^s/([^/]+)-c([0-9]+)-w([0-9]+)\.html                    /home/cate_search.php?city=$2&catid=$3&%{QUERY_STRING} [NE,L]
+
+
+#RewriteRule ^mua-ban/([0-9]+)/([^/]+)\.html                         /home/cate.php?catid=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^mua-ban/rao-vat/([0-9]+)/([^/]+)\.html                 /home/cate.php?city=$1&%{QUERY_STRING} [NE,L]
+#RewriteRule ^mua-ban/rao-vat/([^/]+)-c([0-9]+)-w([0-9]+)\.html      /home/cate.php?city=$2&catid=$3&%{QUERY_STRING} [NE,L]
+#RewriteRule ^rao-vat-mien-phi\.html                                 /home/cate.php?%{QUERY_STRING} [NE,L]
+#RewriteRule ^tac-gia/([^/]+)-tg([0-9]+).html                        /home/blog_author.php?tg=$2&%{QUERY_STRING} [NE,L]
+
+#RewriteRule  ^huong-dan$                      /home/huongdan_sudung.php [NE,L]
+#tim kiem theo nganh nghe viec lam
+#RewriteRule ^([^/]+)-n([0-9]+)t([0-9]+) home/tinhthanh_nganhnghe.php?catid=$2&city=$3&%{QUERY_STRING} [NE,L]
+#tag
+#RewriteRule  ^tim-viec-lam-([^/]+)-r([0-9]+)t([0-9]+).html$                      /home/tag_s.php?keyid=$2&city=$3&%{QUERY_STRING} [NE,L]
+#-----thêm mới-----
+RewriteRule  ^dang-ky.html        /home/dang_ky_moi.php
+RewriteRule  ^dang-ky-nguoi-mua.html        /home/register_buy.php
+RewriteRule  ^dang-ky-tai-khoan-ca-nhan.html        /home/register_person_sell.php
+RewriteRule  ^dang-ky-tai-khoan-doanh-nghiep.html        /home/register_exterprise_sell.php
+
+RewriteRule  ^dang-nhap.html        /home/dang_ky_chung.php
+RewriteRule  ^dang-nhap-tai-khoan-ca-nhan.html        /home/login_buy.php?login=1
+RewriteRule  ^dang-nhap-tai-khoan-doanh-nghiep.html        /home/login_buy.php?login=5
+
+#tổng quan
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan.html                    /home/personal_seller_profile.php
+
+#chỉnh sửa thông tin cá nhân
+RewriteRule  ^chinh-sua-thong-tin.html                    /home/edit_personal_prof_inf.php
+
+#quản lý tin
+#RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tat-ca-tin-dang.html                    /home/news_management.php
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin.html                      /home/news_management.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-dang-dang.html        /home/news_posting.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-dang-hoat-dong.html   /home/news_posting.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-da-ban.html           /home/news_sold.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-da-het-hang.html      /home/news_sold_out.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-da-an.html            /home/news_hidden.php?%{QUERY_STRING} [NE,L]
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin/tin-dang-an.html          /home/news_hidden.php?%{QUERY_STRING} [NE,L]
+#tin mua
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-mua.html                  /home/ql_tinmua_nb.php
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-mua/tin-con-han.html      /home/ql_tinmua_nb.php?typelist=1
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-mua/tin-het-han.html      /home/ql_tinmua_nb.php?typelist=2
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-mua/tin-dang-an.html      /home/ql_tinmua_nb.php?typelist=3
+#tin tìm việc làm
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-tim-viec-lam.html      /home/ql_tin_timviec_canhan.php
+#tin tìm ứng viên
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-tim-ung-vien.html      /home/ql_tin_timungvien_canhan.php
+#danh sách nhà thầu
+RewriteRule  ^danh-sach-nha-thau.html$                     /home/ds_nhathau.php
+#tin đang dự thầu
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-dang-du-thau.html      /home/ql_tin_duthau.php
+#tin đang ứng tuyển
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/quan-ly-tin-dang-ung-tuyen.html      /home/ql_tin_ungtuyen.php
+#tin yêu thích
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/tin-da-yeu-thich.html              /home/favorite_news.php
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/tin-mua-yeu-thich.html              /home/favorite_news_buy.php
+#dịch vụ quảng cáo
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/dich-vu-quang-cao.html                    /home/advertising_service.php
+#lịch sử giao dịch
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/lich-su-giao-dich.html                    /home/transaction_history.php
+#nạp tiền vào tài khoản
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/nap-tien-vao-tai-khoan.html                    /home/recharge_pers_seller_prof.php
+
+RewriteRule ^chon-loai-dang-tin.html$ /home/type_dangtin.php [NE,L]
+# chon danh muc dang tin
+RewriteRule  ^dang-tin-san-pham-ban.html$ /home/tin_dang_index.php [NE,L]
+RewriteRule  ^dang-tin-san-pham-mua.html$ /home/tin_dang_spmua.php [NE,L]
+# đăng tin đồ điện tử
+#RewriteRule  ^dang-tin-dien-tu-am-ly.html$ /home/dang-tin-dtu-amly.php?id=36 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-am-ly.html$ /home/dangtin_new_ddt_tiviloa.php?id=36 [NE,L]
+#RewriteRule  ^dang-tin-dien-tu-may-tinh-de-ban.html$ /home/dang-tin-dtu-may-tinh.php?id=5 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-may-tinh-de-ban.html$ /home/dangtin_new_mtdeban.php?id=5 [NE,L]
+#RewriteRule  ^dang-tin-dien-tu-laptop.html$ /home/dang-tin-dtu-laptop.php?id=98 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-laptop.html$ /home/dangtin_new_ddt_laptop.php?id=98 [NE,L]
+#RewriteRule  ^dang-tin-dien-tu-dien-thoai.html$ /home/dang-tin-dtu-dien-thoai.php?id=7 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-dien-thoai.html$ /home/dangtin_new_ddt_dienthoai.php?id=7 [NE,L]
+#RewriteRule  ^dang-tin-dien-tu-may-tinh-bang.html$ /home/dang-tin-dtu-may-tinh-bang.php?id=35 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-may-tinh-bang.html$ /home/dangtin_new_maytinhbang.php?id=35 [NE,L]
+#RewriteRule  ^dang-tin-dien-tu-khac.html$ /home/dang-tin-dtu-do-dien-tu-khac.php?id=96 [NE,L]
+RewriteRule  ^dang-tin-dien-tu-khac.html$ /home/dangtin_new_ddt_dtkhac.php?id=96 [NE,L]
+#RewriteRule  ^dang-tin-thiet-bi-deo-thong-minh.html$ /home/dang-tin-dtu-thiet-bi-deo-tminh.php?id=99 [NE,L]
+RewriteRule  ^dang-tin-thiet-bi-deo-thong-minh.html$ /home/dangtin_new_ddt_tbithongminh.php?id=99 [NE,L]
+#RewriteRule  ^dang-tin-thiet-bi-may-anh-may-quay.html$ /home/dang-tin-dtu-may-anh.php?id=6 [NE,L]
+RewriteRule  ^dang-tin-thiet-bi-may-anh-may-quay.html$ /home/dangtin_new_mayanhmayquay.php?id=6 [NE,L]
+#RewriteRule  ^dang-tin-thiet-bi-linh-phu-kien.html$ /home/dang-tin-dtu-phu-linh-kien.php?id=37 [NE,L]
+RewriteRule  ^dang-tin-thiet-bi-linh-phu-kien.html$ /home/dangtin_new_ddt_phukien.php?id=37 [NE,L]
+# mới thêm
+RewriteRule  ^dang-tin-do-dien-tu-linh-kien.html$ /home/dangtin_new_ddt_linhkien.php?id=124 [NE,L]
+#Đổi mật khẩu
+RewriteRule  ^ho-so-nguoi-ban-ca-nhan/doi-mat-khau.html                    /home/change_pass_pers_seller_prof.php
+#1dichvu_giaitri
+RewriteRule ^dang-tin-dich-vu.html$ /home/dangtin_dichvu.php?id=65 [NE,L]
+RewriteRule ^dang-tin-mua-dich-vu.html$ /home/dangtin_dichvu.php?id=65 [NE,L]
+RewriteRule ^dang-tin-nhac-cu.html$ /home/dangtin_nhaccu.php?id=100 [NE,L]
+RewriteRule ^dang-tin-sach.html$ /home/dangtin_sach.php?id=101 [NE,L]
+RewriteRule ^dang-tin-do-suu-tam-do-co.html$ /home/dangtin_dosuutamdoco.php?id=102 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-choi-game.html$ /home/dangtin_thietbichoigame.php?id=103 [NE,L]
+RewriteRule ^dang-tin-so-thich-khac.html$ /home/dangtin_sothichkhac.php?id=70 [NE,L]
+#1dichvu_giaitri new
+RewriteRule ^dang-tin-mua-dich-vu-new.html$ /home/dangtin_dvgt_new_dichvu.php?id=65 [NE,L]
+RewriteRule ^dang-tin-nhac-cu-new.html$ /home/dangtin_dvgt_new_nhaccu.php?id=100 [NE,L]
+RewriteRule ^dang-tin-sach-new.html$ /home/dangtin_dvgt_new_sach.php?id=101 [NE,L]
+RewriteRule ^dang-tin-do-suu-tam-do-co-new.html$ /home/dangtin_dvgt_new_dosuutamdoco.php?id=102 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-choi-game-new.html$ /home/dangtin_dvgt_new_thietbichoigame.php?id=103 [NE,L]
+RewriteRule ^dang-tin-so-thich-khac-new.html$ /home/dangtin_dvgt_new_sothichkhac.php?id=70 [NE,L]
+#2dogiadung
+RewriteRule ^dang-tin-thiet-bi-dien-lanh.html$ /home/dangtin_thietbidienlanh.php?id=56 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-nha-bep.html$ /home/dangtin_thietbinhabep.php?id=57 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-theo-mua.html$ /home/dangtin_thietbitheomua.php?id=58 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-suc-khoe.html$ /home/dangtin_thietbisuckhoe.php?id=59 [NE,L]
+RewriteRule ^dang-tin-do-gia-dung-khac.html$ /home/dangtin_dogiadungkhac.php?id=60 [NE,L]
+#2dogiadung new
+RewriteRule ^dang-tin-thiet-bi-dien-lanh-new.html$ /home/dangtin_new_thietbidienlanh.php?id=56 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-nha-bep-new.html$ /home/dangtin_new_thietbinhabep.php?id=57 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-theo-mua-new.html$ /home/dangtin_new_thietbitheomua.php?id=58 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-suc-khoe-new.html$ /home/dangtin_new_thietbisuckhoe.php?id=59 [NE,L]
+RewriteRule ^dang-tin-do-gia-dung-khac-new.html$ /home/dangtin_new_thietbidogiadungkhac.php?id=60 [NE,L]
+#3dodungvanphongcongnongnghiep
+RewriteRule ^dang-tin-do-dung-van-phong.html$ /home/dangtin_dodungvanphong.php?id=116 [NE,L]
+RewriteRule ^dang-tin-cong-nong-nghiep.html$ /home/dangtin_dochuyendunggiongnuoitrong.php?id=117 [NE,L]
+RewriteRule ^dang-tin-thiet-bi-giao-duc.html$ /home/dangtin_thietbigiaoduc.php?id=86 [NE,L]
+#3dodungvanphongcongnongnghiep new
+RewriteRule ^dang-tin-do-dung-van-phong-new.html$ /home/dangtin_vpcnn_new_dodungvanphong.php?id=116 [NE,L]
+RewriteRule ^dang-tin-cong-nong-nghiep-new.html$ /home/dangtin_vpcnn_new_congnongnghiep.php?id=117 [NE,L]
+#4xeco
+RewriteRule ^dang-tin-xe-dap.html$ /home/dangtin_xedap.php [NE,L]
+RewriteRule ^dang-tin-xe-may.html$ /home/dangtin_xemay.php [NE,L]
+RewriteRule ^dang-tin-o-to.html$ /home/dangtin_oto.php [NE,L]
+RewriteRule ^dang-tin-xe-dap-dien.html$ /home/dangtin_xedapdien.php [NE,L]
+RewriteRule ^dang-tin-phu-tung-xe.html$ /home/dangtin_phutungxe.php [NE,L]
+RewriteRule ^dang-tin-noi-that-o-to.html$ /home/dangtin_noithatoto.php [NE,L]
+RewriteRule ^dang-tin-xe-tai-xe-khac.html$ /home/dangtin_xetaixekhac.php [NE,L]
+RewriteRule ^dang-tin-xe-may-dien.html$ /home/dangtin_xemaydien.php [NE,L]
+#dang tin cho xe co moi
+RewriteRule ^dang-tin-xe-dap-new.html$ /home/dangtin_new_xc_xedap.php [NE,L]
+RewriteRule ^dang-tin-xe-may-new.html$ /home/dangtin_new_xc_xemay.php [NE,L]
+RewriteRule ^dang-tin-o-to-new.html$ /home/dangtin_new_xc_oto.php [NE,L]
+RewriteRule ^dang-tin-xe-dap-dien-new.html$ /home/dangtin_new_xc_xedapdien.php [NE,L]
+RewriteRule ^dang-tin-phu-tung-xe-new.html$ /home/dangtin_new_xc_phutungxe.php [NE,L]
+RewriteRule ^dang-tin-noi-that-o-to-new.html$ /home/dangtin_new_xc_noithatoto.php [NE,L]
+RewriteRule ^dang-tin-xe-tai-xe-khac-new.html$ /home/dangtin_new_xc_xetaixekhac.php [NE,L]
+RewriteRule ^dang-tin-xe-may-dien-new.html$ /home/dangtin_new_xc_xemaydien.php [NE,L]
+#5hosotaikhoanvapopup(nguoimua)
+RewriteRule ^chinh-sua-thong-tin-nguoi-mua.html$ /home/cs_thongtin_nguoimua.php [NE,L]
+RewriteRule ^nguoi-mua-thong-tin-tai-khoan.html$ /home/nguoimua_thongtin_taikhoan.php [NE,L]
+RewriteRule ^nguoi-mua-tin-da-yeu-thich.html$ /home/hoso_tinda_yeuthich.php [NE,L]
+RewriteRule ^nguoi-mua-quan-ly-tin.html$ /home/nguoimua_quanly_tindangdang.php [NE,L]
+RewriteRule ^nguoi-mua-rieng-tu-va-bao-mat.html$ /home/nguoimua_riengtu_baomat.php [NE,L]
+#
+RewriteRule ^dang-tin-khuyen-mai-giam-gia.html$ /home/dang_tin_khmai.php?id=24 [NE,L]
+RewriteRule ^dang-tin-du-lich.html$ /home/dang_tin_du_lich.php?id=76 [NE,L]
+RewriteRule ^dang-tin-do-uong.html$ /home/dang_tin_do_uong.php?id=95 [NE,L]
+RewriteRule ^dang-tin-thuc-pham.html$ /home/dang_tin_thuc_pham.php?id=94 [NE,L]
+# do uong, du lich, thuc pham, khuyen mai
+RewriteRule ^dang-tin-du-lich-new.html$ /home/dangtin_new_du_lich.php?id=76 [NE,L]
+RewriteRule ^dang-tin-do-uong-new.html$ /home/dangtin_new_do_uong.php?id=95 [NE,L]
+RewriteRule ^dang-tin-thuc-pham-new.html$ /home/dangtin_new_thuc_pham.php?id=94 [NE,L]
+RewriteRule ^dang-tin-khuyen-mai-giam-gia-new.html$ /home/dangtin_new_khuyenmai.php?id=24 [NE,L]
+#noithat_ngoaithat
+#RewriteRule ^dang-tin-noi-that-phong-khach.html$ /home/dangtin_noithatphongkhach.php?id=78 [NE,L]
+RewriteRule ^dang-tin-noi-that-phong-khach.html$ /home/dangtin_new_ntnt_phongkhach.php?id=78 [NE,L]
+#RewriteRule ^dang-tin-noi-that-phong-ngu.html$ /home/dangtin_noithatphongngu.php?id=79 [NE,L]
+RewriteRule ^dang-tin-noi-that-phong-ngu.html$ /home/dangtin_new_ntnt_phongngu.php?id=79 [NE,L]
+#RewriteRule ^dang-tin-noi-that-phong-bep.html$ /home/dangtin_noithatphongbep.php?id=80 [NE,L]
+RewriteRule ^dang-tin-noi-that-phong-bep.html$ /home/dangtin_new_ntnt_phongbep.php?id=80 [NE,L]
+#RewriteRule ^dang-tin-noi-that-phong-tam.html$ /home/dangtin_noithatphongtam.php?id=81 [NE,L]
+RewriteRule ^dang-tin-noi-that-phong-tam.html$ /home/dangtin_new_ntnt_phongtam.php?id=81 [NE,L]
+#RewriteRule ^dang-tin-noi-that-van-phong.html$ /home/dangtin_noithatvanphong.php?id=82 [NE,L]
+RewriteRule ^dang-tin-noi-that-van-phong.html$ /home/dangtin_new_ntnt_vanphong.php?id=82 [NE,L]
+#RewriteRule ^dang-tin-noi-that-khac.html$ /home/dangtin_noithatkhac.php?id=85 [NE,L]
+RewriteRule ^dang-tin-noi-that-khac.html$ /home/dangtin_new_ntnt_noithatkhac.php?id=85 [NE,L]
+#RewriteRule ^dang-tin-noi-that-vuon.html$ /home/dangtin_noithatvuon.php?id=83 [NE,L]
+RewriteRule ^dang-tin-noi-that-vuon.html$ /home/dangtin_new_ntnt_vuon.php?id=83 [NE,L]
+#RewriteRule ^dang-tin-ngoai-that.html$ /home/dangtin_ngoaithat.php?id=118 [NE,L]
+RewriteRule ^dang-tin-ngoai-that.html$ /home/dangtin_new_ntnt_ngoaithat.php?id=118 [NE,L]
+#batdongsan
+RewriteRule ^dang-tin-bat-dong-san-nha-dat.html$ /home/dangtin_bds_nhadat.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-can-ho-chung-cu.html$ /home/dangtin_bds_chungcu.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-van-phong.html$ /home/dangtin_bds_vanphong.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-dat.html$ /home/dangtin_bds_dat.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-trong-ngo.html$ /home/dangtin_bds_nhatrongngo.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-mat-pho.html$ /home/dangtin_bds_nhamatpho.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-rieng-nguyen-can.html$ /home/dangtin_bds_nharieng.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-cua-hang.html$ /home/dangtin_bds_cuahang.php [NE,L]
+#Bat dong san new
+RewriteRule ^dang-tin-bat-dong-san-nha-dat-new.html$ /home/dangtin_new_bds_nhadat.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-chung-cu-new.html$ /home/dangtin_new_bds_chungcu.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-mat-pho-new.html$ /home/dangtin_new_bds_nhamatpho.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-rieng-new.html$ /home/dangtin_new_bds_nharieng.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-van-phong-new.html$ /home/dangtin_new_bds_vanphong.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-dat-new.html$ /home/dangtin_new_bds_dat.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-tro-new.html$ /home/dangtin_new_bds_nhatro.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-cua-hang-new.html$ /home/dangtin_new_bds_cuahang.php [NE,L]
+RewriteRule ^dang-tin-bat-dong-san-nha-trong-ngo-new.html$ /home/dangtin_new_bds_nhatrongngo.php [NE,L]
+#ship
+RewriteRule ^dang-tin-ship.html$ /home/dangtin_ship.php [NE,L]
+#ship new
+RewriteRule ^dang-tin-ship-new.html$ /home/dangtin_new_ship.php [NE,L]
+#mevabe
+RewriteRule ^dang-tin-me-va-be-do-cho-me.html$ /home/dangtin_mevabe_me.php?id=53 [NE,L]
+RewriteRule ^dang-tin-me-va-be-do-cho-be.html$ /home/dangtin_mevabe_be.php?id=54 [NE,L]
+#mevabe
+RewriteRule ^dang-tin-do-cho-me-va-be.html$ /home/dangtin_new_mevabe.php?id=53 [NE,L]
+#thethao
+RewriteRule ^dang-tin-dung-cu-the-thao.html$ /home/dangtin_thethao_dungcu.php?id=75 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-the-thao.html$ /home/dangtin_thethao_thoitrang.php?id=104 [NE,L]
+RewriteRule ^dang-tin-phu-kien-the-thao.html$ /home/dangtin_thethao_phukien.php?id=105 [NE,L]
+#thethao mới
+RewriteRule ^dang-tin-dung-cu-the-thao-new.html$ /home/dangtin_thethao_new_dungcu.php?id=75 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-the-thao-new.html$ /home/dangtin_thethao_new_thoitrang.php?id=104 [NE,L]
+RewriteRule ^dang-tin-phu-kien-the-thao-new.html$ /home/dangtin_thethao_new_phukien.php?id=105 [NE,L]
+#thucung
+RewriteRule ^dang-tin-thu-cung-ga.html$ /home/dangtin_thucung_ga.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-cho.html$ /home/dangtin_thucung_cho.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-meo.html$ /home/dangtin_thucung_meo.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-chim.html$ /home/dangtin_thucung_chim.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-do-an-phu-kien-dich-vu.html$ /home/dangtin_thucung_doan_phukien.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-khac.html$ /home/dangtin_thucung_khac.php [NE,L]
+#thu cung new
+RewriteRule ^dang-tin-thu-cung-ga-new.html$ /home/dangtin_new_thucung_ga.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-cho-new.html$ /home/dangtin_new_thucung_cho.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-meo-new.html$ /home/dangtin_new_thucung_meo.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-chim-new.html$ /home/dangtin_new_thucung_chim.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-khac-new.html$ /home/dangtin_new_thucung_khac.php [NE,L]
+RewriteRule ^dang-tin-thu-cung-do-an-phu-kien-dich-vu-new.html$ /home/dangtin_new_thucung_doan_phukien.php [NE,L]
+#thotrang
+RewriteRule ^dang-tin-thoi-trang-nam.html$ /home/dangtin_thoitrang_nam.php?id=43 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-nu.html$ /home/dangtin_thoitrang_nu.php?id=44 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-do-doi-dong-phuc.html$ /home/dangtin_thoitrang_dongphuc.php?id=45 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-be.html$ /home/dangtin_thoitrang_be.php?id=46 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-giay-dep.html$ /home/dangtin_thoitrang_giaydep.php?id=47 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-phu-kien.html$ /home/dangtin_thoitrang_phukien.php?id=48 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-tui-xach.html$ /home/dangtin_thoitrang_tuixach.php?id=49 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-dong-ho.html$ /home/dangtin_thoitrang_dongho.php?id=50 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-nuoc-hoa.html$ /home/dangtin_thoitrang_nuochoa.php?id=106 [NE,L]
+#thotrang new
+RewriteRule ^dang-tin-thoi-trang-nam-new.html$ /home/dangtin_thoitrang_new_nam.php?id=43 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-nu-new.html$ /home/dangtin_thoitrang_new_nu.php?id=44 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-do-doi-dong-phuc-new.html$ /home/dangtin_thoitrang_new_dongphuc.php?id=45 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-be-new.html$ /home/dangtin_thoitrang_new_be.php?id=46 [NE,L]
+RewriteRule ^dang-tin-thoi-trang-giay-dep-new.html$ /home/dangtin_thoitrang_new_giaydep.php?id=47 [NE,L]
+#thu-cong-my-nghe-qua-tang
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-thiet-ke.html$ /home/dangtin_thucongmynghe_thietke.php?id=84 [NE,L]
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-hoa-qua-tang-handmade.html$ /home/dangtin_thucongmynghe_handmade.php?id=87 [NE,L]
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-nghe-thuat-thu-cong.html$ /home/dangtin_thucongmynghe_nghethuat.php?id=88 [NE,L]
+#thu-cong-my-nghe-qua-tang new
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-thiet-ke-new.html$ /home/dangtin_thucongmynghe_new_thietke.php?id=84 [NE,L]
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-hoa-qua-tang-handmade-new.html$ /home/dangtin_thucongmynghe_new_handmade.php?id=87 [NE,L]
+RewriteRule ^dang-tin-thu-cong-my-nghe-qua-tang-nghe-thuat-thu-cong-new.html$ /home/dangtin_thucongmynghe_new_nghethuat.php?id=88 [NE,L]
+#suc khoe sac dep
+RewriteRule ^dang-tin-suc-khoe-my-pham.html$ /home/dangtin_suckhoe_mypham.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-dung-cu-phu-kien-lam-dep.html$ /home/dangtin_suckhoe_phukien.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-spa.html$ /home/dangtin_suckhoe_spa.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-thuc-pham-chuc-nang.html$ /home/dangtin_suckhoe_thucphamchucnang.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-vat-tu-y-te.html$ /home/dangtin_suckhoe_vattu_yte.php [NE,L]
+#suc khoe sac dep mới
+RewriteRule ^dang-tin-suc-khoe-my-pham-new.html$ /home/dangtin_suckhoe_new_mypham.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-dung-cu-phu-kien-lam-dep-new.html$ /home/dangtin_suckhoe_new_phukien.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-spa-new.html$ /home/dangtin_suckhoe_new_spa.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-thuc-pham-chuc-nang-new.html$ /home/dangtin_suckhoe_new_thucphamchucnang.php [NE,L]
+RewriteRule ^dang-tin-suc-khoe-vat-tu-y-te-new.html$ /home/dangtin_suckhoe_new_vattu_yte.php [NE,L]
+#
+#RewriteRule ^dang-tin-tim-ung-vien.html$ /home/dangtin_tim_ung_vien.php [NE,L]
+RewriteRule ^dang-tin-tim-ung-vien.html$ /home/dangtin_new_tv_timungvien.php [NE,L]
+#RewriteRule ^dang-tin-tim-viec-lam.html$ /home/dangtin_tim_viec_lam.php [NE,L]
+RewriteRule ^dang-tin-tim-viec-lam.html$ /home/dangtin_new_tv_timvieclam.php [NE,L]
+#
+RewriteRule ^dang-tin-mua-d([0-9]+).html$ /home/dang_tin_mua.php?id_dm=$1 [NE,L]
+#
+
+RewriteRule ^ca-nhan/([0-9]+)/([^/]+)\.html$ /home/nguoiban_khachxem.php?id=$1&%{QUERY_STRING} [NE,L]
+
+RewriteRule ^tro-giup.html$ /home/ho_tro.php [NE,L]
+RewriteRule ^lien-he.html$ /home/lien_he.php [NE,L]
+RewriteRule ^tin-tuc$ /home/tin_tuc.php [NE,L]
+RewriteRule ^giai-quyet-tranh-chap.html$ /home/giaiquyet_trchap.php [NE,L]
+RewriteRule ^quy-dinh-chung.html$ /home/quy_dinh_chung.php [NE,L]
+RewriteRule ^quy-trinh-thanh-toan.html$ /home/quy_trinh_tt.php [NE,L]
+RewriteRule ^quy-trinh-giao-dich.html$ /home/quy_trinh_gdich.php [NE,L]
+RewriteRule ^danh-sach-bao-mat.html$ /home/ds_bao_mat.php [NE,L]
+RewriteRule ^dat-lai-mat-khau.html$ /home/dlai_mat_khau.php [NE,L]
+
+#Timkiem
+RewriteRule ^s/([^/]+)-thuoc-([^/]+)-e([0-9]+)-h([0-9]+)\.html /home/tim_kiem.php?city=$3&catid=$4&sp=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^s/([^/]+)-thuoc-([^/]+)-w([0-9]+)\.html$ /home/tim_kiem.php?catid=$3&sp=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^s/([^/]+)-tai-([^/]+)-c([0-9]+)\.html$ /home/tim_kiem.php?sp=$1&city=$3&%{QUERY_STRING} [NE,L]
+RewriteRule ^s/([^/]+)\.html$ /home/tim_kiem.php?sp=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^mua-ban-rao-vat-tai-([^/]+)-d([0-9]+)c([0-9]+)\.html$ /home/tim_kiem.php?disid=$2&city=$3&%{QUERY_STRING} [NE,L]
+# tim kiem danh muc viec lam
+RewriteRule ^viec-lam.html$ /home/tim_kiem.php?catid=120 [NE,L]
+# tim kiem nganh nghe, nganh nghe + tinh thanh
+RewriteRule ^viec-lam-([^/]+)-n([0-9]+)t([0-9]+)\.html$ /home/tim_kiem.php?nn=$2&city=$3 [NE,L]
+# tim kiem tags nganh nghe, tags nganh nghe + tinh thanh
+RewriteRule ^tim-viec-lam-([^/]+)-r([0-9]+)t([0-9]+)\.html$ /home/tim_kiem.php?tagsvl=$2&city=$3 [NE,L]
+# tim kiem danh muc viec lam nganh nghe
+RewriteRule ^mua-ban/([0-9]+)/([^/]+)\.html$ /home/tim_kiem.php?catid=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^mua-ban/rao-vat/([0-9]+)/([^/]+)\.html$ /home/tim_kiem.php?city=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^mua-ban/rao-vat/([^/]+)-c([0-9]+)-w([0-9]+)\.html$ /home/tim_kiem.php?city=$2&catid=$3&%{QUERY_STRING} [NE,L]
+#tim kiem theo tags
+RewriteRule ^mua-ban-([^/]+)-t([0-9]+)\.html$ /home/tim_kiem.php?tags=$2&%{QUERY_STRING} [NE,L]
+RewriteRule ^mua-ban-([^/]+)-tai-([^/]+)-c([0-9]+)t([0-9]+)d([0-9]+)\.html$ /home/tim_kiem.php?city=$3&tags=$4&disid=$5&%{QUERY_STRING} [NE,L]
+#tim kiem trang mua
+RewriteRule ^sm/([^/]+)\.html$ /home/tim_kiem_mua.php?sp=$1&%{QUERY_STRING} [NE,L]
+#theo danh muc
+RewriteRule ^tim-mua-([^/]+)-d([0-9]+)\.html$ /home/tim_kiem_mua.php?catid=$2&%{QUERY_STRING} [NE,L]
+#theo tinh thanh
+RewriteRule ^tin-mua-tai-([^/]+)-c([0-9]+)\.html$ /home/tim_kiem_mua.php?city=$2&%{QUERY_STRING} [NE,L]
+#theo tu khoa + danh mục
+RewriteRule ^tim-mua-([^/]+)-thuoc-([^/]+)-w([0-9]+)\.html$ /home/tim_kiem_mua.php?sp=$1&catid=$3&%{QUERY_STRING} [NE,L]
+# theo tu khoa + tinh thành
+RewriteRule ^tim-mua-([^/]+)-tai-([^/]+)-c([0-9]+)\.html$ /home/tim_kiem_mua.php?sp=$1&city=$3&%{QUERY_STRING} [NE,L]
+#theo danh mục + tỉnh thành
+RewriteRule ^tim-mua-([^/]+)-tai-([^/]+)-c([0-9]+)w([0-9]+)\.html$ /home/tim_kiem_mua.php?city=$3&catid=$4&%{QUERY_STRING} [NE,L]
+#theo tu khoa + danh mục + tỉnh thành
+RewriteRule ^tim-mua-([^/]+)-([^/]+)-tai-([0-9]+)-c([0-9]+)d([0-9]+)\.html$ /home/tim_kiem_mua.php?sp=$1&city=$4&catid=$5&%{QUERY_STRING} [NE,L]
+#theo nganh nghe
+RewriteRule ^ung-vien-([^/]+)-n([0-9]+)\.html$ /home/tim_kiem_mua.php?nn=$2&%{QUERY_STRING} [NE,L]
+#theo nganh nghe + tinh thanh
+RewriteRule ^ung-vien-([^/]+)-tai-([^/]+)-c([0-9]+)n([0-9]+)\.html$ /home/tim_kiem_mua.php?city=$3&nn=$4&%{QUERY_STRING} [NE,L]
+
+#RewriteRule ^xem-truoc-bai-dang.html$ /home/xem_truoc_baidang.php [NE,L]
+#chi tiết sản phẩm
+RewriteRule ^([^/]+)-c([0-9]+)\.html$ /home/product_detail.php?id=$2&%{QUERY_STRING} [NE,L]
+
+#chi tiet tim mua
+RewriteRule ^([^/]+)-ct([0-9]+)\.html$ /home/chitiet_tinmua.php?id=$2&%{QUERY_STRING} [NE,L]
+
+#ho so tai khoan(gian hang doanh nghiep)
+RewriteRule ^ho-so-gian-hang-cua-toi-trang-chu.html$ /home/hoso_gianhang.php [NE,L]
+RewriteRule ^gian-hang/([0-9]+)/([^/]+)\.html$ /home/hoso_gianhang_khach.php?id=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^danh-gia-gian-hang/([0-9]+)/([^/]+)\.html$ /home/hoso_gianhang_danhgiakhach.php?id=$1&%{QUERY_STRING} [NE,L]
+RewriteRule ^ho-so-gian-hang-cua-toi-dang-gia.html$ /home/hoso_gianhang_danhgia.php [NE,L]
+#-------------------------------
+RewriteRule ^ho-so-quan-ly-tin-ban.html$                /home/hoso_quanlytin.php [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-dang-hoat-dong.html$     /home/hoso_quanlytindanghoatdong.php [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-da-ban.html$             /home/hoso_quanlytindaban.php [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-da-an.html$              /home/hoso_quanlytindaan.php [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-het-hang.html$           /home/hoso_quanlytinhethang.php [NE,L]
+#tin mua
+RewriteRule ^ho-so-quan-ly-tin-mua.html$                /home/ql_tinmua_nb.php [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-mua/tin-con-han.html$    /home/ql_tinmua_nb.php?typelist=1 [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-mua/tin-het-han.html$    /home/ql_tinmua_nb.php?typelist=2 [NE,L]
+RewriteRule ^ho-so-quan-ly-tin-mua/tin-dang-an.html$    /home/ql_tinmua_nb.php?typelist=3 [NE,L]
+#tin tìm việc làm
+RewriteRule  ^ho-so-quan-ly-tin-tim-viec-lam.html       /home/ql_tin_timviec_canhan.php
+#tin tìm ứng viên
+RewriteRule  ^ho-so-quan-ly-tin-tim-ung-vien.html       /home/ql_tin_timungvien_canhan.php
+#tin đang dự thầu
+RewriteRule  ^ho-so-quan-ly-tin-dang-du-thau.html       /home/ql_tin_duthau.php
+#tin đang ứng tuyển
+RewriteRule  ^ho-so-quan-ly-tin-dang-ung-tuyen.html     /home/ql_tin_ungtuyen.php
+#ứng viên ứng tuyển
+RewriteRule ^ho-so-quan-ly-ung-vien-ung-tuyen.html$     /home/uv_ut_tmua.php [NE,L]
+
+RewriteRule ^ho-so-gian-hang-chinh-sua-thong-tin.html$ /home/hoso_chinhsuathongtin.php [NE,L]
+#------------------------- quang
+RewriteRule ^ho-so-gian-hang-tin-ban-da-yeu-thich.html$ /home/hoso_tinyeuthich.php?type=2 [NE,L]
+RewriteRule ^ho-so-gian-hang-tin-mua-da-yeu-thich.html$ /home/hoso_tinyeuthich.php?type=1 [NE,L]
+RewriteRule ^ho-so-gian-hang-dich-vu-quang-cao.html$ /home/hoso_dichvuquangcao.php [NE,L]
+RewriteRule ^ho-so-gian-hang-lich-su-giao-dich.html$ /home/hoso_lichsu_giaodich.php [NE,L]
+#quan ly don hang doanh nghiep
+RewriteRule ^ho-so-gian-hang-quan-ly-don-hang.html$ /home/hoso_quanlydonhang.php [NE,L]
+#quan ly khuyen mai doanh nghiep
+RewriteRule ^ho-so-gian-hang-quan-ly-khuyen-mai.html$ /home/hoso_quanlykhuyenmai.php [NE,L]
+RewriteRule ^ho-so-gian-hang-doi-mat-khau.html$ /home/hoso_doi_matkhau.php [NE,L]
+RewriteRule ^ho-so-gian-hang-nap-tien-vao-tai-khoan.html$ /home/hoso_naptien_taikhoan.php [NE,L]
+RewriteRule ^ho-so-gian-hang-shop-khong-co-web.html$ /home/hoso_shop_khongcoweb.php [NE,L]
+
+RewriteRule ^co-che-hoat-dong.html$ /home/co_che_hoat_dong.php [NE,L]
+
+RewriteRule ^dang-xuat.html$ /home/dangxuat.php [NE,L]
+
+RewriteRule ^tin-tuc/([^/]+)-p([0-9]+)\.html$ /home/chi_tiet_tin_tuc.php?id=$2&%{QUERY_STRING} [NE,L]
+
+RewriteRule ^quen-mat-khau-ca-nhan.html$ /home/forgot_password.php?type=1 [NE,L]
+RewriteRule ^quen-mat-khau-doanh-nghiep.html$ /home/forgot_password.php?type=5 [NE,L]
+RewriteRule ^quen-mat-khau.html$ /home/forgot_password.php [NE,L]
+RewriteRule ^otp-quen-mat-khau.html$ /home/otp_qmk.php [NE,L]
+RewriteRule ^nhap-lai-mat-khau.html$ /home/nhap_lai_mk.php [NE,L]
+#-----------------------------------------------------------------------------------------------------------
+#Chien
+RewriteRule ^thong-tin-nguoi-mua.html$ /home/dang_tin_nguoi_mua.php [NE,L]
+RewriteRule ^so-sanh-san-pham.html$ /home/so_sanh_san_pham.php [NE,L]
+RewriteRule ^tim-quanh-day.html$ /home/tim_quanh_day.php [NE,L]
+#RewriteRule ^trang-tin-mua.html$ /home/tat_ca_nguoi_mua.php [NE,L]
+RewriteRule ^trang-tin-mua.html$ /home/tat_ca_tindang_mua.php [NE,L]
+RewriteRule ^xac-thuc-thanh-cong.html$ /home/xac_thuc_thanh_cong.php [NE,L]
+
+RewriteRule ^ghim-tin-([0-9]+).html$ /home/ghim_tin.php?id=$1 [NE,L]
+RewriteRule ^day-tin-([0-9]+).html$ /home/day_tin.php?id=$1 [NE,L]
+
+#chỉnh sửa đăng tin bất động sản (long lam chinh sua)
+#RewriteRule ^chinh-sua-tin-dang-nha-dat-([0-9]+).html$ /home/chinhsua_bds_nhadat.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nha-dat-([0-9]+).html$ /home/chinhsua_new_bds_nhadat.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-chung-cu-([0-9]+).html$ /home/chinhsua_bds_chungcu.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-chung-cu-([0-9]+).html$ /home/chinhsua_new_bds_chungcu.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-dat-([0-9]+).html$ /home/chinhsua_bds_dat.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-dat-([0-9]+).html$ /home/chinhsua_new_bds_dat.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-nha-trong-ngo-([0-9]+).html$ /home/chinhsua_bds_nhatrongngo.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nha-trong-ngo-([0-9]+).html$ /home/chinhsua_new_bds_nhatrongngo.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nha-mat-pho-([0-9]+).html$ /home/chinhsua_bds_nhamatpho.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-nha-rieng-([0-9]+).html$ /home/chinhsua_bds_nharieng.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nha-rieng-([0-9]+).html$ /home/chinhsua_new_bds_nharieng.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-cua-hang-([0-9]+).html$ /home/chinhsua_bds_cuahang.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-cua-hang-([0-9]+).html$ /home/chinhsua_new_bds_cuahang.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-van-phong-([0-9]+).html$ /home/chinhsua_bds_vanphong.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-van-phong-([0-9]+).html$ /home/chinhsua_new_bds_vanphong.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-phong-tro-([0-9]+).html$ /home/chinhsua_new_bds_phongtro.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng ship
+RewriteRule ^chinh-sua-tin-dang-ship-([0-9]+).html$ /home/chinhsua_ship.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng ship new
+RewriteRule ^chinh-sua-tin-dang-ship-new-([0-9]+).html$ /home/chinhsua_new_ship.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng sức khỏe sắc đẹp
+RewriteRule ^chinh-sua-tin-dang-my-pham-([0-9]+).html$ /home/chinhsua_suckhoe_mypham.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-spa-([0-9]+).html$ /home/chinhsua_suckhoe_spa.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-dung-cu-lam-dep-([0-9]+).html$ /home/chinhsua_suckhoe_phukien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thuc-pham-chuc-nang-([0-9]+).html$ /home/chinhsua_suckhoe_thucphamchucnang.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-vat-tu-y-te-([0-9]+).html$ /home/chinhsua_suckhoe_vattu_yte.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng sức khỏe sắc đẹp mới
+RewriteRule ^chinh-sua-tin-dang-my-pham-new-([0-9]+).html$ /home/chinhsua_suckhoe_new_mypham.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-spa-new-([0-9]+).html$ /home/chinhsua_suckhoe_new_spa.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-dung-cu-lam-dep-new-([0-9]+).html$ /home/chinhsua_suckhoe_new_phukien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thuc-pham-chuc-nang-new-([0-9]+).html$ /home/chinhsua_suckhoe_new_thucphamchucnang.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-vat-tu-y-te-new-([0-9]+).html$ /home/chinhsua_suckhoe_new_vattu_yte.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng thú cưng
+RewriteRule ^chinh-sua-tin-dang-thu-cung-ga-([0-9]+).html$ /home/chinhsua_thucung_ga.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-cho-([0-9]+).html$ /home/chinhsua_thucung_cho.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-meo-([0-9]+).html$ /home/chinhsua_thucung_meo.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-chim-([0-9]+).html$ /home/chinhsua_thucung_chim.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-do-an-phu-kien-([0-9]+).html$ /home/chinhsua_thucung_doan_phukien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-khac-([0-9]+).html$ /home/chinhsua_thucung_khac.php?id=$1 [NE,L]
+#chỉnh sửa tin đăng thú cưng new
+RewriteRule ^chinh-sua-tin-dang-thu-cung-ga-new-([0-9]+).html$ /home/chinhsua_thucung_new_ga.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-cho-new-([0-9]+).html$ /home/chinhsua_thucung_new_cho.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-meo-new-([0-9]+).html$ /home/chinhsua_thucung_new_meo.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-chim-new-([0-9]+).html$ /home/chinhsua_thucung_new_chim.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-do-an-phu-kien-new-([0-9]+).html$ /home/chinhsua_thucung_new_doan_phukien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thu-cung-khac-new-([0-9]+).html$ /home/chinhsua_thucung_new_khac.php?id=$1 [NE,L]
+#Chỉnh sửa tin đăng xe cộ
+RewriteRule ^chinh-sua-tin-dang-xe-may-([0-9]+).html$ /home/chinhsua_xeco_xemay.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-dap-([0-9]+).html$ /home/chinhsua_xeco_xedap.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-dap-dien-([0-9]+).html$ /home/chinhsua_xedapdien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-may-dien-([0-9]+).html$ /home/chinhsua_xemaydien.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-oto-([0-9]+).html$ /home/chinhsua_xeco_oto.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-phu-tung-xe-([0-9]+).html$ /home/chinhsua_phutungxe.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-oto-([0-9]+).html$ /home/chinhsua_noithatoto.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-tai-xe-khac-([0-9]+).html$ /home/chinhsua_xetaixekhac.php?id=$1 [NE,L]
+#Chỉnh sửa tin đăng xe cộ mới
+RewriteRule ^chinh-sua-tin-dang-xe-may-new-([0-9]+).html$ /home/chinhsua_xeco_xemay_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-dap-new-([0-9]+).html$ /home/chinhsua_xeco_xedap_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-dap-dien-new-([0-9]+).html$ /home/chinhsua_xedapdien_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-may-dien-new-([0-9]+).html$ /home/chinhsua_xemaydien_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-oto-new-([0-9]+).html$ /home/chinhsua_xeco_oto_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-phu-tung-xe-new-([0-9]+).html$ /home/chinhsua_xeco_phutungxe_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-oto-new-([0-9]+).html$ /home/chinhsua_xeco_noithatoto_new.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-xe-tai-xe-khac-new-([0-9]+).html$ /home/chinhsua_xetaixekhac_new.php?id=$1 [NE,L]
+
+#Chinh sua dang tin khuyen mai
+RewriteRule ^chinh-sua-tin-dang-khuyen-mai-d([0-9]+)-s([0-9]+).html$ /home/csua_khmai.php?id_dm=$1&id_cs=$2 [NE,L]
+#Chinh sua dang tin khuyen mai
+RewriteRule ^chinh-sua-tin-dang-khuyen-mai-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_khuyenmai.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dang tin du lich
+RewriteRule ^chinh-sua-tin-dang-du-lich-d([0-9]+)-s([0-9]+).html$ /home/csua_dulich.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dang tin du lich new
+RewriteRule ^chinh-sua-tin-dang-du-lich-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_dulich.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dang tin the thao
+RewriteRule ^chinh-sua-tin-dang-the-thao-dung-cu-d([0-9]+)-s([0-9]+).html$ /home/csua_dtin_dungcu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-the-thao-thoi-trang-d([0-9]+)-s([0-9]+).html$ /home/csua_dtin_ttrang.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-the-thao-phu-kien-d([0-9]+)-s([0-9]+).html$ /home/csua_dtin_phukien.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dang tin the thao
+RewriteRule ^chinh-sua-tin-dang-the-thao-dung-cu-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dtin_tt_new_dungcu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-the-thao-thoi-trang-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dtin_tt_new_thoitrang.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-the-thao-phu-kien-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dtin_tt_new_phukien.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thoi trang
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-nam-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_nam.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-nu-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_nu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-do-doi-dong-phuc-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_dongphuc.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-be-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_be.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-giay-dep-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_giaydep.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-phu-kien-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_phukien.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-tui-xach-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_tuixach.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-dong-ho-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_dongho.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-nuoc-hoa-d([0-9]+)-s([0-9]+).html$ /home/csua_tt_nuochoa.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thoi trang new
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-nam-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tt_new_nam.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-nu-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tt_new_nu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-do-doi-dong-phuc-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tt_new_dongphuc.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-be-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tt_new_be.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thoi-trang-giay-dep-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tt_new_giaydep.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thuc pham do uong
+RewriteRule ^chinh-sua-tin-dang-thuc-pham-d([0-9]+)-s([0-9]+).html$ /home/csua_thucpham.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-uong-d([0-9]+)-s([0-9]+).html$ /home/csua_do_uong.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thuc pham do uong new
+RewriteRule ^chinh-sua-tin-dang-thuc-pham-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_thucpham.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-uong-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_douong.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua do dung van phong, cong nong nghiep
+RewriteRule ^chinh-sua-tin-dang-do-dung-van-phong-d([0-9]+)-s([0-9]+).html$ /home/csua_ddvanphong.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-dung-giong-vat-nuoi-d([0-9]+)-s([0-9]+).html$ /home/csua_gnuoitrong.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-giao-duc-d([0-9]+)-s([0-9]+).html$ /home/csua_tbigiaoduc.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua do dung van phong, cong nong nghiep new
+RewriteRule ^chinh-sua-tin-dang-do-dung-van-phong-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_vpcnn_new_ddvanphong.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-cong-nong-nghiep-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_vpcnn_new_congnongnghiep.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thu cong my nghe qua tang
+RewriteRule ^chinh-sua-tin-dang-thiet-ke-phong-thuy-d([0-9]+)-s([0-9]+).html$ /home/csua_thietke.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-hoa-qua-tang-d([0-9]+)-s([0-9]+).html$ /home/csua_hoaquantang.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nghe-thuat-thu-cong-d([0-9]+)-s([0-9]+).html$ /home/csua_nghethuat.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua thu cong my nghe qua tang
+RewriteRule ^chinh-sua-tin-dang-thiet-ke-phong-thuy-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tcmn_new_thietke.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-hoa-qua-tang-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tcmn_new_hoaquantang.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nghe-thuat-thu-cong-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_tcmn_new_nghethuat.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua me va be
+RewriteRule ^chinh-sua-tin-dang-me-va-be-do-cho-me-d([0-9]+)-s([0-9]+).html$ /home/csua_mevabe_me.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-me-va-be-do-cho-be-d([0-9]+)-s([0-9]+).html$ /home/csua_mevabe_be.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua me va be new
+RewriteRule ^chinh-sua-tin-dang-me-va-be-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_mevabe.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dich vu gia tri
+RewriteRule ^chinh-sua-tin-dang-dich-vu-d([0-9]+)-s([0-9]+).html$ /home/csua_dichvu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nhac-cu-d([0-9]+)-s([0-9]+).html$ /home/csua_nhaccu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-sach-d([0-9]+)-s([0-9]+).html$ /home/csua_sach.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-su-tam-do-co-d([0-9]+)-s([0-9]+).html$ /home/csua_stdoco.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-choi-game-d([0-9]+)-s([0-9]+).html$ /home/csua_tbigame.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-so-thich-khac-d([0-9]+)-s([0-9]+).html$ /home/csua_sthichkhac.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua dich vu gia tri new
+RewriteRule ^chinh-sua-tin-dang-dich-vu-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_dichvu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-nhac-cu-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_nhaccu.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-sach-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_sach.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-su-tam-do-co-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_suutamdoco.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-choi-game-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_tbigame.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-so-thich-khac-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_dvgt_new_sothichkhac.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua do dien tu
+#RewriteRule ^chinh-sua-tin-dang-may-tinh-de-ban-d([0-9]+)-s([0-9]+).html$ /home/csua_maytinh_dban.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-may-tinh-de-ban-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_mtdeban.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-laptop-d([0-9]+)-s([0-9]+).html$ /home/csua_laptop.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-laptop-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_laptop.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-may-anh-may-quay-d([0-9]+)-s([0-9]+).html$ /home/csua_mayanh_mayquay.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-may-anh-may-quay-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_mayanh.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-dien-thoai-di-dong-d([0-9]+)-s([0-9]+).html$ /home/csua_dienthoai.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-dien-thoai-di-dong-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_dienthoai.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-may-tinh-bang-d([0-9]+)-s([0-9]+).html$ /home/csua_mtinhbang.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-may-tinh-bang-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_mtinhbang.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-may-tivi-loa-d([0-9]+)-s([0-9]+).html$ /home/csua_tivi_loa.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-may-tivi-loa-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_tiviamthanh.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-phu-kien-linh-kien-d([0-9]+)-s([0-9]+).html$ /home/csua_pkien_lkien.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-phu-kien-linh-kien-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_phukien.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-thiet-bi-thong-minh-d([0-9]+)-s([0-9]+).html$ /home/csua_tbthongminh.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-thong-minh-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_tbithongminh.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-dien-tu-khac-d([0-9]+)-s([0-9]+).html$ /home/csua_dientukhac.php?id_dm=$1&id_cs=$2 [NE,L]
+# moi linh kien
+RewriteRule ^chinh-sua-tin-dang-do-dien-tu-linh-kien-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ddt_linhkien.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua do gia dung
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-dien-lanh-d([0-9]+)-s([0-9]+).html$ /home/csua_tbidienlanh.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-nha-bep-d([0-9]+)-s([0-9]+).html$ /home/csua_tbinhabep.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-theo-mua-d([0-9]+)-s([0-9]+).html$ /home/csua_tbitheomua.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-suc-khoe-d([0-9]+)-s([0-9]+).html$ /home/csua_tbisuckhoe.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-gia-dung-khac-d([0-9]+)-s([0-9]+).html$ /home/csua_dgdungkhac.php?id_dm=$1&id_cs=$2 [NE,L]
+# chinh sua do gia dung new
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-dien-lanh-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tbidienlanh.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-nha-bep-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tbinhabep.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-theo-mua-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tbitheomua.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-thiet-bi-suc-khoe-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tbisuckhoe.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-do-gia-dung-khac-new-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tbdungkhac.php?id_dm=$1&id_cs=$2 [NE,L]
+# Chỉnh sửa nội thất - ngoại thất
+RewriteRule ^chinh-sua-tin-dang-ngoai_that-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ntnt_ngoaithat.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-khac-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ntnt_noithatkhac.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-vuon-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ntnt_vuon.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-van-phong-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_ntnt_vanphong.php?id_dm=$1&id_cs=$2 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-noi-that-phong-khach-([0-9]+).html$ /home/chinhsua_noithatphongkhach.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-phong-khach-([0-9]+).html$ /home/chinhsua_new_ntnt_phongkhach.php?id=$1 [NE,L]
+#RewriteRule ^chinh-sua-tin-dang-noi-that-phong-ngu-([0-9]+).html$ /home/chinhsua_noithatphongngu.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-phong-ngu-([0-9]+).html$ /home/chinhsua_new_ntnt_phongngu.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-phong-bep-([0-9]+).html$ /home/chinhsua_noithatphongbep.php?id=$1 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-noi-that-phong-tam-([0-9]+).html$ /home/chinhsua_noithatphongtam.php?id=$1 [NE,L]
+
+RewriteRule ^chinh-sua-tin-dang-mua-d([0-9]+)-s([0-9]+).html$ /home/cs_tindangmua.php?id_dm=$1&id_cs=$2 [NE,L]
+# ------------ Page Mới
+RewriteRule ^tat-ca-tin-dang-ban.html$ /home/tat_ca_tindang_ban.php [NE,L]
+RewriteRule ^tat-ca-tin-dang-mua.html$ /home/tat_ca_tindang_mua.php [NE,L]
+RewriteRule ^bang-gia.html$ /home/bang_gia.php [NE,L]
+RewriteRule ^bang-gia-ghim-gian-hang.html$ /home/bang_gia_ghim_gian_hang.php?type=1 [NE,L]
+RewriteRule ^bang-gia-ghim-tin.html$ /home/bang_gia_ghim_tin.php?type=3 [NE,L]
+RewriteRule ^dich-vu-bang-gia.html$ /home/dich_vu_bang_gia.php?type=2 [NE,L]
+RewriteRule ^thong-tin-gian-hang.html$ /home/thong_tin_gian_hang.php [NE,L]
+# việc làm
+#RewriteRule ^chinh-sua-tin-dang-tim-ung-vien-d([0-9]+)-s([0-9]+).html$ /home/csua_tim_ung_vien.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-tim-ung-vien-d([0-9]+)-s([0-9]+).html$ /home/chinhsua_new_tv_timungvien.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^chinh-sua-tin-dang-tim-viec-lam-d([0-9]+)-s([0-9]+).html$ /home/csua_tim_viec_lam.php?id_dm=$1&id_cs=$2 [NE,L]
+RewriteRule ^danh-sach-tin-nguoi-mua.html$ /home/ds_tin_nguoi_mua.php [NE,L]
+
+RewriteRule ^quan-ly-binh-luan.html$ /home/quan_ly_binh_luan.php [NE,L]
+RewriteRule ^chi-tiet-binh-luan-tin-dang.html$ /home/chitiet_binhluan_tindang.php [NE,L]
+RewriteRule ^xem-truoc-tin-dang-nguoi-mua.html$ /home/xemtruoc_tindang_nguoimua.php [NE,L]
+RewriteRule ^ung-vien-ung-tuyen.html$ /home/uv_ut_tmua.php [NE,L]
+RewriteRule ^binh-luan-tin-mua.html$ /home/binh_luan_tinmua.php [NE,L]
+
+#Điền
+# ------------ Page Mới
+
+RewriteRule ^xac-thuc-tai-khoan-ngan-hang.html$ /home/xac_thuc_tk.php [NE,L]
+#RewriteRule ^nguoi-mua-lien-ket-tai-khoan.html$ /home/nguoi_mua_lk.php [NE,L]
+
+RewriteRule ^quan-ly-don-hang-ban.html$ /home/ql_donhang_nguoiban.php [NE,L]
+RewriteRule ^quan-ly-don-hang-dang-xu-ly.html$ /home/ql_dangxuly_nguoiban.php [NE,L]
+RewriteRule ^quan-ly-don-hang-dang-giao.html$ /home/ql_danggiao_nguoiban.php [NE,L]
+RewriteRule ^quan-ly-don-hang-da-giao.html$ /home/ql_dagiao_nguoiban.php [NE,L]
+RewriteRule ^quan-ly-don-hang-da-huy.html$ /home/ql_donhang_dahuy.php [NE,L]
+RewriteRule ^quan-ly-don-hang-hoan-tat.html$ /home/ql_donhang_hoantat.php [NE,L]
+RewriteRule ^chi-tiet-cho-xac-nhan-nguoi-ban-([0-9]+).html$ /home/chitiet_choxacnhan_nguoiban.php?id=$1 [NE,L]
+RewriteRule ^chi-tiet-don-dang-xu-ly-([0-9]+).html$ /home/chitiet_dangxuly_nguoiban.php?id=$1 [NE,L]
+RewriteRule ^chi-tiet-don-hang-dang-giao-nguoi-ban-([0-9]+).html$ /home/chitiet_danggiao_nguoiban.php?id=$1 [NE,L]
+RewriteRule ^chi-tiet-da-giao-hang-([0-9]+).html$ /home/chitiet_dagiao_nguoiban.php?id=$1 [NE,L]
+RewriteRule ^chi-tiet-hoan-tat-don-hang-([0-9]+).html$ /home/chitiet_hoantat_donhang_nguoiban.php?id=$1 [NE,L]
+RewriteRule ^chi-tiet-don-huy-([0-9]+).html$ /home/chitiet_donhuy_nguoiban.php?id=$1 [NE,L]
+#--nguoi mua(page moi)
+RewriteRule ^xac-nhan-don-hang-d([0-9]+).html$ /home/xac_nhan_don_hang.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-mua.html$ /home/ql_donhang_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-cho-xac-nhan-nguoi-mua-([0-9]+).html$ /home/chitiet_choxacnhan_nguoimua.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-dang-xu-ly-nguoi-mua.html$ /home/ql_dangxuly_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-don-dang-xu-ly-nguoi-mua-([0-9]+).html$ /home/chitiet_dangxuly_nguoimua.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-dang-giao-nguoi-mua.html$ /home/ql_danggiao_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-don-dang-giao-nguoi-mua-([0-9]+).html$ /home/chitiet_danggiao_nguoimua.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-da-giao-nguoi-mua.html$ /home/ql_dagiao_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-da-giao-hang-nguoi-mua-([0-9]+).html$ /home/chitiet_dagiao_nguoimua.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-hoan-tat-nguoi-mua.html$ /home/ql_donhang_hoantat_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-hoan-tat-don-hang-nguoi-mua-([0-9]+).html$ /home/chitiet_hoantat_donhang_nguoimua.php?id=$1 [NE,L]
+RewriteRule ^quan-ly-don-hang-da-huy-nguoi-mua.html$ /home/ql_donhang_dahuy_nguoimua.php [NE,L]
+RewriteRule ^chi-tiet-don-huy-nguoi-mua-([0-9]+).html$ /home/chitiet_huydon_nguoimua.php?id=$1 [NE,L]
+
+
+RewriteRule ^tim-kiem-tin-ban.html$ /home/tim_kiem1.php [NE,L]
+RewriteRule ^trang-chu-moi.html$ /home/trangchu.php [NE,L]
+# ....
+FileETag MTime Size
+#Turn off Etag
+Header unset Pragma
+Header unset ETag
+<Files ".(js|css|html|htm|php|xml|webp)$">
+SetOutputFilter DEFLATE
+</Files>
+<Files *.js>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+<Files *.ico>
+Header set Cache-Control "max-age=604800, public"
+</Files>
+<Files ".(jpg|jpeg|png|gif|swf|webp)$">
+Header set Cache-Control "max-age=604800, public"
+</Files>
+<Files ".(xml|txt|css|js)$">
+Header set Cache-Control "max-age=172800, proxy-revalidate"
+</Files>
+<Files ".(html|htm|php)$">
+Header set Cache-Control "max-age=60, private, proxy-revalidate"
+</Files>
+<FilesMatch ".(ico|jpg|jpeg|png|gif|js|css|swf|woff|webp|woff2)$">
+Header set Expires "Tue, 16 Jun 2020 20:00:00 GMT"
+</FilesMatch>
+<ifModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 10 seconds"
+    ExpiresByType text/cache-manifest "access plus 0 seconds"
+
+    # Data
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType application/json "access plus 0 seconds"
+
+    # Feed
+    ExpiresByType application/rss+xml "access plus 3600 seconds"
+    ExpiresByType application/atom+xml "access plus 3600 seconds"
+
+    # Favicon
+    ExpiresByType image/x-icon "access plus 15552000 seconds"
+
+    # Media: images, video, audio
+    ExpiresByType image/gif "access plus 15552000 seconds"
+    ExpiresByType image/png "access plus 15552000 seconds"
+    ExpiresByType image/jpeg "access plus 15552000 seconds"
+    ExpiresByType image/jpg "access plus 15552000 seconds"
+    ExpiresByType video/ogg "access plus 15552000 seconds"
+    ExpiresByType audio/ogg "access plus 15552000 seconds"
+    ExpiresByType video/mp4 "access plus 15552000 seconds"
+    ExpiresByType video/webm "access plus 15552000 seconds"
+
+    # HTC files  (css3pie)
+    ExpiresByType text/x-component "access plus 15552000 seconds"
+
+    # Webfonts
+    ExpiresByType application/x-font-ttf "access plus 15552000 seconds"
+    ExpiresByType font/opentype "access plus 15552000 seconds"
+    ExpiresByType font/woff2 "access plus 15552000 seconds"
+    ExpiresByType application/x-font-woff "access plus 15552000 seconds"
+    ExpiresByType image/svg+xml "access plus 15552000 seconds"
+    ExpiresByType application/vnd.ms-fontobject "access plus 15552000 seconds"
+    ExpiresByType application/font-woff2 "access plus 1 month"
+
+
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 15552000 seconds"
+    ExpiresByType application/javascript "access plus 15552000 seconds"
+    ExpiresByType text/javascript "access plus 15552000 seconds"
+    ExpiresByType application/javascript "access plus 15552000 seconds"
+    ExpiresByType application/x-javascript "access plus 15552000 seconds"
+
+    # Others files
+    ExpiresByType application/x-shockwave-flash "access plus 15552000 seconds"
+    ExpiresByType application/octet-stream "access plus 15552000 seconds"
+</ifModule>

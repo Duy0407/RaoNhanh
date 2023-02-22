@@ -1,0 +1,34 @@
+<?
+include_once 'config/config.php';
+
+if(isset($_POST['teach_id'])){
+    $teach_id = $_POST['teach_id'];
+    $TUID = $_COOKIE['TUID'];
+    $class_id = $_POST['class_id'];
+    $count = count($_POST['class_id']);
+    for ($i = 0 ; $i < $count ; $i ++) {
+        $sql_validate = new db_query("SELECT gs_userteach_id, gs_userparent_id,gs_class_id FROM gs_suggest_teacher WHERE gs_userteach_id = $teach_id AND gs_userparent_id = $TUID AND gs_class_id=$class_id[$i] AND suggest='invite'");
+        if(mysql_fetch_array($sql_validate->result)>0){
+            $data = [
+                'result' => false,
+                'msg' => 'Bạn đã mời gia sư lớp này rồi'
+            ];
+        }else{
+            $sql_subject = new db_query("SELECT gs_subject_id FROM gs_class WHERE gs_user_id = '$TUID' AND class_id = '$class_id[$i]'");
+            $row_subject = mysql_fetch_assoc($sql_subject->result);
+            $gs_subject_id = $row_subject['gs_subject_id'];
+            $sql_insert = new db_query("
+            INSERT INTO gs_suggest_teacher (gs_userteach_id,gs_userparent_id,gs_class_id,status_suggest,suggest,gs_subject_id) 
+            VALUES ('$teach_id','$TUID','$class_id[$i]',0,'invite','$gs_subject_id')");
+            $sql_insert2 = new db_query("INSERT INTO notification (gs_userteach_id,gs_userparent_id,gs_class_id,user_type,type_noti) VALUES ('$teach_id','$TUID','$class_id[$i]',2,1)");
+            $data = [
+                'result' => true,
+                'msg' => 'Mời gia sư thành công'
+            ];
+        }
+    }
+
+    echo json_encode($data);
+}
+
+?>

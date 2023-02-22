@@ -1,0 +1,11 @@
+<? 
+require_once("functions/functions.php"); 
+ob_start('callback');
+require_once("functions/function_rewrite.php");
+require_once("classes/html_cleanup.php");
+require_once("classes/user.php");
+require_once("classes/generate_form.php");
+require_once("classes/database.php");
+require_once("classes/config.php");
+require_once("functions/pagebreak.php");
+?>
